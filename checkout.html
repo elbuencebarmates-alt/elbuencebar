@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Compra | El Buen Cebar</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <style>
+    .checkout-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1.2fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    
+    .checkout-section {
+      background-color: var(--color-bg-primary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    
+    .checkout-section__title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 10px;
+    }
+    
+    .checkout-summary-card {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+    
+    .checkout-item-mini {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      color: var(--color-text-secondary);
+    }
+    
+    .checkout-item-mini__qty {
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-right: 8px;
+    }
+    
+    .payment-instructions {
+      background-color: var(--color-bg-primary);
+      border: 1px dashed var(--color-accent-light);
+      padding: 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-top: 12px;
+      display: none;
+    }
+    
+    .payment-instructions strong {
+      color: var(--color-primary);
+    }
+    
+    @media (max-width: 992px) {
+      .checkout-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Promociones / Envíos -->
+  <div class="promo-bar">
+    Envío GRATIS en compras superiores a $150.000 - Ramos Mejía, Zona Oeste
+  </div>
+
+  <!-- Cabecera / Navegación -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        El Buen Cebar <span>Premium</span>
+      </a>
+      
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="catalogo.html" class="nav__link">Catálogo</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto y Envíos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Botón del Carrito -->
+        <button class="action-btn" data-cart-toggle aria-label="Carrito de compras">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Botón de Menú Móvil -->
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú Móvil Colapsable -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html" class="nav__link">Inicio</a>
+    <a href="catalogo.html" class="nav__link">Catálogo</a>
+    <a href="contacto.html" class="nav__link">Contacto y Envíos</a>
+  </div>
+
+  <!-- CONTENIDO DE CHECKOUT -->
+  <main class="container" style="padding-top: 130px; padding-bottom: 80px;">
+    <h1 class="section-title">Finalizar Compra</h1>
+    <p class="section-subtitle">Completá tus datos de entrega y pago para enviar tu pedido por WhatsApp</p>
+
+    <div class="checkout-grid">
+      <!-- Formulario de Datos -->
+      <div>
+        <form id="checkout-form" onsubmit="procesarPedidoWhatsApp(event)">
+          <!-- Sección 1: Datos Personales -->
+          <div class="checkout-section">
+            <h2 class="checkout-section__title">1. Datos de Contacto</h2>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="c-nombre">Nombre y Apellido *</label>
+                <input type="text" id="c-nombre" class="form-input" required placeholder="Ej: Carlos Gómez">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c-telefono">Teléfono (WhatsApp) *</label>
+                <input type="tel" id="c-telefono" class="form-input" required placeholder="Ej: 11 2345 6789">
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección 2: Método de Entrega -->
+          <div class="checkout-section">
+            <h2 class="checkout-section__title">2. Forma de Entrega</h2>
+            <div class="radio-group">
+              <!-- Opción 1: Retiro Showroom -->
+              <label class="radio-label radio-label--active" id="label-entrega-retiro">
+                <input type="radio" name="r-entrega" value="retiro" checked onclick="cambiarMetodoEntrega('retiro')">
+                <div class="radio-info">
+                  <span class="radio-title">Retiro por Showroom (Ramos Mejía)</span>
+                  <span class="radio-desc">Gratis. Coordinamos el retiro de lunes a sábados.</span>
+                </div>
+              </label>
+
+              <!-- Opción 2: Envío Propio -->
+              <label class="radio-label" id="label-entrega-envio">
+                <input type="radio" name="r-entrega" value="envio" onclick="cambiarMetodoEntrega('envio')">
+                <div class="radio-info">
+                  <span class="radio-title">Envío a Domicilio (Logística Propia)</span>
+                  <span class="radio-desc">Gratis desde $150.000. De lo contrario, costo de $3.500. Ramos Mejía y Zona Oeste.</span>
+                </div>
+              </label>
+            </div>
+
+            <!-- Campos de Dirección (Se muestran dinámicamente) -->
+            <div id="direccion-campos" style="display: none; margin-top: 24px; border-top: 1px dashed var(--color-border); padding-top: 20px;">
+              <div class="form-grid">
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="c-calle">Calle y Altura *</label>
+                  <input type="text" id="c-calle" class="form-input" placeholder="Ej: Av. de Mayo 1200">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-piso">Piso / Depto (Opcional)</label>
+                  <input type="text" id="c-piso" class="form-input" placeholder="Ej: 2° B">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-localidad">Localidad *</label>
+                  <input type="text" id="c-localidad" class="form-input" value="Ramos Mejía">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección 3: Métodos de Pago -->
+          <div class="checkout-section">
+            <h2 class="checkout-section__title">3. Forma de Pago</h2>
+            <div class="radio-group">
+              <!-- Opción 1: Mercado Pago -->
+              <label class="radio-label radio-label--active" id="label-pago-mp">
+                <input type="radio" name="r-pago" value="mercadopago" checked onclick="cambiarMetodoPago('mercadopago')">
+                <div class="radio-info">
+                  <span class="radio-title">Mercado Pago (Dinero en Cuenta / Tarjetas)</span>
+                  <span class="radio-desc">Te enviamos el link de pago al confirmar el pedido.</span>
+                </div>
+              </label>
+
+              <!-- Opción 2: Transferencia -->
+              <label class="radio-label" id="label-pago-transferencia">
+                <input type="radio" name="r-pago" value="transferencia" onclick="cambiarMetodoPago('transferencia')">
+                <div class="radio-info">
+                  <span class="radio-title">Transferencia Bancaria (CBU / Alias)</span>
+                  <span class="radio-desc">Aboná con transferencia directa y envianos el comprobante.</span>
+                </div>
+              </label>
+
+              <!-- Opción 3: Efectivo -->
+              <label class="radio-label" id="label-pago-efectivo">
+                <input type="radio" name="r-pago" value="efectivo" onclick="cambiarMetodoPago('efectivo')">
+                <div class="radio-info">
+                  <span class="radio-title">Efectivo al Retirar / Recibir (10% DESCUENTO)</span>
+                  <span class="radio-desc">Aboná en mano al momento de la entrega física. ¡Descuento automático!</span>
+                </div>
+              </label>
+            </div>
+
+            <!-- Datos de CBU en pantalla -->
+            <div id="instrucciones-transferencia" class="payment-instructions">
+              <strong>Datos de Cuenta para Transferencia:</strong><br>
+              Banco: Galicia<br>
+              CBU: 0070012220000012345678<br>
+              Alias: <strong>elbuencebar.mates</strong><br>
+              Titular: El Buen Cebar S.H.<br>
+              * Recordá enviar el comprobante de transferencia al email o por WhatsApp.
+            </div>
+
+            <div id="instrucciones-efectivo" class="payment-instructions" style="background-color: var(--color-success-light); border-color: var(--color-success); color: var(--color-success);">
+              🎉 <strong>¡Descuento del 10% Aplicado!</strong> Ahorrás en tu pedido por abonar en efectivo al retirar o en el reparto.
+            </div>
+          </div>
+
+          <!-- Botón de Envío -->
+          <button type="submit" class="btn btn--accent btn--lg btn--full" style="justify-content: center; height: 56px;">
+            Confirmar Pedido por WhatsApp
+          </button>
+        </form>
+      </div>
+
+      <!-- Resumen del Carrito -->
+      <div>
+        <div class="checkout-summary-card">
+          <h2 class="cart-summary-card__title" style="margin-bottom: 16px;">Resumen de tu compra</h2>
+          
+          <div id="checkout-mini-list" style="margin-bottom: 24px; border-bottom: 1px dashed var(--color-border); padding-bottom: 16px;">
+            <!-- Carga dinámica -->
+          </div>
+
+          <div class="cart-summary-row" style="margin-bottom: 12px;">
+            <span>Subtotal</span>
+            <span id="chk-subtotal">$0</span>
+          </div>
+          
+          <div class="cart-summary-row" style="margin-bottom: 12px;">
+            <span>Envío</span>
+            <span id="chk-shipping">A calcular</span>
+          </div>
+
+          <div class="cart-summary-row" id="chk-row-discount" style="margin-bottom: 12px; display: none; color: var(--color-success);">
+            <span>Descuento Efectivo (10%)</span>
+            <span id="chk-discount">-$0</span>
+          </div>
+
+          <div class="cart-summary-row cart-summary-row--total" style="padding-top: 16px; border-top: 1px dashed var(--color-border); margin-top: 16px;">
+            <span>Total a pagar</span>
+            <span id="chk-total" style="font-size: 1.6rem;">$0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col-about">
+        <a href="index.html" class="logo" style="color: #fff;">El Buen Cebar</a>
+        <p>Mates y accesorios de primer nivel. Fabricación artesanal y atención personalizada desde Ramos Mejía.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/elbuen.cebar" target="_blank" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer__title">Navegación</h3>
+        <ul class="footer__links">
+          <li><a href="index.html" class="footer__link">Inicio</a></li>
+          <li><a href="catalogo.html" class="footer__link">Catálogo</a></li>
+          <li><a href="contacto.html" class="footer__link">Contacto y Envíos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Políticas</h3>
+        <ul class="footer__links">
+          <li><a href="contacto.html#cambios" class="footer__link">Cambios y Devoluciones</a></li>
+          <li><a href="contacto.html#envios" class="footer__link">Métodos de Envío</a></li>
+          <li><a href="contacto.html#pagos" class="footer__link">Medios de Pago</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Contacto</h3>
+        <ul class="footer__info-list">
+          <li class="footer__info-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            elbuencebarmates@gmail.com
+          </li>
+          <li class="footer__info-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Ramos Mejía, La Matanza, Zona Oeste
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="copyright-year">2026</span> El Buen Cebar. Todos los derechos reservados. Diseñado artesanalmente.</p>
+      <div class="footer__payments">
+        <span>Aceptamos:</span>
+        <div class="footer__payments-icons">
+          <span class="footer__payment-icon">Mercado Pago</span>
+          <span class="footer__payment-icon">Transferencia</span>
+          <span class="footer__payment-icon">Efectivo (-10%)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carrito Overlay (Ficticio para no fallar referencias globales de cart.js) -->
+  <div class="cart-overlay" id="cart-overlay" style="display: none;"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Lógica de Checkout -->
+  <script>
+    // Variables locales para cálculo de totales
+    let metodoEntrega = "retiro"; // 'retiro' o 'envio'
+    let metodoPago = "mercadopago"; // 'mercadopago', 'transferencia', 'efectivo'
+    
+    // NÚMERO DE WHATSAPP DE LA TIENDA (SE PUEDE MODIFICAR FÁCILMENTE)
+    const TIENDA_WHATSAPP = ""; // Dejar vacío para abrir selección de chat o rellenar si tienen número
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Si el carrito está vacío, redirigir a catálogo
+      if (carrito.length === 0) {
+        window.location.href = "catalogo.html";
+        return;
+      }
+      
+      renderizarResumenCheckout();
+    });
+
+    // Cambia el método de entrega (envío a domicilio / retiro showroom)
+    function cambiarMetodoEntrega(metodo) {
+      metodoEntrega = metodo;
+      
+      // Manejar clases activas
+      const lRetiro = document.getElementById("label-entrega-retiro");
+      const lEnvio = document.getElementById("label-entrega-envio");
+      const divCampos = document.getElementById("direccion-campos");
+      const calleInput = document.getElementById("c-calle");
+      const localidadInput = document.getElementById("c-localidad");
+      
+      if (metodo === "retiro") {
+        lRetiro.classList.add("radio-label--active");
+        lEnvio.classList.remove("radio-label--active");
+        divCampos.style.display = "none";
+        calleInput.removeAttribute("required");
+        localidadInput.removeAttribute("required");
+      } else {
+        lRetiro.classList.remove("radio-label--active");
+        lEnvio.classList.add("radio-label--active");
+        divCampos.style.display = "block";
+        calleInput.setAttribute("required", "true");
+        localidadInput.setAttribute("required", "true");
+      }
+      
+      renderizarResumenCheckout();
+    }
+
+    // Cambia el método de pago (MP, transferencia, efectivo con 10% desc)
+    function cambiarMetodoPago(metodo) {
+      metodoPago = metodo;
+      
+      const lMP = document.getElementById("label-pago-mp");
+      const lTrans = document.getElementById("label-pago-transferencia");
+      const lEfect = document.getElementById("label-pago-efectivo");
+      
+      const instTrans = document.getElementById("instrucciones-transferencia");
+      const instEfect = document.getElementById("instrucciones-efectivo");
+      
+      // Resetear clases
+      lMP.classList.remove("radio-label--active");
+      lTrans.classList.remove("radio-label--active");
+      lEfect.classList.remove("radio-label--active");
+      
+      instTrans.style.display = "none";
+      instEfect.style.display = "none";
+      
+      if (metodo === "mercadopago") {
+        lMP.classList.add("radio-label--active");
+      } else if (metodo === "transferencia") {
+        lTrans.classList.add("radio-label--active");
+        instTrans.style.display = "block";
+      } else if (metodo === "efectivo") {
+        lEfect.classList.add("radio-label--active");
+        instEfect.style.display = "block";
+      }
+      
+      renderizarResumenCheckout();
+    }
+
+    // Calcula subtotales, envío, descuentos e imprime en el panel lateral
+    function renderizarResumenCheckout() {
+      const listMini = document.getElementById("checkout-mini-list");
+      const subtotal = obtenerSubtotal();
+      
+      // Calcular costo de envío
+      let costoEnvio = 0;
+      if (metodoEntrega === "envio") {
+        costoEnvio = subtotal >= SHIPPING_THRESHOLD ? 0 : FLAT_SHIPPING_COST;
+      }
+      
+      // Calcular descuento (10% si es efectivo)
+      let descuento = 0;
+      if (metodoPago === "efectivo") {
+        descuento = subtotal * 0.1;
+      }
+      
+      const total = subtotal + costoEnvio - descuento;
+
+      // Renderizar listado de items lateral
+      listMini.innerHTML = carrito.map(item => `
+        <div class="checkout-item-mini">
+          <div>
+            <span class="checkout-item-mini__qty">${item.cantidad}x</span>
+            <span>${item.nombre} ${item.opcion ? `(${item.opcion})` : ''}</span>
+          </div>
+          <span style="font-weight: 500;">$${(item.precio * item.cantidad).toLocaleString('es-AR')}</span>
+        </div>
+      `).join("");
+
+      // Imprimir montos
+      document.getElementById("chk-subtotal").textContent = `$${subtotal.toLocaleString('es-AR')}`;
+      
+      if (metodoEntrega === "retiro") {
+        document.getElementById("chk-shipping").textContent = "GRATIS (Retiro)";
+      } else {
+        document.getElementById("chk-shipping").textContent = costoEnvio === 0 ? "GRATIS" : `$${costoEnvio.toLocaleString('es-AR')}`;
+      }
+
+      const rowDesc = document.getElementById("chk-row-discount");
+      if (metodoPago === "efectivo") {
+        rowDesc.style.display = "flex";
+        document.getElementById("chk-discount").textContent = `-$${descuento.toLocaleString('es-AR')}`;
+      } else {
+        rowDesc.style.display = "none";
+      }
+
+      document.getElementById("chk-total").textContent = `$${total.toLocaleString('es-AR')}`;
+    }
+
+    // Procesa el pedido recopilando toda la info y abriendo la API de WhatsApp
+    function procesarPedidoWhatsApp(e) {
+      e.preventDefault();
+      
+      const nombre = document.getElementById("c-nombre").value;
+      const telefono = document.getElementById("c-telefono").value;
+      
+      const subtotal = obtenerSubtotal();
+      let costoEnvio = 0;
+      if (metodoEntrega === "envio") {
+        costoEnvio = subtotal >= SHIPPING_THRESHOLD ? 0 : FLAT_SHIPPING_COST;
+      }
+      
+      let descuento = 0;
+      if (metodoPago === "efectivo") {
+        descuento = subtotal * 0.1;
+      }
+      
+      const total = subtotal + costoEnvio - descuento;
+
+      // Armar listado de productos
+      let textoProductos = "";
+      carrito.forEach(item => {
+        const detalleOp = item.opcion ? ` (Variante: ${item.opcion})` : "";
+        textoProductos += `- ${item.cantidad}x ${item.nombre}${detalleOp} -> $${(item.precio * item.cantidad).toLocaleString('es-AR')}\n`;
+      });
+
+      // Armar datos de entrega
+      let textoEntrega = "";
+      if (metodoEntrega === "retiro") {
+        textoEntrega = "Método: Retiro por Showroom (Ramos Mejía)\n";
+      } else {
+        const calle = document.getElementById("c-calle").value;
+        const depto = document.getElementById("c-piso").value;
+        const deptoTexto = depto ? `, Depto: ${depto}` : "";
+        const localidad = document.getElementById("c-localidad").value;
+        
+        textoEntrega = `Método: Envío a Domicilio (Logística Propia)\nDirección: ${calle}${deptoTexto}, ${localidad}\n`;
+      }
+
+      // Armar método de pago
+      let textoPago = "";
+      if (metodoPago === "mercadopago") {
+        textoPago = "Mercado Pago (Espero Link)\n";
+      } else if (metodoPago === "transferencia") {
+        textoPago = "Transferencia Bancaria (Abonaré al CBU)\n";
+      } else {
+        textoPago = "Efectivo contra entrega (10% descuento aplicado)\n";
+      }
+
+      // Crear mensaje codificado
+      const mensaje = `Hola El Buen Cebar! Quisiera concretar mi pedido:\n\n` +
+                      `👤 CLIENTE:\n` +
+                      `- Nombre: ${nombre}\n` +
+                      `- Teléfono: ${telefono}\n\n` +
+                      `🧉 PRODUCTOS:\n${textoProductos}\n` +
+                      `📍 ENTREGA:\n${textoEntrega}\n` +
+                      `💳 PAGO:\n- ${textoPago}\n` +
+                      `💰 RESUMEN:\n` +
+                      `- Subtotal: $${subtotal.toLocaleString('es-AR')}\n` +
+                      `- Envío: ${metodoEntrega === 'retiro' ? 'Retiro en local' : (costoEnvio === 0 ? 'GRATIS' : '$' + costoEnvio.toLocaleString('es-AR'))}\n` +
+                      (descuento > 0 ? `- Descuento Efectivo (10%): -$${descuento.toLocaleString('es-AR')}\n` : "") +
+                      `- TOTAL A PAGAR: $${total.toLocaleString('es-AR')}`;
+
+      // Generar URL de la API de WhatsApp
+      const mensajeUrl = encodeURIComponent(mensaje);
+      let urlWhatsapp = "";
+      
+      if (TIENDA_WHATSAPP) {
+        urlWhatsapp = `https://api.whatsapp.com/send?phone=${TIENDA_WHATSAPP}&text=${mensajeUrl}`;
+      } else {
+        // Enlace sin número de teléfono preestablecido (abre WhatsApp para elegir contacto de la agenda)
+        urlWhatsapp = `https://api.whatsapp.com/send?text=${mensajeUrl}`;
+      }
+
+      // Vaciar el carrito localmente al finalizar compra
+      localStorage.removeItem("el_buen_cebar_carrito");
+      
+      // Abrir en pestaña nueva
+      window.open(urlWhatsapp, "_blank");
+      
+      // Mostrar toast y redirigir a inicio después de unos segundos
+      mostrarToast("Pedido compilado. Redirigiendo a WhatsApp...");
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS DE LA PORTADA - EL BUEN CEBAR
+   ========================================================================== */
+
+/* 1. HERO SECTION */
+.home-hero {
+  position: relative;
+  height: 85vh;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-bg-dark);
+}
+
+.home-hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+  transform: scale(1.02);
+  transition: transform var(--transition-slow);
+}
+
+.home-hero:hover .home-hero__bg {
+  transform: scale(1.05);
+}
+
+.home-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(30, 21, 19, 0.9) 0%, rgba(30, 21, 19, 0.4) 100%);
+  z-index: 1;
+}
+
+.home-hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  color: var(--color-bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-hero__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent-light);
+  margin-bottom: 20px;
+}
+
+.home-hero__title {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.home-hero__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent-light);
+}
+
+.home-hero__desc {
+  font-size: 1.1rem;
+  color: var(--color-bg-tertiary);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.home-hero__actions {
+  display: flex;
+  gap: 16px;
+}
+
+/* 2. CATEGORÍAS EN INICIO */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.category-card {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 16px;
+  text-align: center;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-card:hover {
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-accent-light);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.category-card__icon-wrapper {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  transition: all var(--transition-normal);
+}
+
+.category-card:hover .category-card__icon-wrapper {
+  background-color: var(--color-accent);
+  color: var(--color-bg-primary);
+  border-color: var(--color-accent);
+  transform: rotate(5deg) scale(1.05);
+}
+
+.category-card__icon-wrapper svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.5;
+  stroke: currentColor;
+  fill: none;
+}
+
+.category-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.category-card__count {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* 3. BARRA DE BENEFICIOS (FEATURES BAR) */
+.features-bar {
+  background-color: var(--color-bg-secondary);
+  padding: 48px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.features-bar__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feature-item__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: rgba(78, 54, 41, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.feature-item__icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.feature-item__title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.feature-item__desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* 4. HISTORIA / PROCESO ARTESANAL */
+.about-craft {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-craft__image-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.about-craft__badge {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--color-bg-primary);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  max-width: 200px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.about-craft__badge-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.about-craft__badge-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-craft__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-craft__title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.about-craft__text {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.about-craft__points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.about-craft__point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.about-craft__point svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-accent);
+  stroke-width: 2.5;
+  fill: none;
+}
+
+/* 5. SECCIÓN DE LOCALIDAD Y MAPA (RAMOS MEJÍA) */
+.locality-section {
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.locality-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.locality-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.locality-info__title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.locality-info__text {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.locality-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.locality-detail-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.locality-detail-item svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  fill: none;
+  margin-top: 2px;
+}
+
+.locality-detail-item__title {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.locality-detail-item__desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.locality-map {
+  height: 350px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.locality-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(0.2) contrast(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .about-craft, .locality-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-craft__image-wrapper {
+    order: 2;
+  }
+  
+  .about-craft__content {
+    order: 1;
+  }
+  
+  .features-bar__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-hero__title {
+    font-size: 2.8rem;
+  }
+  
+  .home-hero__desc {
+    font-size: 1rem;
+  }
+  
+  .home-hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .home-hero__actions .btn {
+    width: 100%;
+  }
+}

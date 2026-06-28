@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Carrito | El Buen Cebar - Mates Premium</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <style>
+    .cart-page-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    
+    .cart-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .cart-table th {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid var(--color-border);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-secondary);
+    }
+    
+    .cart-table td {
+      padding: 24px 16px;
+      border-bottom: 1px solid var(--color-border);
+      vertical-align: middle;
+    }
+    
+    .cart-table-item {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    
+    .cart-table-item__image {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      background-color: var(--color-bg-secondary);
+    }
+    
+    .cart-table-item__title {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    
+    .cart-summary-card {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      position: sticky;
+      top: 100px;
+      height: fit-content;
+    }
+    
+    .cart-summary-card__title {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 12px;
+    }
+    
+    @media (max-width: 992px) {
+      .cart-page-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .cart-table th:nth-child(3),
+      .cart-table td:nth-child(3) {
+        display: none; /* Oculta columna de subtotal unitario en mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Promociones / Envíos -->
+  <div class="promo-bar">
+    Envío GRATIS en compras superiores a $150.000 - Ramos Mejía, Zona Oeste
+  </div>
+
+  <!-- Cabecera / Navegación -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        El Buen Cebar <span>Premium</span>
+      </a>
+      
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="catalogo.html" class="nav__link">Catálogo</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto y Envíos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Botón del Carrito -->
+        <button class="action-btn" data-cart-toggle aria-label="Carrito de compras">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Botón de Menú Móvil -->
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú Móvil Colapsable -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html" class="nav__link">Inicio</a>
+    <a href="catalogo.html" class="nav__link">Catálogo</a>
+    <a href="contacto.html" class="nav__link">Contacto y Envíos</a>
+  </div>
+
+  <!-- CONTENIDO CARRITO COMPLETO -->
+  <main class="container" style="padding-top: 130px; padding-bottom: 80px;">
+    <h1 class="section-title">Tu Carrito de Compras</h1>
+    <p class="section-subtitle">Revisá tu selección antes de finalizar el pedido</p>
+
+    <div class="cart-page-grid" id="cart-page-layout">
+      <!-- Se inyecta por JS (carrito.html local script) -->
+      <div style="grid-column: 1 / -1; text-align: center; padding: 100px 0; color: var(--color-text-muted);">
+        <p>Cargando detalles del carrito...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA (FOOTER) -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col-about">
+        <a href="index.html" class="logo" style="color: #fff;">El Buen Cebar</a>
+        <p>Mates y accesorios de primer nivel. Fabricación artesanal y atención personalizada desde Ramos Mejía.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/elbuen.cebar" target="_blank" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer__title">Navegación</h3>
+        <ul class="footer__links">
+          <li><a href="index.html" class="footer__link">Inicio</a></li>
+          <li><a href="catalogo.html" class="footer__link">Catálogo</a></li>
+          <li><a href="contacto.html" class="footer__link">Contacto y Envíos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Políticas</h3>
+        <ul class="footer__links">
+          <li><a href="contacto.html#cambios" class="footer__link">Cambios y Devoluciones</a></li>
+          <li><a href="contacto.html#envios" class="footer__link">Métodos de Envío</a></li>
+          <li><a href="contacto.html#pagos" class="footer__link">Medios de Pago</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__title">Contacto</h3>
+        <ul class="footer__info-list">
+          <li class="footer__info-item">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            elbuencebarmates@gmail.com
+          </li>
+          <li class="footer__info-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Ramos Mejía, La Matanza, Zona Oeste
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="copyright-year">2026</span> El Buen Cebar. Todos los derechos reservados. Diseñado artesanalmente.</p>
+      <div class="footer__payments">
+        <span>Aceptamos:</span>
+        <div class="footer__payments-icons">
+          <span class="footer__payment-icon">Mercado Pago</span>
+          <span class="footer__payment-icon">Transferencia</span>
+          <span class="footer__payment-icon">Efectivo (-10%)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Carrito Drawer (Necesario para mantener la sincronización y eventos del header) -->
+  <div class="cart-overlay" id="cart-overlay" style="display: none;"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderizarPaginaCarrito();
+      
+      // Escuchar eventos de actualización del carrito global para volver a pintar la tabla
+      document.addEventListener("cartUpdated", renderizarPaginaCarrito);
+    });
+
+    function renderizarPaginaCarrito() {
+      const layout = document.getElementById("cart-page-layout");
+      if (!layout) return;
+
+      if (carrito.length === 0) {
+        layout.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 80px 0; color: var(--color-text-muted);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 64px; height: 64px; margin-bottom: 20px;">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <h2 class="section-title" style="font-size: 1.8rem;">Tu carrito está vacío</h2>
+            <p style="margin-bottom: 24px;">Todavía no agregaste ningún mate ni accesorio a tu pedido.</p>
+            <a href="catalogo.html" class="btn btn--primary">Ir al Catálogo de Productos</a>
+          </div>
+        `;
+        return;
+      }
+
+      const subtotal = obtenerSubtotal();
+      const costoEnvio = obtenerCostoEnvio();
+      
+      // Generar indicador de envío gratis
+      let shippingInfoHtml = "";
+      if (subtotal >= SHIPPING_THRESHOLD) {
+        shippingInfoHtml = `
+          <div class="shipping-meter" style="margin-bottom: 24px;">
+            <div class="shipping-meter__text">🚚 ¡Felicidades! Tenés <span>Envío Gratis</span> en Ramos Mejía y a todo el país.</div>
+            <div class="shipping-meter__bar">
+              <div class="shipping-meter__fill" style="width: 100%"></div>
+            </div>
+          </div>
+        `;
+      } else {
+        const faltante = SHIPPING_THRESHOLD - subtotal;
+        const porcentaje = (subtotal / SHIPPING_THRESHOLD) * 100;
+        shippingInfoHtml = `
+          <div class="shipping-meter" style="margin-bottom: 24px;">
+            <div class="shipping-meter__text">🚚 Faltan <span>$${faltante.toLocaleString('es-AR')}</span> para conseguir <strong>Envío Gratis</strong>.</div>
+            <div class="shipping-meter__bar">
+              <div class="shipping-meter__fill" style="width: ${porcentaje}%"></div>
+            </div>
+          </div>
+        `;
+      }
+
+      let tableRows = "";
+      carrito.forEach(item => {
+        const opcionText = item.opcion ? `<div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 4px;">Variante: ${item.opcion}</div>` : "";
+        tableRows += `
+          <tr>
+            <td>
+              <div class="cart-table-item">
+                <img src="${item.imagen}" alt="${item.nombre}" class="cart-table-item__image">
+                <div>
+                  <h3 class="cart-table-item__title">${item.nombre}</h3>
+                  ${opcionText}
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="qty-selector-detail" style="height: 36px; width: fit-content;">
+                <button class="qty-btn-detail" style="width: 30px;" onclick="modificarCantidad('${item.id}', '${item.opcion}', -1)">-</button>
+                <div class="qty-val-detail" style="width: 36px; font-size: 0.9rem;">${item.cantidad}</div>
+                <button class="qty-btn-detail" style="width: 30px;" onclick="modificarCantidad('${item.id}', '${item.opcion}', 1)">+</button>
+              </div>
+            </td>
+            <td>
+              <span style="font-weight: 500;">$${item.precio.toLocaleString('es-AR')}</span>
+            </td>
+            <td style="text-align: right;">
+              <span style="font-weight: 700; color: var(--color-accent); font-size: 1.1rem;">
+                $${(item.precio * item.cantidad).toLocaleString('es-AR')}
+              </span>
+            </td>
+            <td style="text-align: right; width: 40px;">
+              <button class="cart-item__remove" onclick="eliminarDelCarrito('${item.id}', '${item.opcion}')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+              </button>
+            </td>
+          </tr>
+        `;
+      });
+
+      layout.innerHTML = `
+        <!-- Detalle de Productos -->
+        <div>
+          ${shippingInfoHtml}
+          
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th style="text-align: right;">Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              ${tableRows}
+            </tbody>
+          </table>
+          
+          <div style="margin-top: 32px; display: flex; justify-content: space-between;">
+            <a href="catalogo.html" class="btn btn--secondary">← Seguir Comprando</a>
+            <button class="btn btn--outline" onclick="vaciarCarritoTotal()">Vaciar Carrito</button>
+          </div>
+        </div>
+
+        <!-- Resumen de Costos -->
+        <div>
+          <div class="cart-summary-card">
+            <h2 class="cart-summary-card__title">Resumen del Pedido</h2>
+            
+            <div class="cart-summary-row" style="margin-bottom: 16px;">
+              <span>Subtotal</span>
+              <strong style="color: var(--color-text-primary);">$${subtotal.toLocaleString('es-AR')}</strong>
+            </div>
+            
+            <div class="cart-summary-row" style="margin-bottom: 16px;">
+              <span>Envío (Propio)</span>
+              <strong style="color: var(--color-text-primary);">${costoEnvio === 0 ? "GRATIS" : `$${costoEnvio.toLocaleString('es-AR')}`}</strong>
+            </div>
+            
+            <div class="cart-summary-row cart-summary-row--total" style="margin-bottom: 32px; padding-top: 16px;">
+              <span>Total Estimado</span>
+              <span style="font-size: 1.6rem;">$${(subtotal + costoEnvio).toLocaleString('es-AR')}</span>
+            </div>
+            
+            <a href="checkout.html" class="btn btn--accent btn--full" style="justify-content: center; height: 50px;">Proceder al Pago</a>
+          </div>
+        </div>
+      `;
+    }
+
+    function vaciarCarritoTotal() {
+      if (confirm("¿Estás seguro de que querés vaciar todo el carrito?")) {
+        carrito = [];
+        guardarCarrito();
+      }
+    }
+  </script>
+</body>
+</html>
