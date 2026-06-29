@@ -110,7 +110,7 @@ const PRODUCTOS = [
   },
   {
     id: "mate-imperial-croco-repujado",
-    nombre: "Mate Imperial Croco y Repujados",
+    nombre: "Mate Imperial Croco y Repujado",
     categoria: "mates",
     subcategoria: "imperial",
     precio: 50000,
