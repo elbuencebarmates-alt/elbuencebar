@@ -43,6 +43,19 @@ function agregarAlCarrito(id, cantidad = 1, opcion = "") {
   const producto = PRODUCTOS.find(p => p.id === id);
   if (!producto) return;
 
+  // Buscar si la opción corresponde a una variante con precio o imagen propios
+  let precioFinal = producto.precio;
+  let imagenFinal = producto.imagen;
+  if (producto.variantes && opcion) {
+    const varEncontrada = producto.variantes.find(v => v.nombre.toLowerCase().trim() === opcion.toLowerCase().trim());
+    if (varEncontrada) {
+      precioFinal = varEncontrada.precio;
+      if (varEncontrada.imagen) {
+        imagenFinal = varEncontrada.imagen;
+      }
+    }
+  }
+
   // Buscar si ya existe el item con la misma opción en el carrito
   const itemExistente = carrito.find(item => item.id === id && item.opcion === opcion);
 
@@ -52,8 +65,8 @@ function agregarAlCarrito(id, cantidad = 1, opcion = "") {
     carrito.push({
       id: producto.id,
       nombre: producto.nombre,
-      precio: producto.precio,
-      imagen: producto.imagen,
+      precio: precioFinal,
+      imagen: imagenFinal,
       categoria: producto.categoria,
       opcion: opcion,
       cantidad: cantidad

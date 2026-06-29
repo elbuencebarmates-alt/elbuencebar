@@ -352,7 +352,21 @@
       let optionsHtml = "";
       let opcionActiva = "";
       
-      if (p.categoria === "mates") {
+      if (p.variantes && p.variantes.length > 0) {
+        const variantes = p.variantes;
+        opcionActiva = variantes[0].nombre;
+        
+        optionsHtml = `
+          <div class="options-selector">
+            <span class="form-label">Seleccioná tu variante de cuero/terminación:</span>
+            <div class="options-grid">
+              ${variantes.map((v, i) => `
+                <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcionVariante(this, '${v.nombre}', '${v.imagen}', ${v.precio})">${v.nombre}</button>
+              `).join("")}
+            </div>
+          </div>
+        `;
+      } else if (p.categoria === "mates") {
         const variantes = p.subcategoria === "algarrobo" 
           ? ["Madera Natural", "Madera Curada"] 
           : p.subcategoria === "termico"
@@ -474,6 +488,25 @@
       pills.forEach(p => p.classList.remove("option-pill--active"));
       element.classList.add("option-pill--active");
       window.opcionSeleccionadaActiva = valor;
+    }
+
+    // Control del selector de variantes específicas del producto
+    function seleccionarOpcionVariante(element, nombre, imagen, precio) {
+      const pills = element.parentNode.querySelectorAll(".option-pill");
+      pills.forEach(p => p.classList.remove("option-pill--active"));
+      element.classList.add("option-pill--active");
+      
+      window.opcionSeleccionadaActiva = nombre;
+      
+      const mainImg = document.getElementById("main-product-image");
+      if (mainImg && imagen) {
+        mainImg.src = imagen;
+      }
+      
+      const priceElem = document.querySelector(".product-price-detail");
+      if (priceElem) {
+        priceElem.textContent = `$${precio.toLocaleString('es-AR')}`;
+      }
     }
 
     // Control de la cantidad en la ficha de producto

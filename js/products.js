@@ -94,14 +94,18 @@ const PRODUCTOS = [
     categoria: "mates",
     subcategoria: "imperial",
     precio: 40000,
-    imagen: "assets/images/mate-imperial-boca-ancha-guarda.png",
-    descripcion: "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado, forrado en cuero negro liso legítimo. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
+    imagen: "assets/images/mate-imperial-boca-ancha-negro.png",
+    descripcion: "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
     destacado: true,
     detalles: [
       "Calabaza brasilera seleccionada por su espesor",
-      "Forrado en cuero negro liso legítimo de vaqueta",
       "Virola superior con guarda de alpaca cincelada",
       "Formato boca ancha para cebadas más cómodas"
+    ],
+    variantes: [
+      { nombre: "Cuero Negro Liso", imagen: "assets/images/mate-imperial-boca-ancha-negro.png", precio: 40000 },
+      { nombre: "Cuero Marrón Liso", imagen: "assets/images/mate-imperial-boca-ancha-marron.png", precio: 40000 },
+      { nombre: "Cuero Crudo", imagen: "assets/images/mate-imperial-boca-ancha-crudo.png", precio: 55000 }
     ]
   },
   {

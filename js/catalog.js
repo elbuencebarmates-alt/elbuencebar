@@ -171,7 +171,9 @@ function renderizarCatalogo() {
   grid.innerHTML = productosFiltrados.map(p => {
     // Definimos variantes por defecto simples según su categoría para agregar rápido
     let opcionPorDefecto = "";
-    if (p.categoria === "mates") {
+    if (p.variantes && p.variantes.length > 0) {
+      opcionPorDefecto = p.variantes[0].nombre;
+    } else if (p.categoria === "mates") {
       opcionPorDefecto = p.subcategoria === "algarrobo" ? "Natural" : "Marrón Oscuro";
     } else if (p.categoria === "termos") {
       opcionPorDefecto = p.id.includes("negro") ? "Negro Mate" : "Acero";
