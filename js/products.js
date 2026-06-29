@@ -132,18 +132,22 @@ const PRODUCTOS = [
   },
   {
     id: "mate-imperial-base-alpaca",
-    nombre: "Mate Imperial con Base de Alpaca",
+    nombre: "Imperial con base de alpaca",
     categoria: "mates",
     subcategoria: "imperial",
-    precio: 42000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Una obra de arte de la platería criolla. Cuenta con virola superior de alpaca y una base totalmente recubierta y reforzada en alpaca cincelada para máxima elegancia y durabilidad.",
+    precio: 50000,
+    imagen: "assets/images/mate-imperial-base-alpaca-marron.png",
+    descripcion: "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés optar por el exclusivo diseño de cuero marrón repujado con textura de pelota de fútbol o el clásico cuero negro liso.",
     destacado: true,
     detalles: [
-      "Base de alpaca trabajada a mano (sin patas de cuero expuestas)",
-      "Virola superior cincelada combinando con la base",
-      "Calabaza de excelente espesor",
-      "Cuero negro o marrón de curtiembre artesanal"
+      "Base de alpaca cincelada y reforzada (sin patas expuestas)",
+      "Virola superior de alpaca combinada",
+      "Calabaza brasilera de alto espesor",
+      "Costura fina reforzada hecha a mano"
+    ],
+    variantes: [
+      { nombre: "cuero marron repujado pelota", imagen: "assets/images/mate-imperial-base-alpaca-marron.png", precio: 50000 },
+      { nombre: "cuero negro liso", imagen: "assets/images/mate-imperial-base-alpaca-negro.png", precio: 55000 }
     ]
   },
   {
