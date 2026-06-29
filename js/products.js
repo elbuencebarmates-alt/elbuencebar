@@ -137,7 +137,7 @@ const PRODUCTOS = [
     subcategoria: "imperial",
     precio: 50000,
     imagen: "assets/images/mate-imperial-base-alpaca-marron.png",
-    descripcion: "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés optar por el exclusivo diseño de cuero marrón repujado con textura de pelota de fútbol o el clásico cuero negro liso.",
+    descripcion: "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
     destacado: true,
     detalles: [
       "Base de alpaca cincelada y reforzada (sin patas expuestas)",
@@ -147,7 +147,10 @@ const PRODUCTOS = [
     ],
     variantes: [
       { nombre: "cuero marron repujado pelota", imagen: "assets/images/mate-imperial-base-alpaca-marron.png", precio: 50000 },
-      { nombre: "cuero negro liso", imagen: "assets/images/mate-imperial-base-alpaca-negro.png", precio: 55000 }
+      { nombre: "cuero negro liso", imagen: "assets/images/mate-imperial-base-alpaca-negro.png", precio: 55000 },
+      { nombre: "Imperial con base de alpaca calada negro", imagen: "assets/images/mate-imperial-base-alpaca-calada-negro.png", precio: 60000 },
+      { nombre: "Imperial con base de alpaca calada marron", imagen: "assets/images/mate-imperial-base-alpaca-calada-marron.png", precio: 60000 },
+      { nombre: "cuero labrado rosa feliz dia mama", imagen: "assets/images/mate-imperial-labrado-rosa-mama.png", precio: 50000 }
     ]
   },
   {
