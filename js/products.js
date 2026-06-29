@@ -90,16 +90,16 @@ const PRODUCTOS = [
   },
   {
     id: "mate-imperial-boca-ancha",
-    nombre: "Mate Imperial Boca Ancha con Guarda",
+    nombre: "Mate Imperial premium boca ancha",
     categoria: "mates",
     subcategoria: "imperial",
-    precio: 15990,
+    precio: 40000,
     imagen: "assets/images/mate-imperial-boca-ancha-guarda.png",
-    descripcion: "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado, forrado en cuero vacuno negro legítimo. Virola con guarda de alpaca y calabazas brasileras seleccionadas.",
+    descripcion: "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado, forrado en cuero negro liso legítimo. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
     destacado: true,
     detalles: [
       "Calabaza brasilera seleccionada por su espesor",
-      "Forrado en cuero vacuno negro legítimo",
+      "Forrado en cuero negro liso legítimo de vaqueta",
       "Virola superior con guarda de alpaca cincelada",
       "Formato boca ancha para cebadas más cómodas"
     ]
