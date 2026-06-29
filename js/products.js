@@ -109,6 +109,28 @@ const PRODUCTOS = [
     ]
   },
   {
+    id: "mate-imperial-croco-repujado",
+    nombre: "Mate Imperial Croco y Repujados",
+    categoria: "mates",
+    subcategoria: "imperial",
+    precio: 50000,
+    imagen: "assets/images/mate-imperial-croco-negro.png",
+    descripcion: "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
+    destacado: true,
+    detalles: [
+      "Calabaza brasilera de alto espesor seleccionada",
+      "Cuero vacuno legítimo grabado estilo croco o repujado",
+      "Virola de alpaca pulida a espejo con cincelados de flores",
+      "Costura reforzada a mano con hilo encerado"
+    ],
+    variantes: [
+      { nombre: "Imperial cuero croco negro", imagen: "assets/images/mate-imperial-croco-negro.png", precio: 50000 },
+      { nombre: "Imperial cuero croco marron", imagen: "assets/images/mate-imperial-croco-marron.png", precio: 50000 },
+      { nombre: "Imperial argentina cuero repujado negro", imagen: "assets/images/mate-imperial-repujado-negro.png", precio: 55000 },
+      { nombre: "Imperial cuero croco rosa", imagen: "assets/images/mate-imperial-croco-rosa.png", precio: 50000 }
+    ]
+  },
+  {
     id: "mate-imperial-base-alpaca",
     nombre: "Mate Imperial con Base de Alpaca",
     categoria: "mates",
