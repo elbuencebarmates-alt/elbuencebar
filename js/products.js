@@ -148,8 +148,8 @@ const PRODUCTOS = [
     variantes: [
       { nombre: "cuero marron repujado pelota", imagen: "assets/images/mate-imperial-base-alpaca-marron.png", precio: 50000 },
       { nombre: "cuero negro liso", imagen: "assets/images/mate-imperial-base-alpaca-negro.png", precio: 55000 },
-      { nombre: "Imperial con base de alpaca calada negro", imagen: "assets/images/mate-imperial-base-alpaca-calada-negro.png", precio: 60000 },
-      { nombre: "Imperial con base de alpaca calada marron", imagen: "assets/images/mate-imperial-base-alpaca-calada-marron.png", precio: 60000 },
+      { nombre: "con base de alpaca calada negro", imagen: "assets/images/mate-imperial-base-alpaca-calada-negro.png", precio: 60000 },
+      { nombre: "con base de alpaca calada marron", imagen: "assets/images/mate-imperial-base-alpaca-calada-marron.png", precio: 60000 },
       { nombre: "cuero labrado rosa feliz dia mama", imagen: "assets/images/mate-imperial-labrado-rosa-mama.png", precio: 50000 }
     ]
   },
