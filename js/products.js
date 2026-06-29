@@ -90,18 +90,18 @@ const PRODUCTOS = [
   },
   {
     id: "mate-imperial-boca-ancha",
-    nombre: "Mate Imperial Boca Ancha",
+    nombre: "Mate Imperial Boca Ancha con Guarda",
     categoria: "mates",
     subcategoria: "imperial",
-    precio: 33500,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Ideal para cebadas prolongadas. Su boca ancha facilita el armado de la pared de yerba y evita que se lave rápidamente. Forrado en cuero negro rústico con virola de alpaca.",
-    destacado: false,
+    precio: 15990,
+    imagen: "assets/images/mate-imperial-boca-ancha-guarda.png",
+    descripcion: "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado, forrado en cuero vacuno negro legítimo. Virola con guarda de alpaca y calabazas brasileras seleccionadas.",
+    destacado: true,
     detalles: [
-      "Calabaza de formato boca ancha (galleta seleccionada)",
-      "Facilita mantener la montañita de yerba firme",
-      "Cuero vacuno grueso costurado a mano",
-      "Virola de alpaca lisa ideal para grabados"
+      "Calabaza brasilera seleccionada por su espesor",
+      "Forrado en cuero vacuno negro legítimo",
+      "Virola superior con guarda de alpaca cincelada",
+      "Formato boca ancha para cebadas más cómodas"
     ]
   },
   {
