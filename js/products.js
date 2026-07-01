@@ -563,6 +563,26 @@ const PRODUCTOS = [
     ]
   },
   {
+    id: "bombilla-chata-lisa",
+    nombre: "Bombilla chata lisa",
+    categoria: "bombillas",
+    subcategoria: "acero",
+    precio: 4000,
+    imagen: "assets/images/bombilla-chata-lisa-curva.png",
+    descripcion: "Bombilla chata lisa de acero inoxidable 304 pulido a espejo. Su diseño minimalista y elegante cuenta con un anillo difusor de calor en el cuello. Disponible en versión con curva o versión recta.",
+    destacado: true,
+    detalles: [
+      "Fabricada en acero inoxidable AISI 304 higiénico",
+      "Formato chato tradicional muy cómodo al uso",
+      "Anillo difusor de calor de bronce",
+      "Variante recta de 17 cm y variante curva de 19 cm"
+    ],
+    variantes: [
+      { nombre: "con curva", imagen: "assets/images/bombilla-chata-lisa-curva.png", precio: 4000 },
+      { nombre: "recta", imagen: "assets/images/bombilla-chata-lisa-recta.png", precio: 4000 }
+    ]
+  },
+  {
     id: "bombilla-alpaca",
     nombre: "Bombilla de Alpaca",
     categoria: "bombillas",
