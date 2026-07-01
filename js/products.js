@@ -496,6 +496,27 @@ const PRODUCTOS = [
     ]
   },
   {
+    id: "bombilla-bombillon-labrado-premium",
+    nombre: "Bombillón de caño labrado premium",
+    categoria: "bombillas",
+    subcategoria: "bombillon",
+    precio: 25000,
+    imagen: "assets/images/bombillon-labrado-trenzado.png",
+    descripcion: "Bombillón de altísima gama con caño labrado artesanalmente. Cuenta con virolas de bronce torneadas y detalles de orfebrería únicos. Disponible en diseño trenzado con pico dorado, diseño espiralado tradicional o diseño torsión con pala y pico dorados.",
+    destacado: true,
+    detalles: [
+      "Trabajo de cincelado y labrado hecho a mano en alpaca",
+      "Virolas y apliques de bronce de fundición soldados a mano",
+      "Pala y pico pulidos a espejo o con acabados dorados",
+      "Largo de 21 cm de gran caudal, ideal para mates imperiales"
+    ],
+    variantes: [
+      { nombre: "diseño trenzado con pico dorado", imagen: "assets/images/bombillon-labrado-trenzado.png", precio: 25000 },
+      { nombre: "diseño espiralado", imagen: "assets/images/bombillon-labrado-espiralado.png", precio: 25000 },
+      { nombre: "diseño torsion con pala dorada", imagen: "assets/images/bombillon-labrado-torsion.png", precio: 25000 }
+    ]
+  },
+  {
     id: "bombilla-acero-inoxidable",
     nombre: "Bombilla de Acero Inoxidable",
     categoria: "bombillas",
