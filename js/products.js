@@ -518,18 +518,48 @@ const PRODUCTOS = [
   },
   {
     id: "bombilla-acero-inoxidable",
-    nombre: "Bombilla de Acero Inoxidable",
+    nombre: "Bombilla de acero inoxidable con filtro/pala",
     categoria: "bombillas",
     subcategoria: "acero",
-    precio: 6000,
-    imagen: "assets/images/bombilla.jpg",
-    descripcion: "La bombilla eterna. Fabricada en acero inoxidable 304 pulido a espejo. Cuenta con filtro de resorte desmontable de muy fácil limpieza y mantenimiento.",
-    destacado: false,
+    precio: 15000,
+    imagen: "assets/images/bombilla-acero-pala-bronce.png",
+    descripcion: "Bombillas de acero inoxidable 304 con filtro de pala de alta retención. Muy higiénicas y duraderas. Disponibles en versiones con caño liso y pico de bronce, o formato pico de loro en medidas de 16 cm y 19 cm.",
+    destacado: true,
     detalles: [
-      "Acero inoxidable AISI 304 higiénico",
-      "Resorte desmontable regulable para limpiar",
-      "Pico plano y ancho",
-      "Apta para lavavajillas"
+      "Fabricada íntegramente en acero inoxidable AISI 304",
+      "Filtro tipo pala soldada muy fácil de limpiar",
+      "Pico curvo anatómico muy confortable",
+      "Largo según variante: 16 cm o 19 cm"
+    ],
+    variantes: [
+      { nombre: "caño liso con pico de bronce", imagen: "assets/images/bombilla-acero-pala-bronce.png", precio: 15000 },
+      { nombre: "pico de loro 16cm", imagen: "assets/images/bombilla-acero-pala-16cm.png", precio: 15000 },
+      { nombre: "pico de loro 19cm", imagen: "assets/images/bombilla-acero-pala-19cm.png", precio: 15000 }
+    ]
+  },
+  {
+    id: "bombilla-chata-grabada",
+    nombre: "Bombilla chata grabada",
+    categoria: "bombillas",
+    subcategoria: "acero",
+    precio: 5000,
+    imagen: "assets/images/bombilla-chata-grabada-combo.png",
+    descripcion: "Bombilla chata clásica fabricada en acero inoxidable con grabado láser de alta precisión. Podés elegir tu diseño favorito: escudos de fútbol de Boca o River, diseño patrio de Argentina, Ruta 40, Copa del Mundo, o grabados especiales para regalar como 'Te amo papá' o 'Te amo mamá'.",
+    destacado: true,
+    detalles: [
+      "Fabricada íntegramente en acero inoxidable 304",
+      "Grabado láser indeleble de gran definición",
+      "Doble anillo de bronce en el cuello",
+      "Fácil succión y excelente filtrado de yerba"
+    ],
+    variantes: [
+      { nombre: "Boca Juniors", imagen: "assets/images/bombilla-chata-boca.png", precio: 5000 },
+      { nombre: "River Plate", imagen: "assets/images/bombilla-chata-river.png", precio: 5000 },
+      { nombre: "Copa del Mundo", imagen: "assets/images/bombilla-chata-copa.png", precio: 5000 },
+      { nombre: "Argentina", imagen: "assets/images/bombilla-chata-argentina.png", precio: 5000 },
+      { nombre: "Te amo papá", imagen: "assets/images/bombilla-chata-papa.png", precio: 5000 },
+      { nombre: "Te amo mamá", imagen: "assets/images/bombilla-chata-mama.png", precio: 5000 },
+      { nombre: "Ruta 40", imagen: "assets/images/bombilla-chata-ruta40.png", precio: 5000 }
     ]
   },
   {
