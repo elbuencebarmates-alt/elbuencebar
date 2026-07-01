@@ -477,18 +477,22 @@ const PRODUCTOS = [
   },
   {
     id: "bombilla-bombillon",
-    nombre: "Bombillón Premium",
+    nombre: "Bombillón de caño liso",
     categoria: "bombillas",
     subcategoria: "bombillon",
-    precio: 13500,
-    imagen: "assets/images/bombilla.jpg",
-    descripcion: "Diseñado para mates imperiales grandes. Caño extra grueso de alpaca que permite un flujo de agua masivo y filtro de pala microperforado de alta precisión.",
+    precio: 15000,
+    imagen: "assets/images/bombillon-alpaca-cincelado.png",
+    descripcion: "Bombillones de caño liso diseñados para mates de boca ancha y profundos. Disponibles en alpaca con caño cincelado o en acero inoxidable con formato pico de loro y pala grande.",
     destacado: true,
     detalles: [
-      "Caño de alpaca de gran diámetro",
-      "Filtro de pala grande desmontable o fijo",
-      "Anillo difusor de calor de bronce en el cuello",
-      "Largo ideal de 21 cm para mates profundos"
+      "Caño de gran diámetro para un caudal óptimo",
+      "Pala grande microperforada de excelente filtrado",
+      "Terminaciones pulidas a espejo y difusor de calor",
+      "Largo ideal de 20-21 cm para mates imperiales o camioneros"
+    ],
+    variantes: [
+      { nombre: "alpaca con caño cincelado", imagen: "assets/images/bombillon-alpaca-cincelado.png", precio: 15000 },
+      { nombre: "acero con pico de loro y pala grande", imagen: "assets/images/bombillon-acero-pala.png", precio: 10000 }
     ]
   },
   {
