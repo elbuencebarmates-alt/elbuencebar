@@ -155,16 +155,16 @@ const PRODUCTOS = [
   },
   {
     id: "mate-imperial-botitas-alpaca",
-    nombre: "Imperial con botitas de alpaca marron",
+    nombre: "Imperial con botitas de alpaca marron liso",
     categoria: "mates",
     subcategoria: "imperial",
     precio: 55000,
     imagen: "assets/images/mate-imperial-botitas-alpaca.png",
-    descripcion: "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
+    descripcion: "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
     destacado: true,
     detalles: [
       "Calabaza brasilera de alto espesor seleccionada",
-      "Forrado en cuero vacuno teñido color marrón",
+      "Forrado en cuero vacuno marrón liso de primera",
       "Patas con apliques ornamentales de alpaca (botitas)",
       "Virola superior de alpaca cincelada artesanalmente"
     ]
