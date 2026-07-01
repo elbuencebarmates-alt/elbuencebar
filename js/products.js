@@ -167,6 +167,9 @@ const PRODUCTOS = [
       "Forrado en cuero vacuno marrón liso de primera",
       "Patas con apliques ornamentales de alpaca (botitas)",
       "Virola superior de alpaca cincelada artesanalmente"
+    ],
+    variantes: [
+      { nombre: "Marrón Liso", imagen: "assets/images/mate-imperial-botitas-alpaca.png", precio: 55000 }
     ]
   },
   {
