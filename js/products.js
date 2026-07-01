@@ -170,6 +170,27 @@ const PRODUCTOS = [
     ]
   },
   {
+    id: "mate-imperial-base-alpaca-pelotas",
+    nombre: "Imperial con base de alpaca y pelotas",
+    categoria: "mates",
+    subcategoria: "imperial",
+    precio: 50000,
+    imagen: "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
+    descripcion: "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
+    destacado: true,
+    detalles: [
+      "Base de alpaca trabajada a mano con pelotitas de bronce",
+      "Virola superior de alpaca con cincelados criollos",
+      "Calabaza brasilera de alto espesor seleccionada",
+      "Opciones de cuero vacuno liso o cuero con pelo animal print"
+    ],
+    variantes: [
+      { nombre: "cuero negro", imagen: "assets/images/mate-imperial-base-alpaca-pelotas-negro.png", precio: 50000 },
+      { nombre: "cuero marron", imagen: "assets/images/mate-imperial-base-alpaca-pelotas-marron.png", precio: 50000 },
+      { nombre: "animal print", imagen: "assets/images/mate-imperial-base-alpaca-pelotas-animal.png", precio: 55000 }
+    ]
+  },
+  {
     id: "mate-imperial-personalizado",
     nombre: "Mate Imperial Personalizado",
     categoria: "mates",
