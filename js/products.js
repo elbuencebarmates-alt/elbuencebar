@@ -243,18 +243,82 @@ const PRODUCTOS = [
   },
   {
     id: "mate-imperial-algarrobo",
-    nombre: "Mate Imperial de Algarrobo",
+    nombre: "Mate Imperial de Algarrobo con virola de alpaca",
     categoria: "mates",
     subcategoria: "imperial",
-    precio: 29000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Madera noble y aroma único. Interior torneado en madera de algarrobo estacionado, forrado por fuera en cuero vacuno con virola de alpaca. Aporta un sabor dulzón y es súper fácil de curar.",
+    precio: 25000,
+    imagen: "assets/images/mate-imperial-algarrobo.png",
+    descripcion: "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca y base firme.",
     destacado: false,
     detalles: [
       "Interior de madera de algarrobo macizo torneado",
-      "No junta humedad ni hongos, ideal para uso intermitente",
-      "Exterior forrado en cuero vacuno costurado a mano",
-      "Virola superior de alpaca lisa"
+      "No junta humedad ni hongos, muy duradero",
+      "Exterior forrado en cuero vacuno legítimo",
+      "Virola superior de alpaca premium calada o lisa"
+    ]
+  },
+  {
+    id: "mate-imperial-azul-pelotas-bronce",
+    nombre: "Imperial color azul con base de pelotas de bronce",
+    categoria: "mates",
+    subcategoria: "imperial",
+    precio: 25000,
+    imagen: "assets/images/imperial-azul-pelotas-bronce.png",
+    descripcion: "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
+    destacado: false,
+    detalles: [
+      "Cuero legítimo teñido en tono azul premium",
+      "Base de alpaca con aplique de pelotitas de bronce",
+      "Virola cincelada con motivos florales",
+      "Interior de calabaza seleccionada de gran espesor"
+    ]
+  },
+  {
+    id: "mate-imperial-animal-print-calabaza",
+    nombre: "Imperial Animal Print calabaza ahuecada",
+    categoria: "mates",
+    subcategoria: "imperial",
+    precio: 25000,
+    imagen: "assets/images/imperial-animal-print-calabaza.png",
+    descripcion: "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
+    destacado: false,
+    detalles: [
+      "Cuero con pelo natural diseño animal print",
+      "Virola de alpaca cincelada artesanalmente",
+      "Base de apoyo de cuero legítimo",
+      "Interior de calabaza brasilera de alto grosor"
+    ]
+  },
+  {
+    id: "mate-imperial-roma-cincelado",
+    nombre: "Imperial Roma con base completa cincelada",
+    categoria: "mates",
+    subcategoria: "imperial",
+    precio: 25000,
+    imagen: "assets/images/imperial-roma-cincelado.png",
+    descripcion: "Mate Imperial modelo Roma, forrado en cuero con terminación repujada y base completa de alpaca totalmente cincelada.",
+    destacado: false,
+    detalles: [
+      "Cuero vacuno con trabajo repujado",
+      "Base completa de alpaca torneada y cincelada a mano",
+      "Virola de alpaca con relieves",
+      "Interior de calabaza premium"
+    ]
+  },
+  {
+    id: "mate-imperial-cuero-jean",
+    nombre: "Imperial Cuero Jean con interior de acero",
+    categoria: "mates",
+    subcategoria: "imperial",
+    precio: 25000,
+    imagen: "assets/images/imperial-cuero-jean.png",
+    descripcion: "Mate Imperial forrado en cuero con textura estilo jean de color azul e interior térmico de acero inoxidable. Higiénico y moderno.",
+    destacado: false,
+    detalles: [
+      "Forrado en cuero seleccionado con grabado textura Jean",
+      "Interior de acero inoxidable doble pared térmico",
+      "Virola de alpaca lisa",
+      "Excelente base de 4 patas firmes"
     ]
   },
 
@@ -375,6 +439,38 @@ const PRODUCTOS = [
       { nombre: "Marrón", imagen: "assets/images/torpedo-alpaca-calada-marron.png", precio: 45000 }
     ]
   },
+  {
+    id: "mate-torpedo-algarrobo-alpaca",
+    nombre: "Torpedo algarrobo con virola de alpaca cincelada",
+    categoria: "mates",
+    subcategoria: "torpedo",
+    precio: 25000,
+    imagen: "assets/images/mate-torpedo-algarrobo-alpaca.png",
+    descripcion: "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
+    destacado: false,
+    detalles: [
+      "Madera maciza de algarrobo torneado premium",
+      "Virola de alpaca cincelada artesanalmente",
+      "Forrado en cuero vacuno seleccionado cosido a mano",
+      "Formato torpedo clásico"
+    ]
+  },
+  {
+    id: "mate-torpedo-algarrobo-laqueado",
+    nombre: "Torpedo de algarrobo laqueado virola cincelada",
+    categoria: "mates",
+    subcategoria: "torpedo",
+    precio: 25000,
+    imagen: "assets/images/mate-torpedo-algarrobo-laqueado.png",
+    descripcion: "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
+    destacado: false,
+    detalles: [
+      "Acabado laqueado brillante que protege la madera",
+      "Virola cincelada de diseño patrio",
+      "Excelente espesor de madera de algarrobo laqueada",
+      "Base de apoyo súper estable"
+    ]
+  },
 
   // Subcategoría: Camionero
   {
@@ -439,6 +535,22 @@ const PRODUCTOS = [
       "Costura tradicional a mano con hilo encerado",
       "Virola de acero inoxidable duradera",
       "Fácil de sostener y de base ancha"
+    ]
+  },
+  {
+    id: "mate-camionero-algarrobo-premium",
+    nombre: "Camionero de Algarrobo premium con guarda de acero",
+    categoria: "mates",
+    subcategoria: "camionero",
+    precio: 25000,
+    imagen: "assets/images/camionero-algarrobo-premium.png",
+    descripcion: "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
+    destacado: false,
+    detalles: [
+      "Madera de algarrobo seleccionado extra gruesa",
+      "Virola de acero con cincelados de gran definición",
+      "Exterior en cuero vacuno teñido a mano",
+      "Terminaciones de alta costura"
     ]
   },
 
@@ -618,6 +730,38 @@ const PRODUCTOS = [
       "Ideal para mates torpedo y camioneros"
     ]
   },
+  {
+    id: "bombillon-alpaca-premium-pala",
+    nombre: "Bombillon de alpaca premium, pala ancha y doble dije de bronce, pico recto",
+    categoria: "bombillas",
+    subcategoria: "alpaca",
+    precio: 25000,
+    imagen: "assets/images/bombillon-alpaca-premium-pala.png",
+    descripcion: "Bombillón de alpaca premium con diseño de pico recto, difusores térmicos con doble dije de bronce y pala ancha reforzada para un excelente filtrado.",
+    destacado: false,
+    detalles: [
+      "Alpaca 100% de alta pureza con detalles cincelados",
+      "Doble dije de bronce macizo difusor de calor",
+      "Pala ancha reforzada ideal para yerba uruguaya",
+      "Terminación de lujo pulida a espejo"
+    ]
+  },
+  {
+    id: "bombillon-alpaca-premium-loro",
+    nombre: "Bombillon premium artesanal 100% alpaca - pico Loro",
+    categoria: "bombillas",
+    subcategoria: "alpaca",
+    precio: 25000,
+    imagen: "assets/images/bombillon-alpaca-premium-loro.png",
+    descripcion: "Exclusivo bombillón artesanal fabricado íntegramente en alpaca con pico en curva pronunciada (pico de loro) y detalles florales cincelados a mano.",
+    destacado: false,
+    detalles: [
+      "Fabricación artesanal en alpaca premium",
+      "Pico de loro curvado anatómico muy cómodo",
+      "Cincelados tradicionales en el caño",
+      "Filtro tipo pala de alta capacidad de succión"
+    ]
+  },
 
   // ═══════════════════════════════════════════
   // CATEGORÍA: TERMOS
@@ -702,6 +846,38 @@ const PRODUCTOS = [
       "Media manija rebatible y tapón cebador de precisión"
     ]
   },
+  {
+    id: "termo-media-manija-total-black",
+    nombre: "Termo media manija negro Total Black",
+    categoria: "termos",
+    subcategoria: "negro",
+    precio: 25000,
+    imagen: "assets/images/termo-media-manija-total-black.png",
+    descripcion: "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
+    destacado: false,
+    detalles: [
+      "Pintura siliconada de alta resistencia",
+      "Conserva calor/frío por más de 20 horas",
+      "Media manija para un agarre cómodo",
+      "Capacidad: 1 Litro"
+    ]
+  },
+  {
+    id: "termo-system-12-lts",
+    nombre: "Termo system 1L negro con manija y tapamate",
+    categoria: "termos",
+    subcategoria: "negro",
+    precio: 25000,
+    imagen: "assets/images/termo-system-12-lts.png",
+    descripcion: "Termo de 1 litro con manija rígida lateral y tapón con sistema cebador hermético de alta precisión, incluye tapa que sirve como mate térmico.",
+    destacado: false,
+    detalles: [
+      "Manija fija lateral de transporte cómodo",
+      "Tapón cebador hermético a prueba de fugas",
+      "Acero inoxidable 304 de doble capa",
+      "Conserva calor por 24hs"
+    ]
+  },
 
   // ═══════════════════════════════════════════
   // CATEGORÍA: MATERAS
@@ -768,6 +944,22 @@ const PRODUCTOS = [
       "Formato 2 en 1 (Mesa de apoyo y Valija de transporte)",
       "Manija de agarre ergonómica",
       "Traba de seguridad metálica"
+    ]
+  },
+  {
+    id: "canasta-cuero-grande",
+    nombre: "Canasta 100% cuero grande reforzada",
+    categoria: "materas",
+    subcategoria: "canasta",
+    precio: 25000,
+    imagen: "assets/images/canasta-cuero-grande.png",
+    descripcion: "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
+    destacado: false,
+    detalles: [
+      "Cuero vacuno legítimo extra grueso seleccionado",
+      "Costura doble reforzada de gran resistencia",
+      "Remaches de bronce reforzados en manija y uniones",
+      "Manija superior fija de gran comodidad"
     ]
   },
 
