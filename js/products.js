@@ -648,35 +648,31 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "matera-media-canasta-negra",
-    "nombre": "Media canasta matera de cuero - Negra",
+    "id": "matera-media-canasta",
+    "nombre": "Media canasta matera de cuero",
     "categoria": "materas",
     "subcategoria": "canasta",
     "precio": 18000,
     "imagen": "assets/images/media-canasta-cuero-negro.png",
-    "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate con gran comodidad.",
+    "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate de manera segura y cómoda. Disponible en colores Negro o Marrón Suela.",
     "destacado": false,
     "detalles": [
-      "Cuero legítimo vacuno resistente",
-      "Costuras de tiento tradicionales reforzadas",
-      "Manija fija de cuero y madera",
-      "División interna para termo y mate"
-    ]
-  },
-  {
-    "id": "matera-media-canasta-suela",
-    "nombre": "Media canasta matera de cuero - Suela",
-    "categoria": "materas",
-    "subcategoria": "canasta",
-    "precio": 18000,
-    "imagen": "assets/images/media-canasta-cuero-suela.png",
-    "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno color suela con costuras de tiento hechas a mano y mango rígido. Durabilidad y estilo clásico.",
-    "destacado": false,
-    "detalles": [
-      "Cuero vacuno flor natural color suela",
-      "Costura en tiento a la vista",
-      "Manija rígida súper reforzada",
-      "Excelente tamaño compacto y práctico"
+      "Cuero vacuno legítimo de excelente resistencia",
+      "Costuras tradicionales reforzadas hechas a mano",
+      "Manija fija rígida y división interna para termo y mate",
+      "Tamaño práctico y compacto para uso diario"
+    ],
+    "variantes": [
+      {
+        "nombre": "Negra",
+        "imagen": "assets/images/media-canasta-cuero-negro.png",
+        "precio": 18000
+      },
+      {
+        "nombre": "Marrón Suela",
+        "imagen": "assets/images/media-canasta-cuero-suela.png",
+        "precio": 18000
+      }
     ]
   },
 
