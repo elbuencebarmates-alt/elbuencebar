@@ -3,254 +3,185 @@
    ========================================================================== */
 
 const PRODUCTOS = [
-  // ═══════════════════════════════════════════
-  // CATEGORÍA: MATES
-  // ═══════════════════════════════════════════
-  
-  // Subcategoría: Imperial
   {
-    id: "mate-imperial-clasico",
-    nombre: "Mate Imperial Clásico",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 29500,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Mate Imperial clásico de calabaza seleccionada, forrado en cuero vacuno legítimo con costura reforzada a mano y virola de alpaca lisa. Una pieza fundamental del ritual matero.",
-    destacado: true,
-    detalles: [
-      "Calabaza brasilera de paredes gruesas",
-      "Forrado en cuero vacuno grueso de curtido vegetal",
-      "Virola de alpaca pulida a espejo",
-      "Base reforzada de 4 patas firmes"
-    ]
-  },
-  {
-    id: "mate-imperial-premium",
-    nombre: "Mate Imperial Premium",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 38000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "El rey de la mesa. Calabaza gruesa extra-grande seleccionada, forrado en cuero premium de exportación, virola ancha trabajada artesanalmente con relieves de alpaca.",
-    destacado: true,
-    detalles: [
-      "Calabaza extra-grande seleccionada por su simetría",
-      "Cuero vacuno premium extra grueso",
-      "Virola ancha de alpaca con cincelados artesanales de alta complejidad",
-      "Costura uruguaya fina hecha a mano"
-    ]
-  },
-  {
-    id: "mate-imperial-cuero-liso",
-    nombre: "Mate Imperial de Cuero Liso",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 31000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Estilo elegante y minimalista. Forrado en cuero vacuno liso de textura suave y terminación satinada, complementado con virola de alpaca pulida.",
-    destacado: false,
-    detalles: [
-      "Cuero vacuno liso premium",
-      "Calabaza seleccionada de tamaño mediano-grande",
-      "Virola de alpaca cincelada simple",
-      "Costura invisible reforzada"
-    ]
-  },
-  {
-    id: "mate-imperial-croco",
-    nombre: "Mate Imperial Croco",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 32500,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Distinción con carácter. Forrado en cuero vacuno legítimo con grabado texturizado símil cocodrilo en color marrón oscuro. Virola de alpaca.",
-    destacado: false,
-    detalles: [
-      "Cuero vacuno con grabado croco de alta definición",
-      "Calabaza brasilera de alta densidad",
-      "Virola de alpaca maciza lisa o cincelada",
-      "Patas de apoyo firmes reforzadas internamente"
-    ]
-  },
-  {
-    id: "mate-imperial-alpaca",
-    nombre: "Mate Imperial con Virola de Alpaca",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 35000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Un clásico con detalles que marcan la diferencia. Virola de alpaca cincelada a mano con motivos tradicionales criollos, montada sobre calabaza forrada en cuero rústico.",
-    destacado: false,
-    detalles: [
-      "Virola de alpaca alemana de alta pureza",
-      "Cincelados florales tradicionales en la virola",
-      "Cuero vacuno marrón chocolate",
-      "Costuras de alta resistencia hechas con hilo encerado"
-    ]
-  },
-  {
-    id: "mate-imperial-boca-ancha",
-    nombre: "Mate Imperial premium boca ancha",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 40000,
-    imagen: "assets/images/mate-imperial-boca-ancha-negro.png",
-    descripcion: "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
-    destacado: true,
-    detalles: [
+    "id": "mate-imperial-boca-ancha",
+    "nombre": "Mate Imperial premium boca ancha",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 40000,
+    "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
+    "descripcion": "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
+    "destacado": true,
+    "detalles": [
       "Calabaza brasilera seleccionada por su espesor",
       "Virola superior con guarda de alpaca cincelada",
       "Formato boca ancha para cebadas más cómodas"
     ],
-    variantes: [
-      { nombre: "Cuero Negro Liso", imagen: "assets/images/mate-imperial-boca-ancha-negro.png", precio: 40000 },
-      { nombre: "Cuero Marrón Liso", imagen: "assets/images/mate-imperial-boca-ancha-marron.png", precio: 40000 },
-      { nombre: "Cuero Crudo", imagen: "assets/images/mate-imperial-boca-ancha-crudo.png", precio: 55000 }
+    "variantes": [
+      {
+        "nombre": "Cuero Negro Liso",
+        "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
+        "precio": 40000
+      },
+      {
+        "nombre": "Cuero Marrón Liso",
+        "imagen": "assets/images/mate-imperial-boca-ancha-marron.png",
+        "precio": 40000
+      },
+      {
+        "nombre": "Cuero Crudo",
+        "imagen": "assets/images/mate-imperial-boca-ancha-crudo.png",
+        "precio": 55000
+      }
     ]
   },
   {
-    id: "mate-imperial-croco-repujado",
-    nombre: "Mate Imperial Croco y Repujado",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 50000,
-    imagen: "assets/images/mate-imperial-croco-negro.png",
-    descripcion: "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
-    destacado: true,
-    detalles: [
+    "id": "mate-imperial-croco-repujado",
+    "nombre": "Mate Imperial Croco y Repujado",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 50000,
+    "imagen": "assets/images/mate-imperial-croco-negro.png",
+    "descripcion": "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
+    "destacado": true,
+    "detalles": [
       "Calabaza brasilera de alto espesor seleccionada",
       "Cuero vacuno legítimo grabado estilo croco o repujado",
       "Virola de alpaca pulida a espejo con cincelados de flores",
       "Costura reforzada a mano con hilo encerado"
     ],
-    variantes: [
-      { nombre: "Imperial cuero croco negro", imagen: "assets/images/mate-imperial-croco-negro.png", precio: 50000 },
-      { nombre: "Imperial cuero croco marron", imagen: "assets/images/mate-imperial-croco-marron.png", precio: 50000 },
-      { nombre: "Imperial argentina cuero repujado negro", imagen: "assets/images/mate-imperial-repujado-negro.png", precio: 55000 },
-      { nombre: "Imperial cuero croco rosa", imagen: "assets/images/mate-imperial-croco-rosa.png", precio: 50000 }
+    "variantes": [
+      {
+        "nombre": "Imperial cuero croco negro",
+        "imagen": "assets/images/mate-imperial-croco-negro.png",
+        "precio": 50000
+      },
+      {
+        "nombre": "Imperial cuero croco marron",
+        "imagen": "assets/images/mate-imperial-croco-marron.png",
+        "precio": 50000
+      },
+      {
+        "nombre": "Imperial argentina cuero repujado negro",
+        "imagen": "assets/images/mate-imperial-repujado-negro.png",
+        "precio": 55000
+      },
+      {
+        "nombre": "Imperial cuero croco rosa",
+        "imagen": "assets/images/mate-imperial-croco-rosa.png",
+        "precio": 50000
+      }
     ]
   },
   {
-    id: "mate-imperial-base-alpaca",
-    nombre: "Imperial con base de alpaca",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 50000,
-    imagen: "assets/images/mate-imperial-base-alpaca-marron.png",
-    descripcion: "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
-    destacado: true,
-    detalles: [
+    "id": "mate-imperial-base-alpaca",
+    "nombre": "Imperial con base de alpaca",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 50000,
+    "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
+    "descripcion": "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
+    "destacado": true,
+    "detalles": [
       "Base de alpaca cincelada y reforzada (sin patas expuestas)",
       "Virola superior de alpaca combinada",
       "Calabaza brasilera de alto espesor",
       "Costura fina reforzada hecha a mano"
     ],
-    variantes: [
-      { nombre: "cuero marron repujado pelota", imagen: "assets/images/mate-imperial-base-alpaca-marron.png", precio: 50000 },
-      { nombre: "cuero negro liso", imagen: "assets/images/mate-imperial-base-alpaca-negro.png", precio: 55000 },
-      { nombre: "con base de alpaca calada negro", imagen: "assets/images/mate-imperial-base-alpaca-calada-negro.png", precio: 60000 },
-      { nombre: "con base de alpaca calada marron", imagen: "assets/images/mate-imperial-base-alpaca-calada-marron.png", precio: 60000 },
-      { nombre: "cuero labrado rosa feliz dia mama", imagen: "assets/images/mate-imperial-labrado-rosa-mama.png", precio: 50000 }
+    "variantes": [
+      {
+        "nombre": "cuero marron repujado pelota",
+        "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
+        "precio": 50000
+      },
+      {
+        "nombre": "cuero negro liso",
+        "imagen": "assets/images/mate-imperial-base-alpaca-negro.png",
+        "precio": 55000
+      },
+      {
+        "nombre": "con base de alpaca calada negro",
+        "imagen": "assets/images/mate-imperial-base-alpaca-calada-negro.png",
+        "precio": 60000
+      },
+      {
+        "nombre": "con base de alpaca calada marron",
+        "imagen": "assets/images/mate-imperial-base-alpaca-calada-marron.png",
+        "precio": 60000
+      },
+      {
+        "nombre": "cuero labrado rosa feliz dia mama",
+        "imagen": "assets/images/mate-imperial-labrado-rosa-mama.png",
+        "precio": 50000
+      }
     ]
   },
   {
-    id: "mate-imperial-botitas-alpaca",
-    nombre: "Imperial con botitas de alpaca marron liso",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 55000,
-    imagen: "assets/images/mate-imperial-botitas-alpaca.png",
-    descripcion: "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
-    destacado: true,
-    detalles: [
+    "id": "mate-imperial-botitas-alpaca",
+    "nombre": "Imperial con botitas de alpaca marron liso",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 55000,
+    "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
+    "descripcion": "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
+    "destacado": true,
+    "detalles": [
       "Calabaza brasilera de alto espesor seleccionada",
       "Forrado en cuero vacuno marrón liso de primera",
       "Patas con apliques ornamentales de alpaca (botitas)",
       "Virola superior de alpaca cincelada artesanalmente"
     ],
-    variantes: [
-      { nombre: "Marrón Liso", imagen: "assets/images/mate-imperial-botitas-alpaca.png", precio: 55000 }
+    "variantes": [
+      {
+        "nombre": "Marrón Liso",
+        "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
+        "precio": 55000
+      }
     ]
   },
   {
-    id: "mate-imperial-base-alpaca-pelotas",
-    nombre: "Imperial con base de alpaca y pelotas",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 50000,
-    imagen: "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
-    descripcion: "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
-    destacado: true,
-    detalles: [
+    "id": "mate-imperial-base-alpaca-pelotas",
+    "nombre": "Imperial con base de alpaca y pelotas",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 50000,
+    "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
+    "descripcion": "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
+    "destacado": true,
+    "detalles": [
       "Base de alpaca trabajada a mano con pelotitas de bronce",
       "Virola superior de alpaca con cincelados criollos",
       "Calabaza brasilera de alto espesor seleccionada",
       "Opciones de cuero vacuno liso o cuero con pelo animal print"
     ],
-    variantes: [
-      { nombre: "cuero negro", imagen: "assets/images/mate-imperial-base-alpaca-pelotas-negro.png", precio: 50000 },
-      { nombre: "cuero marron", imagen: "assets/images/mate-imperial-base-alpaca-pelotas-marron.png", precio: 50000 },
-      { nombre: "animal print", imagen: "assets/images/mate-imperial-base-alpaca-pelotas-animal.png", precio: 55000 }
+    "variantes": [
+      {
+        "nombre": "cuero negro",
+        "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
+        "precio": 50000
+      },
+      {
+        "nombre": "cuero marron",
+        "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-marron.png",
+        "precio": 50000
+      },
+      {
+        "nombre": "animal print",
+        "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-animal.png",
+        "precio": 55000
+      }
     ]
   },
   {
-    id: "mate-imperial-personalizado",
-    nombre: "Mate Imperial Personalizado",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 45000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Diseñamos tu mate soñado. Podés elegir apliques en bronce sobre la virola de alpaca (iniciales, números, escudos o logos corporativos) y tipo de cuero.",
-    destacado: true,
-    detalles: [
-      "Apliques de bronce soldados a mano en la virola",
-      "Elección de cuero (Liso, Croco, Negro, Marrón)",
-      "Incluye estuche de guardado artesanal",
-      "Trabajo coordinado directamente post-compra por email/WhatsApp"
-    ]
-  },
-  {
-    id: "mate-imperial-grabado-laser",
-    nombre: "Mate Imperial con Grabado Láser",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 36000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "Tu identidad grabada para siempre. Grabado láser de alta precisión sobre la virola de alpaca. Nombres, frases cortas, logos de clubes o fechas especiales.",
-    destacado: false,
-    detalles: [
-      "Grabado láser de fibra óptica de alta definición sobre metal",
-      "Diseño a elección del cliente",
-      "Calabaza seleccionada forrada en cuero legítimo",
-      "Costura artesanal reforzada"
-    ]
-  },
-  {
-    id: "mate-imperial-calabaza",
-    nombre: "Mate Imperial de Calabaza",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 28000,
-    imagen: "assets/images/mate-imperial.jpg",
-    descripcion: "La esencia pura del ritual matero. Mate imperial clásico forrado en cuero donde se luce el formato natural de la calabaza criolla. Virola de alpaca lisa.",
-    destacado: false,
-    detalles: [
-      "Formato clásico cilíndrico-orgánico",
-      "Calabaza curada de forma natural",
-      "Cuero vacuno curtido con extracto de quebracho",
-      "Virola de alpaca apta para uso diario intensivo"
-    ]
-  },
-  {
-    id: "mate-imperial-algarrobo",
-    nombre: "Mate Imperial de Algarrobo con virola de alpaca",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 25000,
-    imagen: "assets/images/mate-imperial-algarrobo.png",
-    descripcion: "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca y base firme.",
-    destacado: false,
-    detalles: [
+    "id": "mate-imperial-algarrobo",
+    "nombre": "Mate Imperial de Algarrobo con virola de alpaca",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 25000,
+    "imagen": "assets/images/mate-imperial-algarrobo.png",
+    "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca y base firme.",
+    "destacado": false,
+    "detalles": [
       "Interior de madera de algarrobo macizo torneado",
       "No junta humedad ni hongos, muy duradero",
       "Exterior forrado en cuero vacuno legítimo",
@@ -258,15 +189,15 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "mate-imperial-azul-pelotas-bronce",
-    nombre: "Imperial color azul con base de pelotas de bronce",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 25000,
-    imagen: "assets/images/imperial-azul-pelotas-bronce.png",
-    descripcion: "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
-    destacado: false,
-    detalles: [
+    "id": "mate-imperial-azul-pelotas-bronce",
+    "nombre": "Imperial color azul con base de pelotas de bronce",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 25000,
+    "imagen": "assets/images/imperial-azul-pelotas-bronce.png",
+    "descripcion": "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
+    "destacado": false,
+    "detalles": [
       "Cuero legítimo teñido en tono azul premium",
       "Base de alpaca con aplique de pelotitas de bronce",
       "Virola cincelada con motivos florales",
@@ -274,15 +205,15 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "mate-imperial-animal-print-calabaza",
-    nombre: "Imperial Animal Print calabaza ahuecada",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 25000,
-    imagen: "assets/images/imperial-animal-print-calabaza.png",
-    descripcion: "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
-    destacado: false,
-    detalles: [
+    "id": "mate-imperial-animal-print-calabaza",
+    "nombre": "Imperial Animal Print calabaza ahuecada",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 25000,
+    "imagen": "assets/images/imperial-animal-print-calabaza.png",
+    "descripcion": "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
+    "destacado": false,
+    "detalles": [
       "Cuero con pelo natural diseño animal print",
       "Virola de alpaca cincelada artesanalmente",
       "Base de apoyo de cuero legítimo",
@@ -290,15 +221,15 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "mate-imperial-roma-cincelado",
-    nombre: "Imperial Roma con base completa cincelada",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 25000,
-    imagen: "assets/images/imperial-roma-cincelado.png",
-    descripcion: "Mate Imperial modelo Roma, forrado en cuero con terminación repujada y base completa de alpaca totalmente cincelada.",
-    destacado: false,
-    detalles: [
+    "id": "mate-imperial-roma-cincelado",
+    "nombre": "Imperial Roma con base completa cincelada",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 25000,
+    "imagen": "assets/images/imperial-roma-cincelado.png",
+    "descripcion": "Mate Imperial modelo Roma, forrado en cuero con terminación repujada y base completa de alpaca totalmente cincelada.",
+    "destacado": false,
+    "detalles": [
       "Cuero vacuno con trabajo repujado",
       "Base completa de alpaca torneada y cincelada a mano",
       "Virola de alpaca con relieves",
@@ -306,149 +237,59 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "mate-imperial-cuero-jean",
-    nombre: "Imperial Cuero Jean con interior de acero",
-    categoria: "mates",
-    subcategoria: "imperial",
-    precio: 25000,
-    imagen: "assets/images/imperial-cuero-jean.png",
-    descripcion: "Mate Imperial forrado en cuero con textura estilo jean de color azul e interior térmico de acero inoxidable. Higiénico y moderno.",
-    destacado: false,
-    detalles: [
+    "id": "mate-imperial-cuero-jean",
+    "nombre": "Imperial Cuero Jean con interior de acero",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 25000,
+    "imagen": "assets/images/imperial-cuero-jean.png",
+    "descripcion": "Mate Imperial forrado en cuero con textura estilo jean de color azul e interior térmico de acero inoxidable. Higiénico y moderno.",
+    "destacado": false,
+    "detalles": [
       "Forrado en cuero seleccionado con grabado textura Jean",
       "Interior de acero inoxidable doble pared térmico",
       "Virola de alpaca lisa",
       "Excelente base de 4 patas firmes"
     ]
   },
-
-  // Subcategoría: Torpedo
   {
-    id: "mate-torpedo-clasico",
-    nombre: "Mate Torpedo Clásico",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 24500,
-    imagen: "assets/images/mate-torpedo.jpg",
-    descripcion: "Mate de calabaza seleccionada con formato torpedo (más angosto abajo y ensanchado arriba), forrado en cuero de vaqueta con virola de acero inoxidable pulido.",
-    destacado: false,
-    detalles: [
-      "Calabaza con formato torpedo ergonómico",
-      "Forrado en cuero vaqueta color marrón o negro",
-      "Virola de acero inoxidable de alta resistencia",
-      "Costuras firmes y base de apoyo estable"
-    ]
-  },
-  {
-    id: "mate-torpedo-premium",
-    nombre: "Mate Torpedo Premium",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 31000,
-    imagen: "assets/images/mate-torpedo.jpg",
-    descripcion: "Torpedo estilizado con calabaza de alto espesor, forrado en cuero vacuno premium extra-grueso y virola de alpaca pulida con cincelados de flores o grecas.",
-    destacado: true,
-    detalles: [
-      "Calabaza extra-gruesa seleccionada",
-      "Cuero vacuno curtido al cromo para mayor suavidad y brillo",
-      "Virola de alpaca cincelada a mano",
-      "Excelente agarre y comodidad al cebar"
-    ]
-  },
-  {
-    id: "mate-torpedo-termico",
-    nombre: "Mate Torpedo Térmico",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 22000,
-    imagen: "assets/images/mate-torpedo.jpg",
-    descripcion: "Práctico e innovador. Conserva la forma de un mate torpedo de cuero pero cuenta con un interior de acero inoxidable de doble capa de vacío, manteniendo el agua a temperatura ideal sin curado.",
-    destacado: false,
-    detalles: [
-      "Interior de acero inoxidable 304 térmico",
-      "Exterior forrado en cuero vacuno legítimo",
-      "Fácil limpieza, no junta hongos y no requiere curado",
-      "Virola de acero inoxidable"
-    ]
-  },
-  {
-    id: "mate-torpedo-cuero",
-    nombre: "Mate Torpedo de Cuero",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 26000,
-    imagen: "assets/images/mate-torpedo.jpg",
-    descripcion: "Rústico y durable. Elaborado a partir de calabaza seleccionada de torpedo, revestida enteramente en cuero crudo curtido artesanalmente con costuras cruzadas expuestas.",
-    destacado: false,
-    detalles: [
-      "Cuero de excelente espesor teñido a mano",
-      "Costuras uruguayas tradicionales rústicas",
-      "Virola de acero inoxidable embutida",
-      "Muy resistente a caídas y raspaduras"
-    ]
-  },
-  {
-    id: "mate-torpedo-croco",
-    nombre: "Mate Torpedo Croco",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 27000,
-    imagen: "assets/images/mate-torpedo.jpg",
-    descripcion: "La elegancia del formato torpedo combinada con el cuero grabado croco. Virola de acero inoxidable de gran brillo y terminación.",
-    destacado: false,
-    detalles: [
-      "Cuero vacuno grabado símil cocodrilo",
-      "Calabaza brasilera de paredes densas",
-      "Virola de acero inoxidable embutida a presión",
-      "Excelente base para mantener el mate parado"
-    ]
-  },
-  {
-    id: "mate-torpedo-calabaza",
-    nombre: "Mate Torpedo de Calabaza",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 24000,
-    imagen: "assets/images/mate-torpedo.jpg",
-    descripcion: "El formato torpedo más tradicional. Calabaza criolla seleccionada por artesanos de Ramos Mejía, revestida en cuero curtido orgánico. Mantiene la esencia del ritual.",
-    destacado: false,
-    detalles: [
-      "Calabaza pulida internamente",
-      "Cuero vacuno natural marrón claro (suela)",
-      "Virola de acero inoxidable",
-      "Costura en espiral hecha con tiento"
-    ]
-  },
-  {
-    id: "mate-torpedo-alpaca-calada",
-    nombre: "Torpedo con virola de alpaca calada",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 45000,
-    imagen: "assets/images/torpedo-alpaca-calada-negro.png",
-    descripcion: "Un torpedo premium único en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminación repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
-    destacado: true,
-    detalles: [
+    "id": "mate-torpedo-alpaca-calada",
+    "nombre": "Torpedo con virola de alpaca calada",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 45000,
+    "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
+    "descripcion": "Un torpedo premium único en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminación repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
+    "destacado": true,
+    "detalles": [
       "Calabaza de excelente espesor y formato torpedo",
       "Cuero legítimo repujado cincelado",
       "Virola y base ancha de alpaca calada artesanalmente",
       "Costura reforzada a mano con hilo encerado"
     ],
-    variantes: [
-      { nombre: "Negro", imagen: "assets/images/torpedo-alpaca-calada-negro.png", precio: 45000 },
-      { nombre: "Marrón", imagen: "assets/images/torpedo-alpaca-calada-marron.png", precio: 45000 }
+    "variantes": [
+      {
+        "nombre": "Negro",
+        "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
+        "precio": 45000
+      },
+      {
+        "nombre": "Marrón",
+        "imagen": "assets/images/torpedo-alpaca-calada-marron.png",
+        "precio": 45000
+      }
     ]
   },
   {
-    id: "mate-torpedo-algarrobo-alpaca",
-    nombre: "Torpedo algarrobo con virola de alpaca cincelada",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 25000,
-    imagen: "assets/images/mate-torpedo-algarrobo-alpaca.png",
-    descripcion: "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
-    destacado: false,
-    detalles: [
+    "id": "mate-torpedo-algarrobo-alpaca",
+    "nombre": "Torpedo algarrobo con virola de alpaca cincelada",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 25000,
+    "imagen": "assets/images/mate-torpedo-algarrobo-alpaca.png",
+    "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
+    "destacado": false,
+    "detalles": [
       "Madera maciza de algarrobo torneado premium",
       "Virola de alpaca cincelada artesanalmente",
       "Forrado en cuero vacuno seleccionado cosido a mano",
@@ -456,290 +297,238 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "mate-torpedo-algarrobo-laqueado",
-    nombre: "Torpedo de algarrobo laqueado virola cincelada",
-    categoria: "mates",
-    subcategoria: "torpedo",
-    precio: 25000,
-    imagen: "assets/images/mate-torpedo-algarrobo-laqueado.png",
-    descripcion: "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
-    destacado: false,
-    detalles: [
+    "id": "mate-torpedo-algarrobo-laqueado",
+    "nombre": "Torpedo de algarrobo laqueado virola cincelada",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 25000,
+    "imagen": "assets/images/mate-torpedo-algarrobo-laqueado.png",
+    "descripcion": "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
+    "destacado": false,
+    "detalles": [
       "Acabado laqueado brillante que protege la madera",
       "Virola cincelada de diseño patrio",
       "Excelente espesor de madera de algarrobo laqueada",
       "Base de apoyo súper estable"
     ]
   },
-
-  // Subcategoría: Camionero
   {
-    id: "mate-camionero-clasico",
-    nombre: "Mate Camionero Clásico",
-    categoria: "mates",
-    subcategoria: "camionero",
-    precio: 23000,
-    imagen: "assets/images/mate-camionero.jpg",
-    descripcion: "Formato Camionero (boca ensanchada hacia afuera, ideal para evitar que la yerba caiga), forrado en cuero de vaqueta con virola de acero inoxidable.",
-    destacado: false,
-    detalles: [
-      "Calabaza con formato camionero tradicional",
-      "Boca ancha volcada hacia el exterior",
-      "Forrado en cuero vaqueta marrón",
-      "Virola de acero inoxidable pulido"
-    ]
-  },
-  {
-    id: "mate-camionero-premium",
-    nombre: "Mate Camionero Premium",
-    categoria: "mates",
-    subcategoria: "camionero",
-    precio: 29500,
-    imagen: "assets/images/mate-camionero.jpg",
-    descripcion: "Camionero de gran tamaño, cuero seleccionado extra grueso teñido en tonos amaderados profundos y virola de alpaca ancha cincelada artesanalmente.",
-    destacado: true,
-    detalles: [
-      "Calabaza extra-grande seleccionada",
-      "Cuero de exportación teñido a mano",
-      "Virola de alpaca cincelada con motivos florales",
-      "Costura fina artesanal"
-    ]
-  },
-  {
-    id: "mate-camionero-algarrobo",
-    nombre: "Mate Camionero de Algarrobo",
-    categoria: "mates",
-    subcategoria: "camionero",
-    precio: 25000,
-    imagen: "assets/images/mate-camionero.jpg",
-    descripcion: "El camionero de madera. Interior torneado en algarrobo seleccionando maderas duras, forrado por fuera en cuero rústico de costura reforzada y virola de acero inoxidable.",
-    destacado: false,
-    detalles: [
-      "Interior de madera de algarrobo de primera calidad",
-      "Excelente curado y conservación del sabor original",
-      "Exterior en cuero vacuno cosido a mano",
-      "Boca ancha volcada típica del camionero"
-    ]
-  },
-  {
-    id: "mate-camionero-cuero",
-    nombre: "Mate Camionero de Cuero",
-    categoria: "mates",
-    subcategoria: "camionero",
-    precio: 24500,
-    imagen: "assets/images/mate-camionero.jpg",
-    descripcion: "Calabaza con forma camionero, revestida con cuero vacuno grueso con terminaciones naturales rústicas y virola de acero inoxidable.",
-    destacado: false,
-    detalles: [
-      "Cuero curtido al quebracho color chocolate",
-      "Costura tradicional a mano con hilo encerado",
-      "Virola de acero inoxidable duradera",
-      "Fácil de sostener y de base ancha"
-    ]
-  },
-  {
-    id: "mate-camionero-algarrobo-premium",
-    nombre: "Camionero de Algarrobo premium con guarda de acero",
-    categoria: "mates",
-    subcategoria: "camionero",
-    precio: 25000,
-    imagen: "assets/images/camionero-algarrobo-premium.png",
-    descripcion: "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
-    destacado: false,
-    detalles: [
+    "id": "mate-camionero-algarrobo-premium",
+    "nombre": "Camionero de Algarrobo premium con guarda de acero",
+    "categoria": "mates",
+    "subcategoria": "camionero",
+    "precio": 25000,
+    "imagen": "assets/images/camionero-algarrobo-premium.png",
+    "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
+    "destacado": false,
+    "detalles": [
       "Madera de algarrobo seleccionado extra gruesa",
       "Virola de acero con cincelados de gran definición",
       "Exterior en cuero vacuno teñido a mano",
       "Terminaciones de alta costura"
     ]
   },
-
-  // Subcategoría: Mate Térmico
   {
-    id: "mate-termico-acero",
-    nombre: "Mate Térmico de Acero",
-    categoria: "mates",
-    subcategoria: "termico",
-    precio: 18000,
-    imagen: "assets/images/mate-termico.jpg",
-    descripcion: "La solución urbana y minimalista. Fabricado en acero inoxidable 304 de doble capa aislante de vacío. No requiere curado, no transmite sabores y mantiene la yerba templada por horas.",
-    destacado: true,
-    detalles: [
+    "id": "mate-termico-acero",
+    "nombre": "Mate Térmico de Acero",
+    "categoria": "mates",
+    "subcategoria": "termico",
+    "precio": 18000,
+    "imagen": "assets/images/mate-termico.jpg",
+    "descripcion": "La solución urbana y minimalista. Fabricado en acero inoxidable 304 de doble capa aislante de vacío. No requiere curado, no transmite sabores y mantiene la yerba templada por horas.",
+    "destacado": true,
+    "detalles": [
       "Acero inoxidable de grado alimenticio AISI 304",
       "Doble pared de vacío (evita que el exterior se caliente)",
       "Acabado en pintura texturada al horno en color verde oliva o crema",
       "Súper higiénico y fácil de lavar"
     ]
   },
-
-  // ═══════════════════════════════════════════
-  // CATEGORÍA: BOMBILLAS
-  // ═══════════════════════════════════════════
   {
-    id: "bombilla-pico-loro",
-    nombre: "Bombilla Pico de Loro",
-    categoria: "bombillas",
-    subcategoria: "loro",
-    precio: 8500,
-    imagen: "assets/images/bombilla.jpg",
-    descripcion: "Bombilla tradicional de alpaca con formato curvo 'pico de loro'. Excelente caudal de agua, filtro de cuchara clásico y cuerpo de espesor medio para evitar quemaduras.",
-    destacado: true,
-    detalles: [
-      "Fabricada íntegramente en alpaca",
-      "Pico curvo anatómico muy cómodo",
-      "Filtro tipo cuchara de alta filtración",
-      "Largo total aproximado: 19 cm"
-    ]
-  },
-  {
-    id: "bombilla-pico-loro-cincelada",
-    nombre: "Bombilla Pico de Loro Cincelada",
-    categoria: "bombillas",
-    subcategoria: "loro",
-    precio: 11000,
-    imagen: "assets/images/bombilla.jpg",
-    descripcion: "Elegancia y arte en cada mate. Bombilla pico de loro de alpaca con su caño totalmente cincelado a mano con relieves tradicionales criollos.",
-    destacado: false,
-    detalles: [
-      "Cincelado artesanal a lo largo de todo el caño",
-      "Filtro tipo pala reforzada y soldaduras en plata",
-      "No transmite calor a los labios",
-      "Presentada en estuche individual de cartón kraft"
-    ]
-  },
-  {
-    id: "bombilla-bombillon",
-    nombre: "Bombillón de caño liso",
-    categoria: "bombillas",
-    subcategoria: "bombillon",
-    precio: 15000,
-    imagen: "assets/images/bombillon-alpaca-cincelado.png",
-    descripcion: "Bombillones de caño liso diseñados para mates de boca ancha y profundos. Disponibles en alpaca con caño cincelado o en acero inoxidable con formato pico de loro y pala grande.",
-    destacado: true,
-    detalles: [
+    "id": "bombilla-bombillon",
+    "nombre": "Bombillón de caño liso",
+    "categoria": "bombillas",
+    "subcategoria": "bombillon",
+    "precio": 15000,
+    "imagen": "assets/images/bombillon-alpaca-cincelado.png",
+    "descripcion": "Bombillones de caño liso diseñados para mates de boca ancha y profundos. Disponibles en alpaca con caño cincelado o en acero inoxidable con formato pico de loro y pala grande.",
+    "destacado": true,
+    "detalles": [
       "Caño de gran diámetro para un caudal óptimo",
       "Pala grande microperforada de excelente filtrado",
       "Terminaciones pulidas a espejo y difusor de calor",
       "Largo ideal de 20-21 cm para mates imperiales o camioneros"
     ],
-    variantes: [
-      { nombre: "alpaca con caño cincelado", imagen: "assets/images/bombillon-alpaca-cincelado.png", precio: 15000 },
-      { nombre: "acero con pico de loro y pala grande", imagen: "assets/images/bombillon-acero-pala.png", precio: 10000 }
+    "variantes": [
+      {
+        "nombre": "alpaca con caño cincelado",
+        "imagen": "assets/images/bombillon-alpaca-cincelado.png",
+        "precio": 15000
+      },
+      {
+        "nombre": "acero con pico de loro y pala grande",
+        "imagen": "assets/images/bombillon-acero-pala.png",
+        "precio": 10000
+      }
     ]
   },
   {
-    id: "bombilla-bombillon-labrado-premium",
-    nombre: "Bombillón de caño labrado premium",
-    categoria: "bombillas",
-    subcategoria: "bombillon",
-    precio: 25000,
-    imagen: "assets/images/bombillon-labrado-trenzado.png",
-    descripcion: "Bombillón de altísima gama con caño labrado artesanalmente. Cuenta con virolas de bronce torneadas y detalles de orfebrería únicos. Disponible en diseño trenzado con pico dorado, diseño espiralado tradicional o diseño torsión con pala y pico dorados.",
-    destacado: true,
-    detalles: [
+    "id": "bombilla-bombillon-labrado-premium",
+    "nombre": "Bombillón de caño labrado premium",
+    "categoria": "bombillas",
+    "subcategoria": "bombillon",
+    "precio": 25000,
+    "imagen": "assets/images/bombillon-labrado-trenzado.png",
+    "descripcion": "Bombillón de altísima gama con caño labrado artesanalmente. Cuenta con virolas de bronce torneadas y detalles de orfebrería únicos. Disponible en diseño trenzado con pico dorado, diseño espiralado tradicional o diseño torsión con pala y pico dorados.",
+    "destacado": true,
+    "detalles": [
       "Trabajo de cincelado y labrado hecho a mano en alpaca",
       "Virolas y apliques de bronce de fundición soldados a mano",
       "Pala y pico pulidos a espejo o con acabados dorados",
       "Largo de 21 cm de gran caudal, ideal para mates imperiales"
     ],
-    variantes: [
-      { nombre: "diseño trenzado con pico dorado", imagen: "assets/images/bombillon-labrado-trenzado.png", precio: 25000 },
-      { nombre: "diseño espiralado", imagen: "assets/images/bombillon-labrado-espiralado.png", precio: 25000 },
-      { nombre: "diseño torsion con pala dorada", imagen: "assets/images/bombillon-labrado-torsion.png", precio: 25000 }
+    "variantes": [
+      {
+        "nombre": "diseño trenzado con pico dorado",
+        "imagen": "assets/images/bombillon-labrado-trenzado.png",
+        "precio": 25000
+      },
+      {
+        "nombre": "diseño espiralado",
+        "imagen": "assets/images/bombillon-labrado-espiralado.png",
+        "precio": 25000
+      },
+      {
+        "nombre": "diseño torsion con pala dorada",
+        "imagen": "assets/images/bombillon-labrado-torsion.png",
+        "precio": 25000
+      }
     ]
   },
   {
-    id: "bombilla-acero-inoxidable",
-    nombre: "Bombilla de acero inoxidable con filtro/pala",
-    categoria: "bombillas",
-    subcategoria: "acero",
-    precio: 15000,
-    imagen: "assets/images/bombilla-acero-pala-bronce.png",
-    descripcion: "Bombillas de acero inoxidable 304 con filtro de pala de alta retención. Muy higiénicas y duraderas. Disponibles en versiones con caño liso y pico de bronce, o formato pico de loro en medidas de 16 cm y 19 cm.",
-    destacado: true,
-    detalles: [
+    "id": "bombilla-acero-inoxidable",
+    "nombre": "Bombilla de acero inoxidable con filtro/pala",
+    "categoria": "bombillas",
+    "subcategoria": "acero",
+    "precio": 15000,
+    "imagen": "assets/images/bombilla-acero-pala-bronce.png",
+    "descripcion": "Bombillas de acero inoxidable 304 con filtro de pala de alta retención. Muy higiénicas y duraderas. Disponibles en versiones con caño liso y pico de bronce, o formato pico de loro en medidas de 16 cm y 19 cm.",
+    "destacado": true,
+    "detalles": [
       "Fabricada íntegramente en acero inoxidable AISI 304",
       "Filtro tipo pala soldada muy fácil de limpiar",
       "Pico curvo anatómico muy confortable",
       "Largo según variante: 16 cm o 19 cm"
     ],
-    variantes: [
-      { nombre: "caño liso con pico de bronce", imagen: "assets/images/bombilla-acero-pala-bronce.png", precio: 15000 },
-      { nombre: "pico de loro 16cm", imagen: "assets/images/bombilla-acero-pala-16cm.png", precio: 15000 },
-      { nombre: "pico de loro 19cm", imagen: "assets/images/bombilla-acero-pala-19cm.png", precio: 15000 }
+    "variantes": [
+      {
+        "nombre": "caño liso con pico de bronce",
+        "imagen": "assets/images/bombilla-acero-pala-bronce.png",
+        "precio": 15000
+      },
+      {
+        "nombre": "pico de loro 16cm",
+        "imagen": "assets/images/bombilla-acero-pala-16cm.png",
+        "precio": 15000
+      },
+      {
+        "nombre": "pico de loro 19cm",
+        "imagen": "assets/images/bombilla-acero-pala-19cm.png",
+        "precio": 15000
+      }
     ]
   },
   {
-    id: "bombilla-chata-grabada",
-    nombre: "Bombilla chata grabada",
-    categoria: "bombillas",
-    subcategoria: "acero",
-    precio: 5000,
-    imagen: "assets/images/bombilla-chata-grabada-combo.png",
-    descripcion: "Bombilla chata clásica fabricada en acero inoxidable con grabado láser de alta precisión. Podés elegir tu diseño favorito: escudos de fútbol de Boca o River, diseño patrio de Argentina, Ruta 40, Copa del Mundo, o grabados especiales para regalar como 'Te amo papá' o 'Te amo mamá'.",
-    destacado: true,
-    detalles: [
+    "id": "bombilla-chata-grabada",
+    "nombre": "Bombilla chata grabada",
+    "categoria": "bombillas",
+    "subcategoria": "acero",
+    "precio": 5000,
+    "imagen": "assets/images/bombilla-chata-grabada-combo.png",
+    "descripcion": "Bombilla chata clásica fabricada en acero inoxidable con grabado láser de alta precisión. Podés elegir tu diseño favorito: escudos de fútbol de Boca o River, diseño patrio de Argentina, Ruta 40, Copa del Mundo, o grabados especiales para regalar como 'Te amo papá' o 'Te amo mamá'.",
+    "destacado": true,
+    "detalles": [
       "Fabricada íntegramente en acero inoxidable 304",
       "Grabado láser indeleble de gran definición",
       "Doble anillo de bronce en el cuello",
       "Fácil succión y excelente filtrado de yerba"
     ],
-    variantes: [
-      { nombre: "Boca Juniors", imagen: "assets/images/bombilla-chata-boca.png", precio: 5000 },
-      { nombre: "River Plate", imagen: "assets/images/bombilla-chata-river.png", precio: 5000 },
-      { nombre: "Copa del Mundo", imagen: "assets/images/bombilla-chata-copa.png", precio: 5000 },
-      { nombre: "Argentina", imagen: "assets/images/bombilla-chata-argentina.png", precio: 5000 },
-      { nombre: "Te amo papá", imagen: "assets/images/bombilla-chata-papa.png", precio: 5000 },
-      { nombre: "Te amo mamá", imagen: "assets/images/bombilla-chata-mama.png", precio: 5000 },
-      { nombre: "Ruta 40", imagen: "assets/images/bombilla-chata-ruta40.png", precio: 5000 }
+    "variantes": [
+      {
+        "nombre": "Boca Juniors",
+        "imagen": "assets/images/bombilla-chata-boca.png",
+        "precio": 5000
+      },
+      {
+        "nombre": "River Plate",
+        "imagen": "assets/images/bombilla-chata-river.png",
+        "precio": 5000
+      },
+      {
+        "nombre": "Copa del Mundo",
+        "imagen": "assets/images/bombilla-chata-copa.png",
+        "precio": 5000
+      },
+      {
+        "nombre": "Argentina",
+        "imagen": "assets/images/bombilla-chata-argentina.png",
+        "precio": 5000
+      },
+      {
+        "nombre": "Te amo papá",
+        "imagen": "assets/images/bombilla-chata-papa.png",
+        "precio": 5000
+      },
+      {
+        "nombre": "Te amo mamá",
+        "imagen": "assets/images/bombilla-chata-mama.png",
+        "precio": 5000
+      },
+      {
+        "nombre": "Ruta 40",
+        "imagen": "assets/images/bombilla-chata-ruta40.png",
+        "precio": 5000
+      }
     ]
   },
   {
-    id: "bombilla-chata-lisa",
-    nombre: "Bombilla chata lisa",
-    categoria: "bombillas",
-    subcategoria: "acero",
-    precio: 4000,
-    imagen: "assets/images/bombilla-chata-lisa-curva.png",
-    descripcion: "Bombilla chata lisa de acero inoxidable 304 pulido a espejo. Su diseño minimalista y elegante cuenta con un anillo difusor de calor en el cuello. Disponible en versión con curva o versión recta.",
-    destacado: true,
-    detalles: [
+    "id": "bombilla-chata-lisa",
+    "nombre": "Bombilla chata lisa",
+    "categoria": "bombillas",
+    "subcategoria": "acero",
+    "precio": 4000,
+    "imagen": "assets/images/bombilla-chata-lisa-curva.png",
+    "descripcion": "Bombilla chata lisa de acero inoxidable 304 pulido a espejo. Su diseño minimalista y elegante cuenta con un anillo difusor de calor en el cuello. Disponible en versión con curva o versión recta.",
+    "destacado": true,
+    "detalles": [
       "Fabricada en acero inoxidable AISI 304 higiénico",
       "Formato chato tradicional muy cómodo al uso",
       "Anillo difusor de calor de bronce",
       "Variante recta de 17 cm y variante curva de 19 cm"
     ],
-    variantes: [
-      { nombre: "con curva", imagen: "assets/images/bombilla-chata-lisa-curva.png", precio: 4000 },
-      { nombre: "recta", imagen: "assets/images/bombilla-chata-lisa-recta.png", precio: 4000 }
+    "variantes": [
+      {
+        "nombre": "con curva",
+        "imagen": "assets/images/bombilla-chata-lisa-curva.png",
+        "precio": 4000
+      },
+      {
+        "nombre": "recta",
+        "imagen": "assets/images/bombilla-chata-lisa-recta.png",
+        "precio": 4000
+      }
     ]
   },
   {
-    id: "bombilla-alpaca",
-    nombre: "Bombilla de Alpaca",
-    categoria: "bombillas",
-    subcategoria: "alpaca",
-    precio: 9500,
-    imagen: "assets/images/bombilla.jpg",
-    descripcion: "Bombilla de alpaca recta clásica, con coco/filtro plano y detalle de virola de bronce torneada. Sencilla, noble y muy duradera.",
-    destacado: false,
-    detalles: [
-      "Alpaca pulida clásica",
-      "Filtro plano tipo paleta soldada",
-      "Detalle de bronce difusor térmico",
-      "Ideal para mates torpedo y camioneros"
-    ]
-  },
-  {
-    id: "bombillon-alpaca-premium-pala",
-    nombre: "Bombillon de alpaca premium, pala ancha y doble dije de bronce, pico recto",
-    categoria: "bombillas",
-    subcategoria: "alpaca",
-    precio: 25000,
-    imagen: "assets/images/bombillon-alpaca-premium-pala.png",
-    descripcion: "Bombillón de alpaca premium con diseño de pico recto, difusores térmicos con doble dije de bronce y pala ancha reforzada para un excelente filtrado.",
-    destacado: false,
-    detalles: [
+    "id": "bombillon-alpaca-premium-pala",
+    "nombre": "Bombillon de alpaca premium, pala ancha y doble dije de bronce, pico recto",
+    "categoria": "bombillas",
+    "subcategoria": "alpaca",
+    "precio": 25000,
+    "imagen": "assets/images/bombillon-alpaca-premium-pala.png",
+    "descripcion": "Bombillón de alpaca premium con diseño de pico recto, difusores térmicos con doble dije de bronce y pala ancha reforzada para un excelente filtrado.",
+    "destacado": false,
+    "detalles": [
       "Alpaca 100% de alta pureza con detalles cincelados",
       "Doble dije de bronce macizo difusor de calor",
       "Pala ancha reforzada ideal para yerba uruguaya",
@@ -747,99 +536,31 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "bombillon-alpaca-premium-loro",
-    nombre: "Bombillon premium artesanal 100% alpaca - pico Loro",
-    categoria: "bombillas",
-    subcategoria: "alpaca",
-    precio: 25000,
-    imagen: "assets/images/bombillon-alpaca-premium-loro.png",
-    descripcion: "Exclusivo bombillón artesanal fabricado íntegramente en alpaca con pico en curva pronunciada (pico de loro) y detalles florales cincelados a mano.",
-    destacado: false,
-    detalles: [
+    "id": "bombillon-alpaca-premium-loro",
+    "nombre": "Bombillon premium artesanal 100% alpaca - pico Loro",
+    "categoria": "bombillas",
+    "subcategoria": "alpaca",
+    "precio": 25000,
+    "imagen": "assets/images/bombillon-alpaca-premium-loro.png",
+    "descripcion": "Exclusivo bombillón artesanal fabricado íntegramente en alpaca con pico en curva pronunciada (pico de loro) y detalles florales cincelados a mano.",
+    "destacado": false,
+    "detalles": [
       "Fabricación artesanal en alpaca premium",
       "Pico de loro curvado anatómico muy cómodo",
       "Cincelados tradicionales en el caño",
       "Filtro tipo pala de alta capacidad de succión"
     ]
   },
-
-  // ═══════════════════════════════════════════
-  // CATEGORÍA: TERMOS
-  // ═══════════════════════════════════════════
   {
-    id: "termo-acero-1l",
-    nombre: "Termo de Acero Inoxidable 1 Litro",
-    categoria: "termos",
-    subcategoria: "acero",
-    precio: 34000,
-    imagen: "assets/images/termo.jpg",
-    descripcion: "Termo clásico de acero inoxidable de doble capa de 1 litro. Cuenta con tapón cebador de precisión (pico cebador clásico) que asegura un chorro continuo y controlado.",
-    destacado: false,
-    detalles: [
-      "Capacidad: 1 Litro",
-      "Doble pared de aislamiento de vacío de acero 304",
-      "Pico cebador especial para mate",
-      "Manija plegable de transporte"
-    ]
-  },
-  {
-    id: "termo-stanley-style",
-    nombre: "Termo Tipo Stanley",
-    categoria: "termos",
-    subcategoria: "stanley",
-    precio: 49000,
-    imagen: "assets/images/termo.jpg",
-    descripcion: "Termo premium de gran resistencia térmica. Fabricado con paredes de acero de gran calibre capaces de aguantar golpes y caídas sin perder vacío. Mantiene el agua caliente por más de 24 horas.",
-    destacado: true,
-    detalles: [
-      "Capacidad: 1.2 Litros",
-      "Pared exterior rugosa antideslizante color verde martillado",
-      "Conserva calor y frío por 24 horas",
-      "Tapa aislante que funciona como vaso o taza"
-    ]
-  },
-  {
-    id: "termo-negro-mate",
-    nombre: "Termo Negro Mate",
-    categoria: "termos",
-    subcategoria: "negro",
-    precio: 36000,
-    imagen: "assets/images/termo.jpg",
-    descripcion: "Estilo sofisticado y moderno. Termo de acero inoxidable con pintura al horno color negro mate de tacto suave y pico cebador de flujo continuo de 1 litro.",
-    destacado: true,
-    detalles: [
-      "Capacidad: 1 Litro",
-      "Acabado Negro Mate micro-texturado antihuellas",
-      "Pico vertedor de 360 grados ideal para matear",
-      "Conserva el agua caliente por 18 horas"
-    ]
-  },
-  {
-    id: "termo-personalizado",
-    nombre: "Termo Personalizado",
-    categoria: "termos",
-    subcategoria: "personalizado",
-    precio: 42000,
-    imagen: "assets/images/termo.jpg",
-    descripcion: "Tu termo grabado para toda la vida. Grabamos tu logo, nombre o diseño personalizado en láser de fibra óptica sobre termos de acero inoxidable pulido o pintados.",
-    destacado: false,
-    detalles: [
-      "Grabado láser inalterable sobre metal o pintura",
-      "Termo de acero inoxidable de 1 litro incluido",
-      "Coordinación del diseño post-compra por email/WhatsApp",
-      "Ideal para regalos empresariales o personales"
-    ]
-  },
-  {
-    id: "termo-argentina-360",
-    nombre: "Termo Grabado Argentina 360",
-    categoria: "termos",
-    subcategoria: "negro",
-    precio: 38000,
-    imagen: "assets/images/termo-argentina-360.png",
-    descripcion: "Termo media manija de acero inoxidable de 1 litro con pintura texturada en negro mate. Cuenta con un exclusivo grabado láser de 360 grados temático de la Selección Argentina y motivos patrios.",
-    destacado: true,
-    detalles: [
+    "id": "termo-argentina-360",
+    "nombre": "Termo Grabado Argentina 360",
+    "categoria": "termos",
+    "subcategoria": "negro",
+    "precio": 38000,
+    "imagen": "assets/images/termo-argentina-360.png",
+    "descripcion": "Termo media manija de acero inoxidable de 1 litro con pintura texturada en negro mate. Cuenta con un exclusivo grabado láser de 360 grados temático de la Selección Argentina y motivos patrios.",
+    "destacado": true,
+    "detalles": [
       "Acero inoxidable doble pared de vacío (mantiene frío/calor por 24hs)",
       "Pintura rugosa texturada antideslizante negra",
       "Grabado láser de 360 grados de alta definición",
@@ -847,15 +568,15 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "termo-media-manija-total-black",
-    nombre: "Termo media manija negro Total Black",
-    categoria: "termos",
-    subcategoria: "negro",
-    precio: 25000,
-    imagen: "assets/images/termo-media-manija-total-black.png",
-    descripcion: "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
-    destacado: false,
-    detalles: [
+    "id": "termo-media-manija-total-black",
+    "nombre": "Termo media manija negro Total Black",
+    "categoria": "termos",
+    "subcategoria": "negro",
+    "precio": 25000,
+    "imagen": "assets/images/termo-media-manija-total-black.png",
+    "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
+    "destacado": false,
+    "detalles": [
       "Pintura siliconada de alta resistencia",
       "Conserva calor/frío por más de 20 horas",
       "Media manija para un agarre cómodo",
@@ -863,83 +584,31 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "termo-system-12-lts",
-    nombre: "Termo system 1L negro con manija y tapamate",
-    categoria: "termos",
-    subcategoria: "negro",
-    precio: 25000,
-    imagen: "assets/images/termo-system-12-lts.png",
-    descripcion: "Termo de 1 litro con manija rígida lateral y tapón con sistema cebador hermético de alta precisión, incluye tapa que sirve como mate térmico.",
-    destacado: false,
-    detalles: [
+    "id": "termo-system-12-lts",
+    "nombre": "Termo system 1L negro con manija y tapamate",
+    "categoria": "termos",
+    "subcategoria": "negro",
+    "precio": 25000,
+    "imagen": "assets/images/termo-system-12-lts.png",
+    "descripcion": "Termo de 1 litro con manija rígida lateral y tapón con sistema cebador hermético de alta precisión, incluye tapa que sirve como mate térmico.",
+    "destacado": false,
+    "detalles": [
       "Manija fija lateral de transporte cómodo",
       "Tapón cebador hermético a prueba de fugas",
       "Acero inoxidable 304 de doble capa",
       "Conserva calor por 24hs"
     ]
   },
-
-  // ═══════════════════════════════════════════
-  // CATEGORÍA: MATERAS
-  // ═══════════════════════════════════════════
   {
-    id: "matera-bolso",
-    nombre: "Bolso Matero",
-    categoria: "materas",
-    subcategoria: "bolso",
-    precio: 29000,
-    imagen: "assets/images/matera.jpg",
-    descripcion: "Bolso matero premium de cuero vacuno legítimo. Compartimento central amplio con separadores internos rígidos para termo, mate, yerbero y bombilla. Correa bandolera de cuero regulable.",
-    destacado: true,
-    detalles: [
-      "100% Cuero vacuno flor de excelente calidad",
-      "Separadores internos tapizados con material lavable",
-      "Correa de hombro reforzada y cómoda de llevar",
-      "Hebillas y herrajes de bronce viejo"
-    ]
-  },
-  {
-    id: "matera-canasta",
-    nombre: "Canasta Matera",
-    categoria: "materas",
-    subcategoria: "canasta",
-    precio: 22000,
-    imagen: "assets/images/matera.jpg",
-    descripcion: "La clásica canasta matera abierta. Confeccionada en cuero grueso de suela rígida con manija superior de madera noble torneada. Cómoda, rústica y de rápido acceso.",
-    destacado: false,
-    detalles: [
-      "Cuero de suela rígida remachado",
-      "Manija de madera maciza lustrada de gran comodidad",
-      "Capacidad perfecta para termo Stanley, mate y latas",
-      "Costuras de refuerzo a la vista"
-    ]
-  },
-  {
-    id: "matera-ecocuero",
-    nombre: "Matera de Ecocuero",
-    categoria: "materas",
-    subcategoria: "ecocuero",
-    precio: 17500,
-    imagen: "assets/images/matera.jpg",
-    descripcion: "Bolso rígido matero fabricado en ecocuero reforzado e impermeable. Excelente durabilidad frente a salpicaduras, manija de colgar ajustable y cierre superior con cremallera.",
-    destacado: false,
-    detalles: [
-      "Confeccionado en ecocuero de alta resistencia al desgaste",
-      "Fácil limpieza exterior e interior impermeable",
-      "Cierre superior de cremallera metálica",
-      "Precio súper competitivo"
-    ]
-  },
-  {
-    id: "matera-mesa-valija",
-    nombre: "Mesa Matera Valija 2 en 1",
-    categoria: "materas",
-    subcategoria: "madera",
-    precio: 29500,
-    imagen: "assets/images/mesa-matera-valija.png",
-    descripcion: "Práctica mesa matera plegable fabricada en madera seleccionada que se convierte en valija para transportar tu termo, mate, yerbero y bombilla de manera segura y cómoda. Ideal para el parque, la plaza o tus viajes.",
-    destacado: true,
-    detalles: [
+    "id": "matera-mesa-valija",
+    "nombre": "Mesa Matera Valija 2 en 1",
+    "categoria": "materas",
+    "subcategoria": "madera",
+    "precio": 29500,
+    "imagen": "assets/images/mesa-matera-valija.png",
+    "descripcion": "Práctica mesa matera plegable fabricada en madera seleccionada que se convierte en valija para transportar tu termo, mate, yerbero y bombilla de manera segura y cómoda. Ideal para el parque, la plaza o tus viajes.",
+    "destacado": true,
+    "detalles": [
       "Fabricada en madera maciza pulida y tratada",
       "Formato 2 en 1 (Mesa de apoyo y Valija de transporte)",
       "Manija de agarre ergonómica",
@@ -947,55 +616,19 @@ const PRODUCTOS = [
     ]
   },
   {
-    id: "canasta-cuero-grande",
-    nombre: "Canasta 100% cuero grande reforzada",
-    categoria: "materas",
-    subcategoria: "canasta",
-    precio: 25000,
-    imagen: "assets/images/canasta-cuero-grande.png",
-    descripcion: "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
-    destacado: false,
-    detalles: [
+    "id": "canasta-cuero-grande",
+    "nombre": "Canasta 100% cuero grande reforzada",
+    "categoria": "materas",
+    "subcategoria": "canasta",
+    "precio": 25000,
+    "imagen": "assets/images/canasta-cuero-grande.png",
+    "descripcion": "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
+    "destacado": false,
+    "detalles": [
       "Cuero vacuno legítimo extra grueso seleccionado",
       "Costura doble reforzada de gran resistencia",
       "Remaches de bronce reforzados en manija y uniones",
       "Manija superior fija de gran comodidad"
-    ]
-  },
-
-  // ═══════════════════════════════════════════
-  // CATEGORÍA: YERBEROS Y AZUCAREROS
-  // ═══════════════════════════════════════════
-  {
-    id: "set-yerbero-azucarera",
-    nombre: "Set Yerbero + Azucarera",
-    categoria: "yerberos-azucareros",
-    subcategoria: "set",
-    precio: 14500,
-    imagen: "assets/images/set-yerbero.jpg",
-    descripcion: "Set de dos latas reforzadas con pico vertedor plástico dosificador, revestidas enteramente en cuero ecológico cosido a mano con el sello grabado a fuego de El Buen Cebar.",
-    destacado: true,
-    detalles: [
-      "Incluye lata yerbera (grande) y lata azucarera (mediana)",
-      "Picos vertedores de plástico resistente para verter sin derrames",
-      "Revestimiento de ecocuero cosido artesanalmente",
-      "Excelente calce en bolsos y canastas materas"
-    ]
-  },
-  {
-    id: "yerbero-individual",
-    nombre: "Yerbero Individual",
-    categoria: "yerberos-azucareros",
-    subcategoria: "individual",
-    precio: 8900,
-    imagen: "assets/images/set-yerbero.jpg",
-    descripcion: "Lata yerbera individual reforzada con vertedor plástico de alta resistencia, forrada en cuero vacuno legítimo. Ideal para llevar la yerba justa a tus salidas.",
-    destacado: false,
-    detalles: [
-      "Lata de hojalata premium higiénica",
-      "Forrado en cuero vacuno legítimo marrón",
-      "Vertedor plástico dosificador superior",
-      "Capacidad: 250g de yerba mate aproximadamente"
     ]
   }
 ];
