@@ -351,7 +351,7 @@
 
       // Definir variantes de manera inteligente
       let optionsHtml = "";
-      let opcionActiva = "";
+      let opcionActiva = "Única";
       
       if (p.variantes && p.variantes.length > 0) {
         const variantes = p.variantes;
@@ -363,66 +363,6 @@
             <div class="options-grid">
               ${variantes.map((v, i) => `
                 <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcionVariante(this, '${v.nombre}', '${v.imagen}', ${v.precio})">${v.nombre}</button>
-              `).join("")}
-            </div>
-          </div>
-        `;
-      } else if (p.categoria === "mates") {
-        const variantes = p.subcategoria === "algarrobo" 
-          ? ["Madera Natural", "Madera Curada"] 
-          : p.subcategoria === "termico"
-          ? ["Verde Oliva", "Blanco Crema", "Negro Mate"]
-          : ["Cuero Marrón Liso", "Cuero Negro Liso", "Cuero Marrón Croco", "Cuero Negro Croco"];
-          
-        opcionActiva = variantes[0];
-        
-        optionsHtml = `
-          <div class="options-selector">
-            <span class="form-label">Seleccioná tu variante de cuero/terminación:</span>
-            <div class="options-grid">
-              ${variantes.map((v, i) => `
-                <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcion(this, '${v}')">${v}</button>
-              `).join("")}
-            </div>
-          </div>
-        `;
-      } else if (p.categoria === "bombillas") {
-        const variantes = ["Pico Estándar", "Filtro Desmontable", "Pala Ancha"];
-        opcionActiva = variantes[0];
-        optionsHtml = `
-          <div class="options-selector">
-            <span class="form-label">Tipo de Filtro / Pico:</span>
-            <div class="options-grid">
-              ${variantes.map((v, i) => `
-                <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcion(this, '${v}')">${v}</button>
-              `).join("")}
-            </div>
-          </div>
-        `;
-      } else if (p.categoria === "termos") {
-        const variantes = p.id.includes("personalizado") 
-          ? ["Grabado Nombre", "Grabado Logo", "Sin Grabado"]
-          : ["Acero Pulido", "Pintura Rugosa"];
-        opcionActiva = variantes[0];
-        optionsHtml = `
-          <div class="options-selector">
-            <span class="form-label">Estilo del Termo:</span>
-            <div class="options-grid">
-              ${variantes.map((v, i) => `
-                <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcion(this, '${v}')">${v}</button>
-              `).join("")}
-            </div>
-          </div>
-        `;
-      } else if (p.categoria === "materas" || p.categoria === "yerberos-azucareros") {
-        const variantes = ["Marrón Suela", "Negro Profundo"];
-        opcionActiva = variantes[0];
-        optionsHtml = `
-          <div class="options-selector">
-            <span class="form-label">Color de Cuero:</span>
-            <div class="options-grid">
-              ${variantes.map((v, i) => `
-                <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcion(this, '${v}')">${v}</button>
               `).join("")}
             </div>
           </div>
