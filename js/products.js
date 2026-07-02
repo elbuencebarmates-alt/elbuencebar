@@ -329,19 +329,35 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "mate-termico-acero",
-    "nombre": "Mate Térmico de Acero",
+    "id": "mate-termico-stanley-negro",
+    "nombre": "Mate térmico con vuelo color negro",
     "categoria": "mates",
     "subcategoria": "termico",
     "precio": 18000,
-    "imagen": "assets/images/mate-termico.jpg",
-    "descripcion": "La solución urbana y minimalista. Fabricado en acero inoxidable 304 de doble capa aislante de vacío. No requiere curado, no transmite sabores y mantiene la yerba templada por horas.",
+    "imagen": "assets/images/mate-termico-stanley-negro.png",
+    "descripcion": "Mate térmico fabricado en acero inoxidable de doble pared de vacío (tipo Stanley), con virola/vuelo superior. Mantiene la temperatura perfecta por horas y es súper higiénico.",
     "destacado": true,
     "detalles": [
-      "Acero inoxidable de grado alimenticio AISI 304",
-      "Doble pared de vacío (evita que el exterior se caliente)",
-      "Acabado en pintura texturada al horno en color verde oliva o crema",
-      "Súper higiénico y fácil de lavar"
+      "Acero inoxidable de doble pared de vacío de grado alimenticio",
+      "Virola con vuelo estilo clásico",
+      "Fácil de lavar, higiénico y no junta humedad",
+      "Conserva calor/frío de la yerba por horas"
+    ]
+  },
+  {
+    "id": "mate-torpedo-repujado-borravino",
+    "nombre": "Torpedo de cuero repujado borravino con base de alpaca",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 25000,
+    "imagen": "assets/images/torpedo-repujado-borravino.png",
+    "descripcion": "Mate torpedo premium con interior de calabaza de gran grosor, forrado en cuero legítimo con trabajo repujado color borravino y una imponente virola de alpaca ancha con base de alpaca.",
+    "destacado": false,
+    "detalles": [
+      "Calabaza brasilera de alto espesor",
+      "Cuero vacuno legítimo labrado y repujado color borravino",
+      "Virola y base ancha de alpaca reforzada",
+      "Costura cruzada fina hecha a mano"
     ]
   },
   {
@@ -629,6 +645,74 @@ const PRODUCTOS = [
       "Costura doble reforzada de gran resistencia",
       "Remaches de bronce reforzados en manija y uniones",
       "Manija superior fija de gran comodidad"
+    ]
+  },
+  {
+    "id": "matera-media-canasta-negra",
+    "nombre": "Media canasta matera de cuero - Negra",
+    "categoria": "materas",
+    "subcategoria": "canasta",
+    "precio": 18000,
+    "imagen": "assets/images/media-canasta-cuero-negro.png",
+    "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate con gran comodidad.",
+    "destacado": false,
+    "detalles": [
+      "Cuero legítimo vacuno resistente",
+      "Costuras de tiento tradicionales reforzadas",
+      "Manija fija de cuero y madera",
+      "División interna para termo y mate"
+    ]
+  },
+  {
+    "id": "matera-media-canasta-suela",
+    "nombre": "Media canasta matera de cuero - Suela",
+    "categoria": "materas",
+    "subcategoria": "canasta",
+    "precio": 18000,
+    "imagen": "assets/images/media-canasta-cuero-suela.png",
+    "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno color suela con costuras de tiento hechas a mano y mango rígido. Durabilidad y estilo clásico.",
+    "destacado": false,
+    "detalles": [
+      "Cuero vacuno flor natural color suela",
+      "Costura en tiento a la vista",
+      "Manija rígida súper reforzada",
+      "Excelente tamaño compacto y práctico"
+    ]
+  },
+
+  // ═══════════════════════════════════════════
+  // CATEGORÍA: YERBEROS Y AZUCAREROS
+  // ═══════════════════════════════════════════
+  {
+    "id": "set-yerbero-negro-mate",
+    "nombre": "Set de yerbero y azucarera negro mate",
+    "categoria": "yerberos-azucareros",
+    "subcategoria": "set",
+    "precio": 18000,
+    "imagen": "assets/images/set-yerbero-negro-mate.png",
+    "descripcion": "Set de latas yerbera y azucarera con picos vertedores de plástico dosificadores de alta resistencia, revestidas en cuerina negra mate con costuras reforzadas.",
+    "destacado": false,
+    "detalles": [
+      "Lata yerbera (grande) y lata azucarera (mediana)",
+      "Picos vertedores plásticos antiderrames",
+      "Revestimiento sintético negro mate de fácil limpieza",
+      "Calce perfecto para bolsos y canastas"
+    ]
+  },
+  {
+    "id": "set-yerbero-acero",
+    "nombre": "Set de yerbero y azucarera color acero",
+    "categoria": "yerberos-azucareros",
+    "subcategoria": "set",
+    "precio": 18000,
+    "imagen": "assets/images/set-yerbero-acero.png",
+    "descripcion": "Set de latas para yerba y azúcar con acabado color acero pulido, picos vertedores dosificadores superiores de alta resistencia.",
+    "destacado": false,
+    "detalles": [
+      "Hojalata premium con recubrimiento color acero brillante",
+      "Picos vertedores plásticos higiénicos",
+      "Fácil de transportar y limpiar",
+      "Diseño moderno y elegante"
     ]
   }
 ];
