@@ -355,6 +355,26 @@ const PRODUCTOS = [
       "Costura en espiral hecha con tiento"
     ]
   },
+  {
+    id: "mate-torpedo-alpaca-calada",
+    nombre: "Torpedo con virola de alpaca calada",
+    categoria: "mates",
+    subcategoria: "torpedo",
+    precio: 45000,
+    imagen: "assets/images/torpedo-alpaca-calada-negro.png",
+    descripcion: "Un torpedo premium único en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminación repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
+    destacado: true,
+    detalles: [
+      "Calabaza de excelente espesor y formato torpedo",
+      "Cuero legítimo repujado cincelado",
+      "Virola y base ancha de alpaca calada artesanalmente",
+      "Costura reforzada a mano con hilo encerado"
+    ],
+    variantes: [
+      { nombre: "Negro", imagen: "assets/images/torpedo-alpaca-calada-negro.png", precio: 45000 },
+      { nombre: "Marrón", imagen: "assets/images/torpedo-alpaca-calada-marron.png", precio: 45000 }
+    ]
+  },
 
   // Subcategoría: Camionero
   {
@@ -666,6 +686,22 @@ const PRODUCTOS = [
       "Ideal para regalos empresariales o personales"
     ]
   },
+  {
+    id: "termo-argentina-360",
+    nombre: "Termo Grabado Argentina 360",
+    categoria: "termos",
+    subcategoria: "negro",
+    precio: 38000,
+    imagen: "assets/images/termo-argentina-360.png",
+    descripcion: "Termo media manija de acero inoxidable de 1 litro con pintura texturada en negro mate. Cuenta con un exclusivo grabado láser de 360 grados temático de la Selección Argentina y motivos patrios.",
+    destacado: true,
+    detalles: [
+      "Acero inoxidable doble pared de vacío (mantiene frío/calor por 24hs)",
+      "Pintura rugosa texturada antideslizante negra",
+      "Grabado láser de 360 grados de alta definición",
+      "Media manija rebatible y tapón cebador de precisión"
+    ]
+  },
 
   // ═══════════════════════════════════════════
   // CATEGORÍA: MATERAS
@@ -716,6 +752,22 @@ const PRODUCTOS = [
       "Fácil limpieza exterior e interior impermeable",
       "Cierre superior de cremallera metálica",
       "Precio súper competitivo"
+    ]
+  },
+  {
+    id: "matera-mesa-valija",
+    nombre: "Mesa Matera Valija 2 en 1",
+    categoria: "materas",
+    subcategoria: "madera",
+    precio: 29500,
+    imagen: "assets/images/mesa-matera-valija.png",
+    descripcion: "Práctica mesa matera plegable fabricada en madera seleccionada que se convierte en valija para transportar tu termo, mate, yerbero y bombilla de manera segura y cómoda. Ideal para el parque, la plaza o tus viajes.",
+    destacado: true,
+    detalles: [
+      "Fabricada en madera maciza pulida y tratada",
+      "Formato 2 en 1 (Mesa de apoyo y Valija de transporte)",
+      "Manija de agarre ergonómica",
+      "Traba de seguridad metálica"
     ]
   },
 
