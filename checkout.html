@@ -198,25 +198,16 @@
           <div class="checkout-section">
             <h2 class="checkout-section__title">3. Forma de Pago</h2>
             <div class="radio-group">
-              <!-- Opción 1: Mercado Pago -->
+              <!-- Opción 1: Mercado Pago (Presentado como "Transferencia") -->
               <label class="radio-label radio-label--active" id="label-pago-mp">
                 <input type="radio" name="r-pago" value="mercadopago" checked onclick="cambiarMetodoPago('mercadopago')">
                 <div class="radio-info">
-                  <span class="radio-title">Mercado Pago (Dinero en Cuenta / Tarjetas)</span>
-                  <span class="radio-desc">Te enviamos el link de pago al confirmar el pedido.</span>
+                  <span class="radio-title">Transferencia (Mercado Pago / Tarjeta / Débito)</span>
+                  <span class="radio-desc">Paga al instante de forma segura. Recibimos dinero en cuenta o tarjetas.</span>
                 </div>
               </label>
 
-              <!-- Opción 2: Transferencia -->
-              <label class="radio-label" id="label-pago-transferencia">
-                <input type="radio" name="r-pago" value="transferencia" onclick="cambiarMetodoPago('transferencia')">
-                <div class="radio-info">
-                  <span class="radio-title">Transferencia Bancaria (CBU / Alias)</span>
-                  <span class="radio-desc">Aboná con transferencia directa y envianos el comprobante.</span>
-                </div>
-              </label>
-
-              <!-- Opción 3: Efectivo -->
+              <!-- Opción 2: Efectivo -->
               <label class="radio-label" id="label-pago-efectivo">
                 <input type="radio" name="r-pago" value="efectivo" onclick="cambiarMetodoPago('efectivo')">
                 <div class="radio-info">
@@ -224,16 +215,6 @@
                   <span class="radio-desc">Aboná en mano al momento de la entrega física. ¡Descuento automático!</span>
                 </div>
               </label>
-            </div>
-
-            <!-- Datos de CBU en pantalla -->
-            <div id="instrucciones-transferencia" class="payment-instructions">
-              <strong>Datos de Cuenta para Transferencia:</strong><br>
-              Banco: Galicia<br>
-              CBU: 0070012220000012345678<br>
-              Alias: <strong>elbuencebar.mates</strong><br>
-              Titular: El Buen Cebar S.H.<br>
-              * Recordá enviar el comprobante de transferencia al email o por WhatsApp.
             </div>
 
             <div id="instrucciones-efectivo" class="payment-instructions" style="background-color: var(--color-success-light); border-color: var(--color-success); color: var(--color-success);">
@@ -391,30 +372,22 @@
       renderizarResumenCheckout();
     }
 
-    // Cambia el método de pago (MP, transferencia, efectivo con 10% desc)
+    // Cambia el método de pago (Transferencia/MP, efectivo con 10% desc)
     function cambiarMetodoPago(metodo) {
       metodoPago = metodo;
       
       const lMP = document.getElementById("label-pago-mp");
-      const lTrans = document.getElementById("label-pago-transferencia");
       const lEfect = document.getElementById("label-pago-efectivo");
-      
-      const instTrans = document.getElementById("instrucciones-transferencia");
       const instEfect = document.getElementById("instrucciones-efectivo");
       
       // Resetear clases
       lMP.classList.remove("radio-label--active");
-      lTrans.classList.remove("radio-label--active");
       lEfect.classList.remove("radio-label--active");
       
-      instTrans.style.display = "none";
       instEfect.style.display = "none";
       
       if (metodo === "mercadopago") {
         lMP.classList.add("radio-label--active");
-      } else if (metodo === "transferencia") {
-        lTrans.classList.add("radio-label--active");
-        instTrans.style.display = "block";
       } else if (metodo === "efectivo") {
         lEfect.classList.add("radio-label--active");
         instEfect.style.display = "block";
