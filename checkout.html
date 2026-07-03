@@ -473,7 +473,7 @@
       document.getElementById("chk-total").textContent = `$${total.toLocaleString('es-AR')}`;
     }
 
-    // Procesa el pedido recopilando toda la info y abriendo la API de WhatsApp
+    // Procesa el pedido recopilando toda la info
     function procesarPedidoWhatsApp(e) {
       e.preventDefault();
       
@@ -493,17 +493,19 @@
       
       const total = subtotal + costoEnvio - descuento;
 
-      // Armar listado de productos
+      // Armar listado de productos en formato texto
       let textoProductos = "";
       carrito.forEach(item => {
         const detalleOp = item.opcion ? ` (Variante: ${item.opcion})` : "";
         textoProductos += `- ${item.cantidad}x ${item.nombre}${detalleOp} -> $${(item.precio * item.cantidad).toLocaleString('es-AR')}\n`;
       });
 
-      // Armar datos de entrega
+      // Armar datos de entrega en formato texto
       let textoEntrega = "";
+      let direccionText = "";
       if (metodoEntrega === "retiro") {
         textoEntrega = "Método: Retiro por Showroom (Ramos Mejía)\n";
+        direccionText = "Retiro por Showroom";
       } else {
         const calle = document.getElementById("c-calle").value;
         const depto = document.getElementById("c-piso").value;
@@ -511,19 +513,101 @@
         const localidad = document.getElementById("c-localidad").value;
         
         textoEntrega = `Método: Envío a Domicilio (Logística Propia)\nDirección: ${calle}${deptoTexto}, ${localidad}\n`;
+        direccionText = `${calle}${deptoTexto}, ${localidad}`;
       }
 
-      // Armar método de pago
+      // Armar método de pago en formato texto
       let textoPago = "";
       if (metodoPago === "mercadopago") {
-        textoPago = "Mercado Pago (Espero Link)\n";
+        textoPago = "Mercado Pago (Aprobado Online)\n";
       } else if (metodoPago === "transferencia") {
         textoPago = "Transferencia Bancaria (Abonaré al CBU)\n";
       } else {
         textoPago = "Efectivo contra entrega (10% descuento aplicado)\n";
       }
 
-      // Crear mensaje codificado
+      if (metodoPago === "mercadopago") {
+        mostrarToast("Creando link de pago seguro en Mercado Pago...");
+
+        // Guardar detalles del pedido en LocalStorage para mostrar en gracias.html
+        const pedido = {
+          nombre: nombre,
+          telefono: telefono,
+          metodoEntrega: metodoEntrega,
+          direccion: direccionText,
+          subtotal: subtotal,
+          costoEnvio: costoEnvio,
+          items: carrito
+        };
+        localStorage.setItem("el_buen_cebar_ultimo_pedido", JSON.stringify(pedido));
+
+        // Formatear items para la API de Mercado Pago
+        const mpItems = carrito.map(item => ({
+          title: item.nombre + (item.opcion ? ` (${item.opcion})` : ""),
+          quantity: item.cantidad,
+          unit_price: Number(item.precio),
+          currency_id: "ARS"
+        }));
+
+        // Si hay costo de envío, agregarlo como un producto en Mercado Pago
+        if (costoEnvio > 0) {
+          mpItems.push({
+            title: "Costo de Envío",
+            quantity: 1,
+            unit_price: Number(costoEnvio),
+            currency_id: "ARS"
+          });
+        }
+
+        // URLs de retorno
+        const successUrl = window.location.origin + window.location.pathname.replace("checkout.html", "gracias.html");
+        const pendingUrl = window.location.href;
+        const failureUrl = window.location.href;
+
+        // Crear Preferencia de Pago en Mercado Pago
+        fetch("https://api.mercadopago.com/v1/checkout/preferences", {
+          method: "POST",
+          headers: {
+            "Authorization": "Bearer APP_USR-2659646479834957-070222-8d72885e0ce44b6d854c5a6ddd8d79db-3516181668",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            items: mpItems,
+            back_urls: {
+              success: successUrl,
+              pending: pendingUrl,
+              failure: failureUrl
+            },
+            auto_return: "approved"
+          })
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Respuesta inválida de Mercado Pago");
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Limpiar el carrito localmente antes de redirigir
+          localStorage.removeItem("el_buen_cebar_carrito");
+          // Redirigir al checkout seguro de Mercado Pago
+          window.location.href = data.init_point;
+        })
+        .catch(err => {
+          console.error("Error al procesar con Mercado Pago:", err);
+          alert("Hubo un inconveniente al conectar con Mercado Pago. Te redirigiremos para acordar el pago por WhatsApp.");
+          // Fallback a WhatsApp tradicional
+          enviarPorWhatsApp(nombre, telefono, textoProductos, textoEntrega, "Mercado Pago (Acordar con vendedor)\n", subtotal, costoEnvio, 0, subtotal + costoEnvio);
+        });
+
+      } else {
+        // Flujo tradicional: envío de pedido por WhatsApp
+        enviarPorWhatsApp(nombre, telefono, textoProductos, textoEntrega, textoPago, subtotal, costoEnvio, descuento, total);
+      }
+    }
+
+    // Envía el mensaje completo de la compra por WhatsApp
+    function enviarPorWhatsApp(nombre, telefono, textoProductos, textoEntrega, textoPago, subtotal, costoEnvio, descuento, total) {
       const mensaje = `Hola El Buen Cebar! Quisiera concretar mi pedido:\n\n` +
                       `👤 CLIENTE:\n` +
                       `- Nombre: ${nombre}\n` +
@@ -537,24 +621,21 @@
                       (descuento > 0 ? `- Descuento Efectivo (10%): -$${descuento.toLocaleString('es-AR')}\n` : "") +
                       `- TOTAL A PAGAR: $${total.toLocaleString('es-AR')}`;
 
-      // Generar URL de la API de WhatsApp
       const mensajeUrl = encodeURIComponent(mensaje);
       let urlWhatsapp = "";
       
       if (TIENDA_WHATSAPP) {
         urlWhatsapp = `https://api.whatsapp.com/send?phone=${TIENDA_WHATSAPP}&text=${mensajeUrl}`;
       } else {
-        // Enlace sin número de teléfono preestablecido (abre WhatsApp para elegir contacto de la agenda)
         urlWhatsapp = `https://api.whatsapp.com/send?text=${mensajeUrl}`;
       }
 
-      // Vaciar el carrito localmente al finalizar compra
+      // Vaciar carrito
       localStorage.removeItem("el_buen_cebar_carrito");
       
-      // Abrir en pestaña nueva
+      // Abrir WhatsApp
       window.open(urlWhatsapp, "_blank");
       
-      // Mostrar toast y redirigir a inicio después de unos segundos
       mostrarToast("Pedido compilado. Redirigiendo a WhatsApp...");
       setTimeout(() => {
         window.location.href = "index.html";

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Gracias por tu compra! | El Buen Cebar</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <style>
+    .thanks-card {
+      background-color: var(--color-bg-primary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      text-align: center;
+      max-width: 600px;
+      margin: 40px auto;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .thanks-icon {
+      width: 80px;
+      height: 80px;
+      background-color: var(--color-success-light);
+      color: var(--color-success);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+    
+    .thanks-icon svg {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .thanks-title {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+    
+    .thanks-text {
+      color: var(--color-text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    
+    .order-details-box {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    
+    .order-details-title {
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+      border-bottom: 1px dashed var(--color-border);
+      padding-bottom: 8px;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .order-details-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+    
+    .order-details-total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-top: 1px solid var(--color-border);
+      padding-top: 12px;
+      margin-top: 12px;
+      color: var(--color-primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Promociones / Envíos -->
+  <div class="promo-bar">
+    Pago 100% Seguro Procesado por Mercado Pago
+  </div>
+
+  <!-- Cabecera / Navegación -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        El Buen Cebar <span>Premium</span>
+      </a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="catalogo.html" class="nav__link">Catálogo</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto y Envíos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO DE AGRADECIMIENTO -->
+  <main class="container" style="padding-top: 130px; padding-bottom: 80px;">
+    <div class="thanks-card">
+      <div class="thanks-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      
+      <h1 class="thanks-title">¡Pago Aprobado!</h1>
+      <p class="thanks-text">Tu pago mediante Mercado Pago ha sido procesado correctamente. A continuación, hacé clic en el botón de abajo para enviar los detalles del pedido a nuestro local por WhatsApp y coordinar el envío/retiro.</p>
+      
+      <!-- Detalle del Pedido -->
+      <div class="order-details-box" id="order-box" style="display: none;">
+        <div class="order-details-title">Resumen de Pedido Cobrado</div>
+        <div id="order-items-list">
+          <!-- Dinámico -->
+        </div>
+        <div class="order-details-total">
+          <span>Total Pagado</span>
+          <span id="order-total-price">$0</span>
+        </div>
+      </div>
+      
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <button onclick="enviarNotificacionWhatsApp()" class="btn btn--accent btn--lg btn--full" style="justify-content: center; height: 52px;">
+          Notificar pedido por WhatsApp
+        </button>
+        <a href="index.html" class="btn btn--secondary btn--lg btn--full" style="justify-content: center; height: 52px;">
+          Volver a la tienda
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__bottom" style="border-top: none; text-align: center; padding: 24px 0;">
+      <p>&copy; 2026 El Buen Cebar. Todos los derechos reservados. Pago 100% Protegido por Mercado Pago.</p>
+    </div>
+  </footer>
+
+  <script>
+    let ultimoPedido = null;
+    
+    // NÚMERO DE WHATSAPP DE LA TIENDA (EL MISMO DEL CHECKOUT)
+    const TIENDA_WHATSAPP = ""; // Dejar vacío para abrir selección de chat o rellenar si tienen número
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const pedidoStr = localStorage.getItem("el_buen_cebar_ultimo_pedido");
+      if (pedidoStr) {
+        try {
+          ultimoPedido = JSON.parse(pedidoStr);
+          mostrarResumenPedido(ultimoPedido);
+        } catch (e) {
+          console.error("Error al cargar último pedido", e);
+        }
+      }
+    });
+
+    function mostrarResumenPedido(pedido) {
+      const box = document.getElementById("order-box");
+      const list = document.getElementById("order-items-list");
+      const totalElem = document.getElementById("order-total-price");
+      
+      if (!pedido || !box || !list) return;
+      
+      box.style.display = "block";
+      
+      let itemsHtml = "";
+      pedido.items.forEach(item => {
+        itemsHtml += `
+          <div class="order-details-item">
+            <span>${item.cantidad}x ${item.nombre} ${item.opcion ? `(${item.opcion})` : ''}</span>
+            <span style="font-weight: 500;">$${(item.precio * item.cantidad).toLocaleString('es-AR')}</span>
+          </div>
+        `;
+      });
+      
+      list.innerHTML = itemsHtml;
+      
+      // Mostrar total a pagar
+      let total = pedido.subtotal + pedido.costoEnvio;
+      totalElem.textContent = `$${total.toLocaleString('es-AR')}`;
+    }
+
+    function enviarNotificacionWhatsApp() {
+      if (!ultimoPedido) {
+        alert("No se encontró información del pedido actual.");
+        return;
+      }
+      
+      // Armar listado de productos
+      let textoProductos = "";
+      ultimoPedido.items.forEach(item => {
+        const detalleOp = item.opcion ? ` (Variante: ${item.opcion})` : "";
+        textoProductos += `- ${item.cantidad}x ${item.nombre}${detalleOp} -> $${(item.precio * item.cantidad).toLocaleString('es-AR')}\n`;
+      });
+
+      // Armar datos de entrega
+      let textoEntrega = "";
+      if (ultimoPedido.metodoEntrega === "retiro") {
+        textoEntrega = "Método: Retiro por Showroom (Ramos Mejía)\n";
+      } else {
+        textoEntrega = `Método: Envío a Domicilio (Logística Propia)\nDirección: ${ultimoPedido.direccion}\n`;
+      }
+
+      // Crear mensaje codificado
+      const mensaje = `Hola El Buen Cebar! Ya realicé mi pago por Mercado Pago:\n\n` +
+                      `👤 CLIENTE:\n` +
+                      `- Nombre: ${ultimoPedido.nombre}\n` +
+                      `- Teléfono: ${ultimoPedido.telefono}\n\n` +
+                      `🧉 PRODUCTOS:\n${textoProductos}\n` +
+                      `📍 ENTREGA:\n${textoEntrega}\n` +
+                      `💳 PAGO:\n- Mercado Pago (APROBADO ONLINE)\n` +
+                      `💰 RESUMEN:\n` +
+                      `- Subtotal: $${ultimoPedido.subtotal.toLocaleString('es-AR')}\n` +
+                      `- Envío: ${ultimoPedido.metodoEntrega === 'retiro' ? 'Retiro en local' : (ultimoPedido.costoEnvio === 0 ? 'GRATIS' : '$' + ultimoPedido.costoEnvio.toLocaleString('es-AR'))}\n` +
+                      `- TOTAL PAGADO: $${(ultimoPedido.subtotal + ultimoPedido.costoEnvio).toLocaleString('es-AR')}\n\n` +
+                      `*El pago se acreditó correctamente en tu cuenta de Mercado Pago.*`;
+
+      const mensajeUrl = encodeURIComponent(mensaje);
+      let urlWhatsapp = "";
+      
+      if (TIENDA_WHATSAPP) {
+        urlWhatsapp = `https://api.whatsapp.com/send?phone=${TIENDA_WHATSAPP}&text=${mensajeUrl}`;
+      } else {
+        urlWhatsapp = `https://api.whatsapp.com/send?text=${mensajeUrl}`;
+      }
+      
+      window.open(urlWhatsapp, "_blank");
+    }
+  </script>
+</body>
+</html>
