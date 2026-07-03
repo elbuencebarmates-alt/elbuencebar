@@ -557,11 +557,10 @@
         const pendingUrl = window.location.href;
         const failureUrl = window.location.href;
 
-        // Crear Preferencia de Pago en Mercado Pago
-        fetch("https://api.mercadopago.com/v1/checkout/preferences", {
+        // Crear Preferencia de Pago a través de nuestra función serverless (evita CORS y protege credenciales)
+        fetch("/api/create-preference", {
           method: "POST",
           headers: {
-            "Authorization": "Bearer APP_USR-2659646479834957-070222-8d72885e0ce44b6d854c5a6ddd8d79db-3516181668",
             "Content-Type": "application/json"
           },
           body: JSON.stringify({
@@ -576,7 +575,7 @@
         })
         .then(response => {
           if (!response.ok) {
-            throw new Error("Respuesta inválida de Mercado Pago");
+            throw new Error("Respuesta inválida del servidor proxy");
           }
           return response.json();
         })
