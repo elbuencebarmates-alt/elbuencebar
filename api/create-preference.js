@@ -1,7 +1,7 @@
 // api/create-preference.js
-// Vercel Serverless Function para interactuar con Mercado Pago de forma segura y evitar CORS
+// Vercel Serverless Function (CommonJS) para interactuar con Mercado Pago de forma segura y evitar CORS
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Configurar CORS
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
