@@ -147,7 +147,11 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="c-telefono">Teléfono (WhatsApp) *</label>
-                <input type="tel" id="c-telefono" class="form-input" required placeholder="Ej: 11 2345 6789">
+                <input type="tel" id="c-telefono" class="form-input" required placeholder="Ej: 11 2456 1523">
+              </div>
+              <div class="form-group form-group--full">
+                <label class="form-label" for="c-email">Email (Correo Electrónico) *</label>
+                <input type="email" id="c-email" class="form-input" required placeholder="Ej: cliente@gmail.com">
               </div>
             </div>
           </div>
@@ -183,12 +187,20 @@
                   <input type="text" id="c-calle" class="form-input" placeholder="Ej: Av. de Mayo 1200">
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="c-piso">Piso / Depto (Opcional)</label>
-                  <input type="text" id="c-piso" class="form-input" placeholder="Ej: 2° B">
+                  <label class="form-label" for="c-piso">Piso / Depto / Entre calles (Opcional)</label>
+                  <input type="text" id="c-piso" class="form-input" placeholder="Ej: 2° B o Entre Mitre y Urquiza">
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="c-localidad">Localidad *</label>
                   <input type="text" id="c-localidad" class="form-input" value="Ramos Mejía">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-provincia">Provincia *</label>
+                  <input type="text" id="c-provincia" class="form-input" value="Buenos Aires">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="c-cp">Código Postal *</label>
+                  <input type="text" id="c-cp" class="form-input" placeholder="Ej: 1704">
                 </div>
               </div>
             </div>
@@ -354,6 +366,8 @@
       const divCampos = document.getElementById("direccion-campos");
       const calleInput = document.getElementById("c-calle");
       const localidadInput = document.getElementById("c-localidad");
+      const provinciaInput = document.getElementById("c-provincia");
+      const cpInput = document.getElementById("c-cp");
       
       if (metodo === "retiro") {
         lRetiro.classList.add("radio-label--active");
@@ -361,12 +375,16 @@
         divCampos.style.display = "none";
         calleInput.removeAttribute("required");
         localidadInput.removeAttribute("required");
+        provinciaInput.removeAttribute("required");
+        cpInput.removeAttribute("required");
       } else {
         lRetiro.classList.remove("radio-label--active");
         lEnvio.classList.add("radio-label--active");
         divCampos.style.display = "block";
         calleInput.setAttribute("required", "true");
         localidadInput.setAttribute("required", "true");
+        provinciaInput.setAttribute("required", "true");
+        cpInput.setAttribute("required", "true");
       }
       
       renderizarResumenCheckout();
@@ -447,11 +465,13 @@
     }
 
     // Procesa el pedido recopilando toda la info
+    // Procesa el pedido recopilando toda la info
     function procesarPedidoWhatsApp(e) {
       e.preventDefault();
       
       const nombre = document.getElementById("c-nombre").value;
       const telefono = document.getElementById("c-telefono").value;
+      const email = document.getElementById("c-email").value;
       
       const subtotal = obtenerSubtotal();
       let costoEnvio = 0;
@@ -484,17 +504,17 @@
         const depto = document.getElementById("c-piso").value;
         const deptoTexto = depto ? `, Depto: ${depto}` : "";
         const localidad = document.getElementById("c-localidad").value;
+        const provincia = document.getElementById("c-provincia").value;
+        const cp = document.getElementById("c-cp").value;
         
-        textoEntrega = `Método: Envío a Domicilio (Logística Propia)\nDirección: ${calle}${deptoTexto}, ${localidad}\n`;
-        direccionText = `${calle}${deptoTexto}, ${localidad}`;
+        textoEntrega = `Método: Envío a Domicilio\nDirección: ${calle}${deptoTexto}, ${localidad}, ${provincia} (CP: ${cp})\n`;
+        direccionText = `${calle}${deptoTexto}, ${localidad}, ${provincia} (CP: ${cp})`;
       }
 
       // Armar método de pago en formato texto
       let textoPago = "";
       if (metodoPago === "mercadopago") {
         textoPago = "Mercado Pago (Aprobado Online)\n";
-      } else if (metodoPago === "transferencia") {
-        textoPago = "Transferencia Bancaria (Abonaré al CBU)\n";
       } else {
         textoPago = "Efectivo contra entrega (10% descuento aplicado)\n";
       }
@@ -506,6 +526,7 @@
         const pedido = {
           nombre: nombre,
           telefono: telefono,
+          email: email,
           metodoEntrega: metodoEntrega,
           direccion: direccionText,
           subtotal: subtotal,
@@ -570,23 +591,24 @@
           console.error("Error al procesar con Mercado Pago:", err);
           alert("Hubo un inconveniente al conectar con Mercado Pago. Te redirigiremos para acordar el pago por WhatsApp.");
           // Fallback a WhatsApp tradicional
-          enviarPorWhatsApp(nombre, telefono, textoProductos, textoEntrega, "Mercado Pago (Acordar con vendedor)\n", subtotal, costoEnvio, 0, subtotal + costoEnvio);
+          enviarPorWhatsApp(nombre, telefono, email, textoProductos, textoEntrega, "Mercado Pago (Acordar con vendedor)\n", subtotal, costoEnvio, 0, subtotal + costoEnvio);
         });
 
       } else {
         // Flujo tradicional: envío de pedido por WhatsApp
-        enviarPorWhatsApp(nombre, telefono, textoProductos, textoEntrega, textoPago, subtotal, costoEnvio, descuento, total);
+        enviarPorWhatsApp(nombre, telefono, email, textoProductos, textoEntrega, textoPago, subtotal, costoEnvio, descuento, total);
       }
     }
 
     // Envía el mensaje completo de la compra por WhatsApp e email
-    function enviarPorWhatsApp(nombre, telefono, textoProductos, textoEntrega, textoPago, subtotal, costoEnvio, descuento, total) {
+    function enviarPorWhatsApp(nombre, telefono, email, textoProductos, textoEntrega, textoPago, subtotal, costoEnvio, descuento, total) {
       // Intentar enviar notificación por email silenciosamente en segundo plano
       const pedidoObj = {
         nombre: nombre,
         telefono: telefono,
+        email: email,
         metodoEntrega: metodoEntrega,
-        direccion: metodoEntrega === "retiro" ? "Retiro por Showroom" : (document.getElementById("c-calle").value + (document.getElementById("c-piso").value ? ", " + document.getElementById("c-piso").value : "") + ", " + document.getElementById("c-localidad").value),
+        direccion: metodoEntrega === "retiro" ? "Retiro por Showroom" : (document.getElementById("c-calle").value + (document.getElementById("c-piso").value ? ", " + document.getElementById("c-piso").value : "") + ", " + document.getElementById("c-localidad").value + ", " + document.getElementById("c-provincia").value + " (CP: " + document.getElementById("c-cp").value + ")"),
         subtotal: subtotal,
         costoEnvio: costoEnvio,
         items: carrito
@@ -596,7 +618,8 @@
       const mensaje = `Hola El Buen Cebar! Quisiera concretar mi pedido:\n\n` +
                       `👤 CLIENTE:\n` +
                       `- Nombre: ${nombre}\n` +
-                      `- Teléfono: ${telefono}\n\n` +
+                      `- Teléfono: ${telefono}\n` +
+                      `- Email: ${email}\n\n` +
                       `🧉 PRODUCTOS:\n${textoProductos}\n` +
                       `📍 ENTREGA:\n${textoEntrega}\n` +
                       `💳 PAGO:\n- ${textoPago}\n` +
@@ -640,6 +663,7 @@
       const data = {
         "Nombre Cliente": pedido.nombre,
         "Telefono Cliente": pedido.telefono,
+        "Email Cliente": pedido.email,
         "Metodo Entrega": pedido.metodoEntrega === "retiro" ? "Retiro por Showroom" : "Envío a domicilio",
         "Direccion Entrega": pedido.direccion || "No aplica",
         "Productos": textoProductos,
@@ -648,6 +672,7 @@
         "Total Pedido": `$${total.toLocaleString('es-AR')}`,
         "Estado Pago": statusPago,
         "_subject": `Nuevo Pedido - El Buen Cebar - ${pedido.nombre}`,
+        "_replyto": pedido.email,
         "_template": "table"
       };
 
