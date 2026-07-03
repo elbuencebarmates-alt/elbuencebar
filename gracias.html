@@ -169,6 +169,9 @@
         try {
           ultimoPedido = JSON.parse(pedidoStr);
           mostrarResumenPedido(ultimoPedido);
+          
+          // Enviar comprobante por email automáticamente al cargar la página de éxito
+          enviarComprobantePorEmail(ultimoPedido, "APROBADO ONLINE (Mercado Pago)");
         } catch (e) {
           console.error("Error al cargar último pedido", e);
         }
@@ -246,6 +249,43 @@
       }
       
       window.open(urlWhatsapp, "_blank");
+    }
+
+    // Envía los detalles de la compra al email del negocio de manera silenciosa
+    function enviarComprobantePorEmail(pedido, statusPago) {
+      let textoProductos = "";
+      pedido.items.forEach(item => {
+        const detalleOp = item.opcion ? ` (Variante: ${item.opcion})` : "";
+        textoProductos += `${item.cantidad}x ${item.nombre}${detalleOp} - $${(item.precio * item.cantidad).toLocaleString('es-AR')}\n`;
+      });
+
+      const total = pedido.subtotal + pedido.costoEnvio;
+
+      const data = {
+        "Nombre Cliente": pedido.nombre,
+        "Telefono Cliente": pedido.telefono,
+        "Metodo Entrega": pedido.metodoEntrega === "retiro" ? "Retiro por Showroom" : "Envío a domicilio",
+        "Direccion Entrega": pedido.direccion || "No aplica",
+        "Productos": textoProductos,
+        "Subtotal": `$${pedido.subtotal.toLocaleString('es-AR')}`,
+        "Costo Envio": pedido.costoEnvio === 0 ? "GRATIS" : `$${pedido.costoEnvio.toLocaleString('es-AR')}`,
+        "Total Pedido": `$${total.toLocaleString('es-AR')}`,
+        "Estado Pago": statusPago,
+        "_subject": `Nuevo Pedido Aprobado - El Buen Cebar - ${pedido.nombre}`,
+        "_template": "table"
+      };
+
+      fetch("https://formsubmit.co/ajax/elbuencebarmates@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(res => console.log("Email enviado con éxito:", res))
+      .catch(err => console.error("Error al enviar email:", err));
     }
   </script>
 </body>
