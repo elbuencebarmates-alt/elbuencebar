@@ -24,7 +24,7 @@ module.exports = async function handler(req, res) {
   try {
     const { items, back_urls, auto_return } = req.body;
 
-    const mpResponse = await fetch("https://api.mercadopago.com/v1/checkout/preferences", {
+    const mpResponse = await fetch("https://api.mercadopago.com/checkout/preferences", {
       method: "POST",
       headers: {
         "Authorization": "Bearer APP_USR-2659646479834957-070222-8d72885e0ce44b6d854c5a6ddd8d79db-3516181668",
