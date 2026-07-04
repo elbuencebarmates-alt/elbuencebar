@@ -1048,18 +1048,6 @@ const PRODUCTOS = [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
       "Diseño artesanal tradicional"
-    ],
-    "variantes": [
-      {
-        "nombre": "Verde",
-        "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
-        "precio": 17990
-      },
-      {
-        "nombre": "Negro",
-        "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
-        "precio": 17990
-      }
     ]
   },
   {
