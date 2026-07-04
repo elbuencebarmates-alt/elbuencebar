@@ -933,8 +933,8 @@ const PRODUCTOS = [
   {
     "id": "bombillon-de-alpaca-classic-con-pico-de-loro",
     "nombre": "Bombillon de alpaca \"classic\" con pico de loro",
-    "categoria": "mates",
-    "subcategoria": "imperial",
+    "categoria": "bombillas",
+    "subcategoria": "alpaca",
     "precio": 18000,
     "imagen": "assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg",
     "descripcion": "Bombillon sin diseños en el caño. caño grueso y pala ancha de alpaca\r\n\r\nPico de loro de bronce.",
@@ -1138,21 +1138,6 @@ const PRODUCTOS = [
     "subcategoria": "canasta",
     "precio": 28800,
     "imagen": "assets/images/canastas-de-cuero-con-escudo-de-futbol-color-negro.jpeg",
-    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-  {
-    "id": "imperial-cuero-jean-int-acero-con-bombilla-pico-loro",
-    "nombre": "IMPERIAL CUERO JEAN INT ACERO CON BOMBILLA PICO LORO",
-    "categoria": "mates",
-    "subcategoria": "imperial",
-    "precio": 26400,
-    "imagen": "assets/images/imperial-cuero-jean-int-acero-con-bombilla-pico-loro.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
