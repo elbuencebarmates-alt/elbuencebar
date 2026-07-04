@@ -23,6 +23,8 @@ function leerParametrosURL() {
     actualizarBotonActivo(".filter-btn", "data-category", cat);
     if (cat === "mates") {
       document.getElementById("subcategories-bar").style.display = "flex";
+    } else if (cat === "yerbas") {
+      document.getElementById("subcategories-yerbas-bar").style.display = "flex";
     }
   }
 
@@ -59,7 +61,8 @@ function actualizarBotonActivo(selectorBotones, atributo, valor) {
 function inicializarEventosFiltros() {
   // Filtros de Categoría
   const catBotones = document.querySelectorAll(".filter-btn");
-  const subBar = document.getElementById("subcategories-bar");
+  const subBarMates = document.getElementById("subcategories-bar");
+  const subBarYerbas = document.getElementById("subcategories-yerbas-bar");
 
   catBotones.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -70,11 +73,26 @@ function inicializarEventosFiltros() {
       categoriaActiva = btn.getAttribute("data-category");
       subcategoriaActiva = "todos"; // Reset subcategoría al cambiar de categoría principal
 
-      // Mostrar/Ocultar barra de sub-mates si es "Mates"
+      // Mostrar/Ocultar barras de subcategorías
       if (categoriaActiva === "mates") {
-        subBar.style.display = "flex";
-        // Reset clase activa en sub-botones
-        const subBotones = document.querySelectorAll(".subfilter-btn");
+        subBarMates.style.display = "flex";
+        subBarYerbas.style.display = "none";
+        
+        // Reset sub-botones de Mates
+        const subBotones = subBarMates.querySelectorAll(".subfilter-btn");
+        subBotones.forEach(b => {
+          if (b.getAttribute("data-subcategory") === "todos") {
+            b.classList.add("subfilter-btn--active");
+          } else {
+            b.classList.remove("subfilter-btn--active");
+          }
+        });
+      } else if (categoriaActiva === "yerbas") {
+        subBarMates.style.display = "none";
+        subBarYerbas.style.display = "flex";
+
+        // Reset sub-botones de Yerbas
+        const subBotones = subBarYerbas.querySelectorAll(".subfilter-btn");
         subBotones.forEach(b => {
           if (b.getAttribute("data-subcategory") === "todos") {
             b.classList.add("subfilter-btn--active");
@@ -83,18 +101,21 @@ function inicializarEventosFiltros() {
           }
         });
       } else {
-        subBar.style.display = "none";
+        subBarMates.style.display = "none";
+        subBarYerbas.style.display = "none";
       }
 
       renderizarCatalogo();
     });
   });
 
-  // Filtros de Subcategorías de Mates
+  // Filtros de Subcategorías
   const subBotones = document.querySelectorAll(".subfilter-btn");
   subBotones.forEach(btn => {
     btn.addEventListener("click", () => {
-      subBotones.forEach(b => b.classList.remove("subfilter-btn--active"));
+      // Quitar clase activa del mismo contenedor
+      const siblingButtons = btn.parentNode.querySelectorAll(".subfilter-btn");
+      siblingButtons.forEach(b => b.classList.remove("subfilter-btn--active"));
       btn.classList.add("subfilter-btn--active");
 
       subcategoriaActiva = btn.getAttribute("data-subcategory");
@@ -152,10 +173,11 @@ function renderizarCatalogo() {
       productosFiltrados = productosFiltrados.filter(p => p.categoria === categoriaActiva);
     }
 
-    // Filtro Subcategoría (solo aplica si está activo mates y se seleccionó algo distinto a "todos")
-    if (categoriaActiva === "mates" && subcategoriaActiva !== "todos") {
+    // Filtro Subcategoría (solo aplica si está activo mates o yerbas y se seleccionó algo distinto a "todos")
+    if ((categoriaActiva === "mates" || categoriaActiva === "yerbas") && subcategoriaActiva !== "todos") {
       productosFiltrados = productosFiltrados.filter(p => p.subcategoria === subcategoriaActiva);
     }
+
 
     // Filtro de Búsqueda
     if (terminoBusqueda.trim() !== "") {
