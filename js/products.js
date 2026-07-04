@@ -5,7 +5,7 @@
 const PRODUCTOS = [
   {
     "id": "mate-imperial-boca-ancha",
-    "nombre": "Mate Imperial premium boca ancha",
+    "nombre": "MATE IMPERIAL PREMIUM BOCA ANCHA",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 40000,
@@ -19,17 +19,17 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Cuero Negro Liso",
+        "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
         "precio": 40000
       },
       {
-        "nombre": "Cuero Marrón Liso",
+        "nombre": "CUERO MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-marron.png",
         "precio": 40000
       },
       {
-        "nombre": "Cuero Crudo",
+        "nombre": "CUERO CRUDO",
         "imagen": "assets/images/mate-imperial-boca-ancha-crudo.png",
         "precio": 55000
       }
@@ -37,7 +37,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-croco-repujado",
-    "nombre": "Mate Imperial Croco y Repujado",
+    "nombre": "MATE IMPERIAL CROCO Y REPUJADO",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 103455,
@@ -52,22 +52,22 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Imperial cuero croco negro",
+        "nombre": "IMPERIAL CUERO CROCO NEGRO",
         "imagen": "assets/images/mate-imperial-croco-negro.png",
         "precio": 103455
       },
       {
-        "nombre": "Imperial cuero croco marron",
+        "nombre": "IMPERIAL CUERO CROCO MARRON",
         "imagen": "assets/images/mate-imperial-croco-marron.png",
         "precio": 103455
       },
       {
-        "nombre": "Imperial argentina cuero repujado negro",
+        "nombre": "IMPERIAL ARGENTINA CUERO REPUJADO NEGRO",
         "imagen": "assets/images/mate-imperial-repujado-negro.png",
         "precio": 103455
       },
       {
-        "nombre": "Imperial cuero croco rosa",
+        "nombre": "IMPERIAL CUERO CROCO ROSA",
         "imagen": "assets/images/mate-imperial-croco-rosa.png",
         "precio": 103455
       }
@@ -75,7 +75,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-base-alpaca",
-    "nombre": "Imperial con base de alpaca",
+    "nombre": "IMPERIAL CON BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 85491,
@@ -90,27 +90,27 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "cuero marron repujado pelota",
+        "nombre": "CUERO MARRON REPUJADO PELOTA",
         "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
         "precio": 85491
       },
       {
-        "nombre": "cuero negro liso",
+        "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-base-alpaca-negro.png",
         "precio": 85491
       },
       {
-        "nombre": "con base de alpaca calada negro",
+        "nombre": "CON BASE DE ALPACA CALADA NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-negro.png",
         "precio": 85491
       },
       {
-        "nombre": "con base de alpaca calada marron",
+        "nombre": "CON BASE DE ALPACA CALADA MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-marron.png",
         "precio": 85491
       },
       {
-        "nombre": "cuero labrado rosa feliz dia mama",
+        "nombre": "CUERO LABRADO ROSA FELIZ DIA MAMA",
         "imagen": "assets/images/mate-imperial-labrado-rosa-mama.png",
         "precio": 85491
       }
@@ -118,7 +118,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-botitas-alpaca",
-    "nombre": "Imperial con botitas de alpaca marron liso",
+    "nombre": "IMPERIAL CON BOTITAS DE ALPACA MARRON LISO",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 85491,
@@ -133,7 +133,7 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Marrón Liso",
+        "nombre": "MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
         "precio": 85491
       }
@@ -141,7 +141,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-base-alpaca-pelotas",
-    "nombre": "Imperial con base de alpaca y pelotas",
+    "nombre": "IMPERIAL CON BASE DE ALPACA Y PELOTAS",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 85491,
@@ -156,17 +156,17 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "cuero negro",
+        "nombre": "CUERO NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
         "precio": 85491
       },
       {
-        "nombre": "cuero marron",
+        "nombre": "CUERO MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-marron.png",
         "precio": 85491
       },
       {
-        "nombre": "animal print",
+        "nombre": "ANIMAL PRINT",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-animal.png",
         "precio": 85491
       }
@@ -174,7 +174,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-algarrobo",
-    "nombre": "Mate Imperial de Algarrobo con virola de alpaca",
+    "nombre": "MATE IMPERIAL DE ALGARROBO CON VIROLA DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 47491,
@@ -190,7 +190,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-azul-pelotas-bronce",
-    "nombre": "Imperial color azul con base de pelotas de bronce",
+    "nombre": "IMPERIAL COLOR AZUL CON BASE DE PELOTAS DE BRONCE",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 85491,
@@ -206,7 +206,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-animal-print-calabaza",
-    "nombre": "Imperial Animal Print calabaza ahuecada",
+    "nombre": "IMPERIAL ANIMAL PRINT CALABAZA AHUECADA",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 75905,
@@ -222,7 +222,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-roma-cincelado",
-    "nombre": "Imperial Roma con base completa cincelada",
+    "nombre": "IMPERIAL ROMA CON BASE COMPLETA CINCELADA",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 25000,
@@ -238,7 +238,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-imperial-cuero-jean",
-    "nombre": "Imperial Cuero Jean con interior de acero",
+    "nombre": "IMPERIAL CUERO JEAN CON INTERIOR DE ACERO",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 25000,
@@ -254,7 +254,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-torpedo-alpaca-calada",
-    "nombre": "Torpedo con virola de alpaca calada",
+    "nombre": "TORPEDO CON VIROLA DE ALPACA CALADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 45000,
@@ -269,12 +269,12 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Negro",
+        "nombre": "NEGRO",
         "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
         "precio": 45000
       },
       {
-        "nombre": "Marrón",
+        "nombre": "MARRÓN",
         "imagen": "assets/images/torpedo-alpaca-calada-marron.png",
         "precio": 45000
       }
@@ -282,7 +282,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-torpedo-algarrobo-alpaca",
-    "nombre": "Torpedo algarrobo con virola de alpaca cincelada",
+    "nombre": "TORPEDO ALGARROBO CON VIROLA DE ALPACA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 33155,
@@ -298,7 +298,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-torpedo-algarrobo-laqueado",
-    "nombre": "Torpedo de algarrobo laqueado virola cincelada",
+    "nombre": "TORPEDO DE ALGARROBO LAQUEADO VIROLA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 33155,
@@ -314,7 +314,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-camionero-algarrobo-premium",
-    "nombre": "Camionero de Algarrobo premium con guarda de acero",
+    "nombre": "CAMIONERO DE ALGARROBO PREMIUM CON GUARDA DE ACERO",
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 33155,
@@ -330,7 +330,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-termico-stanley-negro",
-    "nombre": "Mate térmico con vuelo color negro",
+    "nombre": "MATE TÉRMICO CON VUELO COLOR NEGRO",
     "categoria": "mates",
     "subcategoria": "termico",
     "precio": 18000,
@@ -346,7 +346,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-torpedo-repujado-borravino",
-    "nombre": "Torpedo de cuero repujado borravino con base de alpaca",
+    "nombre": "TORPEDO DE CUERO REPUJADO BORRAVINO CON BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 25000,
@@ -362,7 +362,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bombilla-bombillon",
-    "nombre": "Bombillón de caño liso",
+    "nombre": "BOMBILLÓN DE CAÑO LISO",
     "categoria": "bombillas",
     "subcategoria": "bombillon",
     "precio": 15000,
@@ -377,12 +377,12 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "alpaca con caño cincelado",
+        "nombre": "ALPACA CON CAÑO CINCELADO",
         "imagen": "assets/images/bombillon-alpaca-cincelado.png",
         "precio": 15000
       },
       {
-        "nombre": "acero con pico de loro y pala grande",
+        "nombre": "ACERO CON PICO DE LORO Y PALA GRANDE",
         "imagen": "assets/images/bombillon-acero-pala.png",
         "precio": 10000
       }
@@ -390,7 +390,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bombilla-bombillon-labrado-premium",
-    "nombre": "Bombillón de caño labrado premium",
+    "nombre": "BOMBILLÓN DE CAÑO LABRADO PREMIUM",
     "categoria": "bombillas",
     "subcategoria": "bombillon",
     "precio": 25000,
@@ -405,17 +405,17 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "diseño trenzado con pico dorado",
+        "nombre": "DISEÑO TRENZADO CON PICO DORADO",
         "imagen": "assets/images/bombillon-labrado-trenzado.png",
         "precio": 25000
       },
       {
-        "nombre": "diseño espiralado",
+        "nombre": "DISEÑO ESPIRALADO",
         "imagen": "assets/images/bombillon-labrado-espiralado.png",
         "precio": 25000
       },
       {
-        "nombre": "diseño torsion con pala dorada",
+        "nombre": "DISEÑO TORSION CON PALA DORADA",
         "imagen": "assets/images/bombillon-labrado-torsion.png",
         "precio": 25000
       }
@@ -423,7 +423,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bombilla-acero-inoxidable",
-    "nombre": "Bombilla de acero inoxidable con filtro/pala",
+    "nombre": "BOMBILLA DE ACERO INOXIDABLE CON FILTRO/PALA",
     "categoria": "bombillas",
     "subcategoria": "acero",
     "precio": 15000,
@@ -438,17 +438,17 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "caño liso con pico de bronce",
+        "nombre": "CAÑO LISO CON PICO DE BRONCE",
         "imagen": "assets/images/bombilla-acero-pala-bronce.png",
         "precio": 15000
       },
       {
-        "nombre": "pico de loro 16cm",
+        "nombre": "PICO DE LORO 16CM",
         "imagen": "assets/images/bombilla-acero-pala-16cm.png",
         "precio": 15000
       },
       {
-        "nombre": "pico de loro 19cm",
+        "nombre": "PICO DE LORO 19CM",
         "imagen": "assets/images/bombilla-acero-pala-19cm.png",
         "precio": 15000
       }
@@ -456,7 +456,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bombilla-chata-grabada",
-    "nombre": "Bombilla chata grabada",
+    "nombre": "BOMBILLA CHATA GRABADA",
     "categoria": "bombillas",
     "subcategoria": "acero",
     "precio": 5000,
@@ -471,37 +471,37 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Boca Juniors",
+        "nombre": "BOCA JUNIORS",
         "imagen": "assets/images/bombilla-chata-boca.png",
         "precio": 5000
       },
       {
-        "nombre": "River Plate",
+        "nombre": "RIVER PLATE",
         "imagen": "assets/images/bombilla-chata-river.png",
         "precio": 5000
       },
       {
-        "nombre": "Copa del Mundo",
+        "nombre": "COPA DEL MUNDO",
         "imagen": "assets/images/bombilla-chata-copa.png",
         "precio": 5000
       },
       {
-        "nombre": "Argentina",
+        "nombre": "ARGENTINA",
         "imagen": "assets/images/bombilla-chata-argentina.png",
         "precio": 5000
       },
       {
-        "nombre": "Te amo papá",
+        "nombre": "TE AMO PAPÁ",
         "imagen": "assets/images/bombilla-chata-papa.png",
         "precio": 5000
       },
       {
-        "nombre": "Te amo mamá",
+        "nombre": "TE AMO MAMÁ",
         "imagen": "assets/images/bombilla-chata-mama.png",
         "precio": 5000
       },
       {
-        "nombre": "Ruta 40",
+        "nombre": "RUTA 40",
         "imagen": "assets/images/bombilla-chata-ruta40.png",
         "precio": 5000
       }
@@ -509,7 +509,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bombilla-chata-lisa",
-    "nombre": "Bombilla chata lisa",
+    "nombre": "BOMBILLA CHATA LISA",
     "categoria": "bombillas",
     "subcategoria": "acero",
     "precio": 4000,
@@ -524,12 +524,12 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "con curva",
+        "nombre": "CON CURVA",
         "imagen": "assets/images/bombilla-chata-lisa-curva.png",
         "precio": 4000
       },
       {
-        "nombre": "recta",
+        "nombre": "RECTA",
         "imagen": "assets/images/bombilla-chata-lisa-recta.png",
         "precio": 4000
       }
@@ -537,7 +537,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bombillon-alpaca-premium-loro",
-    "nombre": "Bombillon premium artesanal 100% alpaca - pico Loro",
+    "nombre": "BOMBILLON PREMIUM ARTESANAL 100% ALPACA - PICO LORO",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
     "precio": 25000,
@@ -553,7 +553,7 @@ const PRODUCTOS = [
   },
   {
     "id": "termo-argentina-360",
-    "nombre": "Termo Grabado Argentina 360",
+    "nombre": "TERMO GRABADO ARGENTINA 360",
     "categoria": "termos",
     "subcategoria": "negro",
     "precio": 38000,
@@ -569,7 +569,7 @@ const PRODUCTOS = [
   },
   {
     "id": "termo-media-manija-total-black",
-    "nombre": "Termo media manija negro Total Black",
+    "nombre": "TERMO MEDIA MANIJA NEGRO TOTAL BLACK",
     "categoria": "termos",
     "subcategoria": "negro",
     "precio": 33241,
@@ -585,7 +585,7 @@ const PRODUCTOS = [
   },
   {
     "id": "termo-system-12-lts",
-    "nombre": "Termo system 1L negro con manija y tapamate",
+    "nombre": "TERMO SYSTEM 1L NEGRO CON MANIJA Y TAPAMATE",
     "categoria": "termos",
     "subcategoria": "negro",
     "precio": 25000,
@@ -601,7 +601,7 @@ const PRODUCTOS = [
   },
   {
     "id": "matera-mesa-valija",
-    "nombre": "Mesa Matera Valija 2 en 1",
+    "nombre": "MESA MATERA VALIJA 2 EN 1",
     "categoria": "materas",
     "subcategoria": "madera",
     "precio": 29500,
@@ -617,7 +617,7 @@ const PRODUCTOS = [
   },
   {
     "id": "canasta-cuero-grande",
-    "nombre": "Canasta 100% cuero grande reforzada",
+    "nombre": "CANASTA 100% CUERO GRANDE REFORZADA",
     "categoria": "materas",
     "subcategoria": "canasta",
     "precio": 54055,
@@ -633,7 +633,7 @@ const PRODUCTOS = [
   },
   {
     "id": "matera-media-canasta",
-    "nombre": "Media canasta matera de cuero",
+    "nombre": "MEDIA CANASTA MATERA DE CUERO",
     "categoria": "materas",
     "subcategoria": "canasta",
     "precio": 54055,
@@ -648,12 +648,12 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Negra",
+        "nombre": "NEGRA",
         "imagen": "assets/images/media-canasta-cuero-negro.png",
         "precio": 54055
       },
       {
-        "nombre": "Marrón Suela",
+        "nombre": "MARRÓN SUELA",
         "imagen": "assets/images/media-canasta-cuero-suela.png",
         "precio": 54055
       }
@@ -661,7 +661,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mediacanasta-pelo-vacuno",
-    "nombre": "Mediacanasta premium de pelo vacuno colores surtidos",
+    "nombre": "MEDIACANASTA PREMIUM DE PELO VACUNO COLORES SURTIDOS",
     "categoria": "materas",
     "subcategoria": "canasta",
     "precio": 70000,
@@ -677,7 +677,7 @@ const PRODUCTOS = [
   },
   {
     "id": "set-yerbero-negro-mate",
-    "nombre": "Set de yerbero y azucarera negro mate",
+    "nombre": "SET DE YERBERO Y AZUCARERA NEGRO MATE",
     "categoria": "yerberos-azucareros",
     "subcategoria": "set",
     "precio": 18000,
@@ -693,7 +693,7 @@ const PRODUCTOS = [
   },
   {
     "id": "set-yerbero-acero",
-    "nombre": "Set de yerbero y azucarera color acero",
+    "nombre": "SET DE YERBERO Y AZUCARERA COLOR ACERO",
     "categoria": "yerberos-azucareros",
     "subcategoria": "set",
     "precio": 18000,
@@ -709,7 +709,7 @@ const PRODUCTOS = [
   },
   {
     "id": "cosito-acero",
-    "nombre": "Cosito para el mate de acero inoxidable",
+    "nombre": "COSITO PARA EL MATE DE ACERO INOXIDABLE",
     "categoria": "accesorios",
     "subcategoria": "limpieza",
     "precio": 15000,
@@ -724,7 +724,7 @@ const PRODUCTOS = [
   },
   {
     "id": "imperial-repujado-marron",
-    "nombre": "Imperial de alpaca cuero repujado marrón",
+    "nombre": "IMPERIAL DE ALPACA CUERO REPUJADO MARRÓN",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 85491,
@@ -740,7 +740,7 @@ const PRODUCTOS = [
   },
   {
     "id": "imperial-premium-chocolate",
-    "nombre": "Mate Imperial premium liso chocolate base de alpaca",
+    "nombre": "MATE IMPERIAL PREMIUM LISO CHOCOLATE BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 85491,
@@ -756,7 +756,7 @@ const PRODUCTOS = [
   },
   {
     "id": "torpedo-pelotitas-bronce",
-    "nombre": "Mate Torpedo con pelotitas de bronce y virola cincelada",
+    "nombre": "MATE TORPEDO CON PELOTITAS DE BRONCE Y VIROLA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 38000,
@@ -771,12 +771,12 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Cuero Negro Liso",
+        "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
         "precio": 38000
       },
       {
-        "nombre": "Cuero Marrón Liso",
+        "nombre": "CUERO MARRÓN LISO",
         "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
         "precio": 38000
       }
@@ -784,7 +784,7 @@ const PRODUCTOS = [
   },
   {
     "id": "camionero-cuero-bombilla",
-    "nombre": "Mate Camionero de cuero con bombilla pico de loro",
+    "nombre": "MATE CAMIONERO DE CUERO CON BOMBILLA PICO DE LORO",
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 47491,
@@ -800,7 +800,7 @@ const PRODUCTOS = [
   },
   {
     "id": "torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla",
-    "nombre": "Torpedo negro interior de CALABAZA virola acero boca ancha CON BOMBILLA",
+    "nombre": "TORPEDO NEGRO INTERIOR DE CALABAZA VIROLA ACERO BOCA ANCHA CON BOMBILLA",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 20390,
@@ -815,7 +815,7 @@ const PRODUCTOS = [
   },
   {
     "id": "imperial-con-dije-de-bronce-sol-argentino-soldado-con-bombilla-de-regalo",
-    "nombre": "Imperial con dije de bronce Sol Argentino soldado con bombilla de regalo",
+    "nombre": "IMPERIAL CON DIJE DE BRONCE SOL ARGENTINO SOLDADO CON BOMBILLA DE REGALO",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 34790,
@@ -830,7 +830,7 @@ const PRODUCTOS = [
   },
   {
     "id": "torpedo-criollo-guarda-de-alpaca-cincelada-interior-calabaza-con-bombilla-pico-loro",
-    "nombre": "Torpedo criollo, guarda de alpaca cincelada, interior calabaza con bombilla pico loro",
+    "nombre": "TORPEDO CRIOLLO, GUARDA DE ALPACA CINCELADA, INTERIOR CALABAZA CON BOMBILLA PICO LORO",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 39480,
@@ -845,7 +845,7 @@ const PRODUCTOS = [
   },
   {
     "id": "torpedo-de-alpaca-cincelada-interior-calabaza-animal-print-con-bombilla-de-regalo",
-    "nombre": "Torpedo de alpaca cincelada interior calabaza animal print con bombilla de regalo",
+    "nombre": "TORPEDO DE ALPACA CINCELADA INTERIOR CALABAZA ANIMAL PRINT CON BOMBILLA DE REGALO",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 36240,
@@ -860,7 +860,7 @@ const PRODUCTOS = [
   },
   {
     "id": "imperial-escudo-de-bronce-boca-guarda-de-alpaca",
-    "nombre": "Imperial escudo de bronce - Boca, guarda de alpaca",
+    "nombre": "IMPERIAL ESCUDO DE BRONCE - BOCA, GUARDA DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 38390,
@@ -875,7 +875,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-torpedo-interior-acero-inoxidable-con-bombilla",
-    "nombre": "Mate Torpedo interior acero inoxidable + bombilla pico de loro de acero inox con filtro/pala",
+    "nombre": "MATE TORPEDO INTERIOR ACERO INOXIDABLE + BOMBILLA PICO DE LORO DE ACERO INOX CON FILTRO/PALA",
     "categoria": "mates",
     "subcategoria": "torpedo",
     "precio": 26400,
@@ -920,7 +920,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bombillon-de-alpaca-classic-con-pico-de-loro",
-    "nombre": "Bombillon de alpaca \"classic\" con pico de loro",
+    "nombre": "BOMBILLON DE ALPACA \"CLASSIC\" CON PICO DE LORO",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
     "precio": 16141,
@@ -935,7 +935,7 @@ const PRODUCTOS = [
   },
   {
     "id": "termo-12-lts-pico-system-color-cobre",
-    "nombre": "Termo 1,2 Lts. pico system color cobre",
+    "nombre": "TERMO 1,2 LTS. PICO SYSTEM COLOR COBRE",
     "categoria": "termos",
     "subcategoria": "media-manija",
     "precio": 29880,
@@ -980,7 +980,7 @@ const PRODUCTOS = [
   },
   {
     "id": "porta-mate-premium-para-la-palanca-de-cambio-reforzado-doble-costura",
-    "nombre": "Porta mate de eco cuero para la palanca de cambio",
+    "nombre": "PORTA MATE DE ECO CUERO PARA LA PALANCA DE CAMBIO",
     "categoria": "accesorios",
     "subcategoria": "soporte",
     "precio": 4320,
@@ -1010,7 +1010,7 @@ const PRODUCTOS = [
   },
   {
     "id": "porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium",
-    "nombre": "Porta mate de cuero vacuno para palanca de cambio(BORRAVINO Y NEGRO)",
+    "nombre": "PORTA MATE DE CUERO VACUNO PARA PALANCA DE CAMBIO(BORRAVINO Y NEGRO)",
     "categoria": "accesorios",
     "subcategoria": "soporte",
     "precio": 11990,
@@ -1024,12 +1024,12 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
-        "nombre": "Borravino",
+        "nombre": "BORRAVINO",
         "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
         "precio": 11990
       },
       {
-        "nombre": "Negro",
+        "nombre": "NEGRO",
         "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
         "precio": 11990
       }
@@ -1037,7 +1037,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela",
-    "nombre": "MOCHILA/BOLSO MATERO + CHAULATA  con detalles en suela",
+    "nombre": "MOCHILA/BOLSO MATERO + CHAULATA  CON DETALLES EN SUELA",
     "categoria": "bolsos",
     "subcategoria": "mochila",
     "precio": 20000,
@@ -1052,7 +1052,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bolsito-viral-tik-tok-con-chaulata",
-    "nombre": "Bolso matero cuerina PREMIUN con sujetador de termo + yerbero + azucarero",
+    "nombre": "BOLSO MATERO CUERINA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
     "precio": 12460,
@@ -1067,7 +1067,7 @@ const PRODUCTOS = [
   },
   {
     "id": "bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia",
-    "nombre": "Bolso matero tela PREMIUN con sujetador de termo + yerbero + azucarero",
+    "nombre": "BOLSO MATERO TELA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
     "precio": 10680,
@@ -1082,7 +1082,7 @@ const PRODUCTOS = [
   },
   {
     "id": "mochila-bolso-matero-animal-print-con-chaulatas",
-    "nombre": "Mochila / Bolso matero animal print con chaulatas",
+    "nombre": "MOCHILA / BOLSO MATERO ANIMAL PRINT CON CHAULATAS",
     "categoria": "bolsos",
     "subcategoria": "mochila",
     "precio": 10790,
@@ -1112,7 +1112,7 @@ const PRODUCTOS = [
   },
   {
     "id": "camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero",
-    "nombre": "Camionero criollo calabaza laqueada virola acero + BOMBILLA DE ACERO",
+    "nombre": "CAMIONERO CRIOLLO CALABAZA LAQUEADA VIROLA ACERO + BOMBILLA DE ACERO",
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 24000,
