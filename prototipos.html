@@ -8,17 +8,13 @@
   <!-- Favicon -->
   <link rel="icon" href="assets/images/favicon.png?v=2" type="image/png">
 
-  <!-- Google Fonts para Grabado Premium -->
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS Base de la Tienda -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
-
-  <!-- Three.js y OrbitControls para el Simulador 3D / 360° -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 
   <style>
     /* Estilos del Prototipo Standalone */
@@ -200,248 +196,239 @@
       transition: all 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     }
 
-    /* 2. ESTILOS DEL SIMULADOR DE GRABADO LÁSER */
-    .engrave-simulator-grid {
+    /* ========================================== */
+    /* 2. ESTILOS DE LAS NUEVAS PROPUESTAS VISUALES */
+    /* ========================================== */
+    
+    .anim-grid {
       display: grid;
-      grid-template-columns: 1.3fr 1.7fr;
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
-      align-items: start;
     }
 
-    /* Panel de previsualización (Mate SVG/Canvas) */
-    .engrave-preview-box {
-      background-color: var(--color-bg-secondary);
+    .anim-panel {
       border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
-      padding: 30px;
+      padding: 24px;
+      background-color: var(--color-bg-secondary);
       text-align: center;
-      box-shadow: var(--shadow-sm);
-      position: sticky;
-      top: 130px;
-    }
-
-    .canvas-container-svg {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      background-color: var(--color-bg-primary);
-      border-radius: var(--radius-md);
-      border: 1px solid var(--color-border);
-      overflow: hidden;
-      box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .svg-canvas {
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Contenedor del Canvas 3D de Three.js */
-    #canvas-3d-container {
-      width: 100%;
-      height: 100%;
-      display: none;
-      background-color: #f7f5f0;
-      cursor: grab;
-    }
-
-    #canvas-3d-container:active {
-      cursor: grabbing;
-    }
-
-    /* Pestañas de modo de vista (2D vs 3D) */
-    .view-mode-tabs {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
-
-    .view-mode-btn {
-      padding: 8px 16px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      border: 1px solid var(--color-border);
-      background-color: var(--color-bg-primary);
-      color: var(--color-text-secondary);
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      transition: all var(--transition-fast);
-    }
-
-    .view-mode-btn--active {
-      background-color: var(--color-primary);
-      color: var(--color-bg-primary);
-      border-color: var(--color-primary);
-    }
-
-    /* Estilos aplicables al texto grabado en la virola con fusión metálica realista */
-    .engraved-text-svg {
-      fill: #473a2f;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      opacity: 0.85;
-      mix-blend-mode: multiply;
-      filter: drop-shadow(0px 0.8px 0.5px rgba(255,255,255,0.4));
-      transition: fill 0.3s, font-family 0.3s;
-    }
-
-    .engraved-text-svg--deep {
-      fill: #1d1713;
-      opacity: 0.95;
-      filter: drop-shadow(0px 0.5px 0.3px rgba(255,255,255,0.25));
-    }
-
-    /* Panel de controles de grabado */
-    .engrave-controls {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 16px;
     }
 
-    .control-group-engrave {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      border-bottom: 1px solid var(--color-border);
-      padding-bottom: 18px;
-    }
-
-    .control-group-engrave:last-of-type {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .control-group-engrave label {
-      font-size: 0.95rem;
-      font-weight: 700;
+    .anim-panel h3 {
+      font-size: 1.2rem;
       color: var(--color-primary);
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 10px;
     }
 
-    .control-group-engrave input[type="text"] {
-      padding: 14px 20px;
-      border: 1px solid var(--color-border);
-      background-color: var(--color-bg-primary);
+    /* A. HERO PARALLAX SIMULATOR */
+    .parallax-hero-box {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      position: relative;
       border-radius: var(--radius-md);
-      font-family: var(--font-sans);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--color-primary);
-      text-transform: uppercase;
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: crosshair;
     }
 
-    .control-group-engrave input[type="text"]::placeholder {
-      color: var(--color-text-muted);
-      text-transform: none;
+    .parallax-hero-bg {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      width: calc(100% + 30px);
+      height: calc(100% + 30px);
+      background-image: url('assets/images/mate-imperial-croco-negro.png');
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.1s ease-out;
+      z-index: 1;
     }
 
-    /* Selectores de pastillas */
-    .choice-grid-engrave {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    .parallax-hero-content {
+      position: relative;
+      z-index: 2;
+      background-color: rgba(44, 30, 27, 0.7);
+      color: var(--color-bg-primary);
+      padding: 16px 24px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* B. SCROLL REVEAL SIMULATOR */
+    .scroll-reveal-container {
+      width: 100%;
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background-color: var(--color-bg-primary);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
       gap: 12px;
     }
 
-    .choice-card-engrave {
-      border: 1px solid var(--color-border);
-      background-color: var(--color-bg-primary);
-      border-radius: var(--radius-md);
-      padding: 12px 6px;
-      text-align: center;
-      cursor: pointer;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--color-text-secondary);
-      transition: all var(--transition-fast);
-      text-transform: uppercase;
-    }
-
-    .choice-card-engrave:hover {
-      border-color: var(--color-accent-light);
+    .reveal-card {
       background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 12px 20px;
+      text-align: left;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
 
-    .choice-card-engrave--active {
-      border-color: var(--color-primary);
-      background-color: var(--color-primary);
-      color: var(--color-bg-primary);
-      box-shadow: var(--shadow-sm);
+    .reveal-card--visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    /* Slider de calibración */
-    .slider-container {
+    /* C. SHIMMER SKELETONS */
+    .shimmer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      min-height: 180px;
+      align-items: center;
+    }
+
+    .skeleton-card {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      background: var(--color-bg-primary);
+      overflow: hidden;
+      position: relative;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 10px;
     }
 
-    .slider-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--color-text-secondary);
-      font-weight: 600;
+    .skeleton-image {
+      aspect-ratio: 1.5 / 1;
+      background-color: var(--color-bg-secondary);
+      border-radius: var(--radius-sm);
+      position: relative;
+      overflow: hidden;
     }
 
-    .slider-input {
-      width: 100%;
-      height: 6px;
-      background: var(--color-border);
+    .skeleton-text {
+      height: 12px;
+      background-color: var(--color-bg-secondary);
       border-radius: var(--radius-full);
-      outline: none;
-      -webkit-appearance: none;
+      position: relative;
+      overflow: hidden;
     }
 
-    .slider-input::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: var(--color-accent);
-      cursor: pointer;
-      border: 2px solid var(--color-bg-primary);
-      box-shadow: var(--shadow-sm);
+    .shimmer-sweep::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      animation: shimmer 1.5s infinite;
     }
 
-    .engrave-summary-card {
-      background-color: rgba(184, 125, 75, 0.05);
-      border: 1px dashed var(--color-accent-light);
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    /* D. GLASSMORPHISM TOAST */
+    .glass-toast-preview-area {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-bg-primary);
       border-radius: var(--radius-md);
-      padding: 20px;
-      font-size: 0.9rem;
-      color: var(--color-text-secondary);
-      line-height: 1.5;
+      border: 1px solid var(--color-border);
+      position: relative;
+      overflow: hidden;
     }
 
-    .engrave-summary-card strong {
+    .glass-toast {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(14px) saturate(120%);
+      -webkit-backdrop-filter: blur(14px) saturate(120%);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: var(--radius-md);
+      padding: 12px 18px;
+      box-shadow: 0 8px 32px 0 rgba(44, 30, 27, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 1000;
+      transform: translateY(120%);
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+      max-width: 250px;
+      text-align: left;
+    }
+
+    .glass-toast--show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .glass-toast-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
       color: var(--color-primary);
     }
 
-    .coordinate-debugger {
-      background-color: var(--color-bg-secondary);
-      border: 1px solid var(--color-border);
-      padding: 10px;
-      font-family: monospace;
-      font-size: 0.75rem;
-      border-radius: var(--radius-sm);
-      text-align: left;
-      margin-top: 10px;
-      color: var(--color-text-muted);
+    .glass-toast-header svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--color-accent);
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .glass-toast-progress-container {
+      width: 100%;
+      height: 3px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+
+    .glass-toast-progress {
+      height: 100%;
+      width: 100%;
+      background-color: var(--color-accent);
     }
 
     @media (max-width: 992px) {
-      .engrave-simulator-grid {
+      .anim-grid {
         grid-template-columns: 1fr;
       }
-      .engrave-preview-box {
-        position: static;
+      .interaction-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -452,201 +439,190 @@
   <header class="proto-header">
     <div class="container">
       <h1>PROPUESTA DE MEJORA INTERACTIVA</h1>
-      <p>Simulador 3D Rotativo de Grabado Láser Personalizado en Virola de Mate.</p>
+      <p>Prototipo de animaciones premium: Parallax, Scroll Reveal, Shimmer y Glassmorphism Toasts.</p>
       <a href="index.html" class="btn btn--secondary btn--sm" style="margin-top: 20px;">Volver a la Web Principal</a>
     </div>
   </header>
 
   <main class="container">
 
-    <!-- SECCIÓN 1: MICRO-INTERACCIONES (YA INTEGRADAS) -->
-    <section style="margin-bottom: 40px; opacity: 0.6;">
-      <h2 class="proto-section-title" style="font-size: 1.4rem;">1. Micro-interacciones ya integradas</h2>
-      <p style="font-size: 0.9rem;">Las animaciones de hover y vuelo al carrito ya están configuradas en la tienda.</p>
-    </section>
-
-    <!-- SECCIÓN 2: SIMULADOR DE GRABADO LÁSER -->
-    <section style="margin-bottom: 120px;">
-      <h2 class="proto-section-title">2. Simulador de Grabado Láser (Vista 3D 360° Rotativa)</h2>
-      <p class="section-subtitle">Alterná entre la foto real (2D) y la vista 360° interactiva para girar el mate con el mouse y ver tu diseño grabado</p>
-
+    <!-- SECCIÓN 1: MICRO-INTERACCIONES (HOVER Y VUELO CARRO) -->
+    <section style="margin-bottom: 80px;">
+      <h2 class="proto-section-title">1. Micro-interacciones (Aprobadas e Integradas)</h2>
+      <p class="section-subtitle">Demostración interactiva del hover fluido y la animación de vuelo del producto al carrito</p>
+      
       <div class="proto-card">
-        <div class="engrave-simulator-grid">
-          
-          <!-- LADO IZQUIERDO: Previsualización en Tiempo Real -->
-          <div class="engrave-preview-box">
-            
-            <!-- Pestañas de modo de vista (2D vs 3D) -->
-            <div class="view-mode-tabs">
-              <button class="view-mode-btn view-mode-btn--active" id="btn-mode-2d" onclick="setViewMode('2d')">
-                🖼️ Foto Real (2D)
-              </button>
-              <button class="view-mode-btn" id="btn-mode-3d" onclick="setViewMode('3d')">
-                🔄 Vista 360° (3D)
-              </button>
-            </div>
+        <!-- Mini Cabecera con Carrito -->
+        <div class="mini-shop-header">
+          <span class="mini-shop-title">Vista Previa de Tienda</span>
+          <div class="mini-cart-icon" id="mini-cart-target">
+            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="mini-cart-badge" id="mini-cart-count">0</span>
+          </div>
+        </div>
 
-            <!-- Selector de Mates para Grabado -->
-            <div style="margin-bottom: 20px;" id="mate-selector-container">
-              <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 10px; text-transform: uppercase;">
-                Seleccioná el Mate a Grabar:
-              </span>
-              <div style="display: flex; gap: 8px; justify-content: center;">
-                <button class="choice-card-engrave choice-card-engrave--active" id="btn-mate-1" onclick="switchMate(1, 'assets/images/mate-imperial-croco-negro.png', 133, 17, 164, 12, 0x111111)">
-                  Imperial Negro
-                </button>
-                <button class="choice-card-engrave" id="btn-mate-2" onclick="switchMate(2, 'assets/images/camionero-cuero-calabaza.jpg', 123, 14, 162, 11.5, 0x5a3d28)">
-                  Camionero Acero
-                </button>
-                <button class="choice-card-engrave" id="btn-mate-3" onclick="switchMate(3, 'assets/images/torpedo-alpaca-calada-marron.png', 145, 20, 160, 12, 0x3d2516)">
-                  Torpedo Marrón
+        <div class="interaction-grid">
+          
+          <!-- Tarjeta 1: Mochila Matera Verde -->
+          <div class="hover-card">
+            <div class="hover-card__image-container">
+              <img class="hover-card__image hover-card__image--primary" src="assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg" alt="Mochila Verde">
+              <img class="hover-card__image hover-card__image--secondary" src="assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela-2.jpeg" alt="Mochila Detalle">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__meta">BOLSOS · MOCHILA</span>
+              <h3 class="product-card__title">MOCHILA/BOLSO MATERO + CHAULATA</h3>
+              <div class="product-card__price-box">
+                <span class="product-card__price">$20.000</span>
+              </div>
+              <div class="product-card__actions">
+                <button class="btn btn--primary btn--sm btn--full" onclick="animateAddToCart(this, 'assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg')">
+                  Agregar
                 </button>
               </div>
-            </div>
-
-            <div class="canvas-container-svg">
-              <!-- VISTA 2D (SVG + Imagen) -->
-              <svg class="svg-canvas" viewBox="0 0 400 400" id="virola-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Imagen del Mate de Fondo -->
-                <image id="mate-bg-svg" xlink:href="assets/images/mate-imperial-croco-negro.png" href="assets/images/mate-imperial-croco-negro.png" x="0" y="0" width="400" height="400" />
-                
-                <!-- Path visible en debug, invisible en uso -->
-                <path id="curve-path" d="M 118,133 Q 200,150 282,133" fill="none" stroke="none" />
-                
-                <!-- Texto grabado curvado -->
-                <text font-size="12" class="engraved-text-svg" id="engraved-text-element">
-                  <textPath xlink:href="#curve-path" href="#curve-path" startOffset="50%" text-anchor="middle" id="engraved-text-path">
-                    TU NOMBRE AQUÍ
-                  </textPath>
-                </text>
-              </svg>
-
-              <!-- VISTA 3D (Three.js) -->
-              <div id="canvas-3d-container"></div>
-            </div>
-            
-            <p style="font-size: 0.85rem; color: var(--color-text-muted); font-style: italic;" id="preview-caption">
-              * Vista previa digital interactiva de grabado.
-            </p>
-            
-            <!-- Depurador de Coordenadas (Solo visible en 2D) -->
-            <div class="coordinate-debugger" id="path-debugger">
-              Path D: M 118,133 Q 200,150 282,133
             </div>
           </div>
 
-          <!-- LADO DERECHO: Panel de Controles -->
-          <div class="engrave-controls">
-            
-            <!-- Entrada de texto -->
-            <div class="control-group-engrave">
-              <label for="engrave-text-input">1. Escribí tu Grabado (Máx 18 letras):</label>
-              <input type="text" id="engrave-text-input" placeholder="Ej: EL BUEN CEBAR" maxlength="18" oninput="updateEngraveText()">
+          <!-- Tarjeta 2: Torpedo Calado -->
+          <div class="hover-card">
+            <div class="hover-card__image-container">
+              <img class="hover-card__image hover-card__image--primary" src="assets/images/torpedo-alpaca-calada-negro.png" alt="Torpedo Negro">
+              <img class="hover-card__image hover-card__image--secondary" src="assets/images/torpedo-alpaca-calada-marron.png" alt="Torpedo Marrón">
             </div>
-
-            <!-- Estilo de Fuente -->
-            <div class="control-group-engrave">
-              <label>2. Tipografía del Grabado:</label>
-              <div class="choice-grid-engrave">
-                <div class="choice-card-engrave choice-card-engrave--active" id="btn-font-serif" onclick="setEngraveFont(this, 'Cormorant Garamond, serif')">
-                  Romana Elegante
-                </div>
-                <div class="choice-card-engrave" id="btn-font-sans" onclick="setEngraveFont(this, 'Montserrat, sans-serif')">
-                  Gótica Moderna
-                </div>
-                <div class="choice-card-engrave" id="btn-font-cursive" onclick="setEngraveFont(this, 'Alex Brush, cursive')">
-                  Cursiva Cincelada
-                </div>
+            <div class="product-card__content">
+              <span class="product-card__meta">MATES · TORPEDO</span>
+              <h3 class="product-card__title">TORPEDO CON VIROLA DE ALPACA CALADA</h3>
+              <div class="product-card__price-box">
+                <span class="product-card__price">$50.000</span>
+              </div>
+              <div class="product-card__actions">
+                <button class="btn btn--primary btn--sm btn--full" onclick="animateAddToCart(this, 'assets/images/torpedo-alpaca-calada-negro.png')">
+                  Agregar
+                </button>
               </div>
             </div>
+          </div>
 
-            <!-- Adornos / Símbolos laterales -->
-            <div class="control-group-engrave">
-              <label>3. Agregar Símbolos a los Costados:</label>
-              <div class="choice-grid-engrave">
-                <div class="choice-card-engrave choice-card-engrave--active" onclick="setEngraveSymbol(this, 'none')">
-                  Sin símbolos
-                </div>
-                <div class="choice-card-engrave" onclick="setEngraveSymbol(this, 'stars')">
-                  ★ Estrellas ★
-                </div>
-                <div class="choice-card-engrave" onclick="setEngraveSymbol(this, 'suns')">
-                  ☀️ Soles ☀️
-                </div>
+          <!-- Tarjeta 3: Bombilla Chata Grabada -->
+          <div class="hover-card">
+            <div class="hover-card__image-container">
+              <img class="hover-card__image hover-card__image--primary" src="assets/images/bombilla-chata-grabada-combo.png" alt="Bombilla Chata">
+              <img class="hover-card__image hover-card__image--secondary" src="assets/images/bombilla-chata-argentina.png" alt="Bombilla Argentina">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__meta">BOMBILLAS · ACERO</span>
+              <h3 class="product-card__title">BOMBILLA CHATA GRABADA</h3>
+              <div class="product-card__price-box">
+                <span class="product-card__price">$10.000</span>
+              </div>
+              <div class="product-card__actions">
+                <button class="btn btn--primary btn--sm btn--full" onclick="animateAddToCart(this, 'assets/images/bombilla-chata-grabada-combo.png')">
+                  Agregar
+                </button>
               </div>
             </div>
-
-            <!-- Calibrador de Curva (Sliders de Ajuste - Solo útiles en 2D) -->
-            <div class="control-group-engrave" id="calibration-controls-group">
-              <label style="color: var(--color-accent); font-weight: 700;">⚙️ Calibración de Curva (Foto 2D):</label>
-              
-              <!-- Posición Y -->
-              <div class="slider-container" style="margin-top: 10px;">
-                <div class="slider-row">
-                  <span>Posición Vertical (Y):</span>
-                  <span id="val-posy">133px</span>
-                </div>
-                <input type="range" id="slide-posy" class="slider-input" min="90" max="180" value="133" oninput="adjustPath()">
-              </div>
-
-              <!-- Curvatura -->
-              <div class="slider-container" style="margin-top: 14px;">
-                <div class="slider-row">
-                  <span>Curvatura (Bending):</span>
-                  <span id="val-bend">17px</span>
-                </div>
-                <input type="range" id="slide-bend" class="slider-input" min="0" max="40" value="17" oninput="adjustPath()">
-              </div>
-
-              <!-- Ancho del Arco -->
-              <div class="slider-container" style="margin-top: 14px;">
-                <div class="slider-row">
-                  <span>Ancho del Arco (Width):</span>
-                  <span id="val-width">164px</span>
-                </div>
-                <input type="range" id="slide-width" class="slider-input" min="100" max="240" value="164" oninput="adjustPath()">
-              </div>
-
-              <!-- Tamaño de Fuente -->
-              <div class="slider-container" style="margin-top: 14px;">
-                <div class="slider-row">
-                  <span>Tamaño de Letra:</span>
-                  <span id="val-size">12px</span>
-                </div>
-                <input type="range" id="slide-size" class="slider-input" min="8" max="22" step="0.5" value="12" oninput="adjustPath()">
-              </div>
-            </div>
-
-            <!-- Tipo de Grabado / Profundidad -->
-            <div class="control-group-engrave">
-              <label>5. Acabado de la Profundidad:</label>
-              <div class="choice-grid-engrave">
-                <div class="choice-card-engrave choice-card-engrave--active" onclick="setEngraveDepth(this, 'light')">
-                  Láser Superficial
-                </div>
-                <div class="choice-card-engrave" onclick="setEngraveDepth(this, 'deep')">
-                  Cincelado Oscuro
-                </div>
-              </div>
-            </div>
-
-            <!-- Resumen de Costo -->
-            <div class="engrave-summary-card">
-              <p style="margin-bottom: 8px;">
-                Grabado personalizado de virola: <strong>Adicional $5.000</strong>
-              </p>
-              <p>
-                Este grabado artesanal demora **24 a 48 horas hábiles** adicionales de producción. Cuando compres por WhatsApp, este grabado quedará guardado para tu pedido.
-              </p>
-            </div>
-
-            <button class="btn btn--accent btn--full" style="justify-content: center; padding: 16px;" onclick="pedirGrabadoPorWhatsApp()">
-              Pedir Mate con este Grabado
-            </button>
-
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: NUEVAS PROPUESTAS DE ANIMACIÓN -->
+    <section style="margin-bottom: 120px;">
+      <h2 class="proto-section-title">2. Nuevas Propuestas de Diseño y Animación</h2>
+      <p class="section-subtitle">Interactuá con los simuladores de abajo para ver cómo funciona cada efecto</p>
+
+      <div class="anim-grid">
+        
+        <!-- A. HERO PARALLAX -->
+        <div class="anim-panel">
+          <h3>A. Profundidad 3D en Banner (Hero Parallax)</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+            Mové el cursor sobre el banner de abajo. Verás cómo la foto del mate se desplaza en perspectiva contraria al movimiento de tu mouse, creando profundidad.
+          </p>
+          
+          <div class="parallax-hero-box" id="parallax-hero-box">
+            <div class="parallax-hero-bg" id="parallax-hero-bg"></div>
+            <div class="parallax-hero-content">
+              <h4 style="font-size: 1.1rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 4px;">MATE ARTESANAL</h4>
+              <p style="font-size: 0.8rem; opacity: 0.9;">Tradición cincelada en cuero premium</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- B. SCROLL REVEAL -->
+        <div class="anim-panel">
+          <h3>B. Revelado Suave al Scroll (Scroll Reveal)</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+            Hacé scroll hacia abajo dentro de la caja de abajo. Verás cómo las tarjetas aparecen suavemente deslizándose hacia arriba a medida que entran al visor.
+          </p>
+          
+          <div class="scroll-reveal-container" id="scroll-reveal-container">
+            <div class="reveal-card">🧉 1. Mate Imperial Cincelado</div>
+            <div class="reveal-card">✨ 2. Bombilla de Alpaca Grabada</div>
+            <div class="reveal-card">🎒 3. Mochila Matera Impermeable</div>
+            <div class="reveal-card">🌡️ 4. Termo de Acero de 1 Litro</div>
+            <div class="reveal-card">💼 5. Canasta Matera de Cuero</div>
+            <div class="reveal-card">☀️ 6. Yerbera y Azucarera combinadas</div>
+          </div>
+        </div>
+
+        <!-- C. SHIMMER LOADING -->
+        <div class="anim-panel">
+          <h3>C. Siluetas de Carga Shimmer (Skeletons)</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+            Hacé clic en el botón para simular una carga de productos (ej: cuando aplicás un filtro en la tienda).
+          </p>
+          
+          <div class="shimmer-grid" id="shimmer-container">
+            <!-- CARDS SKELETON (INICIALMENTE) -->
+            <div class="skeleton-card">
+              <div class="skeleton-image shimmer-sweep"></div>
+              <div class="skeleton-text shimmer-sweep" style="width: 80%;"></div>
+              <div class="skeleton-text shimmer-sweep" style="width: 50%;"></div>
+            </div>
+            <div class="skeleton-card">
+              <div class="skeleton-image shimmer-sweep"></div>
+              <div class="skeleton-text shimmer-sweep" style="width: 80%;"></div>
+              <div class="skeleton-text shimmer-sweep" style="width: 50%;"></div>
+            </div>
+          </div>
+          
+          <button class="btn btn--secondary btn--sm" style="margin-top: 10px; justify-content: center;" onclick="simularCargaShimmer()">
+            Simular Carga de Productos
+          </button>
+        </div>
+
+        <!-- D. GLASSMORPHISM TOAST -->
+        <div class="anim-panel">
+          <h3>D. Notificación Translúcida (Glassmorphism Toast)</h3>
+          <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+            Hacé clic para simular que agregás un producto. Se disparará una alerta flotante tipo vidrio con barra de progreso de tiempo.
+          </p>
+          
+          <div class="glass-toast-preview-area">
+            <span style="font-size: 0.85rem; color: var(--color-text-muted);">Área de previsualización</span>
+            
+            <!-- Toast Translúcido -->
+            <div class="glass-toast" id="glass-toast">
+              <div class="glass-toast-header">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>¡Producto agregado!</span>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--color-text-secondary); margin: 0;">
+                MATE IMPERIAL se sumó a tu compra.
+              </p>
+              <div class="glass-toast-progress-container">
+                <div class="glass-toast-progress" id="glass-toast-bar"></div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn btn--secondary btn--sm" style="margin-top: 10px; justify-content: center;" onclick="dispararGlassToast()">
+            Disparar Notificación Premium
+          </button>
+        </div>
+
       </div>
     </section>
 
@@ -654,425 +630,174 @@
 
   <!-- Script del Prototipo -->
   <script>
-    // Variables de configuración de grabado
-    let textBase = "TU NOMBRE AQUÍ";
-    let selectedFont = "Cormorant Garamond, serif";
-    let selectedSymbol = "none";
-    let selectedDepth = "light";
-    let activeMateId = 1;
-    let viewMode = '2d'; // '2d' o '3d'
-    let leatherColor = 0x111111; // Negro por defecto
+    // 1. LÓGICA DE MICRO-INTERACCIONES (FLY-TO-CART)
+    let cartCount = 0;
 
-    // Variables de Three.js
-    let scene, camera, renderer, controls;
-    let mateMeshGroup;
-    let textCanvasTexture;
-    let virolaMaterial;
-    let mateBodyMaterial;
+    function animateAddToCart(buttonElement, imgSrc) {
+      const card = buttonElement.closest(".hover-card");
+      const imgToClone = card.querySelector(".hover-card__image--primary");
+      const cartTarget = document.getElementById("mini-cart-target");
+      const countBadge = document.getElementById("mini-cart-count");
 
-    // Configuración por defecto de cada mate: [Y, Bend, Width, FontSize, ColorCuero]
-    const configsMates = {
-      1: { y: 133, bend: 17, width: 164, size: 12, leather: 0x111111 },    // Imperial Negro
-      2: { y: 123, bend: 14, width: 162, size: 11.5, leather: 0x5a3d28 },  // Camionero Acero
-      3: { y: 145, bend: 20, width: 160, size: 12, leather: 0x3d2516 }     // Torpedo Marrón
-    };
+      if (!imgToClone || !cartTarget) return;
 
-    function setViewMode(mode) {
-      viewMode = mode;
-      
-      const btn2d = document.getElementById("btn-mode-2d");
-      const btn3d = document.getElementById("btn-mode-3d");
-      const svgContainer = document.getElementById("virola-svg");
-      const container3d = document.getElementById("canvas-3d-container");
-      const debugDiv = document.getElementById("path-debugger");
-      const calControls = document.getElementById("calibration-controls-group");
-      const mateSelector = document.getElementById("mate-selector-container");
-      const caption = document.getElementById("preview-caption");
+      const imgRect = imgToClone.getBoundingClientRect();
+      const targetRect = cartTarget.getBoundingClientRect();
 
-      if (mode === '3d') {
-        btn2d.classList.remove("view-mode-btn--active");
-        btn3d.classList.add("view-mode-btn--active");
-        svgContainer.style.display = "none";
-        container3d.style.display = "block";
-        debugDiv.style.display = "none";
-        calControls.style.display = "none";
-        mateSelector.style.display = "none"; // Ocultar selector en 3D para simplificar el modelo base
-        caption.textContent = "* Arrastrá con el mouse/dedo para rotar el mate en 360° y ver el grabado.";
-        
-        // Inicializar Three.js si aún no se hizo
-        if (!scene) {
-          init3D();
-        } else {
-          // Si ya existe, actualizar textura del grabado
-          update3DTextTexture();
-        }
-      } else {
-        btn2d.classList.add("view-mode-btn--active");
-        btn3d.classList.remove("view-mode-btn--active");
-        svgContainer.style.display = "block";
-        container3d.style.display = "none";
-        debugDiv.style.display = "block";
-        calControls.style.display = "block";
-        mateSelector.style.display = "block";
-        caption.textContent = "* Vista previa digital interactiva de grabado.";
-        
-        adjustPath();
-      }
-    }
+      const clone = document.createElement("img");
+      clone.src = imgSrc;
+      clone.classList.add("flying-image");
+      clone.style.left = `${imgRect.left}px`;
+      clone.style.top = `${imgRect.top}px`;
+      clone.style.width = `${imgRect.width}px`;
+      clone.style.height = `${imgRect.height}px`;
 
-    function switchMate(mateId, imageSrc, y, bend, width, size, colorHex) {
-      activeMateId = mateId;
-      leatherColor = colorHex;
+      document.body.appendChild(clone);
 
-      // Actualizar botones de mate activo
-      for (let i = 1; i <= 3; i++) {
-        const btn = document.getElementById(`btn-mate-${i}`);
-        if (i === mateId) {
-          btn.classList.add("choice-card-engrave--active");
-        } else {
-          btn.classList.remove("choice-card-engrave--active");
-        }
-      }
-
-      // Actualizar imagen de fondo
-      const imgElement = document.getElementById("mate-bg-svg");
-      imgElement.setAttribute("href", imageSrc);
-      imgElement.setAttribute("xlink:href", imageSrc);
-
-      // Cargar valores en sliders
-      document.getElementById("slide-posy").value = y;
-      document.getElementById("slide-bend").value = bend;
-      document.getElementById("slide-width").value = width;
-      document.getElementById("slide-size").value = size;
-
-      // Actualizar textos y aplicar grabado
-      adjustPath();
-    }
-
-    function updateEngraveText() {
-      const input = document.getElementById("engrave-text-input");
-      textBase = input.value.trim().toUpperCase();
-      
-      if (textBase === "") {
-        textBase = "TU NOMBRE AQUÍ";
-      }
-
-      applyGrabado();
-      
-      if (viewMode === '3d' && scene) {
-        update3DTextTexture();
-      }
-    }
-
-    function setEngraveFont(cardElement, fontFamily) {
-      const cards = cardElement.parentNode.querySelectorAll(".choice-card-engrave");
-      cards.forEach(c => c.classList.remove("choice-card-engrave--active"));
-      cardElement.classList.add("choice-card-engrave--active");
-
-      selectedFont = fontFamily;
-      applyGrabado();
-      
-      if (viewMode === '3d' && scene) {
-        update3DTextTexture();
-      }
-    }
-
-    function setEngraveSymbol(cardElement, symbolType) {
-      const cards = cardElement.parentNode.querySelectorAll(".choice-card-engrave");
-      cards.forEach(c => c.classList.remove("choice-card-engrave--active"));
-      cardElement.classList.add("choice-card-engrave--active");
-
-      selectedSymbol = symbolType;
-      applyGrabado();
-      
-      if (viewMode === '3d' && scene) {
-        update3DTextTexture();
-      }
-    }
-
-    function setEngraveDepth(cardElement, depthType) {
-      const cards = cardElement.parentNode.querySelectorAll(".choice-card-engrave");
-      cards.forEach(c => c.classList.remove("choice-card-engrave--active"));
-      cardElement.classList.add("choice-card-engrave--active");
-
-      selectedDepth = depthType;
-      applyGrabado();
-      
-      if (viewMode === '3d' && scene) {
-        update3DTextTexture();
-      }
-    }
-
-    // Calcula y ajusta el Path SVG según los sliders
-    function adjustPath() {
-      const y = parseInt(document.getElementById("slide-posy").value);
-      const bend = parseInt(document.getElementById("slide-bend").value);
-      const width = parseInt(document.getElementById("slide-width").value);
-      const size = parseFloat(document.getElementById("slide-size").value);
-
-      document.getElementById("val-posy").textContent = `${y}px`;
-      document.getElementById("val-bend").textContent = `${bend}px`;
-      document.getElementById("val-width").textContent = `${width}px`;
-      document.getElementById("val-size").textContent = `${size}px`;
-
-      const xStart = 200 - (width / 2);
-      const xEnd = 200 + (width / 2);
-      const yCenter = y + bend;
-
-      const dPath = `M ${xStart},${y} Q 200,${yCenter} ${xEnd},${y}`;
-
-      const pathEl = document.getElementById("curve-path");
-      pathEl.setAttribute("d", dPath);
-
-      document.getElementById("path-debugger").textContent = `Path D: ${dPath}`;
-
-      const textEl = document.getElementById("engraved-text-element");
-      textEl.setAttribute("font-size", size);
-
-      applyGrabado();
-    }
-
-    function applyGrabado() {
-      const textPathElement = document.getElementById("engraved-text-path");
-      const textElement = document.getElementById("engraved-text-element");
-
-      // Construir texto final con símbolos
-      let textFinal = textBase;
-      if (selectedSymbol === "stars") {
-        textFinal = `★  ${textBase}  ★`;
-      } else if (selectedSymbol === "suns") {
-        textFinal = `☀️  ${textBase}  ☀️`;
-      }
-
-      // Aplicar texto
-      textPathElement.textContent = textFinal;
-
-      // Aplicar tipografía
-      textElement.style.fontFamily = selectedFont;
-
-      // Cursiva compensación de tamaño
-      if (selectedFont.includes("Alex")) {
-        textElement.style.letterSpacing = "0.02em";
-      } else {
-        textElement.style.letterSpacing = "0.15em";
-      }
-
-      // Aplicar profundidad
-      if (selectedDepth === "deep") {
-        textElement.classList.add("engraved-text-svg--deep");
-      } else {
-        textElement.classList.remove("engraved-text-svg--deep");
-      }
-    }
-
-    function pedirGrabadoPorWhatsApp() {
-      const grabadoFinal = document.getElementById("engraved-text-path").textContent;
-      const estiloAcabado = selectedDepth === "deep" ? "Cincelado Oscuro" : "Láser Superficial";
-      const tipoTipografia = selectedFont.includes("Cormorant") ? "Romana" : (selectedFont.includes("Montserrat") ? "Gótica" : "Cursiva");
-      
-      const mateNombres = { 1: "MATE IMPERIAL NEGRO", 2: "MATE CAMIONERO ACERO", 3: "MATE TORPEDO MARRÓN" };
-      const mateSeleccionado = mateNombres[activeMateId];
-
-      const mensaje = `Hola El Buen Cebar! Me gustaría encargar un Mate con virola personalizada:\n\n` +
-                      `🧉 Producto: ${mateSeleccionado}\n` +
-                      `✍️ Texto de Grabado: "${grabadoFinal}"\n` +
-                      `🔠 Tipografía: ${tipoTipografia}\n` +
-                      `🛠️ Tipo de Acabado: ${estiloAcabado}\n\n` +
-                      `💵 Adicional grabado: $5.000`;
-
-      const url = `https://wa.me/5491131102604?text=${encodeURIComponent(mensaje)}`;
-      window.open(url, "_blank");
-    }
-
-    // ==========================================================================
-    // LÓGICA DE THREE.JS - MATE 3D ROTATIVO (360 GRADOS)
-    // ==========================================================================
-
-    function init3D() {
-      const container = document.getElementById("canvas-3d-container");
-      const width = container.clientWidth;
-      const height = container.clientHeight;
-
-      // 1. Escena & Renderizador
-      scene = new THREE.Scene();
-      scene.background = new THREE.Color(0xfbf9f5); // Fondo crema que combina con la web
-
-      renderer = new THREE.WebGLRenderer({ antialias: true });
-      renderer.setSize(width, height);
-      renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.shadowMap.enabled = true;
-      container.appendChild(renderer.domElement);
-
-      // 2. Cámara
-      camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
-      camera.position.set(0, 3, 6);
-
-      // 3. Controles orbitales (arrastrar para rotar)
-      controls = new THREE.OrbitControls(camera, renderer.domElement);
-      controls.enableDamping = true;
-      controls.dampingFactor = 0.05;
-      controls.minDistance = 3;
-      controls.maxDistance = 10;
-      controls.maxPolarAngle = Math.PI / 1.8; // Impedir ver el mate completamente desde abajo
-
-      // 4. Luces (Iluminación premium para resaltar metal)
-      const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-      scene.add(ambientLight);
-
-      const mainLight = new THREE.DirectionalLight(0xffffff, 0.8);
-      mainLight.position.set(5, 10, 7);
-      scene.add(mainLight);
-
-      const fillLight = new THREE.DirectionalLight(0xddeeff, 0.4);
-      fillLight.position.set(-5, 3, -5);
-      scene.add(fillLight);
-
-      // 5. Creación del Modelo 3D del Mate (Lathe + Colores)
-      mateMeshGroup = new THREE.Group();
-      scene.add(mateMeshGroup);
-
-      // A. Cuerpo del Mate (Cuero) usando LatheGeometry para una forma realista curvada
-      const points = [];
-      points.push(new THREE.Vector2(0, 0));       // Centro base
-      points.push(new THREE.Vector2(0.55, 0));    // Borde base
-      points.push(new THREE.Vector2(0.65, 0.3));  // Curva inferior
-      points.push(new THREE.Vector2(0.85, 1.0));  // Cintura del mate
-      points.push(new THREE.Vector2(1.05, 1.7));  // Hombro superior
-      points.push(new THREE.Vector2(1.10, 2.0));  // Borde superior
-      
-      const bodyGeometry = new THREE.LatheGeometry(points, 32);
-      
-      mateBodyMaterial = new THREE.MeshStandardMaterial({
-        color: leatherColor,
-        roughness: 0.8,
-        metalness: 0.1
+      requestAnimationFrame(() => {
+        clone.style.left = `${targetRect.left + (targetRect.width / 2) - 40}px`;
+        clone.style.top = `${targetRect.top + (targetRect.height / 2) - 40}px`;
+        clone.style.width = "20px";
+        clone.style.height = "20px";
+        clone.style.opacity = "0.2";
+        clone.style.transform = "rotate(360deg)";
       });
 
-      const bodyMesh = new THREE.Mesh(bodyGeometry, mateBodyMaterial);
-      mateMeshGroup.add(bodyMesh);
+      setTimeout(() => {
+        clone.remove();
+        
+        cartCount++;
+        countBadge.textContent = cartCount;
 
-      // B. Virola Metálica (Cilindro donde se proyecta la textura del grabado)
-      const virolaGeom = new THREE.CylinderGeometry(1.11, 1.11, 0.3, 32, 1, false);
-      
-      // Crear textura dinámica de canvas para el grabado
-      textCanvasTexture = createTextTexture();
-      
-      virolaMaterial = new THREE.MeshStandardMaterial({
-        map: textCanvasTexture,
-        roughness: 0.15,
-        metalness: 0.95
-      });
+        cartTarget.classList.add("bounce-animation");
+        
+        setTimeout(() => {
+          cartTarget.classList.remove("bounce-animation");
+        }, 500);
 
-      const virolaMesh = new THREE.Mesh(virolaGeom, virolaMaterial);
-      virolaMesh.position.y = 2.05; // Colocar encima del cuerpo
-      mateMeshGroup.add(virolaMesh);
-
-      // C. Base Metálica Opcional (Anillo metálico inferior)
-      const baseGeom = new THREE.CylinderGeometry(0.57, 0.57, 0.08, 32);
-      const baseMat = new THREE.MeshStandardMaterial({ color: 0xaaaaaa, roughness: 0.2, metalness: 0.8 });
-      const baseMesh = new THREE.Mesh(baseGeom, baseMat);
-      baseMesh.position.y = 0.04;
-      mateMeshGroup.add(baseMesh);
-
-      // Desplazar el mate un poquito hacia abajo para centrar en la pantalla
-      mateMeshGroup.position.y = -1;
-
-      // 6. Ciclo de animación
-      animate();
-
-      // Ajustar al cambiar el tamaño de la ventana
-      window.addEventListener("resize", onWindowResize);
+      }, 800);
     }
 
-    function createTextTexture() {
-      const canvas = document.createElement("canvas");
-      canvas.width = 1024;
-      canvas.height = 128;
-      const ctx = canvas.getContext("2d");
+    // ==========================================================
+    // 2. LÓGICA DE LAS NUEVAS PROPUESTAS VISUALES
+    // ==========================================================
 
-      // Fondo metálico (plateado cepillado)
-      const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-      gradient.addColorStop(0, '#bbbbbb');
-      gradient.addColorStop(0.2, '#dddddd');
-      gradient.addColorStop(0.4, '#ffffff');
-      gradient.addColorStop(0.6, '#cccccc');
-      gradient.addColorStop(0.8, '#dddddd');
-      gradient.addColorStop(1, '#bbbbbb');
+    // A. HERO PARALLAX
+    const heroBox = document.getElementById("parallax-hero-box");
+    const heroBg = document.getElementById("parallax-hero-bg");
+
+    heroBox.addEventListener("mousemove", (e) => {
+      const rect = heroBox.getBoundingClientRect();
+      const xVal = (e.clientX - rect.left) / rect.width; // 0 a 1
+      const yVal = (e.clientY - rect.top) / rect.height; // 0 a 1
       
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      // Dibujar texto del grabado (repetido 2 veces a los lados opuestos de la virola)
-      let textFinal = textBase;
-      if (selectedSymbol === "stars") {
-        textFinal = `★  ${textBase}  ★`;
-      } else if (selectedSymbol === "suns") {
-        textFinal = `☀️  ${textBase}  ☀️`;
-      }
-
-      // Configurar color del grabado (láser quemado oscuro)
-      ctx.fillStyle = selectedDepth === 'deep' ? '#18120e' : '#45382e';
+      // Mapear movimiento sutil (-12px a 12px)
+      const xMove = (xVal - 0.5) * -24;
+      const yMove = (yVal - 0.5) * -24;
       
-      // Aplicar tipografía seleccionada
-      let fontName = "serif";
-      if (selectedFont.includes("Montserrat")) fontName = "Montserrat";
-      if (selectedFont.includes("Alex")) fontName = "Alex Brush";
-      
-      ctx.font = `bold 38px ${fontName}`;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-
-      // Centrar el grabado en el frente (Y=64, X=256 y X=768 para que se vea atrás también)
-      ctx.fillText(textFinal, 256, 64);
-      ctx.fillText(textFinal, 768, 64);
-
-      // Retornar textura de Three.js
-      const texture = new THREE.CanvasTexture(canvas);
-      texture.wrapS = THREE.RepeatWrapping; // Envoltura cilíndrica horizontal
-      return texture;
-    }
-
-    function update3DTextTexture() {
-      if (!textCanvasTexture) return;
-
-      // Regenerar textura en el canvas y notificar a Three.js
-      const oldTexture = textCanvasTexture;
-      textCanvasTexture = createTextTexture();
-      virolaMaterial.map = textCanvasTexture;
-      
-      // Actualizar color de cuero del mate
-      mateBodyMaterial.color.setHex(leatherColor);
-      
-      oldTexture.dispose(); // Liberar memoria
-    }
-
-    function animate() {
-      requestAnimationFrame(animate);
-      
-      // Rotación pasiva muy sutil si no hay interacción del usuario
-      if (!controls.state === -1) {
-        mateMeshGroup.rotation.y += 0.003;
-      }
-
-      controls.update();
-      renderer.render(scene, camera);
-    }
-
-    function onWindowResize() {
-      if (!camera || !renderer) return;
-      const container = document.getElementById("canvas-3d-container");
-      const width = container.clientWidth;
-      const height = container.clientHeight;
-
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
-      renderer.setSize(width, height);
-    }
-
-    // Inicializar valores al cargar la página
-    document.addEventListener("DOMContentLoaded", () => {
-      adjustPath();
+      heroBg.style.transform = `translate(${xMove}px, ${yMove}px) scale(1.08)`;
     });
+
+    heroBox.addEventListener("mouseleave", () => {
+      heroBg.style.transform = "translate(0, 0) scale(1)";
+    });
+
+    // B. SCROLL REVEAL
+    const scrollContainer = document.getElementById("scroll-reveal-container");
+    const revealCards = scrollContainer.querySelectorAll(".reveal-card");
+
+    scrollContainer.addEventListener("scroll", () => {
+      const containerBottom = scrollContainer.getBoundingClientRect().bottom;
+      
+      revealCards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < containerBottom - 25) {
+          card.classList.add("reveal-card--visible");
+        } else {
+          card.classList.remove("reveal-card--visible"); // Opcional: ocultar si vuelve a subir
+        }
+      });
+    });
+
+    // Disparar primer reveal de las cartas visibles inicialmente
+    setTimeout(() => {
+      scrollContainer.dispatchEvent(new Event("scroll"));
+    }, 400);
+
+    // C. SHIMMER LOADING
+    function simularCargaShimmer() {
+      const container = document.getElementById("shimmer-container");
+      
+      // 1. Mostrar Skeletons
+      container.innerHTML = `
+        <div class="skeleton-card">
+          <div class="skeleton-image shimmer-sweep"></div>
+          <div class="skeleton-text shimmer-sweep" style="width: 80%;"></div>
+          <div class="skeleton-text shimmer-sweep" style="width: 50%;"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-image shimmer-sweep"></div>
+          <div class="skeleton-text shimmer-sweep" style="width: 80%;"></div>
+          <div class="skeleton-text shimmer-sweep" style="width: 50%;"></div>
+        </div>
+      `;
+
+      // 2. Simular retardo de carga de servidor (1.5 segundos) y renderizar productos reales
+      setTimeout(() => {
+        container.innerHTML = `
+          <!-- Producto Real 1 -->
+          <div class="hover-card" style="animation: fadeIn 0.4s ease forwards;">
+            <div class="hover-card__image-container" style="aspect-ratio: 1.5/1;">
+              <img src="assets/images/mate-imperial-croco-negro.png" style="width: 80%; height: 80%; object-fit: contain;">
+            </div>
+            <div class="product-card__content" style="padding: 12px; gap: 4px;">
+              <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin: 0; text-transform: uppercase;">Mate Imperial</h4>
+              <span style="font-size: 0.85rem; color: var(--color-accent); font-weight: 700;">$40.000</span>
+            </div>
+          </div>
+          <!-- Producto Real 2 -->
+          <div class="hover-card" style="animation: fadeIn 0.4s ease forwards;">
+            <div class="hover-card__image-container" style="aspect-ratio: 1.5/1;">
+              <img src="assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg" style="width: 80%; height: 80%; object-fit: contain;">
+            </div>
+            <div class="product-card__content" style="padding: 12px; gap: 4px;">
+              <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin: 0; text-transform: uppercase;">Bombillón Alpaca</h4>
+              <span style="font-size: 0.85rem; color: var(--color-accent); font-weight: 700;">$20.000</span>
+            </div>
+          </div>
+        `;
+      }, 1500);
+    }
+
+    // D. GLASSMORPHISM TOAST
+    let toastTimeout;
+    
+    function dispararGlassToast() {
+      const toast = document.getElementById("glass-toast");
+      const bar = document.getElementById("glass-toast-bar");
+
+      // Reset previo si estuviera activo
+      clearTimeout(toastTimeout);
+      toast.classList.remove("glass-toast--show");
+      bar.style.transition = "none";
+      bar.style.width = "100%";
+
+      // Mostrar en el siguiente frame
+      requestAnimationFrame(() => {
+        toast.classList.add("glass-toast--show");
+        
+        // Iniciar achicado de la barra de progreso (3 segundos)
+        requestAnimationFrame(() => {
+          bar.style.transition = "width 3s linear";
+          bar.style.width = "0%";
+        });
+
+        // Ocultar toast después de 3 segundos
+        toastTimeout = setTimeout(() => {
+          toast.classList.remove("glass-toast--show");
+        }, 3000);
+      });
+    }
   </script>
 </body>
 </html>
