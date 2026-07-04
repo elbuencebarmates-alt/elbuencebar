@@ -1042,6 +1042,10 @@ const PRODUCTOS = [
     "subcategoria": "mochila",
     "precio": 20000,
     "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
+    "imagenes": [
+      "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
+      "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela-2.jpeg"
+    ],
     "descripcion": "Mochila con tiras para bolso color verde enebro, con detalles suela.\r\n\r\nincluye sujetador para bolso y yerbera grande y yerbera chica reforzadas por dentro.",
     "destacado": false,
     "detalles": [

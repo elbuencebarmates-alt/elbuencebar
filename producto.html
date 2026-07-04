@@ -43,6 +43,39 @@
       padding: 16px;
     }
     
+    .product-gallery__thumbs {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .product-gallery__thumb {
+      width: 80px;
+      height: 80px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      background-color: var(--color-bg-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .product-gallery__thumb:hover, .product-gallery__thumb--active {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .product-gallery__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 8px;
+    }
+    
     .product-info-panel {
       display: flex;
       flex-direction: column;
@@ -352,6 +385,20 @@
       // Actualizar título de pestaña
       document.title = `${p.nombre} | El Buen Cebar`;
 
+      // Definir galería de imágenes si existen
+      let thumbsHtml = "";
+      if (p.imagenes && p.imagenes.length > 1) {
+        thumbsHtml = `
+          <div class="product-gallery__thumbs">
+            ${p.imagenes.map((img, i) => `
+              <div class="product-gallery__thumb ${i === 0 ? 'product-gallery__thumb--active' : ''}" onclick="cambiarImagenPrincipal(this, '${img}')">
+                <img src="${img}" alt="${p.nombre} vista ${i+1}">
+              </div>
+            `).join("")}
+          </div>
+        `;
+      }
+
       // Definir variantes de manera inteligente
       let optionsHtml = "";
       let opcionActiva = "Única";
@@ -388,6 +435,7 @@
             <div class="product-gallery__main">
               <img src="${p.imagen}" alt="${p.nombre}" id="main-product-image">
             </div>
+            ${thumbsHtml}
           </div>
           
           <!-- Detalles Derecha -->
@@ -425,6 +473,14 @@
       // Renderizar productos relacionados
       renderizarRelacionados(p);
     });
+
+    // Control del carrusel de imágenes
+    function cambiarImagenPrincipal(thumbElement, imgSrc) {
+      document.getElementById("main-product-image").src = imgSrc;
+      const thumbs = thumbElement.parentNode.querySelectorAll(".product-gallery__thumb");
+      thumbs.forEach(t => t.classList.remove("product-gallery__thumb--active"));
+      thumbElement.classList.add("product-gallery__thumb--active");
+    }
 
     // Control del selector de variantes
     function seleccionarOpcion(element, valor) {
