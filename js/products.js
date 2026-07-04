@@ -923,7 +923,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLON DE ALPACA \"CLASSIC\" CON PICO DE LORO",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
-    "precio": 16141,
+    "precio": 20000,
     "imagen": "assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg",
     "descripcion": "Bombillon sin diseños en el caño. caño grueso y pala ancha de alpaca\r\n\r\nPico de loro de bronce.",
     "destacado": false,
