@@ -426,7 +426,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLA DE ACERO INOXIDABLE CON FILTRO/PALA",
     "categoria": "bombillas",
     "subcategoria": "acero",
-    "precio": 15000,
+    "precio": 10000,
     "imagen": "assets/images/bombilla-acero-pala-bronce.png",
     "descripcion": "Bombillas de acero inoxidable 304 con filtro de pala de alta retención. Muy higiénicas y duraderas. Disponibles en versiones con caño liso y pico de bronce, o formato pico de loro en medidas de 16 cm y 19 cm.",
     "destacado": true,
@@ -440,17 +440,17 @@ const PRODUCTOS = [
       {
         "nombre": "CAÑO LISO CON PICO DE BRONCE",
         "imagen": "assets/images/bombilla-acero-pala-bronce.png",
-        "precio": 15000
+        "precio": 10000
       },
       {
         "nombre": "PICO DE LORO 16CM",
         "imagen": "assets/images/bombilla-acero-pala-16cm.png",
-        "precio": 15000
+        "precio": 10000
       },
       {
         "nombre": "PICO DE LORO 19CM",
         "imagen": "assets/images/bombilla-acero-pala-19cm.png",
-        "precio": 15000
+        "precio": 10000
       }
     ]
   },
@@ -459,7 +459,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLA CHATA GRABADA",
     "categoria": "bombillas",
     "subcategoria": "acero",
-    "precio": 5000,
+    "precio": 10000,
     "imagen": "assets/images/bombilla-chata-grabada-combo.png",
     "descripcion": "Bombilla chata clásica fabricada en acero inoxidable con grabado láser de alta precisión. Podés elegir tu diseño favorito: escudos de fútbol de Boca o River, diseño patrio de Argentina, Ruta 40, Copa del Mundo, o grabados especiales para regalar como 'Te amo papá' o 'Te amo mamá'.",
     "destacado": true,
@@ -473,37 +473,37 @@ const PRODUCTOS = [
       {
         "nombre": "BOCA JUNIORS",
         "imagen": "assets/images/bombilla-chata-boca.png",
-        "precio": 5000
+        "precio": 10000
       },
       {
         "nombre": "RIVER PLATE",
         "imagen": "assets/images/bombilla-chata-river.png",
-        "precio": 5000
+        "precio": 10000
       },
       {
         "nombre": "COPA DEL MUNDO",
         "imagen": "assets/images/bombilla-chata-copa.png",
-        "precio": 5000
+        "precio": 10000
       },
       {
         "nombre": "ARGENTINA",
         "imagen": "assets/images/bombilla-chata-argentina.png",
-        "precio": 5000
+        "precio": 10000
       },
       {
         "nombre": "TE AMO PAPÁ",
         "imagen": "assets/images/bombilla-chata-papa.png",
-        "precio": 5000
+        "precio": 10000
       },
       {
         "nombre": "TE AMO MAMÁ",
         "imagen": "assets/images/bombilla-chata-mama.png",
-        "precio": 5000
+        "precio": 10000
       },
       {
         "nombre": "RUTA 40",
         "imagen": "assets/images/bombilla-chata-ruta40.png",
-        "precio": 5000
+        "precio": 10000
       }
     ]
   },
@@ -512,7 +512,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLA CHATA LISA",
     "categoria": "bombillas",
     "subcategoria": "acero",
-    "precio": 4000,
+    "precio": 10000,
     "imagen": "assets/images/bombilla-chata-lisa-curva.png",
     "descripcion": "Bombilla chata lisa de acero inoxidable 304 pulido a espejo. Su diseño minimalista y elegante cuenta con un anillo difusor de calor en el cuello. Disponible en versión con curva o versión recta.",
     "destacado": true,
@@ -526,12 +526,12 @@ const PRODUCTOS = [
       {
         "nombre": "CON CURVA",
         "imagen": "assets/images/bombilla-chata-lisa-curva.png",
-        "precio": 4000
+        "precio": 10000
       },
       {
         "nombre": "RECTA",
         "imagen": "assets/images/bombilla-chata-lisa-recta.png",
-        "precio": 4000
+        "precio": 10000
       }
     ]
   },
