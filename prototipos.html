@@ -472,6 +472,141 @@
       color: var(--color-primary);
     }
 
+    /* 3. ESTILOS DE MICRO-INTERACCIONES (FLY-TO-CART & HOVER) */
+    .mini-shop-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 16px 24px;
+      margin-bottom: 30px;
+    }
+    .mini-shop-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .mini-cart-icon {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      background-color: var(--color-primary);
+      color: var(--color-bg-primary);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-fast);
+    }
+    .mini-cart-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+    .mini-cart-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      background-color: var(--color-accent);
+      color: var(--color-bg-primary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      width: 20px;
+      height: 20px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--color-bg-primary);
+    }
+    .bounce-animation {
+      animation: cartBounce 0.5s ease-out;
+    }
+    @keyframes cartBounce {
+      0% { transform: scale(1); }
+      30% { transform: scale(1.3) rotate(-10deg); }
+      50% { transform: scale(0.9) rotate(5deg); }
+      70% { transform: scale(1.1) rotate(-3deg); }
+      100% { transform: scale(1) rotate(0); }
+    }
+
+    /* Grilla de productos con efecto hover de segunda imagen */
+    .interaction-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .hover-card {
+      background-color: var(--color-bg-primary);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      overflow: hidden;
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
+    }
+    .hover-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-accent-light);
+    }
+    .hover-card__image-container {
+      aspect-ratio: 1 / 1;
+      background-color: var(--color-bg-secondary);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .hover-card__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 16px;
+      transition: opacity var(--transition-normal), transform var(--transition-slow);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .hover-card__image--secondary {
+      opacity: 0;
+    }
+    .hover-card:hover .hover-card__image--primary {
+      opacity: 0;
+      transform: scale(1.06);
+    }
+    .hover-card:hover .hover-card__image--secondary {
+      opacity: 1;
+      transform: scale(1.06);
+    }
+    
+    /* Imagen voladora para animación add-to-cart */
+    .flying-image {
+      position: fixed;
+      z-index: 9999;
+      pointer-events: none;
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: var(--radius-md);
+      background-color: var(--color-bg-primary);
+      border: 1px solid var(--color-border);
+      padding: 8px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
     @media (max-width: 992px) {
       .configurator-grid {
         grid-template-columns: 1fr;
@@ -488,6 +623,9 @@
       .curing-calc {
         grid-template-columns: 1fr;
       }
+      .interaction-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -497,16 +635,97 @@
   <header class="proto-header">
     <div class="container">
       <h1>PROPUESTA DE MEJORA INTERACTIVA</h1>
-      <p>Prototipo funcional e interactivo para visualizar cómo quedarían la sección de armado de combos y la guía de curado.</p>
+      <p>Prototipo funcional e interactivo para visualizar cómo quedarían la sección de armado de combos, micro-interacciones de vuelo y hovers de imagen.</p>
       <a href="index.html" class="btn btn--secondary btn--sm" style="margin-top: 20px;">Volver a la Web Principal</a>
     </div>
   </header>
 
   <main class="container">
 
+    <!-- SECCIÓN DE MICRO-INTERACCIONES (IDEAS 3 Y 4) -->
+    <section style="margin-bottom: 80px;">
+      <h2 class="proto-section-title">1. Micro-interacciones: Vuelo de Compra y Hover de Imagen (Ideas 3 y 4)</h2>
+      <p class="section-subtitle">Demostración interactiva de efectos hover fluidos y animación del producto volando al carrito</p>
+      
+      <div class="proto-card">
+        <!-- Mini Cabecera con Carrito -->
+        <div class="mini-shop-header">
+          <span class="mini-shop-title">Vista Previa de Tienda</span>
+          <div class="mini-cart-icon" id="mini-cart-target">
+            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="mini-cart-badge" id="mini-cart-count">0</span>
+          </div>
+        </div>
+
+        <div class="interaction-grid">
+          
+          <!-- Tarjeta 1: Mochila Matera Verde -->
+          <div class="hover-card">
+            <div class="hover-card__image-container">
+              <img class="hover-card__image hover-card__image--primary" src="assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg" alt="Mochila Verde">
+              <img class="hover-card__image hover-card__image--secondary" src="assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela-2.jpeg" alt="Mochila Detalle">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__meta">BOLSOS · MOCHILA</span>
+              <h3 class="product-card__title">MOCHILA/BOLSO MATERO + CHAULATA</h3>
+              <div class="product-card__price-box">
+                <span class="product-card__price">$20.000</span>
+              </div>
+              <div class="product-card__actions">
+                <button class="btn btn--primary btn--sm btn--full" onclick="animateAddToCart(this, 'assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg')">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Torpedo Calado -->
+          <div class="hover-card">
+            <div class="hover-card__image-container">
+              <img class="hover-card__image hover-card__image--primary" src="assets/images/torpedo-alpaca-calada-negro.png" alt="Torpedo Negro">
+              <img class="hover-card__image hover-card__image--secondary" src="assets/images/torpedo-alpaca-calada-marron.png" alt="Torpedo Marrón">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__meta">MATES · TORPEDO</span>
+              <h3 class="product-card__title">TORPEDO CON VIROLA DE ALPACA CALADA</h3>
+              <div class="product-card__price-box">
+                <span class="product-card__price">$50.000</span>
+              </div>
+              <div class="product-card__actions">
+                <button class="btn btn--primary btn--sm btn--full" onclick="animateAddToCart(this, 'assets/images/torpedo-alpaca-calada-negro.png')">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Bombilla Chata Grabada -->
+          <div class="hover-card">
+            <div class="hover-card__image-container">
+              <img class="hover-card__image hover-card__image--primary" src="assets/images/bombilla-chata-grabada-combo.png" alt="Bombilla Chata">
+              <img class="hover-card__image hover-card__image--secondary" src="assets/images/bombilla-chata-argentina.png" alt="Bombilla Argentina">
+            </div>
+            <div class="product-card__content">
+              <span class="product-card__meta">BOMBILLAS · ACERO</span>
+              <h3 class="product-card__title">BOMBILLA CHATA GRABADA</h3>
+              <div class="product-card__price-box">
+                <span class="product-card__price">$10.000</span>
+              </div>
+              <div class="product-card__actions">
+                <button class="btn btn--primary btn--sm btn--full" onclick="animateAddToCart(this, 'assets/images/bombilla-chata-grabada-combo.png')">
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- SECCIÓN 1: CONFIGURADOR DE COMBOS -->
     <section>
-      <h2 class="proto-section-title">1. Configurador: Armá tu Set Matero</h2>
+      <h2 class="proto-section-title">2. Configurador: Armá tu Set Matero (Idea 1)</h2>
       <p class="section-subtitle">Visualizador interactivo de armado de combos con descuento automático</p>
       
       <div class="proto-card">
@@ -624,9 +843,9 @@
       </div>
     </section>
 
-    <!-- SECCIÓN 2: GUÍA DE CURADO -->
+    <!-- SECCIÓN 3: GUÍA DE CURADO -->
     <section style="margin-bottom: 100px;">
-      <h2 class="proto-section-title">2. Guía Interactiva de Curado del Mate</h2>
+      <h2 class="proto-section-title">3. Guía Interactiva de Curado del Mate (Idea 2)</h2>
       <p class="section-subtitle">Aprende a curar tu mate correctamente según su material con calculadora dinámica</p>
 
       <div class="curing-tabs">
@@ -851,7 +1070,6 @@
       const options = { weekday: 'long', hour: '2-digit', minute: '2-digit' };
 
       if (type === "calabaza") {
-        // Calabaza timeline ( reposar 24 hs -> raspar -> segunda tanda 24 hs)
         const step1Date = new Date(today.getTime());
         const step2Date = new Date(today.getTime() + 24 * 60 * 60 * 1000); // +24 hs
         const step3Date = new Date(today.getTime() + 48 * 60 * 60 * 1000); // +48 hs
@@ -863,7 +1081,6 @@
           <li><span>Fase 4: Enjuague final y curado completo</span> <strong>${step3Date.toLocaleDateString('es-AR', options)}</strong></li>
         `;
       } else {
-        // Algarrobo timeline ( lubricar 12 hs -> yerba usada 12 hs )
         const step1Date = new Date(today.getTime());
         const step2Date = new Date(today.getTime() + 12 * 60 * 60 * 1000); // +12 hs
         const step3Date = new Date(today.getTime() + 24 * 60 * 60 * 1000); // +24 hs
@@ -874,6 +1091,57 @@
           <li><span>Fase 3: Lavado final (curado listo)</span> <strong>${step3Date.toLocaleDateString('es-AR', options)}</strong></li>
         `;
       }
+    }
+
+    // 3. LÓGICA DE LA ANIMACIÓN DE COMPRA (FLY-TO-CART)
+    let cartCount = 0;
+
+    function animateAddToCart(buttonElement, imgSrc) {
+      const card = buttonElement.closest(".hover-card");
+      const imgToClone = card.querySelector(".hover-card__image--primary");
+      const cartTarget = document.getElementById("mini-cart-target");
+      const countBadge = document.getElementById("mini-cart-count");
+
+      if (!imgToClone || !cartTarget) return;
+
+      const imgRect = imgToClone.getBoundingClientRect();
+      const targetRect = cartTarget.getBoundingClientRect();
+
+      // Crear clon flotante
+      const clone = document.createElement("img");
+      clone.src = imgSrc;
+      clone.classList.add("flying-image");
+      clone.style.left = `${imgRect.left}px`;
+      clone.style.top = `${imgRect.top}px`;
+      clone.style.width = `${imgRect.width}px`;
+      clone.style.height = `${imgRect.height}px`;
+
+      document.body.appendChild(clone);
+
+      // Iniciar animación en el siguiente frame
+      requestAnimationFrame(() => {
+        clone.style.left = `${targetRect.left + (targetRect.width / 2) - 40}px`;
+        clone.style.top = `${targetRect.top + (targetRect.height / 2) - 40}px`;
+        clone.style.width = "20px";
+        clone.style.height = "20px";
+        clone.style.opacity = "0.2";
+        clone.style.transform = "rotate(360deg)";
+      });
+
+      // Al finalizar la animación
+      setTimeout(() => {
+        clone.remove();
+        
+        cartCount++;
+        countBadge.textContent = cartCount;
+
+        cartTarget.classList.add("bounce-animation");
+        
+        setTimeout(() => {
+          cartTarget.classList.remove("bounce-animation");
+        }, 500);
+
+      }, 800);
     }
 
     // Inicializar calculadora
