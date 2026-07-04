@@ -1,0 +1,134 @@
+[
+  {
+    "id": "yerba-canarias-edicion-especial-1kg",
+    "nombre": "YERBA MATE CANARIAS EDICIÓN ESPECIAL 1 KG",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE CANARIAS EDICIÓN ESPECIAL 1 KG. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 8500,
+    "imagen": "assets/images/yerba-canarias-edicion-especial-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "canarias",
+    "variantes": [],
+    "destacado": true
+  },
+  {
+    "id": "yerba-canarias-jengibre-te-verde-1kg",
+    "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE 1 KG",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE 1 KG. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 8500,
+    "imagen": "assets/images/yerba-canarias-jengibre-te-verde-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "canarias",
+    "variantes": [],
+    "destacado": true
+  },
+  {
+    "id": "yerba-baldo-tradicional-500g",
+    "nombre": "YERBA MATE BALDO TRADICIONAL 500 GR",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE BALDO TRADICIONAL 500 GR. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 4500,
+    "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "variantes": [],
+    "destacado": true
+  },
+  {
+    "id": "yerba-yerba-pindare-1kg",
+    "nombre": "YERBA PINDARE 1 KG",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA PINDARE 1 KG. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 11500,
+    "imagen": "assets/images/yerba-yerba-pindare-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-rei-verde-tradicional-500g",
+    "nombre": "YERBA MATE REI VERDE TRADICIONAL 500 GR",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE REI VERDE TRADICIONAL 500 GR. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 4500,
+    "imagen": "assets/images/yerba-rei-verde-tradicional-500g.png",
+    "categoria": "yerbas",
+    "subcategoria": "rei-verde",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-rei-verde-tradicional-1kg",
+    "nombre": "YERBA MATE REI VERDE TRADICIONAL 1 KG",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE REI VERDE TRADICIONAL 1 KG. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 7000,
+    "imagen": "assets/images/yerba-rei-verde-tradicional-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "rei-verde",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-verdecita-sin-palo-1kg",
+    "nombre": "YERBA MATE VERDE CITA SIN PALO 1 KG",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE VERDE CITA SIN PALO 1 KG. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 7000,
+    "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-canarias-serena-500g",
+    "nombre": "YERBA MATE CANARIAS SERENA 500 GR",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE CANARIAS SERENA 500 GR. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-canarias-serena-500g.png",
+    "categoria": "yerbas",
+    "subcategoria": "canarias",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-canarias-jengibre-te-verde-500g",
+    "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE 500 GR",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE 500 GR. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.png",
+    "categoria": "yerbas",
+    "subcategoria": "canarias",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-canarias-serena-1kg",
+    "nombre": "YERBA MATE CANARIAS SERENA 1 KG",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE CANARIAS SERENA 1 KG. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 8500,
+    "imagen": "assets/images/yerba-canarias-serena-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "canarias",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-rei-verde-premium-export-500g",
+    "nombre": "YERBA MATE REI VERDE PREMIUM EXPORT 500 GR",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE REI VERDE PREMIUM EXPORT 500 GR. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 4500,
+    "imagen": "assets/images/yerba-rei-verde-premium-export-500g.png",
+    "categoria": "yerbas",
+    "subcategoria": "rei-verde",
+    "variantes": [],
+    "destacado": false
+  },
+  {
+    "id": "yerba-rei-verde-premium-1kg",
+    "nombre": "YERBA MATE REI VERDE PREMIUM 1 KG",
+    "descripcion": "Disfrutá del sabor auténtico y la calidad superior de la Yerba Mate YERBA MATE REI VERDE PREMIUM 1 KG. Edición importada y seleccionada por El Buen Cebar, ideal para cebadas de larga duración, estables y de sabor persistente....",
+    "precio": 7000,
+    "imagen": "assets/images/yerba-rei-verde-premium-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "rei-verde",
+    "variantes": [],
+    "destacado": false
+  }
+]
