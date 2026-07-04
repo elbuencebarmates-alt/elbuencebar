@@ -1050,7 +1050,7 @@ const PRODUCTOS = [
   {
     "id": "mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela",
     "nombre": "MOCHILA/BOLSO MATERO + CHAULATA  con detalles en suela",
-    "categoria": "materas",
+    "categoria": "bolsos",
     "subcategoria": "mochila",
     "precio": 17990,
     "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
@@ -1077,8 +1077,8 @@ const PRODUCTOS = [
   {
     "id": "bolsito-viral-tik-tok-con-chaulata",
     "nombre": "Bolso matero cuerina PREMIUN con sujetador de termo + yerbero + azucarero",
-    "categoria": "termos",
-    "subcategoria": "media-manija",
+    "categoria": "bolsos",
+    "subcategoria": "bolso",
     "precio": 12460,
     "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
     "descripcion": "Bolsito de tela con chaulata.\r\n\r\nApto para termo stanley de 1,4",
@@ -1104,8 +1104,8 @@ const PRODUCTOS = [
   {
     "id": "bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia",
     "nombre": "Bolso matero tela PREMIUN con sujetador de termo + yerbero + azucarero",
-    "categoria": "termos",
-    "subcategoria": "media-manija",
+    "categoria": "bolsos",
+    "subcategoria": "bolso",
     "precio": 10680,
     "imagen": "assets/images/bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia.jpeg",
     "descripcion": "Bolsito de tela con chaulata",
@@ -1119,7 +1119,7 @@ const PRODUCTOS = [
   {
     "id": "mochila-bolso-matero-animal-print-con-chaulatas",
     "nombre": "Mochila / Bolso matero animal print con chaulatas",
-    "categoria": "materas",
+    "categoria": "bolsos",
     "subcategoria": "mochila",
     "precio": 10790,
     "imagen": "assets/images/mochila-bolso-matero-animal-print-con-chaulatas.jpeg",
