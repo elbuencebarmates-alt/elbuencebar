@@ -193,277 +193,148 @@
       transition: all 0.8s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     }
 
-    /* 2. ESTILOS DEL COMBO PERSONALIZADO FLEXIBLE */
-    .product-mockup-page {
+    /* 2. ESTILOS DEL SIMULADOR DE GRABADO LÁSER */
+    .engrave-simulator-grid {
       display: grid;
-      grid-template-columns: 1fr 1.2fr;
+      grid-template-columns: 1.3fr 1.7fr;
       gap: 40px;
-      border: 1px solid var(--color-border);
-      background-color: var(--color-bg-secondary);
-      border-radius: var(--radius-lg);
-      padding: 30px;
-      margin-bottom: 40px;
+      align-items: start;
     }
 
-    .product-mockup-img {
+    /* Panel de previsualización (Mate SVG) */
+    .engrave-preview-box {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 130px;
+    }
+
+    .canvas-container-svg {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
       background-color: var(--color-bg-primary);
       border-radius: var(--radius-md);
       border: 1px solid var(--color-border);
-      aspect-ratio: 1.1 / 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .product-mockup-img img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-
-    .product-mockup-details {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .product-mockup-details h3 {
-      font-size: 1.8rem;
-      color: var(--color-primary);
-      margin-bottom: 8px;
-    }
-
-    .product-mockup-price {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--color-accent);
+      overflow: hidden;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
       margin-bottom: 20px;
     }
 
-    .combo-banner-activation {
-      border: 1.5px dashed var(--color-accent-light);
-      background-color: rgba(184, 125, 75, 0.05);
-      border-radius: var(--radius-md);
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-    /* Barra Flotante del Combo (Sticky Bottom Bar en el simulador) */
-    .combo-sticky-bar {
-      position: sticky;
-      bottom: 20px;
-      left: 0;
-      right: 0;
+    .svg-canvas {
       width: 100%;
-      background-color: var(--color-primary);
-      color: var(--color-bg-primary);
-      border-radius: var(--radius-lg);
-      padding: 20px 30px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      border: 2px solid var(--color-accent);
-      transform: translateY(120%);
-      transition: transform var(--transition-normal);
-      margin-top: 40px;
+      height: 100%;
     }
 
-    .combo-sticky-bar--active {
-      transform: translateY(0);
+    /* Estilos aplicables al texto grabado en la virola */
+    .engraved-text-svg {
+      fill: #4b3e35;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      filter: drop-shadow(0px 1px 1px rgba(255,255,255,0.3));
+      transition: fill 0.3s, font-family 0.3s, font-size 0.3s;
     }
 
-    .combo-bar-left {
-      display: flex;
-      align-items: center;
-      gap: 20px;
+    .engraved-text-svg--deep {
+      fill: #221c17;
+      filter: drop-shadow(0px 0.5px 0.5px rgba(255,255,255,0.1));
     }
 
-    .combo-bar-items-list {
+    /* Panel de controles de grabado */
+    .engrave-controls {
       display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .control-group-engrave {
+      display: flex;
+      flex-direction: column;
       gap: 10px;
     }
 
-    .combo-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: var(--radius-full);
-      background-color: var(--color-bg-primary);
-      border: 2px solid var(--color-accent);
-      padding: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      animation: avatarPop 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
-    }
-
-    @keyframes avatarPop {
-      0% { transform: scale(0); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    .combo-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .combo-avatar-remove {
-      position: absolute;
-      top: -4px;
-      right: -4px;
-      width: 16px;
-      height: 16px;
-      background-color: var(--color-error);
-      color: var(--color-bg-primary);
-      font-size: 10px;
+    .control-group-engrave label {
+      font-size: 0.95rem;
       font-weight: 700;
-      border-radius: var(--radius-full);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      border: 1px solid var(--color-bg-primary);
-    }
-
-    .combo-bar-info {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .combo-bar-status {
-      font-weight: 700;
-      font-size: 1.05rem;
-      letter-spacing: 0.02em;
-    }
-
-    .combo-bar-price {
-      font-size: 0.9rem;
-      color: var(--color-accent-light);
-    }
-
-    .combo-bar-actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .btn-combo-cancel {
-      background: transparent;
-      border: 1px solid var(--color-border);
-      color: var(--color-bg-primary);
-      padding: 10px 20px;
-      border-radius: var(--radius-full);
-      cursor: pointer;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: all var(--transition-fast);
-    }
-
-    .btn-combo-cancel:hover {
-      background-color: rgba(255,255,255,0.1);
-      border-color: var(--color-bg-primary);
-    }
-
-    /* Modal de confirmación del combo */
-    .combo-modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.6);
-      z-index: 10000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity var(--transition-normal);
-    }
-
-    .combo-modal-overlay--active {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .combo-modal {
-      background-color: var(--color-bg-primary);
-      border: 2px solid var(--color-primary);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-      width: 100%;
-      max-width: 500px;
-      box-shadow: var(--shadow-lg);
-      transform: translateY(20px);
-      transition: transform var(--transition-normal);
-    }
-
-    .combo-modal-overlay--active .combo-modal {
-      transform: translateY(0);
-    }
-
-    .combo-modal h4 {
-      font-size: 1.5rem;
       color: var(--color-primary);
-      margin-bottom: 20px;
-      border-bottom: 2px solid var(--color-border);
-      padding-bottom: 12px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
 
-    .combo-modal-items {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
+    .control-group-engrave input[type="text"] {
+      padding: 14px 20px;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-bg-primary);
+      border-radius: var(--radius-md);
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-transform: uppercase;
+    }
+
+    .control-group-engrave input[type="text"]::placeholder {
+      color: var(--color-text-muted);
+      text-transform: none;
+    }
+
+    /* Selectores en formato pastilla/tarjeta */
+    .choice-grid-engrave {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 12px;
-      margin-bottom: 24px;
-      font-size: 0.95rem;
     }
 
-    .combo-modal-items li {
-      display: flex;
-      justify-content: space-between;
+    .choice-card-engrave {
+      border: 1px solid var(--color-border);
+      background-color: var(--color-bg-primary);
+      border-radius: var(--radius-md);
+      padding: 12px 6px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
       color: var(--color-text-secondary);
+      transition: all var(--transition-fast);
+      text-transform: uppercase;
     }
 
-    .combo-modal-total {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--color-accent);
-      border-top: 2px solid var(--color-border);
-      padding-top: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 30px;
+    .choice-card-engrave:hover {
+      border-color: var(--color-accent-light);
+      background-color: var(--color-bg-secondary);
     }
 
-    .combo-modal-total span {
-      font-size: 0.95rem;
+    .choice-card-engrave--active {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary);
+      color: var(--color-bg-primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .engrave-summary-card {
+      background-color: rgba(184, 125, 75, 0.05);
+      border: 1px dashed var(--color-accent-light);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      font-size: 0.9rem;
       color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    .engrave-summary-card strong {
+      color: var(--color-primary);
     }
 
     @media (max-width: 992px) {
-      .product-mockup-page {
+      .engrave-simulator-grid {
         grid-template-columns: 1fr;
       }
-      .combo-sticky-bar {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        align-items: stretch;
-      }
-      .combo-bar-left {
-        flex-direction: column;
-      }
-      .combo-bar-actions {
-        justify-content: center;
+      .engrave-preview-box {
+        position: static;
       }
     }
   </style>
@@ -474,399 +345,224 @@
   <header class="proto-header">
     <div class="container">
       <h1>PROPUESTA DE MEJORA INTERACTIVA</h1>
-      <p>Prototipo funcional e interactivo para visualizar el nuevo flujo de Combo Personalizado Flexible.</p>
+      <p>Prototipo funcional de la idea: Simulador de Grabado Láser Personalizado en Virola de Mate.</p>
       <a href="index.html" class="btn btn--secondary btn--sm" style="margin-top: 20px;">Volver a la Web Principal</a>
     </div>
   </header>
 
   <main class="container">
 
-    <!-- SECCIÓN 1: MICRO-INTERACCIONES (YA APROBADAS E INTEGRADAS) -->
+    <!-- SECCIÓN 1: MICRO-INTERACCIONES (YA INTEGRADAS) -->
     <section style="margin-bottom: 60px; opacity: 0.6;">
-      <h2 class="proto-section-title" style="font-size: 1.5rem;">1. Micro-interacciones ya integradas (Hover y Carrito)</h2>
-      <p style="font-size: 0.9rem;">Estas animaciones ya fueron integradas con éxito en el catálogo principal de la web.</p>
+      <h2 class="proto-section-title" style="font-size: 1.4rem;">1. Micro-interacciones ya integradas</h2>
+      <p style="font-size: 0.9rem;">Las animaciones de hover y vuelo al carrito ya están configuradas en la tienda.</p>
     </section>
 
-    <!-- SECCIÓN 2: PROTOTIPO DE COMBO PERSONALIZADO FLEXIBLE -->
+    <!-- SECCIÓN 2: SIMULADOR DE GRABADO LÁSER -->
     <section style="margin-bottom: 120px;">
-      <h2 class="proto-section-title">2. Flujo de Combo Personalizado Flexible</h2>
-      <p class="section-subtitle">Simulación de cómo iniciás un combo desde un producto y sumás artículos libremente desde el catálogo</p>
+      <h2 class="proto-section-title">2. Simulador de Grabado Láser en Virola (Idea 2)</h2>
+      <p class="section-subtitle">Simulación en tiempo real de cómo quedaría un texto grabado en relieve sobre la virola metálica del mate</p>
 
       <div class="proto-card">
-        
-        <!-- FASE A: SIMULADOR DE FICHA DE PRODUCTO -->
-        <h3 style="font-size: 1.2rem; color: var(--color-accent); text-transform: uppercase; margin-bottom: 16px; font-weight: 700;">
-          Fase A: Ficha de Producto (Detalles del Mate)
-        </h3>
-        
-        <div class="product-mockup-page" id="mockup-product-page">
-          <div class="product-mockup-img">
-            <img src="assets/images/mate-imperial-boca-ancha-negro.png" alt="Mate Imperial">
-          </div>
-          <div class="product-mockup-details">
-            <h3>MATE IMPERIAL PREMIUM BOCA ANCHA</h3>
-            <div class="product-mockup-price">$40.000</div>
-            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 24px;">
-              Mate de calabaza premium forrado en cuero legítimo con costura cruzada y virola cincelada de alpaca de boca ancha.
-            </p>
-            
-            <button class="btn btn--secondary btn--full" style="justify-content: center; margin-bottom: 12px;">
-              Agregar al Carrito Simple
-            </button>
-            
-            <div class="combo-banner-activation">
-              <h4 style="font-size: 1rem; color: var(--color-primary); margin-bottom: 8px; font-weight: 700;">🎁 ¡CON DESCUENTO DEL 10%!</h4>
-              <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 16px;">
-                Sumá este producto a un Combo Personalizado (mínimo 3 productos de cualquier categoría) y obtené un 10% de descuento en el total.
-              </p>
-              <button class="btn btn--accent btn--full" style="justify-content: center;" onclick="activarModoCombo()">
-                ✨ Iniciar Combo con este Mate
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- FASE B: SIMULADOR DE CATÁLOGO EN MODO COMBO -->
-        <div id="mockup-catalog-section" style="display: none; border-top: 2px dashed var(--color-border); padding-top: 40px; margin-top: 40px;">
-          <h3 style="font-size: 1.2rem; color: var(--color-accent); text-transform: uppercase; margin-bottom: 16px; font-weight: 700;">
-            Fase B: Catálogo de Productos (Modo Combo Activado)
-          </h3>
-          <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 30px;">
-            Seleccioná al menos 2 productos adicionales de la grilla de abajo para completar tu combo.
-          </p>
-
-          <div class="interaction-grid">
-            
-            <!-- Producto 1: Bombillón Classic -->
-            <div class="hover-card">
-              <div class="hover-card__image-container">
-                <img class="hover-card__image" src="assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg" alt="Bombillón Classic">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__meta">BOMBILLAS</span>
-                <h3 class="product-card__title">BOMBILLÓN CLASSIC ALPACA</h3>
-                <div class="product-card__price-box">
-                  <span class="product-card__price">$20.000</span>
-                </div>
-                <div class="product-card__actions">
-                  <button class="btn btn--accent btn--sm btn--full" onclick="agregarAlCombo('BOMBILLÓN CLASSIC ALPACA', 20000, 'assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg', this)">
-                    ➕ Agregar al Combo
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 2: Termo Negro -->
-            <div class="hover-card">
-              <div class="hover-card__image-container">
-                <img class="hover-card__image" src="assets/images/termo-media-manija-total-black.png" alt="Termo Negro">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__meta">TERMOS</span>
-                <h3 class="product-card__title">TERMO MEDIA MANIJA NEGRO</h3>
-                <div class="product-card__price-box">
-                  <span class="product-card__price">$33.241</span>
-                </div>
-                <div class="product-card__actions">
-                  <button class="btn btn--accent btn--sm btn--full" onclick="agregarAlCombo('TERMO MEDIA MANIJA NEGRO', 33241, 'assets/images/termo-media-manija-total-black.png', this)">
-                    ➕ Agregar al Combo
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 3: Canasta -->
-            <div class="hover-card">
-              <div class="hover-card__image-container">
-                <img class="hover-card__image" src="assets/images/media-canasta-cuero-negro.png" alt="Matera Canasta">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__meta">MATERAS</span>
-                <h3 class="product-card__title">MEDIA CANASTA DE CUERO</h3>
-                <div class="product-card__price-box">
-                  <span class="product-card__price">$54.055</span>
-                </div>
-                <div class="product-card__actions">
-                  <button class="btn btn--accent btn--sm btn--full" onclick="agregarAlCombo('MEDIA CANASTA DE CUERO', 54055, 'assets/images/media-canasta-cuero-negro.png', this)">
-                    ➕ Agregar al Combo
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 4: Set Yerbero -->
-            <div class="hover-card">
-              <div class="hover-card__image-container">
-                <img class="hover-card__image" src="assets/images/set-yerbero-negro-mate.png" alt="Set Yerbero">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__meta">YERBERAS</span>
-                <h3 class="product-card__title">SET YERBERO NEGRO MATE</h3>
-                <div class="product-card__price-box">
-                  <span class="product-card__price">$18.000</span>
-                </div>
-                <div class="product-card__actions">
-                  <button class="btn btn--accent btn--sm btn--full" onclick="agregarAlCombo('SET YERBERO NEGRO MATE', 18000, 'assets/images/set-yerbero-negro-mate.png', this)">
-                    ➕ Agregar al Combo
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 5: Vaso Fernetero -->
-            <div class="hover-card">
-              <div class="hover-card__image-container">
-                <img class="hover-card__image" src="assets/images/termos-vaso-fernetero.png" alt="Vaso Fernetero">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__meta">VASOS</span>
-                <h3 class="product-card__title">VASO FERNETERO LISO NEGRO</h3>
-                <div class="product-card__price-box">
-                  <span class="product-card__price">$5.000</span>
-                </div>
-                <div class="product-card__actions">
-                  <button class="btn btn--accent btn--sm btn--full" onclick="agregarAlCombo('VASO FERNETERO LISO NEGRO', 5000, 'assets/images/termos-vaso-fernetero.png', this)">
-                    ➕ Agregar al Combo
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Producto 6: Luz Mate -->
-            <div class="hover-card">
-              <div class="hover-card__image-container">
-                <img class="hover-card__image" src="assets/images/accesorios-luz-mate.png" alt="Luz Mate">
-              </div>
-              <div class="product-card__content">
-                <span class="product-card__meta">ACCESORIOS</span>
-                <h3 class="product-card__title">LUZ MATE COLORES SURTIDOS</h3>
-                <div class="product-card__price-box">
-                  <span class="product-card__price">$5.000</span>
-                </div>
-                <div class="product-card__actions">
-                  <button class="btn btn--accent btn--sm btn--full" onclick="agregarAlCombo('LUZ MATE COLORES SURTIDOS', 5000, 'assets/images/accesorios-luz-mate.png', this)">
-                    ➕ Agregar al Combo
-                  </button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- BARRA FLOTANTE INTERACTIVA (SIMULADA STICKY) -->
-        <div class="combo-sticky-bar" id="combo-bar">
-          <div class="combo-bar-left">
-            <div class="combo-bar-items-list" id="combo-bar-items">
-              <!-- JS INJECT AVATARS -->
-            </div>
-            
-            <div class="combo-bar-info">
-              <div class="combo-bar-status" id="combo-bar-status">Combo Personalizado (1/3)</div>
-              <div class="combo-bar-price" id="combo-bar-price">Subtotal: $40.000</div>
-            </div>
-          </div>
+        <div class="engrave-simulator-grid">
           
-          <div class="combo-bar-actions">
-            <button class="btn-combo-cancel" onclick="cancelarCombo()">Cancelar</button>
-            <button class="btn btn--accent btn--sm" id="btn-combo-finish" disabled onclick="abrirConfirmacionCombo()">
-              Finalizar Combo
-            </button>
+          <!-- LADO IZQUIERDO: Previsualización en Tiempo Real -->
+          <div class="engrave-preview-box">
+            <div class="canvas-container-svg">
+              <svg class="svg-canvas" viewBox="0 0 400 400" id="virola-svg">
+                <!-- Imagen del Mate de Fondo -->
+                <image href="assets/images/mate-imperial-croco-negro.png" x="0" y="0" width="400" height="400" />
+                
+                <!-- Path invisible para guiar el texto curvado en el labio frontal de la virola -->
+                <!-- M 120,135 Q 200,158 280,135 -->
+                <path id="curve-path" d="M 115,135 Q 200,156 285,135" fill="none" stroke="none" />
+                
+                <!-- Texto grabado curvado -->
+                <text font-size="12.5" class="engraved-text-svg" id="engraved-text-element">
+                  <textPath href="#curve-path" startOffset="50%" text-anchor="middle" id="engraved-text-path">
+                    TU NOMBRE AQUÍ
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+            
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); font-style: italic;">
+              * Vista previa digital aproximada. El tono del grabado final puede variar según la dureza del metal de la virola.
+            </p>
           </div>
-        </div>
 
+          <!-- LADO DERECHO: Panel de Controles -->
+          <div class="engrave-controls">
+            
+            <!-- Entrada de texto -->
+            <div class="control-group-engrave">
+              <label for="engrave-text-input">1. Escribí tu Grabado (Máx 18 letras):</label>
+              <input type="text" id="engrave-text-input" placeholder="Ej: EL BUEN CEBAR" maxlength="18" oninput="updateEngraveText()">
+            </div>
+
+            <!-- Estilo de Fuente -->
+            <div class="control-group-engrave">
+              <label>2. Tipografía del Grabado:</label>
+              <div class="choice-grid-engrave">
+                <div class="choice-card-engrave choice-card-engrave--active" onclick="setEngraveFont(this, 'Times New Roman, serif')">
+                  Romana Elegante
+                </div>
+                <div class="choice-card-engrave" onclick="setEngraveFont(this, 'Arial, Helvetica, sans-serif')">
+                  Gótica Moderna
+                </div>
+                <div class="choice-card-engrave" onclick="setEngraveFont(this, 'Brush Script MT, cursive')">
+                  Cursiva Cincelada
+                </div>
+              </div>
+            </div>
+
+            <!-- Adornos / Símbolos laterales -->
+            <div class="control-group-engrave">
+              <label>3. Agregar Símbolos a los Costados:</label>
+              <div class="choice-grid-engrave">
+                <div class="choice-card-engrave choice-card-engrave--active" onclick="setEngraveSymbol(this, 'none')">
+                  Sin símbolos
+                </div>
+                <div class="choice-card-engrave" onclick="setEngraveSymbol(this, 'stars')">
+                  ⭐ Estrellas ⭐
+                </div>
+                <div class="choice-card-engrave" onclick="setEngraveSymbol(this, 'suns')">
+                  ☀️ Soles ☀️
+                </div>
+              </div>
+            </div>
+
+            <!-- Tipo de Grabado / Profundidad -->
+            <div class="control-group-engrave">
+              <label>4. Acabado de la Profundidad:</label>
+              <div class="choice-grid-engrave">
+                <div class="choice-card-engrave choice-card-engrave--active" onclick="setEngraveDepth(this, 'light')">
+                  Láser Superficial
+                </div>
+                <div class="choice-card-engrave" onclick="setEngraveDepth(this, 'deep')">
+                  Cincelado Oscuro
+                </div>
+              </div>
+            </div>
+
+            <!-- Resumen de Costo y Checkout -->
+            <div class="engrave-summary-card">
+              <p style="margin-bottom: 8px;">
+                Grabado personalizado de virola: <strong>Adicional $5.000</strong>
+              </p>
+              <p>
+                Este grabado artesanal demora **24 a 48 horas hábiles** adicionales de producción. Cuando compres por WhatsApp, este grabado quedará guardado para tu pedido.
+              </p>
+            </div>
+
+            <button class="btn btn--accent btn--full" style="justify-content: center; padding: 16px;" onclick="pedirGrabadoPorWhatsApp()">
+              Pedir Mate con este Grabado
+            </button>
+
+          </div>
+
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- MODAL DE CHECKOUT DEL COMBO -->
-  <div class="combo-modal-overlay" id="combo-modal">
-    <div class="combo-modal">
-      <h4>¡Tu Combo Está Listo!</h4>
-      <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 20px;">
-        Revisá los componentes de tu set personalizado antes de proceder al pedido:
-      </p>
-      
-      <ul class="combo-modal-items" id="combo-modal-list">
-        <!-- JS INJECT LIST -->
-      </ul>
-      
-      <div class="combo-modal-total">
-        <span>Total con 10% OFF:</span>
-        <span id="combo-modal-total-price">$0</span>
-      </div>
-      
-      <div style="display: flex; gap: 12px;">
-        <button class="btn btn--secondary btn--full" onclick="cerrarConfirmacionCombo()">Volver</button>
-        <button class="btn btn--accent btn--full" onclick="pedirComboPorWhatsApp()">Pedir por WhatsApp</button>
-      </div>
-    </div>
-  </div>
-
   <!-- Script del Prototipo -->
   <script>
-    // ESTADO DEL COMBO PERSONALIZADO
-    let comboItems = [];
-    const minItems = 3;
+    // Variables de configuración de grabado
+    let textBase = "TU NOMBRE AQUÍ";
+    let selectedFont = "Times New Roman, serif";
+    let selectedSymbol = "none";
+    let selectedDepth = "light";
 
-    function activarModoCombo() {
-      // Ocultar botón inicial e iniciar el combo con el Mate
-      comboItems = [
-        {
-          nombre: "MATE IMPERIAL PREMIUM BOCA ANCHA",
-          precio: 40000,
-          imagen: "assets/images/mate-imperial-boca-ancha-negro.png"
-        }
-      ];
-
-      // Mostrar el catálogo simulado
-      document.getElementById("mockup-catalog-section").style.display = "block";
+    function updateEngraveText() {
+      const input = document.getElementById("engrave-text-input");
+      textBase = input.value.trim().toUpperCase();
       
-      // Mostrar y activar la barra de combo
-      const bar = document.getElementById("combo-bar");
-      bar.classList.add("combo-sticky-bar--active");
+      if (textBase === "") {
+        textBase = "TU NOMBRE AQUÍ";
+      }
 
-      // Hacer scroll suave hacia el catálogo
-      document.getElementById("mockup-catalog-section").scrollIntoView({ behavior: 'smooth' });
-
-      actualizarBarraCombo();
+      applyGrabado();
     }
 
-    function agregarAlCombo(nombre, precio, imagen, btnElement) {
-      // Agregar elemento
-      comboItems.push({ nombre, precio, imagen });
-      
-      // Deshabilitar botón temporalmente para dar feedback
-      btnElement.disabled = true;
-      btnElement.textContent = "✓ Agregado";
-      setTimeout(() => {
-        btnElement.disabled = false;
-        btnElement.textContent = "➕ Agregar al Combo";
-      }, 1000);
+    function setEngraveFont(cardElement, fontFamily) {
+      // Toggle clase activa
+      const cards = cardElement.parentNode.querySelectorAll(".choice-card-engrave");
+      cards.forEach(c => c.classList.remove("choice-card-engrave--active"));
+      cardElement.classList.add("choice-card-engrave--active");
 
-      // Animación de vuelo del producto a la barra del combo
-      const imgToClone = btnElement.closest(".hover-card").querySelector(".hover-card__image");
-      const barTarget = document.getElementById("combo-bar-items");
-      if (imgToClone && barTarget) {
-        const imgRect = imgToClone.getBoundingClientRect();
-        const targetRect = barTarget.getBoundingClientRect();
+      selectedFont = fontFamily;
+      applyGrabado();
+    }
 
-        const clone = document.createElement("img");
-        clone.src = imgToClone.src;
-        clone.classList.add("flying-image");
-        clone.style.left = `${imgRect.left}px`;
-        clone.style.top = `${imgRect.top}px`;
-        clone.style.width = `${imgRect.width}px`;
-        clone.style.height = `${imgRect.height}px`;
+    function setEngraveSymbol(cardElement, symbolType) {
+      const cards = cardElement.parentNode.querySelectorAll(".choice-card-engrave");
+      cards.forEach(c => c.classList.remove("choice-card-engrave--active"));
+      cardElement.classList.add("choice-card-engrave--active");
 
-        document.body.appendChild(clone);
+      selectedSymbol = symbolType;
+      applyGrabado();
+    }
 
-        requestAnimationFrame(() => {
-          clone.style.left = `${targetRect.left + 20}px`;
-          clone.style.top = `${targetRect.top + window.scrollY + 10}px`;
-          clone.style.width = "40px";
-          clone.style.height = "40px";
-          clone.style.opacity = "0.4";
-        });
+    function setEngraveDepth(cardElement, depthType) {
+      const cards = cardElement.parentNode.querySelectorAll(".choice-card-engrave");
+      cards.forEach(c => c.classList.remove("choice-card-engrave--active"));
+      cardElement.classList.add("choice-card-engrave--active");
 
-        setTimeout(() => {
-          clone.remove();
-          actualizarBarraCombo();
-        }, 800);
+      selectedDepth = depthType;
+      applyGrabado();
+    }
+
+    function applyGrabado() {
+      const textPathElement = document.getElementById("engraved-text-path");
+      const textElement = document.getElementById("engraved-text-element");
+
+      // Construir texto final con símbolos
+      let textFinal = textBase;
+      if (selectedSymbol === "stars") {
+        textFinal = `★  ${textBase}  ★`;
+      } else if (selectedSymbol === "suns") {
+        textFinal = `☀️  ${textBase}  ☀️`;
+      }
+
+      // Aplicar texto
+      textPathElement.textContent = textFinal;
+
+      // Aplicar tipografía
+      textElement.style.fontFamily = selectedFont;
+
+      // Ajustar tamaño para cursiva (suele necesitar ser más grande para legibilidad)
+      if (selectedFont.includes("Brush")) {
+        textElement.setAttribute("font-size", "15");
+        textElement.setAttribute("letter-spacing", "0.05em");
       } else {
-        actualizarBarraCombo();
+        textElement.setAttribute("font-size", "12.5");
+        textElement.setAttribute("letter-spacing", "0.15em");
       }
-    }
 
-    function removerDelCombo(index) {
-      comboItems.splice(index, 1);
-      actualizarBarraCombo();
-      
-      // Si eliminamos el primer elemento y queda vacío, cancelar combo
-      if (comboItems.length === 0) {
-        cancelarCombo();
-      }
-    }
-
-    function actualizarBarraCombo() {
-      const containerAvatars = document.getElementById("combo-bar-items");
-      const statusText = document.getElementById("combo-bar-status");
-      const priceText = document.getElementById("combo-bar-price");
-      const finishBtn = document.getElementById("btn-combo-finish");
-
-      // Pintar Avatars
-      containerAvatars.innerHTML = comboItems.map((item, idx) => `
-        <div class="combo-avatar">
-          <img src="${item.imagen}" alt="${item.nombre}">
-          <span class="combo-avatar-remove" onclick="removerDelCombo(${idx})">×</span>
-        </div>
-      `).join("");
-
-      // Calcular Precios
-      const subtotal = comboItems.reduce((acc, item) => acc + item.precio, 0);
-      const count = comboItems.length;
-
-      priceText.textContent = `Subtotal: $${subtotal.toLocaleString('es-AR')}`;
-
-      if (count < minItems) {
-        statusText.textContent = `Combo Personalizado (${count}/${minItems})`;
-        finishBtn.disabled = true;
-        finishBtn.textContent = `Faltan ${minItems - count} producto${minItems - count > 1 ? 's' : ''}`;
+      // Aplicar profundidad (estilos CSS/relleno)
+      if (selectedDepth === "deep") {
+        textElement.classList.add("engraved-text-svg--deep");
       } else {
-        const desc = Math.round(subtotal * 0.1);
-        const total = subtotal - desc;
-        statusText.textContent = `¡Combo Listo! (10% de descuento)`;
-        priceText.textContent = `Subtotal: $${subtotal.toLocaleString('es-AR')} ➔ Total: $${total.toLocaleString('es-AR')}`;
-        finishBtn.disabled = false;
-        finishBtn.textContent = "Finalizar Combo";
+        textElement.classList.remove("engraved-text-svg--deep");
       }
     }
 
-    function cancelarCombo() {
-      comboItems = [];
-      document.getElementById("mockup-catalog-section").style.display = "none";
-      document.getElementById("combo-bar").classList.remove("combo-sticky-bar--active");
-      document.getElementById("mockup-product-page").scrollIntoView({ behavior: 'smooth' });
-    }
+    function pedirGrabadoPorWhatsApp() {
+      const grabadoFinal = document.getElementById("engraved-text-path").textContent;
+      const estiloAcabado = selectedDepth === "deep" ? "Cincelado Oscuro" : "Láser Superficial";
+      const tipoTipografia = selectedFont.includes("Times") ? "Romana" : (selectedFont.includes("Arial") ? "Gótica" : "Cursiva");
 
-    // CONFIRMACIÓN Y CHECKOUT
-    function abrirConfirmacionCombo() {
-      const modal = document.getElementById("combo-modal");
-      const list = document.getElementById("combo-modal-list");
-      const totalPrice = document.getElementById("combo-modal-total-price");
-
-      list.innerHTML = comboItems.map(item => `
-        <li><span>${item.nombre}</span> <strong>$${item.precio.toLocaleString('es-AR')}</strong></li>
-      `).join("");
-
-      const subtotal = comboItems.reduce((acc, item) => acc + item.precio, 0);
-      const discount = Math.round(subtotal * 0.1);
-      const total = subtotal - discount;
-
-      totalPrice.textContent = `$${total.toLocaleString('es-AR')}`;
-      modal.classList.add("combo-modal-overlay--active");
-    }
-
-    function cerrarConfirmacionCombo() {
-      document.getElementById("combo-modal").classList.remove("combo-modal-overlay--active");
-    }
-
-    function pedirComboPorWhatsApp() {
-      const subtotal = comboItems.reduce((acc, item) => acc + item.precio, 0);
-      const discount = Math.round(subtotal * 0.1);
-      const total = subtotal - discount;
-
-      let mensaje = `Hola El Buen Cebar! Armé un Combo Personalizado Flexible:\n\n`;
-      comboItems.forEach((item, idx) => {
-        mensaje += `${idx + 1}. ${item.nombre} ($${item.precio.toLocaleString('es-AR')})\n`;
-      });
-      mensaje += `\n🔥 Descuento Combo (10%): -$${discount.toLocaleString('es-AR')}\n` +
-                 `💵 Total a pagar: $${total.toLocaleString('es-AR')}`;
+      const mensaje = `Hola El Buen Cebar! Me gustaría encargar un Mate Imperial con virola personalizada:\n\n` +
+                      `🧉 Producto: MATE IMPERIAL PREMIUM CROCO\n` +
+                      `✍️ Texto de Grabado: "${grabadoFinal}"\n` +
+                      `🔠 Tipografía: ${tipoTipografia}\n` +
+                      `🛠️ Tipo de Acabado: ${estiloAcabado}\n\n` +
+                      `💵 Adicional grabado: $5.000`;
 
       const url = `https://wa.me/5491131102604?text=${encodeURIComponent(mensaje)}`;
       window.open(url, "_blank");
-      cerrarConfirmacionCombo();
     }
   </script>
 </body>
