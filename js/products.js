@@ -40,7 +40,7 @@ const PRODUCTOS = [
     "nombre": "Mate Imperial Croco y Repujado",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 50000,
+    "precio": 103455,
     "imagen": "assets/images/mate-imperial-croco-negro.png",
     "descripcion": "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
     "destacado": true,
@@ -54,22 +54,22 @@ const PRODUCTOS = [
       {
         "nombre": "Imperial cuero croco negro",
         "imagen": "assets/images/mate-imperial-croco-negro.png",
-        "precio": 50000
+        "precio": 103455
       },
       {
         "nombre": "Imperial cuero croco marron",
         "imagen": "assets/images/mate-imperial-croco-marron.png",
-        "precio": 50000
+        "precio": 103455
       },
       {
         "nombre": "Imperial argentina cuero repujado negro",
         "imagen": "assets/images/mate-imperial-repujado-negro.png",
-        "precio": 55000
+        "precio": 103455
       },
       {
         "nombre": "Imperial cuero croco rosa",
         "imagen": "assets/images/mate-imperial-croco-rosa.png",
-        "precio": 50000
+        "precio": 103455
       }
     ]
   },
@@ -78,7 +78,7 @@ const PRODUCTOS = [
     "nombre": "Imperial con base de alpaca",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 50000,
+    "precio": 85491,
     "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
     "descripcion": "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
     "destacado": true,
@@ -92,27 +92,27 @@ const PRODUCTOS = [
       {
         "nombre": "cuero marron repujado pelota",
         "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
-        "precio": 50000
+        "precio": 85491
       },
       {
         "nombre": "cuero negro liso",
         "imagen": "assets/images/mate-imperial-base-alpaca-negro.png",
-        "precio": 55000
+        "precio": 85491
       },
       {
         "nombre": "con base de alpaca calada negro",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-negro.png",
-        "precio": 60000
+        "precio": 85491
       },
       {
         "nombre": "con base de alpaca calada marron",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-marron.png",
-        "precio": 60000
+        "precio": 85491
       },
       {
         "nombre": "cuero labrado rosa feliz dia mama",
         "imagen": "assets/images/mate-imperial-labrado-rosa-mama.png",
-        "precio": 50000
+        "precio": 85491
       }
     ]
   },
@@ -121,7 +121,7 @@ const PRODUCTOS = [
     "nombre": "Imperial con botitas de alpaca marron liso",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 55000,
+    "precio": 85491,
     "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
     "descripcion": "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
     "destacado": true,
@@ -135,7 +135,7 @@ const PRODUCTOS = [
       {
         "nombre": "Marrón Liso",
         "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
-        "precio": 55000
+        "precio": 85491
       }
     ]
   },
@@ -144,7 +144,7 @@ const PRODUCTOS = [
     "nombre": "Imperial con base de alpaca y pelotas",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 50000,
+    "precio": 85491,
     "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
     "descripcion": "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
     "destacado": true,
@@ -158,17 +158,17 @@ const PRODUCTOS = [
       {
         "nombre": "cuero negro",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
-        "precio": 50000
+        "precio": 85491
       },
       {
         "nombre": "cuero marron",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-marron.png",
-        "precio": 50000
+        "precio": 85491
       },
       {
         "nombre": "animal print",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-animal.png",
-        "precio": 55000
+        "precio": 85491
       }
     ]
   },
@@ -177,7 +177,7 @@ const PRODUCTOS = [
     "nombre": "Mate Imperial de Algarrobo con virola de alpaca",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 25000,
+    "precio": 47491,
     "imagen": "assets/images/mate-imperial-algarrobo.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca y base firme.",
     "destacado": false,
@@ -193,7 +193,7 @@ const PRODUCTOS = [
     "nombre": "Imperial color azul con base de pelotas de bronce",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 25000,
+    "precio": 85491,
     "imagen": "assets/images/imperial-azul-pelotas-bronce.png",
     "descripcion": "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
     "destacado": false,
@@ -209,7 +209,7 @@ const PRODUCTOS = [
     "nombre": "Imperial Animal Print calabaza ahuecada",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 25000,
+    "precio": 75905,
     "imagen": "assets/images/imperial-animal-print-calabaza.png",
     "descripcion": "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
     "destacado": false,
@@ -285,7 +285,7 @@ const PRODUCTOS = [
     "nombre": "Torpedo algarrobo con virola de alpaca cincelada",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 25000,
+    "precio": 33155,
     "imagen": "assets/images/mate-torpedo-algarrobo-alpaca.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
     "destacado": false,
@@ -301,7 +301,7 @@ const PRODUCTOS = [
     "nombre": "Torpedo de algarrobo laqueado virola cincelada",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 25000,
+    "precio": 33155,
     "imagen": "assets/images/mate-torpedo-algarrobo-laqueado.png",
     "descripcion": "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
     "destacado": false,
@@ -317,7 +317,7 @@ const PRODUCTOS = [
     "nombre": "Camionero de Algarrobo premium con guarda de acero",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 25000,
+    "precio": 33155,
     "imagen": "assets/images/camionero-algarrobo-premium.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
     "destacado": false,
@@ -572,7 +572,7 @@ const PRODUCTOS = [
     "nombre": "Termo media manija negro Total Black",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 25000,
+    "precio": 33241,
     "imagen": "assets/images/termo-media-manija-total-black.png",
     "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
     "destacado": false,
@@ -620,7 +620,7 @@ const PRODUCTOS = [
     "nombre": "Canasta 100% cuero grande reforzada",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 25000,
+    "precio": 54055,
     "imagen": "assets/images/canasta-cuero-grande.png",
     "descripcion": "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
     "destacado": false,
@@ -636,7 +636,7 @@ const PRODUCTOS = [
     "nombre": "Media canasta matera de cuero",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 18000,
+    "precio": 54055,
     "imagen": "assets/images/media-canasta-cuero-negro.png",
     "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate de manera segura y cómoda. Disponible en colores Negro o Marrón Suela.",
     "destacado": false,
@@ -650,12 +650,12 @@ const PRODUCTOS = [
       {
         "nombre": "Negra",
         "imagen": "assets/images/media-canasta-cuero-negro.png",
-        "precio": 18000
+        "precio": 54055
       },
       {
         "nombre": "Marrón Suela",
         "imagen": "assets/images/media-canasta-cuero-suela.png",
-        "precio": 18000
+        "precio": 54055
       }
     ]
   },
@@ -727,7 +727,7 @@ const PRODUCTOS = [
     "nombre": "Imperial de alpaca cuero repujado marrón",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 30000,
+    "precio": 85491,
     "imagen": "assets/images/imperial-alpaca-repujado-marron.jpg",
     "descripcion": "Mate imperial premium fabricado con calabaza brasilera de alto espesor, forrado en cuero vacuno legítimo labrado con diseño repujado marrón y una hermosa virola de alpaca cincelada artesanalmente.",
     "destacado": false,
@@ -743,7 +743,7 @@ const PRODUCTOS = [
     "nombre": "Mate Imperial premium liso chocolate base de alpaca",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 36990,
+    "precio": 85491,
     "imagen": "assets/images/imperial-premium-chocolate.jpg",
     "descripcion": "El mate definitivo. Cuenta con una virola de alpaca pulida a espejo con guarda trabajada, forrado en cuero liso premium color chocolate, base ancha de alpaca y cuatro delicadas pelotitas de bronce como soporte. Incluye bombilla pico de loro de acero inoxidable.",
     "destacado": true,
@@ -787,7 +787,7 @@ const PRODUCTOS = [
     "nombre": "Mate Camionero de cuero con bombilla pico de loro",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 17460,
+    "precio": 47491,
     "imagen": "assets/images/camionero-cuero-calabaza.jpg",
     "descripcion": "Mate Camionero de cuero, alpaca y calabaza con bombilla de acero.",
     "destacado": false,
@@ -893,7 +893,7 @@ const PRODUCTOS = [
     "nombre": "TERMOS MEDIA MANIJA ACERO",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 17640,
+    "precio": 29441,
     "imagen": "assets/images/termo-media-manija.jpg",
     "descripcion": "Termo media manija de 1 litro y de acero inoxidable.",
     "destacado": false,
@@ -923,7 +923,7 @@ const PRODUCTOS = [
     "nombre": "Bombillon de alpaca \"classic\" con pico de loro",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
-    "precio": 18000,
+    "precio": 16141,
     "imagen": "assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg",
     "descripcion": "Bombillon sin diseños en el caño. caño grueso y pala ancha de alpaca\r\n\r\nPico de loro de bronce.",
     "destacado": false,
