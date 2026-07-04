@@ -535,7 +535,6 @@ const PRODUCTOS = [
       }
     ]
   },
-
   {
     "id": "bombillon-alpaca-premium-loro",
     "nombre": "Bombillon premium artesanal 100% alpaca - pico Loro",
@@ -676,10 +675,6 @@ const PRODUCTOS = [
       "Diseño premium con división interna"
     ]
   },
-
-  // ═══════════════════════════════════════════
-  // CATEGORÍA: YERBEROS Y AZUCAREROS
-  // ═══════════════════════════════════════════
   {
     "id": "set-yerbero-negro-mate",
     "nombre": "Set de yerbero y azucarera negro mate",
@@ -815,7 +810,6 @@ const PRODUCTOS = [
       }
     ]
   },
-
   {
     "id": "torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla",
     "nombre": "Torpedo negro interior de CALABAZA virola acero boca ancha CON BOMBILLA",
@@ -831,7 +825,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "imperial-con-dije-de-bronce-sol-argentino-soldado-con-bombilla-de-regalo",
     "nombre": "Imperial con dije de bronce Sol Argentino soldado con bombilla de regalo",
@@ -847,7 +840,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "torpedo-criollo-guarda-de-alpaca-cincelada-interior-calabaza-con-bombilla-pico-loro",
     "nombre": "Torpedo criollo, guarda de alpaca cincelada, interior calabaza con bombilla pico loro",
@@ -863,7 +855,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "torpedo-de-alpaca-cincelada-interior-calabaza-animal-print-con-bombilla-de-regalo",
     "nombre": "Torpedo de alpaca cincelada interior calabaza animal print con bombilla de regalo",
@@ -879,7 +870,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "imperial-escudo-de-bronce-boca-guarda-de-alpaca",
     "nombre": "Imperial escudo de bronce - Boca, guarda de alpaca",
@@ -895,51 +885,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
-  {
-    "id": "mate-imperial-cuero-croco-negro",
-    "nombre": "Mate Imperial cuero croco + bombilla pico de loro de acero inox con filtro/pala",
-    "categoria": "mates",
-    "subcategoria": "imperial",
-    "precio": 31750,
-    "imagen": "assets/images/mate-imperial-cuero-croco-negro.jpeg",
-    "descripcion": "Mate Imperial cuero croco con alpaca y calabaza.\r\n\r\nIncluye bombilla pico de loro de acero inoxidable.",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ],
-    "variantes": [
-      {
-        "nombre": "Marrón",
-        "imagen": "assets/images/mate-imperial-cuero-croco-negro.jpeg",
-        "precio": 31750
-      },
-      {
-        "nombre": "Negro",
-        "imagen": "assets/images/mate-imperial-cuero-croco-negro.jpeg",
-        "precio": 31750
-      }
-    ]
-  },
-
-  {
-    "id": "mate-imperial-base-de-alpaca-y-pelotas-guarda-de-alpaca-cuero-negro-repujado-bombilla-de-acero",
-    "nombre": "mate imperial BASE DE ALPACA Y PELOTAS - guarda de alpaca - cuero negro repujado + bombilla de acero",
-    "categoria": "mates",
-    "subcategoria": "imperial",
-    "precio": 42000,
-    "imagen": "assets/images/mate-imperial-base-de-alpaca-y-pelotas-guarda-de-alpaca-cuero-negro-repujado-bombilla-de-acero.jpeg",
-    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-
   {
     "id": "mate-torpedo-interior-acero-inoxidable-con-bombilla",
     "nombre": "Mate Torpedo interior acero inoxidable + bombilla pico de loro de acero inox con filtro/pala",
@@ -955,39 +900,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
-  {
-    "id": "imperial-algarrobo-premium-guarda-de-alpaca-con-base-de-alpaca-con-bombilla",
-    "nombre": "Imperial ALGARROBO PREMIUM guarda de ALPACA con BASE DE ALPACA (con bombilla)",
-    "categoria": "mates",
-    "subcategoria": "algarrobo",
-    "precio": 27590,
-    "imagen": "assets/images/imperial-algarrobo-premium-guarda-de-alpaca-con-base-de-alpaca-con-bombilla.jpeg",
-    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-
-  {
-    "id": "mate-imperial-de-algarrobo-con-guarda-de-alpaca",
-    "nombre": "Mate Imperial de algarrobo con guarda de alpaca  premium + bombilla pico de loro con filtro/pala",
-    "categoria": "mates",
-    "subcategoria": "algarrobo",
-    "precio": 21080,
-    "imagen": "assets/images/mate-imperial-de-algarrobo-con-guarda-de-alpaca.webp",
-    "descripcion": "Mate Imperial de algarrobo con fleje y virola de alpaca gruesa.\r\n\r\nIncluye bombilla pico de loro de acero inoxidable con filtro/pala.",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-
   {
     "id": "termo-media-manija",
     "nombre": "TERMOS MEDIA MANIJA ACERO",
@@ -1003,7 +915,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "termo-original-luminox-lumilagro-1-litro-pico-cebador-con-caja",
     "nombre": "TERMO ORIGINAL LUMINOX LUMILAGRO 1 LITRO PICO CEBADOR CON CAJA",
@@ -1019,7 +930,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "bombillon-de-alpaca-classic-con-pico-de-loro",
     "nombre": "Bombillon de alpaca \"classic\" con pico de loro",
@@ -1035,7 +945,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "termo-12-lts-pico-system-color-cobre",
     "nombre": "Termo 1,2 Lts. pico system color cobre",
@@ -1051,7 +960,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "vaso-quencher-de-1-2l-colores-surtidos",
     "nombre": "VASO QUENCHER DE 1.2L COLORES SURTIDOS",
@@ -1067,7 +975,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "botella-flip-de-650ml-colores-surtidos",
     "nombre": "BOTELLA FLIP DE 650ML COLORES SURTIDOS",
@@ -1083,7 +990,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "porta-mate-premium-para-la-palanca-de-cambio-reforzado-doble-costura",
     "nombre": "Porta mate de eco cuero para la palanca de cambio",
@@ -1099,7 +1005,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "pico-system-blanco",
     "nombre": "PICO SYSTEM BLANCO",
@@ -1115,7 +1020,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium",
     "nombre": "Porta mate de cuero vacuno para palanca de cambio(BORRAVINO Y NEGRO)",
@@ -1143,7 +1047,6 @@ const PRODUCTOS = [
       }
     ]
   },
-
   {
     "id": "mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela",
     "nombre": "MOCHILA/BOLSO MATERO + CHAULATA  con detalles en suela",
@@ -1171,7 +1074,6 @@ const PRODUCTOS = [
       }
     ]
   },
-
   {
     "id": "bolsito-viral-tik-tok-con-chaulata",
     "nombre": "Bolso matero cuerina PREMIUN con sujetador de termo + yerbero + azucarero",
@@ -1199,7 +1101,6 @@ const PRODUCTOS = [
       }
     ]
   },
-
   {
     "id": "bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia",
     "nombre": "Bolso matero tela PREMIUN con sujetador de termo + yerbero + azucarero",
@@ -1215,7 +1116,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "mochila-bolso-matero-animal-print-con-chaulatas",
     "nombre": "Mochila / Bolso matero animal print con chaulatas",
@@ -1231,7 +1131,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "canastas-de-cuero-con-escudo-de-futbol-color-negro",
     "nombre": "CANASTAS DE CUERO CON ESCUDO DE FUTBOL COLOR NEGRO",
@@ -1247,23 +1146,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
-  {
-    "id": "media-canasta-ideal-dos-productos-100-cuero",
-    "nombre": "Media Canasta/ ideal dos productos 100% cuero",
-    "categoria": "materas",
-    "subcategoria": "canasta",
-    "precio": 26400,
-    "imagen": "assets/images/media-canasta-ideal-dos-productos-100-cuero.jpg",
-    "descripcion": "te traemos estas media canastas de calidad premium,  que cuentan con división interna y manija reforzada\r\n\r\nDisponible en tres colores a los cuales las fotos no se comparan con cómo son\r\n\r\n \r\n\r\n-Marrón borravino\r\n\r\n-Marrón chocolate\r\n\r\n-Negro\r\n\r\n \r\n\r\nCada canasta es única, por ende sus detalles en el cuero son todos diferentes. el diseño es siempre el mismo",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-
   {
     "id": "imperial-cuero-jean-int-acero-con-bombilla-pico-loro",
     "nombre": "IMPERIAL CUERO JEAN INT ACERO CON BOMBILLA PICO LORO",
@@ -1279,7 +1161,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero",
     "nombre": "Camionero criollo calabaza laqueada virola acero + BOMBILLA DE ACERO",
@@ -1295,7 +1176,6 @@ const PRODUCTOS = [
       "Diseño artesanal tradicional"
     ]
   },
-
   {
     "id": "camionero-algarrobo-grabado-predisenados-bombilla",
     "nombre": "CAMIONERO ALGARROBO GRABADO PREDISEÑADOS + BOMBILLA",
