@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   inicializarHeader();
   inicializarMenuMovil();
   actualizarFechaCopyright();
+  inicializarScrollReveal();
 });
 
 // 1. Efecto Scroll en la Cabecera (Header shadow & shrink)
@@ -65,3 +66,29 @@ function actualizarFechaCopyright() {
     copyrightYear.textContent = new Date().getFullYear();
   }
 }
+
+// 4. Revelado suave de elementos al hacer scroll
+function inicializarScrollReveal() {
+  const elements = document.querySelectorAll(".reveal-on-scroll");
+  if (elements.length === 0) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal-on-scroll--visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+}
+

@@ -121,86 +121,106 @@ function inicializarEventosFiltros() {
   }
 }
 
+let renderTimeout = null;
+
 // Filtra, ordena y pinta los productos en la grilla
 function renderizarCatalogo() {
   const grid = document.getElementById("catalog-products-grid");
   if (!grid) return;
 
-  // 1. Filtrar productos
-  let productosFiltrados = [...PRODUCTOS];
-
-  // Filtro Categoría
-  if (categoriaActiva !== "todos") {
-    productosFiltrados = productosFiltrados.filter(p => p.categoria === categoriaActiva);
+  // Cancelar renderizado anterior pendiente
+  if (renderTimeout) {
+    clearTimeout(renderTimeout);
   }
 
-  // Filtro Subcategoría (solo aplica si está activo mates y se seleccionó algo distinto a "todos")
-  if (categoriaActiva === "mates" && subcategoriaActiva !== "todos") {
-    productosFiltrados = productosFiltrados.filter(p => p.subcategoria === subcategoriaActiva);
-  }
+  // 1. Mostrar Skeletons Shimmer inmediatamente
+  grid.innerHTML = Array(6).fill(0).map(() => `
+    <div class="skeleton-card">
+      <div class="skeleton-image shimmer-sweep"></div>
+      <div class="skeleton-text shimmer-sweep" style="width: 80%;"></div>
+      <div class="skeleton-text shimmer-sweep" style="width: 50%;"></div>
+    </div>
+  `).join("");
 
-  // Filtro de Búsqueda
-  if (terminoBusqueda.trim() !== "") {
-    const query = terminoBusqueda.toLowerCase().trim();
-    productosFiltrados = productosFiltrados.filter(p => 
-      p.nombre.toLowerCase().includes(query) || 
-      p.descripcion.toLowerCase().includes(query)
-    );
-  }
+  // 2. Programar la carga de los productos reales tras 600ms
+  renderTimeout = setTimeout(() => {
+    // 3. Filtrar productos
+    let productosFiltrados = [...PRODUCTOS];
 
-  // 2. Ordenar productos
-  if (ordenActivo === "price-asc") {
-    productosFiltrados.sort((a, b) => a.precio - b.precio);
-  } else if (ordenActivo === "price-desc") {
-    productosFiltrados.sort((a, b) => b.precio - a.precio);
-  } else if (ordenActivo === "name-asc") {
-    productosFiltrados.sort((a, b) => a.nombre.localeCompare(b.nombre));
-  }
-
-  // 3. Imprimir en pantalla
-  if (productosFiltrados.length === 0) {
-    grid.innerHTML = `
-      <div style="grid-column: 1 / -1; text-align: center; padding: 60px 0; color: var(--color-text-muted);">
-        <p style="font-size: 1.2rem; margin-bottom: 8px;">No encontramos productos que coincidan con tu búsqueda.</p>
-        <p style="font-size: 0.9rem;">Probá buscando otra palabra o limpiando los filtros.</p>
-      </div>
-    `;
-    return;
-  }
-
-  grid.innerHTML = productosFiltrados.map(p => {
-    // Definimos variantes por defecto simples según su categoría para agregar rápido
-    let opcionPorDefecto = "";
-    if (p.variantes && p.variantes.length > 0) {
-      opcionPorDefecto = p.variantes[0].nombre;
-    } else if (p.categoria === "mates") {
-      opcionPorDefecto = p.subcategoria === "algarrobo" ? "Natural" : "Marrón Oscuro";
-    } else if (p.categoria === "termos") {
-      opcionPorDefecto = p.id.includes("negro") ? "Negro Mate" : "Acero";
+    // Filtro Categoría
+    if (categoriaActiva !== "todos") {
+      productosFiltrados = productosFiltrados.filter(p => p.categoria === categoriaActiva);
     }
 
-    const imgHover = obtenerImagenHover(p);
-    const hasHover = imgHover && imgHover !== p.imagen;
+    // Filtro Subcategoría (solo aplica si está activo mates y se seleccionó algo distinto a "todos")
+    if (categoriaActiva === "mates" && subcategoriaActiva !== "todos") {
+      productosFiltrados = productosFiltrados.filter(p => p.subcategoria === subcategoriaActiva);
+    }
 
-    return `
-      <div class="product-card">
-        <div class="product-card__image-container ${hasHover ? 'product-card__image-container--has-hover' : ''}" onclick="window.location.href='producto.html?id=${p.id}'">
-          ${p.destacado ? `<span class="product-card__badge">Destacado</span>` : ""}
-          <img src="${p.imagen}" alt="${p.nombre}" class="product-card__image product-card__image--primary">
-          ${hasHover ? `<img src="${imgHover}" alt="${p.nombre}" class="product-card__image product-card__image--secondary">` : ""}
+    // Filtro de Búsqueda
+    if (terminoBusqueda.trim() !== "") {
+      const query = terminoBusqueda.toLowerCase().trim();
+      productosFiltrados = productosFiltrados.filter(p => 
+        p.nombre.toLowerCase().includes(query) || 
+        p.descripcion.toLowerCase().includes(query)
+      );
+    }
+
+    // 4. Ordenar productos
+    if (ordenActivo === "price-asc") {
+      productosFiltrados.sort((a, b) => a.precio - b.precio);
+    } else if (ordenActivo === "price-desc") {
+      productosFiltrados.sort((a, b) => b.precio - a.precio);
+    } else if (ordenActivo === "name-asc") {
+      productosFiltrados.sort((a, b) => a.nombre.localeCompare(b.nombre));
+    }
+
+    // 5. Imprimir en pantalla
+    if (productosFiltrados.length === 0) {
+      grid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 60px 0; color: var(--color-text-muted);">
+          <p style="font-size: 1.2rem; margin-bottom: 8px;">No encontramos productos que coincidan con tu búsqueda.</p>
+          <p style="font-size: 0.9rem;">Probá buscando otra palabra o limpiando los filtros.</p>
         </div>
-        <div class="product-card__content">
-          <span class="product-card__meta">${p.categoria} ${p.subcategoria ? `· ${p.subcategoria}` : ''}</span>
-          <h3 class="product-card__title">${p.nombre}</h3>
-          <div class="product-card__price-box">
-            <span class="product-card__price">$${p.precio.toLocaleString('es-AR')}</span>
+      `;
+      return;
+    }
+
+    grid.innerHTML = productosFiltrados.map(p => {
+      // Definimos variantes por defecto simples según su categoría para agregar rápido
+      let opcionPorDefecto = "";
+      if (p.variantes && p.variantes.length > 0) {
+        opcionPorDefecto = p.variantes[0].nombre;
+      } else if (p.categoria === "mates") {
+        opcionPorDefecto = p.subcategoria === "algarrobo" ? "Natural" : "Marrón Oscuro";
+      } else if (p.categoria === "termos") {
+        opcionPorDefecto = p.id.includes("negro") ? "Negro Mate" : "Acero";
+      }
+
+      const imgHover = obtenerImagenHover(p);
+      const hasHover = imgHover && imgHover !== p.imagen;
+
+      return `
+        <div class="product-card" style="animation: fadeIn 0.4s ease forwards;">
+          <div class="product-card__image-container ${hasHover ? 'product-card__image-container--has-hover' : ''}" onclick="window.location.href='producto.html?id=${p.id}'">
+            ${p.destacado ? `<span class="product-card__badge">Destacado</span>` : ""}
+            <img src="${p.imagen}" alt="${p.nombre}" class="product-card__image product-card__image--primary">
+            ${hasHover ? `<img src="${imgHover}" alt="${p.nombre}" class="product-card__image product-card__image--secondary">` : ""}
           </div>
-          <div class="product-card__actions">
-            <a href="producto.html?id=${p.id}" class="btn btn--secondary btn--sm btn--full">Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('${p.id}', 1, '${opcionPorDefecto}', event)">Agregar</button>
+          <div class="product-card__content">
+            <span class="product-card__meta">${p.categoria} ${p.subcategoria ? `· ${p.subcategoria}` : ''}</span>
+            <h3 class="product-card__title">${p.nombre}</h3>
+            <div class="product-card__price-box">
+              <span class="product-card__price">$${p.precio.toLocaleString('es-AR')}</span>
+            </div>
+            <div class="product-card__actions">
+              <a href="producto.html?id=${p.id}" class="btn btn--secondary btn--sm btn--full">Detalles</a>
+              <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('${p.id}', 1, '${opcionPorDefecto}', event)">Agregar</button>
+            </div>
           </div>
         </div>
-      </div>
-    `;
-  }).join("");
+      `;
+    }).join("");
+  }, 600);
 }
+

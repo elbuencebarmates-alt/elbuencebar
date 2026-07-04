@@ -314,7 +314,9 @@ function actualizarUI() {
   }
 }
 
-// Muestra una notificación visual en la esquina
+// Muestra una notificación visual en la esquina (Glassmorphism Toast con progreso)
+let toastTimeout = null;
+
 function mostrarToast(mensaje) {
   let toast = document.getElementById("toast-notification");
   if (!toast) {
@@ -322,19 +324,50 @@ function mostrarToast(mensaje) {
     toast.id = "toast-notification";
     toast.className = "toast";
     toast.innerHTML = `
-      <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <polyline points="12 8 12 12 16 14"></polyline>
-      </svg>
-      <span class="toast-message"></span>
+      <div class="toast-content-wrapper">
+        <svg viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span class="toast-message"></span>
+      </div>
+      <div class="toast-progress-container">
+        <div class="toast-progress" id="toast-progress-bar"></div>
+      </div>
     `;
     document.body.appendChild(toast);
   }
 
-  toast.querySelector(".toast-message").textContent = mensaje;
-  toast.classList.add("toast--show");
+  const bar = toast.querySelector("#toast-progress-bar");
+  
+  // Limpiar cualquier estado anterior
+  if (toastTimeout) {
+    clearTimeout(toastTimeout);
+  }
+  toast.classList.remove("toast--show");
+  if (bar) {
+    bar.style.transition = "none";
+    bar.style.width = "100%";
+  }
 
-  setTimeout(() => {
-    toast.classList.remove("toast--show");
-  }, 3000);
+  // Escribir mensaje
+  toast.querySelector(".toast-message").textContent = mensaje;
+
+  // Forzar reflow y animar en el siguiente frame
+  requestAnimationFrame(() => {
+    toast.classList.add("toast--show");
+    
+    // Iniciar decremento de la barra de progreso
+    if (bar) {
+      requestAnimationFrame(() => {
+        bar.style.transition = "width 3s linear";
+        bar.style.width = "0%";
+      });
+    }
+
+    toastTimeout = setTimeout(() => {
+      toast.classList.remove("toast--show");
+    }, 3000);
+  });
 }
+
