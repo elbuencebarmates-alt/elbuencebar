@@ -225,7 +225,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL ROMA CON BASE COMPLETA CINCELADA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 25000,
+    "precio": 35000,
     "imagen": "assets/images/imperial-roma-cincelado.png",
     "descripcion": "Mate Imperial modelo Roma, forrado en cuero con terminación repujada y base completa de alpaca totalmente cincelada.",
     "destacado": false,
@@ -241,7 +241,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CUERO JEAN CON INTERIOR DE ACERO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 25000,
+    "precio": 40000,
     "imagen": "assets/images/imperial-cuero-jean.png",
     "descripcion": "Mate Imperial forrado en cuero con textura estilo jean de color azul e interior térmico de acero inoxidable. Higiénico y moderno.",
     "destacado": false,
@@ -257,7 +257,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO CON VIROLA DE ALPACA CALADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 45000,
+    "precio": 50000,
     "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
     "descripcion": "Un torpedo premium único en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminación repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
     "destacado": true,
@@ -271,12 +271,12 @@ const PRODUCTOS = [
       {
         "nombre": "NEGRO",
         "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
-        "precio": 45000
+        "precio": 50000
       },
       {
         "nombre": "MARRÓN",
         "imagen": "assets/images/torpedo-alpaca-calada-marron.png",
-        "precio": 45000
+        "precio": 50000
       }
     ]
   },
