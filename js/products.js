@@ -1188,6 +1188,21 @@ const PRODUCTOS = [
       "Diseño plegable súper compacto y liviano",
       "Espacio para termo, mate y accesorios"
     ]
+  },
+  {
+    "id": "vaso-fernetero-liso-negro",
+    "nombre": "VASO FERNETERO LISO NEGRO",
+    "categoria": "termos",
+    "subcategoria": "vasos",
+    "precio": 5000,
+    "imagen": "assets/images/termos-vaso-fernetero.png",
+    "descripcion": "Vaso térmico fernetero de acero inoxidable con pintura texturada en negro mate. Excelente capacidad y aislamiento térmico doble pared para mantener tu bebida fría por horas.",
+    "destacado": false,
+    "detalles": [
+      "Fabricado en acero inoxidable doble pared térmico",
+      "Pintura siliconada negra de alta resistencia",
+      "Ideal para fernet, cerveza y bebidas frías"
+    ]
   }
 ];
 
