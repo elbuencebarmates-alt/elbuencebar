@@ -675,6 +675,22 @@ const PRODUCTOS = [
       }
     ]
   },
+  {
+    "id": "mediacanasta-pelo-vacuno",
+    "nombre": "Mediacanasta premium de pelo vacuno colores surtidos",
+    "categoria": "materas",
+    "subcategoria": "canasta",
+    "precio": 70000,
+    "imagen": "assets/images/mediacanasta-pelo-vacuno.jpg",
+    "descripcion": "Esta canasta viene con pelo natural, por lo cual presentan todas diferentes tonos y manchas, volviendo cada modelo único. En caso de querer un tono particular, una vez realizada la compra solicita foto de la misma a través de WhatsApp.",
+    "destacado": true,
+    "detalles": [
+      "Pelo natural vacuno con estampados y colores únicos",
+      "Costuras reforzadas a mano para máxima duración",
+      "Manija rígida fija para un transporte cómodo y seguro",
+      "Diseño premium con división interna"
+    ]
+  },
 
   // ═══════════════════════════════════════════
   // CATEGORÍA: YERBEROS Y AZUCAREROS
@@ -709,6 +725,109 @@ const PRODUCTOS = [
       "Picos vertedores plásticos higiénicos",
       "Fácil de transportar y limpiar",
       "Diseño moderno y elegante"
+    ]
+  },
+  {
+    "id": "cosito-acero",
+    "nombre": "Cosito para el mate de acero inoxidable",
+    "categoria": "accesorios",
+    "subcategoria": "limpieza",
+    "precio": 15000,
+    "imagen": "assets/images/cosito-acero.jpg",
+    "descripcion": "El accesorio ideal para vaciar la yerba del mate de manera rápida, limpia y sin desperdicios. Fabricado 100% en acero inoxidable de alta calidad, duradero y fácil de lavar.",
+    "destacado": false,
+    "detalles": [
+      "Fabricado íntegramente en acero inoxidable 304",
+      "Facilita la limpieza del mate en un solo movimiento",
+      "Resistente, higiénico y de larga vida útil"
+    ]
+  },
+  {
+    "id": "imperial-repujado-marron",
+    "nombre": "Imperial de alpaca cuero repujado marrón",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 30000,
+    "imagen": "assets/images/imperial-alpaca-repujado-marron.jpg",
+    "descripcion": "Mate imperial premium fabricado con calabaza brasilera de alto espesor, forrado en cuero vacuno legítimo labrado con diseño repujado marrón y una hermosa virola de alpaca cincelada artesanalmente.",
+    "destacado": false,
+    "detalles": [
+      "Calabaza brasilera de gran grosor",
+      "Forrado en cuero legítimo repujado marrón",
+      "Virola superior de alpaca cincelada a mano",
+      "Base reforzada de excelente estabilidad"
+    ]
+  },
+  {
+    "id": "imperial-premium-chocolate",
+    "nombre": "Mate Imperial premium liso chocolate base de alpaca",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 36990,
+    "imagen": "assets/images/imperial-premium-chocolate.jpg",
+    "descripcion": "El mate definitivo. Cuenta con una virola de alpaca pulida a espejo con guarda trabajada, forrado en cuero liso premium color chocolate, base ancha de alpaca y cuatro delicadas pelotitas de bronce como soporte. Incluye bombilla pico de loro de acero inoxidable.",
+    "destacado": true,
+    "detalles": [
+      "Guarda superior de alpaca cincelada",
+      "Cuero vacuno liso premium color chocolate",
+      "Base ancha de alpaca reforzada con pelotas de bronce",
+      "Incluye bombilla pico de loro de acero inoxidable"
+    ]
+  },
+  {
+    "id": "torpedo-pelotitas-bronce",
+    "nombre": "Mate Torpedo con pelotitas de bronce y virola cincelada",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 38000,
+    "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
+    "descripcion": "Torpedo con base y virola de alpaca. La virola tiene distintos cinceles hechos a mano. Calabazas seleccionadas, forradas en cuero liso. Incluye bombilla de acero inoxidable con filtro de pala.",
+    "destacado": false,
+    "detalles": [
+      "Calabaza seleccionada de excelente espesor",
+      "Forrado en cuero liso de alta calidad",
+      "Virola cincelada a mano y base de alpaca con pelotitas de bronce",
+      "Incluye bombilla de acero inoxidable con filtro de pala"
+    ],
+    "variantes": [
+      {
+        "nombre": "Cuero Negro Liso",
+        "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
+        "precio": 38000
+      },
+      {
+        "nombre": "Cuero Marrón Liso",
+        "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
+        "precio": 38000
+      }
+    ]
+  },
+  {
+    "id": "camionero-cuero-bombilla",
+    "nombre": "Mate Camionero de cuero con bombilla pico de loro",
+    "categoria": "mates",
+    "subcategoria": "camionero",
+    "precio": 17460,
+    "imagen": "assets/images/camionero-cuero-calabaza.jpg",
+    "descripcion": "Mate Camionero de cuero, alpaca y calabaza con bombilla de acero.",
+    "destacado": false,
+    "detalles": [
+      "Calabaza brasilera de alto espesor",
+      "Forrado en cuero vacuno legítimo con costuras tradicionales",
+      "Virola de alpaca pulida",
+      "Incluye bombilla pico de loro de acero inoxidable"
+    ],
+    "variantes": [
+      {
+        "nombre": "Negro",
+        "imagen": "assets/images/camionero-cuero-calabaza.jpg",
+        "precio": 17460
+      },
+      {
+        "nombre": "Marrón",
+        "imagen": "assets/images/camionero-cuero-calabaza.jpg",
+        "precio": 17460
+      }
     ]
   }
 ];
