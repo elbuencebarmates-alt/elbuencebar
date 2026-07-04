@@ -1228,3 +1228,15 @@ function buscarProductos(query) {
 function obtenerProductoPorId(id) {
   return PRODUCTOS.find(p => p.id === id);
 }
+
+// Función para obtener la imagen secundaria de hover de un producto
+function obtenerImagenHover(p) {
+  if (p.imagenes && p.imagenes.length >= 2) {
+    return p.imagenes[1];
+  }
+  if (p.variantes && p.variantes.length > 0) {
+    const varConImg = p.variantes.find(v => v.imagen && v.imagen !== p.imagen);
+    if (varConImg) return varConImg.imagen;
+  }
+  return p.imagen;
+}

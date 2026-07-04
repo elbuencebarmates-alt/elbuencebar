@@ -38,10 +38,59 @@ function guardarCarrito() {
 }
 
 // Agrega un producto al carrito
-function agregarAlCarrito(id, cantidad = 1, opcion = "") {
+function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null) {
   // Buscar producto en la base de datos (PRODUCTOS está en products.js)
   const producto = PRODUCTOS.find(p => p.id === id);
   if (!producto) return;
+
+  // Lógica de animación Fly-to-Cart
+  let delayDrawer = 0;
+  if (event) {
+    const btn = event.currentTarget || event.target;
+    if (btn) {
+      const card = btn.closest(".product-card");
+      if (card) {
+        const imgToClone = card.querySelector(".product-card__image--primary") || card.querySelector(".product-card__image");
+        const cartTarget = document.querySelector("button[data-cart-toggle]");
+        
+        if (imgToClone && cartTarget) {
+          delayDrawer = 800; // Demorar apertura del drawer para dar tiempo a la animación
+          
+          const imgRect = imgToClone.getBoundingClientRect();
+          const targetRect = cartTarget.getBoundingClientRect();
+          
+          const clone = document.createElement("img");
+          clone.src = imgToClone.src;
+          clone.classList.add("flying-image");
+          clone.style.left = `${imgRect.left}px`;
+          clone.style.top = `${imgRect.top}px`;
+          clone.style.width = `${imgRect.width}px`;
+          clone.style.height = `${imgRect.height}px`;
+          
+          document.body.appendChild(clone);
+          
+          requestAnimationFrame(() => {
+            clone.style.left = `${targetRect.left + (targetRect.width / 2) - 40}px`;
+            clone.style.top = `${targetRect.top + (targetRect.height / 2) - 40}px`;
+            clone.style.width = "20px";
+            clone.style.height = "20px";
+            clone.style.opacity = "0.2";
+            clone.style.transform = "rotate(360deg)";
+          });
+          
+          setTimeout(() => {
+            clone.remove();
+            
+            // Efecto rebote en el carrito
+            cartTarget.classList.add("cart-bounce-animation");
+            setTimeout(() => {
+              cartTarget.classList.remove("cart-bounce-animation");
+            }, 500);
+          }, 800);
+        }
+      }
+    }
+  }
 
   // Buscar si la opción corresponde a una variante con precio o imagen propios
   let precioFinal = producto.precio;
@@ -75,7 +124,14 @@ function agregarAlCarrito(id, cantidad = 1, opcion = "") {
 
   guardarCarrito();
   mostrarToast(`${producto.nombre} agregado al carrito.`);
-  abrirCarritoDrawer();
+  
+  if (delayDrawer > 0) {
+    setTimeout(() => {
+      abrirCarritoDrawer();
+    }, delayDrawer);
+  } else {
+    abrirCarritoDrawer();
+  }
 }
 
 // Elimina un producto del carrito

@@ -179,11 +179,15 @@ function renderizarCatalogo() {
       opcionPorDefecto = p.id.includes("negro") ? "Negro Mate" : "Acero";
     }
 
+    const imgHover = obtenerImagenHover(p);
+    const hasHover = imgHover && imgHover !== p.imagen;
+
     return `
       <div class="product-card">
-        <div class="product-card__image-container" onclick="window.location.href='producto.html?id=${p.id}'">
+        <div class="product-card__image-container ${hasHover ? 'product-card__image-container--has-hover' : ''}" onclick="window.location.href='producto.html?id=${p.id}'">
           ${p.destacado ? `<span class="product-card__badge">Destacado</span>` : ""}
-          <img src="${p.imagen}" alt="${p.nombre}" class="product-card__image">
+          <img src="${p.imagen}" alt="${p.nombre}" class="product-card__image product-card__image--primary">
+          ${hasHover ? `<img src="${imgHover}" alt="${p.nombre}" class="product-card__image product-card__image--secondary">` : ""}
         </div>
         <div class="product-card__content">
           <span class="product-card__meta">${p.categoria} ${p.subcategoria ? `· ${p.subcategoria}` : ''}</span>
@@ -193,7 +197,7 @@ function renderizarCatalogo() {
           </div>
           <div class="product-card__actions">
             <a href="producto.html?id=${p.id}" class="btn btn--secondary btn--sm btn--full">Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('${p.id}', 1, '${opcionPorDefecto}')">Agregar</button>
+            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('${p.id}', 1, '${opcionPorDefecto}', event)">Agregar</button>
           </div>
         </div>
       </div>
