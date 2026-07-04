@@ -1075,18 +1075,6 @@ const PRODUCTOS = [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
       "Diseño artesanal tradicional"
-    ],
-    "variantes": [
-      {
-        "nombre": "NEGRO",
-        "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
-        "precio": 12460
-      },
-      {
-        "nombre": "SUELA",
-        "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
-        "precio": 12460
-      }
     ]
   },
   {
