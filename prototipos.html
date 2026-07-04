@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
 
+  <!-- Three.js y OrbitControls para el Simulador 3D / 360° -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
   <style>
     /* Estilos del Prototipo Standalone */
     .proto-header {
@@ -204,7 +208,7 @@
       align-items: start;
     }
 
-    /* Panel de previsualización (Mate SVG) */
+    /* Panel de previsualización (Mate SVG/Canvas) */
     .engrave-preview-box {
       background-color: var(--color-bg-secondary);
       border: 1px solid var(--color-border);
@@ -226,11 +230,54 @@
       overflow: hidden;
       box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .svg-canvas {
       width: 100%;
       height: 100%;
+    }
+
+    /* Contenedor del Canvas 3D de Three.js */
+    #canvas-3d-container {
+      width: 100%;
+      height: 100%;
+      display: none;
+      background-color: #f7f5f0;
+      cursor: grab;
+    }
+
+    #canvas-3d-container:active {
+      cursor: grabbing;
+    }
+
+    /* Pestañas de modo de vista (2D vs 3D) */
+    .view-mode-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .view-mode-btn {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-bg-primary);
+      color: var(--color-text-secondary);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .view-mode-btn--active {
+      background-color: var(--color-primary);
+      color: var(--color-bg-primary);
+      border-color: var(--color-primary);
     }
 
     /* Estilos aplicables al texto grabado en la virola con fusión metálica realista */
@@ -405,7 +452,7 @@
   <header class="proto-header">
     <div class="container">
       <h1>PROPUESTA DE MEJORA INTERACTIVA</h1>
-      <p>Prototipo interactivo ajustable: Simulador de Grabado Láser Personalizado en Virola de Mate.</p>
+      <p>Simulador 3D Rotativo de Grabado Láser Personalizado en Virola de Mate.</p>
       <a href="index.html" class="btn btn--secondary btn--sm" style="margin-top: 20px;">Volver a la Web Principal</a>
     </div>
   </header>
@@ -420,8 +467,8 @@
 
     <!-- SECCIÓN 2: SIMULADOR DE GRABADO LÁSER -->
     <section style="margin-bottom: 120px;">
-      <h2 class="proto-section-title">2. Simulador de Grabado Láser en Virola Ajustable</h2>
-      <p class="section-subtitle">Probá cómo queda el grabado sobre distintos mates y usá los controles para centrar y curvar el texto perfectamente</p>
+      <h2 class="proto-section-title">2. Simulador de Grabado Láser (Vista 3D 360° Rotativa)</h2>
+      <p class="section-subtitle">Alterná entre la foto real (2D) y la vista 360° interactiva para girar el mate con el mouse y ver tu diseño grabado</p>
 
       <div class="proto-card">
         <div class="engrave-simulator-grid">
@@ -429,25 +476,36 @@
           <!-- LADO IZQUIERDO: Previsualización en Tiempo Real -->
           <div class="engrave-preview-box">
             
+            <!-- Pestañas de modo de vista (2D vs 3D) -->
+            <div class="view-mode-tabs">
+              <button class="view-mode-btn view-mode-btn--active" id="btn-mode-2d" onclick="setViewMode('2d')">
+                🖼️ Foto Real (2D)
+              </button>
+              <button class="view-mode-btn" id="btn-mode-3d" onclick="setViewMode('3d')">
+                🔄 Vista 360° (3D)
+              </button>
+            </div>
+
             <!-- Selector de Mates para Grabado -->
-            <div style="margin-bottom: 20px;">
+            <div style="margin-bottom: 20px;" id="mate-selector-container">
               <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 10px; text-transform: uppercase;">
                 Seleccioná el Mate a Grabar:
               </span>
               <div style="display: flex; gap: 8px; justify-content: center;">
-                <button class="choice-card-engrave choice-card-engrave--active" id="btn-mate-1" onclick="switchMate(1, 'assets/images/mate-imperial-croco-negro.png', 133, 17, 164, 12)">
+                <button class="choice-card-engrave choice-card-engrave--active" id="btn-mate-1" onclick="switchMate(1, 'assets/images/mate-imperial-croco-negro.png', 133, 17, 164, 12, 0x111111)">
                   Imperial Negro
                 </button>
-                <button class="choice-card-engrave" id="btn-mate-2" onclick="switchMate(2, 'assets/images/camionero-cuero-calabaza.jpg', 123, 14, 162, 11.5)">
+                <button class="choice-card-engrave" id="btn-mate-2" onclick="switchMate(2, 'assets/images/camionero-cuero-calabaza.jpg', 123, 14, 162, 11.5, 0x5a3d28)">
                   Camionero Acero
                 </button>
-                <button class="choice-card-engrave" id="btn-mate-3" onclick="switchMate(3, 'assets/images/torpedo-alpaca-calada-marron.png', 145, 20, 160, 12)">
+                <button class="choice-card-engrave" id="btn-mate-3" onclick="switchMate(3, 'assets/images/torpedo-alpaca-calada-marron.png', 145, 20, 160, 12, 0x3d2516)">
                   Torpedo Marrón
                 </button>
               </div>
             </div>
 
             <div class="canvas-container-svg">
+              <!-- VISTA 2D (SVG + Imagen) -->
               <svg class="svg-canvas" viewBox="0 0 400 400" id="virola-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Imagen del Mate de Fondo -->
                 <image id="mate-bg-svg" xlink:href="assets/images/mate-imperial-croco-negro.png" href="assets/images/mate-imperial-croco-negro.png" x="0" y="0" width="400" height="400" />
@@ -462,13 +520,16 @@
                   </textPath>
                 </text>
               </svg>
+
+              <!-- VISTA 3D (Three.js) -->
+              <div id="canvas-3d-container"></div>
             </div>
             
-            <p style="font-size: 0.85rem; color: var(--color-text-muted); font-style: italic;">
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); font-style: italic;" id="preview-caption">
               * Vista previa digital interactiva de grabado.
             </p>
             
-            <!-- Depurador de Coordenadas -->
+            <!-- Depurador de Coordenadas (Solo visible en 2D) -->
             <div class="coordinate-debugger" id="path-debugger">
               Path D: M 118,133 Q 200,150 282,133
             </div>
@@ -515,9 +576,9 @@
               </div>
             </div>
 
-            <!-- Calibrador de Curva (Sliders de Ajuste) -->
-            <div class="control-group-engrave">
-              <label style="color: var(--color-accent); font-weight: 700;">⚙️ Calibración Manual del Grabado:</label>
+            <!-- Calibrador de Curva (Sliders de Ajuste - Solo útiles en 2D) -->
+            <div class="control-group-engrave" id="calibration-controls-group">
+              <label style="color: var(--color-accent); font-weight: 700;">⚙️ Calibración de Curva (Foto 2D):</label>
               
               <!-- Posición Y -->
               <div class="slider-container" style="margin-top: 10px;">
@@ -599,16 +660,69 @@
     let selectedSymbol = "none";
     let selectedDepth = "light";
     let activeMateId = 1;
+    let viewMode = '2d'; // '2d' o '3d'
+    let leatherColor = 0x111111; // Negro por defecto
 
-    // Configuración por defecto de cada mate: [Y, Bend, Width, FontSize]
+    // Variables de Three.js
+    let scene, camera, renderer, controls;
+    let mateMeshGroup;
+    let textCanvasTexture;
+    let virolaMaterial;
+    let mateBodyMaterial;
+
+    // Configuración por defecto de cada mate: [Y, Bend, Width, FontSize, ColorCuero]
     const configsMates = {
-      1: { y: 133, bend: 17, width: 164, size: 12 },    // Imperial Negro
-      2: { y: 123, bend: 14, width: 162, size: 11.5 },  // Camionero Acero
-      3: { y: 145, bend: 20, width: 160, size: 12 }     // Torpedo Marrón
+      1: { y: 133, bend: 17, width: 164, size: 12, leather: 0x111111 },    // Imperial Negro
+      2: { y: 123, bend: 14, width: 162, size: 11.5, leather: 0x5a3d28 },  // Camionero Acero
+      3: { y: 145, bend: 20, width: 160, size: 12, leather: 0x3d2516 }     // Torpedo Marrón
     };
 
-    function switchMate(mateId, imageSrc, y, bend, width, size) {
+    function setViewMode(mode) {
+      viewMode = mode;
+      
+      const btn2d = document.getElementById("btn-mode-2d");
+      const btn3d = document.getElementById("btn-mode-3d");
+      const svgContainer = document.getElementById("virola-svg");
+      const container3d = document.getElementById("canvas-3d-container");
+      const debugDiv = document.getElementById("path-debugger");
+      const calControls = document.getElementById("calibration-controls-group");
+      const mateSelector = document.getElementById("mate-selector-container");
+      const caption = document.getElementById("preview-caption");
+
+      if (mode === '3d') {
+        btn2d.classList.remove("view-mode-btn--active");
+        btn3d.classList.add("view-mode-btn--active");
+        svgContainer.style.display = "none";
+        container3d.style.display = "block";
+        debugDiv.style.display = "none";
+        calControls.style.display = "none";
+        mateSelector.style.display = "none"; // Ocultar selector en 3D para simplificar el modelo base
+        caption.textContent = "* Arrastrá con el mouse/dedo para rotar el mate en 360° y ver el grabado.";
+        
+        // Inicializar Three.js si aún no se hizo
+        if (!scene) {
+          init3D();
+        } else {
+          // Si ya existe, actualizar textura del grabado
+          update3DTextTexture();
+        }
+      } else {
+        btn2d.classList.add("view-mode-btn--active");
+        btn3d.classList.remove("view-mode-btn--active");
+        svgContainer.style.display = "block";
+        container3d.style.display = "none";
+        debugDiv.style.display = "block";
+        calControls.style.display = "block";
+        mateSelector.style.display = "block";
+        caption.textContent = "* Vista previa digital interactiva de grabado.";
+        
+        adjustPath();
+      }
+    }
+
+    function switchMate(mateId, imageSrc, y, bend, width, size, colorHex) {
       activeMateId = mateId;
+      leatherColor = colorHex;
 
       // Actualizar botones de mate activo
       for (let i = 1; i <= 3; i++) {
@@ -644,6 +758,10 @@
       }
 
       applyGrabado();
+      
+      if (viewMode === '3d' && scene) {
+        update3DTextTexture();
+      }
     }
 
     function setEngraveFont(cardElement, fontFamily) {
@@ -653,6 +771,10 @@
 
       selectedFont = fontFamily;
       applyGrabado();
+      
+      if (viewMode === '3d' && scene) {
+        update3DTextTexture();
+      }
     }
 
     function setEngraveSymbol(cardElement, symbolType) {
@@ -662,6 +784,10 @@
 
       selectedSymbol = symbolType;
       applyGrabado();
+      
+      if (viewMode === '3d' && scene) {
+        update3DTextTexture();
+      }
     }
 
     function setEngraveDepth(cardElement, depthType) {
@@ -671,6 +797,10 @@
 
       selectedDepth = depthType;
       applyGrabado();
+      
+      if (viewMode === '3d' && scene) {
+        update3DTextTexture();
+      }
     }
 
     // Calcula y ajusta el Path SVG según los sliders
@@ -680,28 +810,22 @@
       const width = parseInt(document.getElementById("slide-width").value);
       const size = parseFloat(document.getElementById("slide-size").value);
 
-      // Actualizar etiquetas numéricas
       document.getElementById("val-posy").textContent = `${y}px`;
       document.getElementById("val-bend").textContent = `${bend}px`;
       document.getElementById("val-width").textContent = `${width}px`;
       document.getElementById("val-size").textContent = `${size}px`;
 
-      // Calcular puntos inicial y final simétricos respecto al centro X=200
       const xStart = 200 - (width / 2);
       const xEnd = 200 + (width / 2);
       const yCenter = y + bend;
 
-      // Crear string del path D: M xStart,y Q 200,yCenter xEnd,y
       const dPath = `M ${xStart},${y} Q 200,${yCenter} ${xEnd},${y}`;
 
-      // Aplicar al elemento path
       const pathEl = document.getElementById("curve-path");
       pathEl.setAttribute("d", dPath);
 
-      // Actualizar el debugger
       document.getElementById("path-debugger").textContent = `Path D: ${dPath}`;
 
-      // Aplicar tamaño de fuente al elemento texto
       const textEl = document.getElementById("engraved-text-element");
       textEl.setAttribute("font-size", size);
 
@@ -733,7 +857,7 @@
         textElement.style.letterSpacing = "0.15em";
       }
 
-      // Aplicar profundidad (estilos CSS/relleno)
+      // Aplicar profundidad
       if (selectedDepth === "deep") {
         textElement.classList.add("engraved-text-svg--deep");
       } else {
@@ -758,6 +882,191 @@
 
       const url = `https://wa.me/5491131102604?text=${encodeURIComponent(mensaje)}`;
       window.open(url, "_blank");
+    }
+
+    // ==========================================================================
+    // LÓGICA DE THREE.JS - MATE 3D ROTATIVO (360 GRADOS)
+    // ==========================================================================
+
+    function init3D() {
+      const container = document.getElementById("canvas-3d-container");
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      // 1. Escena & Renderizador
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xfbf9f5); // Fondo crema que combina con la web
+
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(width, height);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.shadowMap.enabled = true;
+      container.appendChild(renderer.domElement);
+
+      // 2. Cámara
+      camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
+      camera.position.set(0, 3, 6);
+
+      // 3. Controles orbitales (arrastrar para rotar)
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.minDistance = 3;
+      controls.maxDistance = 10;
+      controls.maxPolarAngle = Math.PI / 1.8; // Impedir ver el mate completamente desde abajo
+
+      // 4. Luces (Iluminación premium para resaltar metal)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+      scene.add(ambientLight);
+
+      const mainLight = new THREE.DirectionalLight(0xffffff, 0.8);
+      mainLight.position.set(5, 10, 7);
+      scene.add(mainLight);
+
+      const fillLight = new THREE.DirectionalLight(0xddeeff, 0.4);
+      fillLight.position.set(-5, 3, -5);
+      scene.add(fillLight);
+
+      // 5. Creación del Modelo 3D del Mate (Lathe + Colores)
+      mateMeshGroup = new THREE.Group();
+      scene.add(mateMeshGroup);
+
+      // A. Cuerpo del Mate (Cuero) usando LatheGeometry para una forma realista curvada
+      const points = [];
+      points.push(new THREE.Vector2(0, 0));       // Centro base
+      points.push(new THREE.Vector2(0.55, 0));    // Borde base
+      points.push(new THREE.Vector2(0.65, 0.3));  // Curva inferior
+      points.push(new THREE.Vector2(0.85, 1.0));  // Cintura del mate
+      points.push(new THREE.Vector2(1.05, 1.7));  // Hombro superior
+      points.push(new THREE.Vector2(1.10, 2.0));  // Borde superior
+      
+      const bodyGeometry = new THREE.LatheGeometry(points, 32);
+      
+      mateBodyMaterial = new THREE.MeshStandardMaterial({
+        color: leatherColor,
+        roughness: 0.8,
+        metalness: 0.1
+      });
+
+      const bodyMesh = new THREE.Mesh(bodyGeometry, mateBodyMaterial);
+      mateMeshGroup.add(bodyMesh);
+
+      // B. Virola Metálica (Cilindro donde se proyecta la textura del grabado)
+      const virolaGeom = new THREE.CylinderGeometry(1.11, 1.11, 0.3, 32, 1, false);
+      
+      // Crear textura dinámica de canvas para el grabado
+      textCanvasTexture = createTextTexture();
+      
+      virolaMaterial = new THREE.MeshStandardMaterial({
+        map: textCanvasTexture,
+        roughness: 0.15,
+        metalness: 0.95
+      });
+
+      const virolaMesh = new THREE.Mesh(virolaGeom, virolaMaterial);
+      virolaMesh.position.y = 2.05; // Colocar encima del cuerpo
+      mateMeshGroup.add(virolaMesh);
+
+      // C. Base Metálica Opcional (Anillo metálico inferior)
+      const baseGeom = new THREE.CylinderGeometry(0.57, 0.57, 0.08, 32);
+      const baseMat = new THREE.MeshStandardMaterial({ color: 0xaaaaaa, roughness: 0.2, metalness: 0.8 });
+      const baseMesh = new THREE.Mesh(baseGeom, baseMat);
+      baseMesh.position.y = 0.04;
+      mateMeshGroup.add(baseMesh);
+
+      // Desplazar el mate un poquito hacia abajo para centrar en la pantalla
+      mateMeshGroup.position.y = -1;
+
+      // 6. Ciclo de animación
+      animate();
+
+      // Ajustar al cambiar el tamaño de la ventana
+      window.addEventListener("resize", onWindowResize);
+    }
+
+    function createTextTexture() {
+      const canvas = document.createElement("canvas");
+      canvas.width = 1024;
+      canvas.height = 128;
+      const ctx = canvas.getContext("2d");
+
+      // Fondo metálico (plateado cepillado)
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+      gradient.addColorStop(0, '#bbbbbb');
+      gradient.addColorStop(0.2, '#dddddd');
+      gradient.addColorStop(0.4, '#ffffff');
+      gradient.addColorStop(0.6, '#cccccc');
+      gradient.addColorStop(0.8, '#dddddd');
+      gradient.addColorStop(1, '#bbbbbb');
+      
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Dibujar texto del grabado (repetido 2 veces a los lados opuestos de la virola)
+      let textFinal = textBase;
+      if (selectedSymbol === "stars") {
+        textFinal = `★  ${textBase}  ★`;
+      } else if (selectedSymbol === "suns") {
+        textFinal = `☀️  ${textBase}  ☀️`;
+      }
+
+      // Configurar color del grabado (láser quemado oscuro)
+      ctx.fillStyle = selectedDepth === 'deep' ? '#18120e' : '#45382e';
+      
+      // Aplicar tipografía seleccionada
+      let fontName = "serif";
+      if (selectedFont.includes("Montserrat")) fontName = "Montserrat";
+      if (selectedFont.includes("Alex")) fontName = "Alex Brush";
+      
+      ctx.font = `bold 38px ${fontName}`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+
+      // Centrar el grabado en el frente (Y=64, X=256 y X=768 para que se vea atrás también)
+      ctx.fillText(textFinal, 256, 64);
+      ctx.fillText(textFinal, 768, 64);
+
+      // Retornar textura de Three.js
+      const texture = new THREE.CanvasTexture(canvas);
+      texture.wrapS = THREE.RepeatWrapping; // Envoltura cilíndrica horizontal
+      return texture;
+    }
+
+    function update3DTextTexture() {
+      if (!textCanvasTexture) return;
+
+      // Regenerar textura en el canvas y notificar a Three.js
+      const oldTexture = textCanvasTexture;
+      textCanvasTexture = createTextTexture();
+      virolaMaterial.map = textCanvasTexture;
+      
+      // Actualizar color de cuero del mate
+      mateBodyMaterial.color.setHex(leatherColor);
+      
+      oldTexture.dispose(); // Liberar memoria
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      
+      // Rotación pasiva muy sutil si no hay interacción del usuario
+      if (!controls.state === -1) {
+        mateMeshGroup.rotation.y += 0.003;
+      }
+
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    function onWindowResize() {
+      if (!camera || !renderer) return;
+      const container = document.getElementById("canvas-3d-container");
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+      renderer.setSize(width, height);
     }
 
     // Inicializar valores al cargar la página
