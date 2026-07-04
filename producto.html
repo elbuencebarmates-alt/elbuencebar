@@ -364,7 +364,7 @@
             <span class="form-label">Seleccioná tu variante de cuero/terminación:</span>
             <div class="options-grid">
               ${variantes.map((v, i) => `
-                <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcionVariante(this, '${v.nombre}', '${v.imagen}', ${v.precio})">${v.nombre}</button>
+                <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcionVariante(this, '${v.nombre}', '${v.imagen || ''}', ${v.precio})">${v.nombre}</button>
               `).join("")}
             </div>
           </div>
@@ -415,7 +415,7 @@
             
             <!-- Lista de Características -->
             <ul class="product-bullets">
-              ${p.detalles.map(d => `<li>${d}</li>`).join("")}
+              ${(p.detalles || []).map(d => `<li>${d}</li>`).join("")}
             </ul>
           </div>
         </div>
@@ -442,7 +442,7 @@
       window.opcionSeleccionadaActiva = nombre;
       
       const mainImg = document.getElementById("main-product-image");
-      if (mainImg && imagen) {
+      if (mainImg && imagen && imagen !== 'undefined' && imagen !== '') {
         mainImg.src = imagen;
       }
       
