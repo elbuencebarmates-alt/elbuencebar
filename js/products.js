@@ -796,18 +796,6 @@ const PRODUCTOS = [
       "Forrado en cuero vacuno legítimo con costuras tradicionales",
       "Virola de alpaca pulida",
       "Incluye bombilla pico de loro de acero inoxidable"
-    ],
-    "variantes": [
-      {
-        "nombre": "Negro",
-        "imagen": "assets/images/camionero-cuero-calabaza.jpg",
-        "precio": 17460
-      },
-      {
-        "nombre": "Marrón",
-        "imagen": "assets/images/camionero-cuero-calabaza.jpg",
-        "precio": 17460
-      }
     ]
   },
   {
