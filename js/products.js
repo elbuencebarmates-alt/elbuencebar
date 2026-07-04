@@ -535,22 +535,7 @@ const PRODUCTOS = [
       }
     ]
   },
-  {
-    "id": "bombillon-alpaca-premium-pala",
-    "nombre": "Bombillon de alpaca premium, pala ancha y doble dije de bronce, pico recto",
-    "categoria": "bombillas",
-    "subcategoria": "alpaca",
-    "precio": 25000,
-    "imagen": "assets/images/bombillon-alpaca-premium-pala.png",
-    "descripcion": "Bombillón de alpaca premium con diseño de pico recto, difusores térmicos con doble dije de bronce y pala ancha reforzada para un excelente filtrado.",
-    "destacado": false,
-    "detalles": [
-      "Alpaca 100% de alta pureza con detalles cincelados",
-      "Doble dije de bronce macizo difusor de calor",
-      "Pala ancha reforzada ideal para yerba uruguaya",
-      "Terminación de lujo pulida a espejo"
-    ]
-  },
+
   {
     "id": "bombillon-alpaca-premium-loro",
     "nombre": "Bombillon premium artesanal 100% alpaca - pico Loro",
@@ -828,6 +813,502 @@ const PRODUCTOS = [
         "imagen": "assets/images/camionero-cuero-calabaza.jpg",
         "precio": 17460
       }
+    ]
+  },
+
+  {
+    "id": "torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla",
+    "nombre": "Torpedo negro interior de CALABAZA virola acero boca ancha CON BOMBILLA",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 20390,
+    "imagen": "assets/images/torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "imperial-con-dije-de-bronce-sol-argentino-soldado-con-bombilla-de-regalo",
+    "nombre": "Imperial con dije de bronce Sol Argentino soldado con bombilla de regalo",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 34790,
+    "imagen": "assets/images/imperial-con-dije-de-bronce-sol-argentino-soldado-con-bombilla-de-regalo.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "torpedo-criollo-guarda-de-alpaca-cincelada-interior-calabaza-con-bombilla-pico-loro",
+    "nombre": "Torpedo criollo, guarda de alpaca cincelada, interior calabaza con bombilla pico loro",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 39480,
+    "imagen": "assets/images/torpedo-criollo-guarda-de-alpaca-cincelada-interior-calabaza-con-bombilla-pico-loro.jpg",
+    "descripcion": "Torpedo  criollo base de cuero, con diferentes diseños tallados, color negro con interior calabaza.\r\n\r\nGuarda de alpaca cincelada.\r\n\r\nIncluye bombilla pico loro de acero inoxidable con filtro /pala.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "torpedo-de-alpaca-cincelada-interior-calabaza-animal-print-con-bombilla-de-regalo",
+    "nombre": "Torpedo de alpaca cincelada interior calabaza animal print con bombilla de regalo",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 36240,
+    "imagen": "assets/images/torpedo-de-alpaca-cincelada-interior-calabaza-animal-print-con-bombilla-de-regalo.jpg",
+    "descripcion": "Torpedo de cuero con interior calabaza, guarda de alpaca cincelada.\r\n\r\nReforzado con patas rígidas",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "imperial-escudo-de-bronce-boca-guarda-de-alpaca",
+    "nombre": "Imperial escudo de bronce - Boca, guarda de alpaca",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 38390,
+    "imagen": "assets/images/imperial-escudo-de-bronce-boca-guarda-de-alpaca.jpg",
+    "descripcion": "Imperial interior calabaza con guarda de alpaca, con escudo en bronce de Boca soldado.\r\n\r\ncuero vacuno 100%",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "mate-imperial-cuero-croco-negro",
+    "nombre": "Mate Imperial cuero croco + bombilla pico de loro de acero inox con filtro/pala",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 31750,
+    "imagen": "assets/images/mate-imperial-cuero-croco-negro.jpeg",
+    "descripcion": "Mate Imperial cuero croco con alpaca y calabaza.\r\n\r\nIncluye bombilla pico de loro de acero inoxidable.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ],
+    "variantes": [
+      {
+        "nombre": "Marrón",
+        "imagen": "assets/images/mate-imperial-cuero-croco-negro.jpeg",
+        "precio": 31750
+      },
+      {
+        "nombre": "Negro",
+        "imagen": "assets/images/mate-imperial-cuero-croco-negro.jpeg",
+        "precio": 31750
+      }
+    ]
+  },
+
+  {
+    "id": "mate-imperial-base-de-alpaca-y-pelotas-guarda-de-alpaca-cuero-negro-repujado-bombilla-de-acero",
+    "nombre": "mate imperial BASE DE ALPACA Y PELOTAS - guarda de alpaca - cuero negro repujado + bombilla de acero",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 42000,
+    "imagen": "assets/images/mate-imperial-base-de-alpaca-y-pelotas-guarda-de-alpaca-cuero-negro-repujado-bombilla-de-acero.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "mate-torpedo-interior-acero-inoxidable-con-bombilla",
+    "nombre": "Mate Torpedo interior acero inoxidable + bombilla pico de loro de acero inox con filtro/pala",
+    "categoria": "mates",
+    "subcategoria": "torpedo",
+    "precio": 26400,
+    "imagen": "assets/images/mate-torpedo-interior-acero-inoxidable-con-bombilla.webp",
+    "descripcion": "Mate Torpedo forrado en cuero con interior de acero inoxidable.\r\n\r\nIncluye bombilla pico de loro de acero inoxidable de regalo.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "imperial-algarrobo-premium-guarda-de-alpaca-con-base-de-alpaca-con-bombilla",
+    "nombre": "Imperial ALGARROBO PREMIUM guarda de ALPACA con BASE DE ALPACA (con bombilla)",
+    "categoria": "mates",
+    "subcategoria": "algarrobo",
+    "precio": 27590,
+    "imagen": "assets/images/imperial-algarrobo-premium-guarda-de-alpaca-con-base-de-alpaca-con-bombilla.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "mate-imperial-de-algarrobo-con-guarda-de-alpaca",
+    "nombre": "Mate Imperial de algarrobo con guarda de alpaca  premium + bombilla pico de loro con filtro/pala",
+    "categoria": "mates",
+    "subcategoria": "algarrobo",
+    "precio": 21080,
+    "imagen": "assets/images/mate-imperial-de-algarrobo-con-guarda-de-alpaca.webp",
+    "descripcion": "Mate Imperial de algarrobo con fleje y virola de alpaca gruesa.\r\n\r\nIncluye bombilla pico de loro de acero inoxidable con filtro/pala.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "termo-media-manija",
+    "nombre": "TERMOS MEDIA MANIJA ACERO",
+    "categoria": "termos",
+    "subcategoria": "media-manija",
+    "precio": 17640,
+    "imagen": "assets/images/termo-media-manija.jpg",
+    "descripcion": "Termo media manija de 1 litro y de acero inoxidable.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "termo-original-luminox-lumilagro-1-litro-pico-cebador-con-caja",
+    "nombre": "TERMO ORIGINAL LUMINOX LUMILAGRO 1 LITRO PICO CEBADOR CON CAJA",
+    "categoria": "termos",
+    "subcategoria": "media-manija",
+    "precio": 59990,
+    "imagen": "assets/images/termo-original-luminox-lumilagro-1-litro-pico-cebador-con-caja.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "bombillon-de-alpaca-classic-con-pico-de-loro",
+    "nombre": "Bombillon de alpaca \"classic\" con pico de loro",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 18000,
+    "imagen": "assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg",
+    "descripcion": "Bombillon sin diseños en el caño. caño grueso y pala ancha de alpaca\r\n\r\nPico de loro de bronce.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "termo-12-lts-pico-system-color-cobre",
+    "nombre": "Termo 1,2 Lts. pico system color cobre",
+    "categoria": "termos",
+    "subcategoria": "media-manija",
+    "precio": 29880,
+    "imagen": "assets/images/termo-12-lts-pico-system-color-cobre.jpeg",
+    "descripcion": "termo color cobre con pico system y tapa para usar. omo mate.\r\n\r\n1,2 lts.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "vaso-quencher-de-1-2l-colores-surtidos",
+    "nombre": "VASO QUENCHER DE 1.2L COLORES SURTIDOS",
+    "categoria": "accesorios",
+    "subcategoria": "vasos",
+    "precio": 20390,
+    "imagen": "assets/images/vaso-quencher-de-1-2l-colores-surtidos.jpeg",
+    "descripcion": "TAPA ANTIVUELCO\r\n\r\nSORBETE DE PLASTICO\r\n\r\nCOLORES SURTIDOS",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "botella-flip-de-650ml-colores-surtidos",
+    "nombre": "BOTELLA FLIP DE 650ML COLORES SURTIDOS",
+    "categoria": "accesorios",
+    "subcategoria": "vasos",
+    "precio": 19190,
+    "imagen": "assets/images/botella-flip-de-650ml-colores-surtidos.jpeg",
+    "descripcion": "PICO VERTEDOR\r\n\r\nTAPA ANTIVUELCO\r\n\r\nCOLORES SURTIDOS",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "porta-mate-premium-para-la-palanca-de-cambio-reforzado-doble-costura",
+    "nombre": "Porta mate de eco cuero para la palanca de cambio",
+    "categoria": "accesorios",
+    "subcategoria": "soporte",
+    "precio": 4320,
+    "imagen": "assets/images/porta-mate-premium-para-la-palanca-de-cambio-reforzado-doble-costura.jpeg",
+    "descripcion": "porta mate de eco cuero. idéntico a los de cuero.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "pico-system-blanco",
+    "nombre": "PICO SYSTEM BLANCO",
+    "categoria": "accesorios",
+    "subcategoria": "repuesto",
+    "precio": 5990,
+    "imagen": "assets/images/pico-system-blanco.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium",
+    "nombre": "Porta mate de cuero vacuno para palanca de cambio(BORRAVINO Y NEGRO)",
+    "categoria": "accesorios",
+    "subcategoria": "soporte",
+    "precio": 11990,
+    "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
+    "descripcion": "Porta mate artesanales de cuero\r\n\r\n10 cm de diámetro",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ],
+    "variantes": [
+      {
+        "nombre": "Borravino",
+        "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
+        "precio": 11990
+      },
+      {
+        "nombre": "Negro",
+        "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
+        "precio": 11990
+      }
+    ]
+  },
+
+  {
+    "id": "mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela",
+    "nombre": "MOCHILA/BOLSO MATERO + CHAULATA  con detalles en suela",
+    "categoria": "materas",
+    "subcategoria": "mochila",
+    "precio": 17990,
+    "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
+    "descripcion": "Mochila con tiras para bolso color verde enebro, con detalles suela.\r\n\r\nincluye sujetador para bolso y yerbera grande y yerbera chica reforzadas por dentro.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ],
+    "variantes": [
+      {
+        "nombre": "Verde",
+        "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
+        "precio": 17990
+      },
+      {
+        "nombre": "Negro",
+        "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
+        "precio": 17990
+      }
+    ]
+  },
+
+  {
+    "id": "bolsito-viral-tik-tok-con-chaulata",
+    "nombre": "Bolso matero cuerina PREMIUN con sujetador de termo + yerbero + azucarero",
+    "categoria": "termos",
+    "subcategoria": "media-manija",
+    "precio": 12460,
+    "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
+    "descripcion": "Bolsito de tela con chaulata.\r\n\r\nApto para termo stanley de 1,4",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ],
+    "variantes": [
+      {
+        "nombre": "NEGRO",
+        "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
+        "precio": 12460
+      },
+      {
+        "nombre": "SUELA",
+        "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
+        "precio": 12460
+      }
+    ]
+  },
+
+  {
+    "id": "bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia",
+    "nombre": "Bolso matero tela PREMIUN con sujetador de termo + yerbero + azucarero",
+    "categoria": "termos",
+    "subcategoria": "media-manija",
+    "precio": 10680,
+    "imagen": "assets/images/bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia.jpeg",
+    "descripcion": "Bolsito de tela con chaulata",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "mochila-bolso-matero-animal-print-con-chaulatas",
+    "nombre": "Mochila / Bolso matero animal print con chaulatas",
+    "categoria": "materas",
+    "subcategoria": "mochila",
+    "precio": 10790,
+    "imagen": "assets/images/mochila-bolso-matero-animal-print-con-chaulatas.jpeg",
+    "descripcion": "Incluye mochila/bolso color animal print con yerbero y azucarero haciendo juego.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "canastas-de-cuero-con-escudo-de-futbol-color-negro",
+    "nombre": "CANASTAS DE CUERO CON ESCUDO DE FUTBOL COLOR NEGRO",
+    "categoria": "materas",
+    "subcategoria": "canasta",
+    "precio": 28800,
+    "imagen": "assets/images/canastas-de-cuero-con-escudo-de-futbol-color-negro.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "media-canasta-ideal-dos-productos-100-cuero",
+    "nombre": "Media Canasta/ ideal dos productos 100% cuero",
+    "categoria": "materas",
+    "subcategoria": "canasta",
+    "precio": 26400,
+    "imagen": "assets/images/media-canasta-ideal-dos-productos-100-cuero.jpg",
+    "descripcion": "te traemos estas media canastas de calidad premium,  que cuentan con división interna y manija reforzada\r\n\r\nDisponible en tres colores a los cuales las fotos no se comparan con cómo son\r\n\r\n \r\n\r\n-Marrón borravino\r\n\r\n-Marrón chocolate\r\n\r\n-Negro\r\n\r\n \r\n\r\nCada canasta es única, por ende sus detalles en el cuero son todos diferentes. el diseño es siempre el mismo",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "imperial-cuero-jean-int-acero-con-bombilla-pico-loro",
+    "nombre": "IMPERIAL CUERO JEAN INT ACERO CON BOMBILLA PICO LORO",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 26400,
+    "imagen": "assets/images/imperial-cuero-jean-int-acero-con-bombilla-pico-loro.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero",
+    "nombre": "Camionero criollo calabaza laqueada virola acero + BOMBILLA DE ACERO",
+    "categoria": "mates",
+    "subcategoria": "camionero",
+    "precio": 24000,
+    "imagen": "assets/images/camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
+    ]
+  },
+
+  {
+    "id": "camionero-algarrobo-grabado-predisenados-bombilla",
+    "nombre": "CAMIONERO ALGARROBO GRABADO PREDISEÑADOS + BOMBILLA",
+    "categoria": "mates",
+    "subcategoria": "camionero",
+    "precio": 17990,
+    "imagen": "assets/images/camionero-algarrobo-grabado-predisenados-bombilla.jpeg",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "destacado": false,
+    "detalles": [
+      "Seleccionado minuciosamente por calidad",
+      "Materiales premium garantizados",
+      "Diseño artesanal tradicional"
     ]
   }
 ];
