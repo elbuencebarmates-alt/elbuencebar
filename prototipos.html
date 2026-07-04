@@ -8,6 +8,9 @@
   <!-- Favicon -->
   <link rel="icon" href="assets/images/favicon.png?v=2" type="image/png">
 
+  <!-- Google Fonts para Grabado Premium -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+
   <!-- CSS Base de la Tienda -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/main.css">
@@ -230,18 +233,21 @@
       height: 100%;
     }
 
-    /* Estilos aplicables al texto grabado en la virola */
+    /* Estilos aplicables al texto grabado en la virola con fusión metálica realista */
     .engraved-text-svg {
-      fill: #4b3e35;
+      fill: #473a2f;
       font-weight: 700;
       letter-spacing: 0.15em;
-      filter: drop-shadow(0px 1px 1px rgba(255,255,255,0.3));
-      transition: fill 0.3s, font-family 0.3s, font-size 0.3s;
+      opacity: 0.85;
+      mix-blend-mode: multiply;
+      filter: drop-shadow(0px 0.8px 0.5px rgba(255,255,255,0.4));
+      transition: fill 0.3s, font-family 0.3s;
     }
 
     .engraved-text-svg--deep {
-      fill: #221c17;
-      filter: drop-shadow(0px 0.5px 0.5px rgba(255,255,255,0.1));
+      fill: #1d1713;
+      opacity: 0.95;
+      filter: drop-shadow(0px 0.5px 0.3px rgba(255,255,255,0.25));
     }
 
     /* Panel de controles de grabado */
@@ -255,6 +261,13 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 18px;
+    }
+
+    .control-group-engrave:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
     .control-group-engrave label {
@@ -282,7 +295,7 @@
       text-transform: none;
     }
 
-    /* Selectores en formato pastilla/tarjeta */
+    /* Selectores de pastillas */
     .choice-grid-engrave {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -315,6 +328,41 @@
       box-shadow: var(--shadow-sm);
     }
 
+    /* Slider de calibración */
+    .slider-container {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .slider-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      font-weight: 600;
+    }
+
+    .slider-input {
+      width: 100%;
+      height: 6px;
+      background: var(--color-border);
+      border-radius: var(--radius-full);
+      outline: none;
+      -webkit-appearance: none;
+    }
+
+    .slider-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      cursor: pointer;
+      border: 2px solid var(--color-bg-primary);
+      box-shadow: var(--shadow-sm);
+    }
+
     .engrave-summary-card {
       background-color: rgba(184, 125, 75, 0.05);
       border: 1px dashed var(--color-accent-light);
@@ -327,6 +375,18 @@
 
     .engrave-summary-card strong {
       color: var(--color-primary);
+    }
+
+    .coordinate-debugger {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      padding: 10px;
+      font-family: monospace;
+      font-size: 0.75rem;
+      border-radius: var(--radius-sm);
+      text-align: left;
+      margin-top: 10px;
+      color: var(--color-text-muted);
     }
 
     @media (max-width: 992px) {
@@ -345,7 +405,7 @@
   <header class="proto-header">
     <div class="container">
       <h1>PROPUESTA DE MEJORA INTERACTIVA</h1>
-      <p>Prototipo funcional de la idea: Simulador de Grabado Láser Personalizado en Virola de Mate.</p>
+      <p>Prototipo interactivo ajustable: Simulador de Grabado Láser Personalizado en Virola de Mate.</p>
       <a href="index.html" class="btn btn--secondary btn--sm" style="margin-top: 20px;">Volver a la Web Principal</a>
     </div>
   </header>
@@ -353,33 +413,51 @@
   <main class="container">
 
     <!-- SECCIÓN 1: MICRO-INTERACCIONES (YA INTEGRADAS) -->
-    <section style="margin-bottom: 60px; opacity: 0.6;">
+    <section style="margin-bottom: 40px; opacity: 0.6;">
       <h2 class="proto-section-title" style="font-size: 1.4rem;">1. Micro-interacciones ya integradas</h2>
       <p style="font-size: 0.9rem;">Las animaciones de hover y vuelo al carrito ya están configuradas en la tienda.</p>
     </section>
 
     <!-- SECCIÓN 2: SIMULADOR DE GRABADO LÁSER -->
     <section style="margin-bottom: 120px;">
-      <h2 class="proto-section-title">2. Simulador de Grabado Láser en Virola (Idea 2)</h2>
-      <p class="section-subtitle">Simulación en tiempo real de cómo quedaría un texto grabado en relieve sobre la virola metálica del mate</p>
+      <h2 class="proto-section-title">2. Simulador de Grabado Láser en Virola Ajustable</h2>
+      <p class="section-subtitle">Probá cómo queda el grabado sobre distintos mates y usá los controles para centrar y curvar el texto perfectamente</p>
 
       <div class="proto-card">
         <div class="engrave-simulator-grid">
           
           <!-- LADO IZQUIERDO: Previsualización en Tiempo Real -->
           <div class="engrave-preview-box">
+            
+            <!-- Selector de Mates para Grabado -->
+            <div style="margin-bottom: 20px;">
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 10px; text-transform: uppercase;">
+                Seleccioná el Mate a Grabar:
+              </span>
+              <div style="display: flex; gap: 8px; justify-content: center;">
+                <button class="choice-card-engrave choice-card-engrave--active" id="btn-mate-1" onclick="switchMate(1, 'assets/images/mate-imperial-croco-negro.png', 133, 17, 164, 12)">
+                  Imperial Negro
+                </button>
+                <button class="choice-card-engrave" id="btn-mate-2" onclick="switchMate(2, 'assets/images/camionero-cuero-calabaza.jpg', 123, 14, 162, 11.5)">
+                  Camionero Acero
+                </button>
+                <button class="choice-card-engrave" id="btn-mate-3" onclick="switchMate(3, 'assets/images/torpedo-alpaca-calada-marron.png', 145, 20, 160, 12)">
+                  Torpedo Marrón
+                </button>
+              </div>
+            </div>
+
             <div class="canvas-container-svg">
-              <svg class="svg-canvas" viewBox="0 0 400 400" id="virola-svg">
+              <svg class="svg-canvas" viewBox="0 0 400 400" id="virola-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Imagen del Mate de Fondo -->
-                <image href="assets/images/mate-imperial-croco-negro.png" x="0" y="0" width="400" height="400" />
+                <image id="mate-bg-svg" xlink:href="assets/images/mate-imperial-croco-negro.png" href="assets/images/mate-imperial-croco-negro.png" x="0" y="0" width="400" height="400" />
                 
-                <!-- Path invisible para guiar el texto curvado en el labio frontal de la virola -->
-                <!-- M 120,135 Q 200,158 280,135 -->
-                <path id="curve-path" d="M 115,135 Q 200,156 285,135" fill="none" stroke="none" />
+                <!-- Path visible en debug, invisible en uso -->
+                <path id="curve-path" d="M 118,133 Q 200,150 282,133" fill="none" stroke="none" />
                 
                 <!-- Texto grabado curvado -->
-                <text font-size="12.5" class="engraved-text-svg" id="engraved-text-element">
-                  <textPath href="#curve-path" startOffset="50%" text-anchor="middle" id="engraved-text-path">
+                <text font-size="12" class="engraved-text-svg" id="engraved-text-element">
+                  <textPath xlink:href="#curve-path" href="#curve-path" startOffset="50%" text-anchor="middle" id="engraved-text-path">
                     TU NOMBRE AQUÍ
                   </textPath>
                 </text>
@@ -387,8 +465,13 @@
             </div>
             
             <p style="font-size: 0.85rem; color: var(--color-text-muted); font-style: italic;">
-              * Vista previa digital aproximada. El tono del grabado final puede variar según la dureza del metal de la virola.
+              * Vista previa digital interactiva de grabado.
             </p>
+            
+            <!-- Depurador de Coordenadas -->
+            <div class="coordinate-debugger" id="path-debugger">
+              Path D: M 118,133 Q 200,150 282,133
+            </div>
           </div>
 
           <!-- LADO DERECHO: Panel de Controles -->
@@ -404,13 +487,13 @@
             <div class="control-group-engrave">
               <label>2. Tipografía del Grabado:</label>
               <div class="choice-grid-engrave">
-                <div class="choice-card-engrave choice-card-engrave--active" onclick="setEngraveFont(this, 'Times New Roman, serif')">
+                <div class="choice-card-engrave choice-card-engrave--active" id="btn-font-serif" onclick="setEngraveFont(this, 'Cormorant Garamond, serif')">
                   Romana Elegante
                 </div>
-                <div class="choice-card-engrave" onclick="setEngraveFont(this, 'Arial, Helvetica, sans-serif')">
+                <div class="choice-card-engrave" id="btn-font-sans" onclick="setEngraveFont(this, 'Montserrat, sans-serif')">
                   Gótica Moderna
                 </div>
-                <div class="choice-card-engrave" onclick="setEngraveFont(this, 'Brush Script MT, cursive')">
+                <div class="choice-card-engrave" id="btn-font-cursive" onclick="setEngraveFont(this, 'Alex Brush, cursive')">
                   Cursiva Cincelada
                 </div>
               </div>
@@ -424,7 +507,7 @@
                   Sin símbolos
                 </div>
                 <div class="choice-card-engrave" onclick="setEngraveSymbol(this, 'stars')">
-                  ⭐ Estrellas ⭐
+                  ★ Estrellas ★
                 </div>
                 <div class="choice-card-engrave" onclick="setEngraveSymbol(this, 'suns')">
                   ☀️ Soles ☀️
@@ -432,9 +515,50 @@
               </div>
             </div>
 
+            <!-- Calibrador de Curva (Sliders de Ajuste) -->
+            <div class="control-group-engrave">
+              <label style="color: var(--color-accent); font-weight: 700;">⚙️ Calibración Manual del Grabado:</label>
+              
+              <!-- Posición Y -->
+              <div class="slider-container" style="margin-top: 10px;">
+                <div class="slider-row">
+                  <span>Posición Vertical (Y):</span>
+                  <span id="val-posy">133px</span>
+                </div>
+                <input type="range" id="slide-posy" class="slider-input" min="90" max="180" value="133" oninput="adjustPath()">
+              </div>
+
+              <!-- Curvatura -->
+              <div class="slider-container" style="margin-top: 14px;">
+                <div class="slider-row">
+                  <span>Curvatura (Bending):</span>
+                  <span id="val-bend">17px</span>
+                </div>
+                <input type="range" id="slide-bend" class="slider-input" min="0" max="40" value="17" oninput="adjustPath()">
+              </div>
+
+              <!-- Ancho del Arco -->
+              <div class="slider-container" style="margin-top: 14px;">
+                <div class="slider-row">
+                  <span>Ancho del Arco (Width):</span>
+                  <span id="val-width">164px</span>
+                </div>
+                <input type="range" id="slide-width" class="slider-input" min="100" max="240" value="164" oninput="adjustPath()">
+              </div>
+
+              <!-- Tamaño de Fuente -->
+              <div class="slider-container" style="margin-top: 14px;">
+                <div class="slider-row">
+                  <span>Tamaño de Letra:</span>
+                  <span id="val-size">12px</span>
+                </div>
+                <input type="range" id="slide-size" class="slider-input" min="8" max="22" step="0.5" value="12" oninput="adjustPath()">
+              </div>
+            </div>
+
             <!-- Tipo de Grabado / Profundidad -->
             <div class="control-group-engrave">
-              <label>4. Acabado de la Profundidad:</label>
+              <label>5. Acabado de la Profundidad:</label>
               <div class="choice-grid-engrave">
                 <div class="choice-card-engrave choice-card-engrave--active" onclick="setEngraveDepth(this, 'light')">
                   Láser Superficial
@@ -445,7 +569,7 @@
               </div>
             </div>
 
-            <!-- Resumen de Costo y Checkout -->
+            <!-- Resumen de Costo -->
             <div class="engrave-summary-card">
               <p style="margin-bottom: 8px;">
                 Grabado personalizado de virola: <strong>Adicional $5.000</strong>
@@ -471,9 +595,45 @@
   <script>
     // Variables de configuración de grabado
     let textBase = "TU NOMBRE AQUÍ";
-    let selectedFont = "Times New Roman, serif";
+    let selectedFont = "Cormorant Garamond, serif";
     let selectedSymbol = "none";
     let selectedDepth = "light";
+    let activeMateId = 1;
+
+    // Configuración por defecto de cada mate: [Y, Bend, Width, FontSize]
+    const configsMates = {
+      1: { y: 133, bend: 17, width: 164, size: 12 },    // Imperial Negro
+      2: { y: 123, bend: 14, width: 162, size: 11.5 },  // Camionero Acero
+      3: { y: 145, bend: 20, width: 160, size: 12 }     // Torpedo Marrón
+    };
+
+    function switchMate(mateId, imageSrc, y, bend, width, size) {
+      activeMateId = mateId;
+
+      // Actualizar botones de mate activo
+      for (let i = 1; i <= 3; i++) {
+        const btn = document.getElementById(`btn-mate-${i}`);
+        if (i === mateId) {
+          btn.classList.add("choice-card-engrave--active");
+        } else {
+          btn.classList.remove("choice-card-engrave--active");
+        }
+      }
+
+      // Actualizar imagen de fondo
+      const imgElement = document.getElementById("mate-bg-svg");
+      imgElement.setAttribute("href", imageSrc);
+      imgElement.setAttribute("xlink:href", imageSrc);
+
+      // Cargar valores en sliders
+      document.getElementById("slide-posy").value = y;
+      document.getElementById("slide-bend").value = bend;
+      document.getElementById("slide-width").value = width;
+      document.getElementById("slide-size").value = size;
+
+      // Actualizar textos y aplicar grabado
+      adjustPath();
+    }
 
     function updateEngraveText() {
       const input = document.getElementById("engrave-text-input");
@@ -487,7 +647,6 @@
     }
 
     function setEngraveFont(cardElement, fontFamily) {
-      // Toggle clase activa
       const cards = cardElement.parentNode.querySelectorAll(".choice-card-engrave");
       cards.forEach(c => c.classList.remove("choice-card-engrave--active"));
       cardElement.classList.add("choice-card-engrave--active");
@@ -514,6 +673,41 @@
       applyGrabado();
     }
 
+    // Calcula y ajusta el Path SVG según los sliders
+    function adjustPath() {
+      const y = parseInt(document.getElementById("slide-posy").value);
+      const bend = parseInt(document.getElementById("slide-bend").value);
+      const width = parseInt(document.getElementById("slide-width").value);
+      const size = parseFloat(document.getElementById("slide-size").value);
+
+      // Actualizar etiquetas numéricas
+      document.getElementById("val-posy").textContent = `${y}px`;
+      document.getElementById("val-bend").textContent = `${bend}px`;
+      document.getElementById("val-width").textContent = `${width}px`;
+      document.getElementById("val-size").textContent = `${size}px`;
+
+      // Calcular puntos inicial y final simétricos respecto al centro X=200
+      const xStart = 200 - (width / 2);
+      const xEnd = 200 + (width / 2);
+      const yCenter = y + bend;
+
+      // Crear string del path D: M xStart,y Q 200,yCenter xEnd,y
+      const dPath = `M ${xStart},${y} Q 200,${yCenter} ${xEnd},${y}`;
+
+      // Aplicar al elemento path
+      const pathEl = document.getElementById("curve-path");
+      pathEl.setAttribute("d", dPath);
+
+      // Actualizar el debugger
+      document.getElementById("path-debugger").textContent = `Path D: ${dPath}`;
+
+      // Aplicar tamaño de fuente al elemento texto
+      const textEl = document.getElementById("engraved-text-element");
+      textEl.setAttribute("font-size", size);
+
+      applyGrabado();
+    }
+
     function applyGrabado() {
       const textPathElement = document.getElementById("engraved-text-path");
       const textElement = document.getElementById("engraved-text-element");
@@ -532,13 +726,11 @@
       // Aplicar tipografía
       textElement.style.fontFamily = selectedFont;
 
-      // Ajustar tamaño para cursiva (suele necesitar ser más grande para legibilidad)
-      if (selectedFont.includes("Brush")) {
-        textElement.setAttribute("font-size", "15");
-        textElement.setAttribute("letter-spacing", "0.05em");
+      // Cursiva compensación de tamaño
+      if (selectedFont.includes("Alex")) {
+        textElement.style.letterSpacing = "0.02em";
       } else {
-        textElement.setAttribute("font-size", "12.5");
-        textElement.setAttribute("letter-spacing", "0.15em");
+        textElement.style.letterSpacing = "0.15em";
       }
 
       // Aplicar profundidad (estilos CSS/relleno)
@@ -552,10 +744,13 @@
     function pedirGrabadoPorWhatsApp() {
       const grabadoFinal = document.getElementById("engraved-text-path").textContent;
       const estiloAcabado = selectedDepth === "deep" ? "Cincelado Oscuro" : "Láser Superficial";
-      const tipoTipografia = selectedFont.includes("Times") ? "Romana" : (selectedFont.includes("Arial") ? "Gótica" : "Cursiva");
+      const tipoTipografia = selectedFont.includes("Cormorant") ? "Romana" : (selectedFont.includes("Montserrat") ? "Gótica" : "Cursiva");
+      
+      const mateNombres = { 1: "MATE IMPERIAL NEGRO", 2: "MATE CAMIONERO ACERO", 3: "MATE TORPEDO MARRÓN" };
+      const mateSeleccionado = mateNombres[activeMateId];
 
-      const mensaje = `Hola El Buen Cebar! Me gustaría encargar un Mate Imperial con virola personalizada:\n\n` +
-                      `🧉 Producto: MATE IMPERIAL PREMIUM CROCO\n` +
+      const mensaje = `Hola El Buen Cebar! Me gustaría encargar un Mate con virola personalizada:\n\n` +
+                      `🧉 Producto: ${mateSeleccionado}\n` +
                       `✍️ Texto de Grabado: "${grabadoFinal}"\n` +
                       `🔠 Tipografía: ${tipoTipografia}\n` +
                       `🛠️ Tipo de Acabado: ${estiloAcabado}\n\n` +
@@ -564,6 +759,11 @@
       const url = `https://wa.me/5491131102604?text=${encodeURIComponent(mensaje)}`;
       window.open(url, "_blank");
     }
+
+    // Inicializar valores al cargar la página
+    document.addEventListener("DOMContentLoaded", () => {
+      adjustPath();
+    });
   </script>
 </body>
 </html>
