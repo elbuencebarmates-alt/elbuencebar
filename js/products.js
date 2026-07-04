@@ -1143,6 +1143,51 @@ const PRODUCTOS = [
       "Materiales premium garantizados",
       "Diseño artesanal tradicional"
     ]
+  },
+  {
+    "id": "matepa-gruesa-acero-con-sujetador",
+    "nombre": "MATEPA GRUESA DE ACERO CON SUJETADOR",
+    "categoria": "accesorios",
+    "subcategoria": "repuesto",
+    "precio": 8000,
+    "imagen": "assets/images/accesorios-matepa-acero.png",
+    "descripcion": "Tapa mate o matepa gruesa fabricada en acero inoxidable con sujetador incorporado. Ideal para cebar sin salpicaduras y mantener el calor.",
+    "destacado": false,
+    "detalles": [
+      "Fabricado en acero inoxidable de alto espesor",
+      "Sujetador lateral de agarre seguro",
+      "Evita salpicaduras y mantiene la temperatura de la yerba"
+    ]
+  },
+  {
+    "id": "luz-mate-colores-surtidos",
+    "nombre": "LUZ MATE COLORES SURTIDOS",
+    "categoria": "accesorios",
+    "subcategoria": "novedades",
+    "precio": 5000,
+    "imagen": "assets/images/accesorios-luz-mate.png",
+    "descripcion": "Práctica luz LED para bombilla de mate. Ideal para cebar de noche o en viajes. Viene con pila incluida y gancho sujetador universal.",
+    "destacado": false,
+    "detalles": [
+      "Luz LED blanca de alta visibilidad",
+      "Pila incluida de larga duración",
+      "Gancho de sujeción compatible con cualquier bombilla"
+    ]
+  },
+  {
+    "id": "mesa-plegable-de-madera",
+    "nombre": "MESA PLEGABLE DE MADERA",
+    "categoria": "accesorios",
+    "subcategoria": "combos",
+    "precio": 25000,
+    "imagen": "assets/images/accesorios-mesa-madera.png",
+    "descripcion": "Mesa matera plegable de madera de pino seleccionado con posa-termos y posa-mates integrados. Muy liviana y fácil de transportar.",
+    "destacado": false,
+    "detalles": [
+      "Fabricada en madera de pino pulida y natural",
+      "Diseño plegable súper compacto y liviano",
+      "Espacio para termo, mate y accesorios"
+    ]
   }
 ];
 
