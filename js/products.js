@@ -963,7 +963,7 @@ const PRODUCTOS = [
   {
     "id": "vaso-quencher-de-1-2l-colores-surtidos",
     "nombre": "VASO QUENCHER DE 1.2L COLORES SURTIDOS",
-    "categoria": "accesorios",
+    "categoria": "termos",
     "subcategoria": "vasos",
     "precio": 20390,
     "imagen": "assets/images/vaso-quencher-de-1-2l-colores-surtidos.jpeg",
@@ -978,7 +978,7 @@ const PRODUCTOS = [
   {
     "id": "botella-flip-de-650ml-colores-surtidos",
     "nombre": "BOTELLA FLIP DE 650ML COLORES SURTIDOS",
-    "categoria": "accesorios",
+    "categoria": "termos",
     "subcategoria": "vasos",
     "precio": 19190,
     "imagen": "assets/images/botella-flip-de-650ml-colores-surtidos.jpeg",
