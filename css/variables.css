@@ -64,37 +64,37 @@
    ========================================================================== */
 
 html.dark-mode {
-  --color-bg-primary: #1A1311;      /* Sepia profundo muy cálido y agradable al ojo */
-  --color-bg-secondary: #261C19;    /* Café tostado suave para paneles */
-  --color-bg-tertiary: #362925;     /* Café madera cálida */
-  --color-bg-dark: #FDFBF7;         /* Contraste invertido */
+  --color-bg-primary: #17100E;      /* Sepia oscuro amortiguado */
+  --color-bg-secondary: #241A17;    /* Café tostado de mayor contraste */
+  --color-bg-tertiary: #332420;     /* Arcilla intermedia */
+  --color-bg-dark: #FAF6F0;         
   
-  --color-text-primary: #F5EDE3;    /* Crema avena suave (evita el deslumbramiento del blanco puro) */
-  --color-text-secondary: #C8BAAE;  /* Arena cálido para lectura secundaria */
-  --color-text-muted: #96857A;      /* Arcilla/ceniza suave para textos secundarios */
-  --color-text-light: #1A1311;      /* Contraste invertido */
+  --color-text-primary: #FFF5EB;    /* Crema avena más brillante y nítido */
+  --color-text-secondary: #D4C3B3;  /* Arena cálido suave */
+  --color-text-muted: #A38F84;      /* Ceniza arcillosa */
+  --color-text-light: #17100E;      
 
-  --color-primary: #D9A077;         /* Cobre cálido / Cuero cognac */
-  --color-primary-light: #F5EDE3;   
+  --color-primary: #E88C51;         /* Ámbar / Cobre encendido y vibrante (da mucha vida) */
+  --color-primary-light: #FFF5EB;   
   --color-primary-dark: #FAF6F0;    
   
-  --color-accent: #C5916A;          /* Bronce / Ante cálido */
-  --color-accent-light: #E7C2A6;    
+  --color-accent: #E05A47;          /* Terracota radiante / Coral cálido para llamar la atención */
+  --color-accent-light: #F2A89F;    
   
-  --color-border: #2D221E;          /* Bordes de color café oscuro muy integrados */
-  --color-border-dark: #F5EDE3;     
+  --color-border: #2D201C;          /* Bordes cálidos integrados */
+  --color-border-dark: #FFF5EB;     
   
-  --color-success: #78A983;         /* Verde mate orgánico amortiguado */
-  --color-success-light: #202D23;   
-  --color-error: #D97365;           
+  --color-success: #48B478;         /* Verde Yerba Mate saturado y vibrante (destaca precios) */
+  --color-success-light: #182C20;   
+  --color-error: #F25A5A;           
 
-  /* Sombras cálidas amortiguadas */
-  --shadow-sm: 0 4px 12px rgba(26, 19, 17, 0.4);
-  --shadow-md: 0 12px 36px rgba(26, 19, 17, 0.5);
-  --shadow-lg: 0 24px 60px rgba(26, 19, 17, 0.6);
-  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* Sombras con un tinte sutil de calor */
+  --shadow-sm: 0 4px 12px rgba(23, 16, 14, 0.45);
+  --shadow-md: 0 12px 36px rgba(23, 16, 14, 0.55);
+  --shadow-lg: 0 24px 60px rgba(23, 16, 14, 0.65);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.35);
 
-  /* Componentes traslúcidos en modo oscuro cálido */
-  --color-header-bg: rgba(26, 19, 17, 0.85);
-  --color-mobilenav-bg: rgba(26, 19, 17, 0.98);
+  /* Componentes traslúcidos más vivos */
+  --color-header-bg: rgba(23, 16, 14, 0.88);
+  --color-mobilenav-bg: rgba(23, 16, 14, 0.98);
 }

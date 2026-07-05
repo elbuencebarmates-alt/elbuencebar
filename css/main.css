@@ -523,7 +523,7 @@ section {
   background-color: var(--color-bg-secondary);
   color: var(--color-primary); /* Color Cobre cálido */
   border: 1px solid var(--color-border);
-  box-shadow: 0 4px 20px rgba(217, 160, 119, 0.15); /* Resplandor cobre cálido */
+  box-shadow: 0 4px 20px rgba(232, 140, 81, 0.15); /* Resplandor cobre cálido */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,7 +538,7 @@ section {
   transform: scale(1.08) translateY(-3px);
   background-color: var(--color-bg-tertiary);
   border-color: var(--color-primary);
-  box-shadow: 0 8px 24px rgba(217, 160, 119, 0.35); /* Resplandor cobre más fuerte al hacer hover */
+  box-shadow: 0 8px 24px rgba(232, 140, 81, 0.35); /* Resplandor cobre más fuerte al hacer hover */
 }
 
 .dark-mode-toggle svg {
