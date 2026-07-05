@@ -40,7 +40,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL CROCO Y REPUJADO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 103455,
+    "precio": 103500,
     "imagen": "assets/images/mate-imperial-croco-negro.png",
     "descripcion": "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
     "destacado": true,
@@ -54,22 +54,22 @@ const PRODUCTOS = [
       {
         "nombre": "IMPERIAL CUERO CROCO NEGRO",
         "imagen": "assets/images/mate-imperial-croco-negro.png",
-        "precio": 103455
+        "precio": 103500
       },
       {
         "nombre": "IMPERIAL CUERO CROCO MARRON",
         "imagen": "assets/images/mate-imperial-croco-marron.png",
-        "precio": 103455
+        "precio": 103500
       },
       {
         "nombre": "IMPERIAL ARGENTINA CUERO REPUJADO NEGRO",
         "imagen": "assets/images/mate-imperial-repujado-negro.png",
-        "precio": 103455
+        "precio": 103500
       },
       {
         "nombre": "IMPERIAL CUERO CROCO ROSA",
         "imagen": "assets/images/mate-imperial-croco-rosa.png",
-        "precio": 103455
+        "precio": 103500
       }
     ]
   },
@@ -78,7 +78,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85491,
+    "precio": 85500,
     "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
     "descripcion": "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
     "destacado": true,
@@ -92,27 +92,27 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO MARRON REPUJADO PELOTA",
         "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
-        "precio": 85491
+        "precio": 85500
       },
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-base-alpaca-negro.png",
-        "precio": 85491
+        "precio": 85500
       },
       {
         "nombre": "CON BASE DE ALPACA CALADA NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-negro.png",
-        "precio": 85491
+        "precio": 85500
       },
       {
         "nombre": "CON BASE DE ALPACA CALADA MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-marron.png",
-        "precio": 85491
+        "precio": 85500
       },
       {
         "nombre": "CUERO LABRADO ROSA FELIZ DIA MAMA",
         "imagen": "assets/images/mate-imperial-labrado-rosa-mama.png",
-        "precio": 85491
+        "precio": 85500
       }
     ]
   },
@@ -121,7 +121,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BOTITAS DE ALPACA MARRON LISO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85491,
+    "precio": 85500,
     "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
     "descripcion": "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
     "destacado": true,
@@ -135,7 +135,7 @@ const PRODUCTOS = [
       {
         "nombre": "MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
-        "precio": 85491
+        "precio": 85500
       }
     ]
   },
@@ -144,7 +144,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BASE DE ALPACA Y PELOTAS",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85491,
+    "precio": 85500,
     "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
     "descripcion": "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
     "destacado": true,
@@ -158,17 +158,17 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
-        "precio": 85491
+        "precio": 85500
       },
       {
         "nombre": "CUERO MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-marron.png",
-        "precio": 85491
+        "precio": 85500
       },
       {
         "nombre": "ANIMAL PRINT",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-animal.png",
-        "precio": 85491
+        "precio": 85500
       }
     ]
   },
@@ -177,7 +177,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL DE ALGARROBO CON VIROLA DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 47491,
+    "precio": 47500,
     "imagen": "assets/images/mate-imperial-algarrobo.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca y base firme.",
     "destacado": false,
@@ -193,7 +193,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL COLOR AZUL CON BASE DE PELOTAS DE BRONCE",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85491,
+    "precio": 85500,
     "imagen": "assets/images/imperial-azul-pelotas-bronce.png",
     "descripcion": "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
     "destacado": false,
@@ -209,7 +209,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL ANIMAL PRINT CALABAZA AHUECADA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 75905,
+    "precio": 76000,
     "imagen": "assets/images/imperial-animal-print-calabaza.png",
     "descripcion": "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
     "destacado": false,
@@ -285,7 +285,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO ALGARROBO CON VIROLA DE ALPACA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 33155,
+    "precio": 33000,
     "imagen": "assets/images/mate-torpedo-algarrobo-alpaca.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
     "destacado": false,
@@ -301,7 +301,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO DE ALGARROBO LAQUEADO VIROLA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 33155,
+    "precio": 33000,
     "imagen": "assets/images/mate-torpedo-algarrobo-laqueado.png",
     "descripcion": "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
     "destacado": false,
@@ -317,7 +317,7 @@ const PRODUCTOS = [
     "nombre": "CAMIONERO DE ALGARROBO PREMIUM CON GUARDA DE ACERO",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 33155,
+    "precio": 33000,
     "imagen": "assets/images/camionero-algarrobo-premium.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
     "destacado": false,
@@ -572,7 +572,7 @@ const PRODUCTOS = [
     "nombre": "TERMO MEDIA MANIJA NEGRO TOTAL BLACK",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 33241,
+    "precio": 33000,
     "imagen": "assets/images/termo-media-manija-total-black.png",
     "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
     "destacado": false,
@@ -620,7 +620,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA 100% CUERO GRANDE REFORZADA",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 54055,
+    "precio": 54000,
     "imagen": "assets/images/canasta-cuero-grande.png",
     "descripcion": "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
     "destacado": false,
@@ -636,7 +636,7 @@ const PRODUCTOS = [
     "nombre": "MEDIA CANASTA MATERA DE CUERO",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 54055,
+    "precio": 54000,
     "imagen": "assets/images/media-canasta-cuero-negro.png",
     "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate de manera segura y cómoda. Disponible en colores Negro o Marrón Suela.",
     "destacado": false,
@@ -650,12 +650,12 @@ const PRODUCTOS = [
       {
         "nombre": "NEGRA",
         "imagen": "assets/images/media-canasta-cuero-negro.png",
-        "precio": 54055
+        "precio": 54000
       },
       {
         "nombre": "MARRÓN SUELA",
         "imagen": "assets/images/media-canasta-cuero-suela.png",
-        "precio": 54055
+        "precio": 54000
       }
     ]
   },
@@ -727,7 +727,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL DE ALPACA CUERO REPUJADO MARRÓN",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85491,
+    "precio": 85500,
     "imagen": "assets/images/imperial-alpaca-repujado-marron.jpg",
     "descripcion": "Mate imperial premium fabricado con calabaza brasilera de alto espesor, forrado en cuero vacuno legítimo labrado con diseño repujado marrón y una hermosa virola de alpaca cincelada artesanalmente.",
     "destacado": false,
@@ -743,7 +743,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL PREMIUM LISO CHOCOLATE BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85491,
+    "precio": 85500,
     "imagen": "assets/images/imperial-premium-chocolate.jpg",
     "descripcion": "El mate definitivo. Cuenta con una virola de alpaca pulida a espejo con guarda trabajada, forrado en cuero liso premium color chocolate, base ancha de alpaca y cuatro delicadas pelotitas de bronce como soporte. Incluye bombilla pico de loro de acero inoxidable.",
     "destacado": true,
@@ -787,7 +787,7 @@ const PRODUCTOS = [
     "nombre": "MATE CAMIONERO DE CUERO CON BOMBILLA PICO DE LORO",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 47491,
+    "precio": 47500,
     "imagen": "assets/images/camionero-cuero-calabaza.jpg",
     "descripcion": "Mate Camionero de cuero, alpaca y calabaza con bombilla de acero.",
     "destacado": false,
@@ -803,7 +803,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO NEGRO INTERIOR DE CALABAZA VIROLA ACERO BOCA ANCHA CON BOMBILLA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 20390,
+    "precio": 20500,
     "imagen": "assets/images/torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -818,7 +818,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON DIJE DE BRONCE SOL ARGENTINO SOLDADO CON BOMBILLA DE REGALO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 34790,
+    "precio": 35000,
     "imagen": "assets/images/imperial-con-dije-de-bronce-sol-argentino-soldado-con-bombilla-de-regalo.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -833,7 +833,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO CRIOLLO, GUARDA DE ALPACA CINCELADA, INTERIOR CALABAZA CON BOMBILLA PICO LORO",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 39480,
+    "precio": 39500,
     "imagen": "assets/images/torpedo-criollo-guarda-de-alpaca-cincelada-interior-calabaza-con-bombilla-pico-loro.jpg",
     "descripcion": "Torpedo  criollo base de cuero, con diferentes diseños tallados, color negro con interior calabaza.\r\n\r\nGuarda de alpaca cincelada.\r\n\r\nIncluye bombilla pico loro de acero inoxidable con filtro /pala.",
     "destacado": false,
@@ -848,7 +848,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO DE ALPACA CINCELADA INTERIOR CALABAZA ANIMAL PRINT CON BOMBILLA DE REGALO",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 36240,
+    "precio": 36000,
     "imagen": "assets/images/torpedo-de-alpaca-cincelada-interior-calabaza-animal-print-con-bombilla-de-regalo.jpg",
     "descripcion": "Torpedo de cuero con interior calabaza, guarda de alpaca cincelada.\r\n\r\nReforzado con patas rígidas",
     "destacado": false,
@@ -863,7 +863,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL ESCUDO DE BRONCE - BOCA, GUARDA DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 38390,
+    "precio": 38500,
     "imagen": "assets/images/imperial-escudo-de-bronce-boca-guarda-de-alpaca.jpg",
     "descripcion": "Imperial interior calabaza con guarda de alpaca, con escudo en bronce de Boca soldado.\r\n\r\ncuero vacuno 100%",
     "destacado": false,
@@ -878,7 +878,7 @@ const PRODUCTOS = [
     "nombre": "MATE TORPEDO INTERIOR ACERO INOXIDABLE + BOMBILLA PICO DE LORO DE ACERO INOX CON FILTRO/PALA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 26400,
+    "precio": 26500,
     "imagen": "assets/images/mate-torpedo-interior-acero-inoxidable-con-bombilla.webp",
     "descripcion": "Mate Torpedo forrado en cuero con interior de acero inoxidable.\r\n\r\nIncluye bombilla pico de loro de acero inoxidable de regalo.",
     "destacado": false,
@@ -893,7 +893,7 @@ const PRODUCTOS = [
     "nombre": "TERMOS MEDIA MANIJA ACERO",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 29441,
+    "precio": 29500,
     "imagen": "assets/images/termo-media-manija.jpg",
     "descripcion": "Termo media manija de 1 litro y de acero inoxidable.",
     "destacado": false,
@@ -908,7 +908,7 @@ const PRODUCTOS = [
     "nombre": "TERMO ORIGINAL LUMINOX LUMILAGRO 1 LITRO PICO CEBADOR CON CAJA",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 59990,
+    "precio": 60000,
     "imagen": "assets/images/termo-original-luminox-lumilagro-1-litro-pico-cebador-con-caja.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -938,7 +938,7 @@ const PRODUCTOS = [
     "nombre": "TERMO 1,2 LTS. PICO SYSTEM COLOR COBRE",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 29880,
+    "precio": 30000,
     "imagen": "assets/images/termo-12-lts-pico-system-color-cobre.jpeg",
     "descripcion": "termo color cobre con pico system y tapa para usar. omo mate.\r\n\r\n1,2 lts.",
     "destacado": false,
@@ -953,7 +953,7 @@ const PRODUCTOS = [
     "nombre": "VASO QUENCHER DE 1.2L COLORES SURTIDOS",
     "categoria": "termos",
     "subcategoria": "vasos",
-    "precio": 20390,
+    "precio": 20500,
     "imagen": "assets/images/vaso-quencher-de-1-2l-colores-surtidos.jpeg",
     "descripcion": "TAPA ANTIVUELCO\r\n\r\nSORBETE DE PLASTICO\r\n\r\nCOLORES SURTIDOS",
     "destacado": false,
@@ -968,7 +968,7 @@ const PRODUCTOS = [
     "nombre": "BOTELLA FLIP DE 650ML COLORES SURTIDOS",
     "categoria": "termos",
     "subcategoria": "vasos",
-    "precio": 19190,
+    "precio": 19000,
     "imagen": "assets/images/botella-flip-de-650ml-colores-surtidos.jpeg",
     "descripcion": "PICO VERTEDOR\r\n\r\nTAPA ANTIVUELCO\r\n\r\nCOLORES SURTIDOS",
     "destacado": false,
@@ -983,7 +983,7 @@ const PRODUCTOS = [
     "nombre": "PORTA MATE DE ECO CUERO PARA LA PALANCA DE CAMBIO",
     "categoria": "accesorios",
     "subcategoria": "soporte",
-    "precio": 4320,
+    "precio": 4500,
     "imagen": "assets/images/porta-mate-premium-para-la-palanca-de-cambio-reforzado-doble-costura.jpeg",
     "descripcion": "porta mate de eco cuero. idéntico a los de cuero.",
     "destacado": false,
@@ -998,7 +998,7 @@ const PRODUCTOS = [
     "nombre": "PICO SYSTEM BLANCO",
     "categoria": "accesorios",
     "subcategoria": "repuesto",
-    "precio": 5990,
+    "precio": 6000,
     "imagen": "assets/images/pico-system-blanco.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -1013,7 +1013,7 @@ const PRODUCTOS = [
     "nombre": "PORTA MATE DE CUERO VACUNO PARA PALANCA DE CAMBIO(BORRAVINO Y NEGRO)",
     "categoria": "accesorios",
     "subcategoria": "soporte",
-    "precio": 11990,
+    "precio": 12000,
     "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
     "descripcion": "Porta mate artesanales de cuero\r\n\r\n10 cm de diámetro",
     "destacado": false,
@@ -1026,12 +1026,12 @@ const PRODUCTOS = [
       {
         "nombre": "BORRAVINO",
         "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
-        "precio": 11990
+        "precio": 12000
       },
       {
         "nombre": "NEGRO",
         "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
-        "precio": 11990
+        "precio": 12000
       }
     ]
   },
@@ -1059,7 +1059,7 @@ const PRODUCTOS = [
     "nombre": "BOLSO MATERO CUERINA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
-    "precio": 12460,
+    "precio": 12500,
     "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
     "descripcion": "Bolsito de tela con chaulata.\r\n\r\nApto para termo stanley de 1,4",
     "destacado": false,
@@ -1074,7 +1074,7 @@ const PRODUCTOS = [
     "nombre": "BOLSO MATERO TELA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
-    "precio": 10680,
+    "precio": 10500,
     "imagen": "assets/images/bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia.jpeg",
     "descripcion": "Bolsito de tela con chaulata",
     "destacado": false,
@@ -1089,7 +1089,7 @@ const PRODUCTOS = [
     "nombre": "MOCHILA / BOLSO MATERO ANIMAL PRINT CON CHAULATAS",
     "categoria": "bolsos",
     "subcategoria": "mochila",
-    "precio": 10790,
+    "precio": 11000,
     "imagen": "assets/images/mochila-bolso-matero-animal-print-con-chaulatas.jpeg",
     "descripcion": "Incluye mochila/bolso color animal print con yerbero y azucarero haciendo juego.",
     "destacado": false,
@@ -1104,7 +1104,7 @@ const PRODUCTOS = [
     "nombre": "CANASTAS DE CUERO CON ESCUDO DE FUTBOL COLOR NEGRO",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 28800,
+    "precio": 29000,
     "imagen": "assets/images/canastas-de-cuero-con-escudo-de-futbol-color-negro.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -1134,7 +1134,7 @@ const PRODUCTOS = [
     "nombre": "CAMIONERO ALGARROBO GRABADO PREDISEÑADOS + BOMBILLA",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 17990,
+    "precio": 18000,
     "imagen": "assets/images/camionero-algarrobo-grabado-predisenados-bombilla.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -1203,10 +1203,7 @@ const PRODUCTOS = [
       "Pintura siliconada negra de alta resistencia",
       "Ideal para fernet, cerveza y bebidas frías"
     ]
-  }
-,
-
-  // --- CATEGORÍA YERBAS ---
+  },
   {
     "id": "yerba-canarias-edicion-especial-1kg",
     "nombre": "YERBA MATE CANARIAS EDICIÓN ESPECIAL",
@@ -1230,7 +1227,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-edicion-especial-1kg.jpg",
-        "precio": 11200
+        "precio": 11000
       }
     ]
   },
@@ -1257,7 +1254,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-jengibre-te-verde-1kg.jpg",
-        "precio": 11200
+        "precio": 11000
       }
     ]
   },
@@ -1284,7 +1281,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
-        "precio": 9800
+        "precio": 10000
       },
       {
         "nombre": "5 KG",
@@ -1316,7 +1313,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 9600
+        "precio": 9500
       }
     ]
   },
@@ -1324,7 +1321,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-tradicional",
     "nombre": "YERBA MATE REI VERDE TRADICIONAL",
     "descripcion": "Yerba Mate Rei Verde Tradicional, clásica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duración de cebada. Perfecta para el consumo diario.",
-    "precio": 4200,
+    "precio": 4000,
     "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1338,7 +1335,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
-        "precio": 4200
+        "precio": 4000
       },
       {
         "nombre": "1 KG",
@@ -1351,7 +1348,7 @@ const PRODUCTOS = [
     "id": "yerba-verdecita-sin-palo-1kg",
     "nombre": "YERBA MATE VERDE CITA SIN PALO",
     "descripcion": "Yerba Mate Verde Cita Sin Palo, una yerba argentina de primer nivel. Sin palo para una infusión más limpia, con sabor fuerte y persistente. Muy apreciada por los cebadores exigentes.",
-    "precio": 4900,
+    "precio": 5000,
     "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1365,12 +1362,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 4900
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 9200
+        "precio": 9000
       }
     ]
   },
@@ -1378,7 +1375,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-serena",
     "nombre": "YERBA MATE CANARIAS SERENA",
     "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
-    "precio": 5900,
+    "precio": 6000,
     "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1392,7 +1389,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
-        "precio": 5900
+        "precio": 6000
       },
       {
         "nombre": "1 KG",
@@ -1405,7 +1402,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-premium",
     "nombre": "YERBA MATE REI VERDE PREMIUM",
     "descripcion": "Yerba Mate Rei Verde Premium, la versión de mayor calidad de la marca uruguaya. Hojas más finas y seleccionadas para una infusión excepcional y duradera.",
-    "precio": 6400,
+    "precio": 6500,
     "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1419,12 +1416,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
-        "precio": 6400
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-premium-1kg.jpg",
-        "precio": 12100
+        "precio": 12000
       }
     ]
   },
@@ -1451,14 +1448,12 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 10300
+        "precio": 10500
       }
     ]
   }
 ];
 
-// Función para obtener productos por categoría
-// Función para obtener productos por categoría
 // Función para obtener productos por categoría
 function obtenerProductosPorCategoria(categoria) {
   if (!categoria || categoria === 'todos') {
