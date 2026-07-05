@@ -5,8 +5,9 @@
 // Detección inicial del modo oscuro (inmediato para evitar flash visual)
 (function initDarkMode() {
   const darkModeSaved = localStorage.getItem('dark-mode');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (darkModeSaved === 'true' || (darkModeSaved === null && prefersDark)) {
+  // Por defecto para usuarios nuevos (sin preferencia guardada) siempre carga Modo Claro.
+  // Solo se activa el modo oscuro si el usuario lo encendió explícitamente y quedó guardado.
+  if (darkModeSaved === 'true') {
     document.documentElement.classList.add('dark-mode');
   }
 })();
