@@ -94,7 +94,7 @@ section {
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgba(253, 251, 247, 0.85); /* Frosty cream background */
+  background-color: var(--color-header-bg); /* Dinámico */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
@@ -102,7 +102,7 @@ section {
 }
 
 .header--scrolled {
-  background-color: rgba(253, 251, 247, 0.95);
+  background-color: var(--color-header-bg);
   box-shadow: var(--shadow-sm);
   padding: 12px 0;
 }
@@ -261,7 +261,7 @@ section {
   left: 0;
   width: 100%;
   height: calc(100vh - 80px);
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-mobilenav-bg); /* Dinámico */
   z-index: 99;
   padding: 40px 24px;
   display: flex;
@@ -510,5 +510,58 @@ section {
 .reveal-on-scroll--visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* --- BOTÓN FLOTANTE MODO OSCURO (DARK MODE TOGGLE) --- */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1) translateY(-2px);
+  background-color: var(--color-bg-tertiary);
+  border-color: var(--color-primary);
+}
+
+.dark-mode-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform var(--transition-slow);
+}
+
+.dark-mode-toggle:active svg {
+  transform: rotate(360deg);
+}
+
+/* Para pantallas chicas ajustamos la posición para no tapar el menú o carrito */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    bottom: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+  }
 }
 

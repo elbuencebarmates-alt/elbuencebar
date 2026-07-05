@@ -52,4 +52,49 @@
   
   /* Máximo ancho del layout */
   --container-width: 1200px;
+  
+  /* Componentes traslúcidos */
+  --color-header-bg: rgba(253, 251, 247, 0.85);
+  --color-mobilenav-bg: rgba(253, 251, 247, 0.98);
+}
+
+/* ==========================================================================
+   ESTILOS MODO OSCURO (DARK MODE)
+   Colores invertidos con alto contraste, tintes chocolate oscuro y cobre vibrante
+   ========================================================================== */
+
+html.dark-mode {
+  --color-bg-primary: #120C0B;      /* Ébano / Fondo oscuro profundo */
+  --color-bg-secondary: #1C1311;    /* Madera oscura suave */
+  --color-bg-tertiary: #2A1D1A;     /* Madera intermedia / Arcilla oscura */
+  --color-bg-dark: #FDFBF7;         /* Se invierte el color de fondo oscuro a claro */
+  
+  --color-text-primary: #FAF6F0;    /* Crema avena suave para el texto */
+  --color-text-secondary: #D7CDC6;  /* Lino grisáceo para subtítulos */
+  --color-text-muted: #9E8F8B;      /* Ceniza suave */
+  --color-text-light: #120C0B;      /* Contraste invertido */
+
+  --color-primary: #D9AC87;         /* El cobre claro resalta en el fondo oscuro */
+  --color-primary-light: #FAF6F0;   
+  --color-primary-dark: #B87D4B;    
+  
+  --color-accent: #E5A36A;          /* Cognac / Suela más vibrante */
+  --color-accent-light: #F2D2B6;    
+  
+  --color-border: #2A1D1A;          /* Bordes oscuros integrados */
+  --color-border-dark: #FAF6F0;     
+  
+  --color-success: #6CA67A;         /* Verde Yerba Mate más luminoso */
+  --color-success-light: #1C2B20;   
+  --color-error: #D96A59;           
+
+  /* Sombras oscuras más densas */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.75);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+
+  /* Componentes traslúcidos en modo oscuro */
+  --color-header-bg: rgba(18, 12, 11, 0.85);
+  --color-mobilenav-bg: rgba(18, 12, 11, 0.98);
 }
