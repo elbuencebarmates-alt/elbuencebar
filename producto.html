@@ -6,7 +6,7 @@
   <title>Cargando Producto... | El Buen Cebar</title>
   
   <!-- Favicon -->
-  <link rel="icon" href="assets/images/favicon.png?v=100" type="image/png">
+  <link rel="icon" href="assets/images/favicon.png?v=101" type="image/png">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/variables.css">
@@ -406,10 +406,11 @@
       if (p.variantes && p.variantes.length > 0) {
         const variantes = p.variantes;
         opcionActiva = variantes[0].nombre;
+        const selectorLabel = p.categoria === 'yerbas' ? 'Seleccioná la presentación:' : 'Seleccioná tu variante de cuero/terminación:';
         
         optionsHtml = `
           <div class="options-selector">
-            <span class="form-label">Seleccioná tu variante de cuero/terminación:</span>
+            <span class="form-label">${selectorLabel}</span>
             <div class="options-grid">
               ${variantes.map((v, i) => `
                 <button class="option-pill ${i === 0 ? 'option-pill--active' : ''}" onclick="seleccionarOpcionVariante(this, '${v.nombre}', '${v.imagen || ''}', ${v.precio})">${v.nombre}</button>

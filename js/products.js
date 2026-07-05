@@ -1224,19 +1224,30 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "yerba-canarias-jengibre-te-verde-1kg",
-    "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE 1 KG",
-    "descripcion": "La Yerba Mate Canarias con Té Verde y Jengibre combina el sabor clásico del mate con las propiedades del té verde y el toque picante del jengibre. Una mezcla refrescante y energizante.",
-    "precio": 8500,
-    "imagen": "assets/images/yerba-canarias-jengibre-te-verde-1kg.jpg",
+    "id": "yerba-canarias-jengibre-te-verde",
+    "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE",
+    "descripcion": "La Yerba Mate Canarias con Té Verde y Jengibre combina el sabor clásico del mate con las propiedades del té verde y el toque picante del jengibre. Una mezcla refrescante y energizante, perfecta para quienes buscan algo diferente.",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
-    "variantes": [],
     "destacado": true,
     "detalles": [
-      "Peso: 1 kg",
       "Con té verde y jengibre natural",
-      "Sabor refrescante y energizante"
+      "Sabor refrescante y energizante",
+      "Excelente duración de cebadas"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
+        "precio": 5000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-jengibre-te-verde-1kg.jpg",
+        "precio": 8500
+      }
     ]
   },
   {
@@ -1272,35 +1283,30 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "yerba-rei-verde-tradicional-500g",
-    "nombre": "YERBA MATE REI VERDE TRADICIONAL 500 GR",
+    "id": "yerba-rei-verde-tradicional",
+    "nombre": "YERBA MATE REI VERDE TRADICIONAL",
     "descripcion": "Yerba Mate Rei Verde Tradicional, clásica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duración de cebada. Perfecta para el consumo diario.",
     "precio": 4500,
     "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
-    "variantes": [],
     "destacado": false,
     "detalles": [
-      "Peso: 500 g",
       "Yerba uruguaya tradicional",
-      "Sabor suave y equilibrado"
-    ]
-  },
-  {
-    "id": "yerba-rei-verde-tradicional-1kg",
-    "nombre": "YERBA MATE REI VERDE TRADICIONAL 1 KG",
-    "descripcion": "Yerba Mate Rei Verde Tradicional en presentación de 1 kg. La misma calidad reconocida de siempre, ahora en formato familiar para no quedarte sin tu mate favorito.",
-    "precio": 7000,
-    "imagen": "assets/images/yerba-rei-verde-tradicional-1kg.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "variantes": [],
-    "destacado": false,
-    "detalles": [
-      "Peso: 1 kg",
-      "Yerba uruguaya tradicional",
-      "Sabor suave y equilibrado"
+      "Sabor suave y equilibrado",
+      "Perfecto para consumo diario"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
+        "precio": 4500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-tradicional-1kg.jpg",
+        "precio": 7000
+      }
     ]
   },
   {
@@ -1320,51 +1326,30 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "yerba-canarias-serena-500g",
-    "nombre": "YERBA MATE CANARIAS SERENA 500 GR",
+    "id": "yerba-canarias-serena",
+    "nombre": "YERBA MATE CANARIAS SERENA",
     "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
     "precio": 5000,
     "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
-    "variantes": [],
     "destacado": false,
     "detalles": [
-      "Peso: 500 g",
+      "Yerba uruguaya tipo compuesta",
       "Línea suave de Canarias",
       "Sabor delicado y equilibrado"
-    ]
-  },
-  {
-    "id": "yerba-canarias-jengibre-te-verde-500g",
-    "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE 500 GR",
-    "descripcion": "Yerba Mate Canarias con Té Verde y Jengibre en presentación de 500 g. La combinación perfecta de mate, té verde y jengibre en formato práctico.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "variantes": [],
-    "destacado": false,
-    "detalles": [
-      "Peso: 500 g",
-      "Con té verde y jengibre natural",
-      "Sabor refrescante y energizante"
-    ]
-  },
-  {
-    "id": "yerba-canarias-serena-1kg",
-    "nombre": "YERBA MATE CANARIAS SERENA 1 KG",
-    "descripcion": "Yerba Mate Canarias Serena en presentación de 1 kg. La línea suave de Canarias en formato familiar. Sabor delicado, sin amargor, ideal para largas ruedas de mate.",
-    "precio": 8500,
-    "imagen": "assets/images/yerba-canarias-serena-1kg.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "variantes": [],
-    "destacado": false,
-    "detalles": [
-      "Peso: 1 kg",
-      "Línea suave de Canarias",
-      "Sin amargor, sabor equilibrado"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
+        "precio": 5000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-serena-1kg.jpg",
+        "precio": 8500
+      }
     ]
   },
   {
@@ -1401,6 +1386,7 @@ const PRODUCTOS = [
   }
 ];
 
+// Función para obtener productos por categoría
 // Función para obtener productos por categoría
 function obtenerProductosPorCategoria(categoria) {
   if (!categoria || categoria === 'todos') {
