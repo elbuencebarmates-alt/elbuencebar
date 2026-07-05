@@ -517,27 +517,28 @@ section {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: var(--radius-full);
   background-color: var(--color-bg-secondary);
-  color: var(--color-text-primary);
+  color: var(--color-primary); /* Color Oro */
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15); /* Resplandor dorado ultra sutil */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
   cursor: pointer;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .dark-mode-toggle:hover {
-  transform: scale(1.1) translateY(-2px);
+  transform: scale(1.08) translateY(-3px);
   background-color: var(--color-bg-tertiary);
   border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35); /* Resplandor dorado más fuerte al hacer hover */
 }
 
 .dark-mode-toggle svg {
@@ -545,7 +546,7 @@ section {
   height: 20px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 2;
+  stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: transform var(--transition-slow);

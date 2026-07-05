@@ -64,37 +64,37 @@
    ========================================================================== */
 
 html.dark-mode {
-  --color-bg-primary: #120C0B;      /* Ébano / Fondo oscuro profundo */
-  --color-bg-secondary: #1C1311;    /* Madera oscura suave */
-  --color-bg-tertiary: #2A1D1A;     /* Madera intermedia / Arcilla oscura */
-  --color-bg-dark: #FDFBF7;         /* Se invierte el color de fondo oscuro a claro */
+  --color-bg-primary: #080808;      /* Negro absoluto / Carbono premium */
+  --color-bg-secondary: #141414;    /* Gris medianoche ultra elegante */
+  --color-bg-tertiary: #1F1F1F;     /* Gris grafito sutil */
+  --color-bg-dark: #FAF6F0;         /* Contraste invertido */
   
-  --color-text-primary: #FAF6F0;    /* Crema avena suave para el texto */
-  --color-text-secondary: #D7CDC6;  /* Lino grisáceo para subtítulos */
-  --color-text-muted: #9E8F8B;      /* Ceniza suave */
-  --color-text-light: #120C0B;      /* Contraste invertido */
+  --color-text-primary: #FFFFFF;    /* Blanco puro para máxima claridad */
+  --color-text-secondary: #A3A3A3;  /* Gris plata satinado */
+  --color-text-muted: #666666;      /* Gris ceniza sutil */
+  --color-text-light: #080808;      /* Contraste invertido */
 
-  --color-primary: #D9AC87;         /* El cobre claro resalta en el fondo oscuro */
-  --color-primary-light: #FAF6F0;   
-  --color-primary-dark: #B87D4B;    
+  --color-primary: #D4AF37;         /* Oro / Latón cincelado premium */
+  --color-primary-light: #F3E5AB;   /* Crema Champán */
+  --color-primary-dark: #FFFFFF;    
   
-  --color-accent: #E5A36A;          /* Cognac / Suela más vibrante */
-  --color-accent-light: #F2D2B6;    
+  --color-accent: #C5A059;          /* Cobre / Bronce cepillado */
+  --color-accent-light: #E5C483;    
   
-  --color-border: #2A1D1A;          /* Bordes oscuros integrados */
-  --color-border-dark: #FAF6F0;     
+  --color-border: #1C1C1C;          /* Líneas de corte ultra delgadas */
+  --color-border-dark: #FFFFFF;     
   
-  --color-success: #6CA67A;         /* Verde Yerba Mate más luminoso */
-  --color-success-light: #1C2B20;   
-  --color-error: #D96A59;           
+  --color-success: #52B788;         /* Verde yerba mate luminoso */
+  --color-success-light: #0E2419;   
+  --color-error: #E63946;           
 
-  /* Sombras oscuras más densas */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.75);
-  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+  /* Sombras profundas para el negro absoluto */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.85);
+  --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.9);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.95);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.7);
 
   /* Componentes traslúcidos en modo oscuro */
-  --color-header-bg: rgba(18, 12, 11, 0.85);
-  --color-mobilenav-bg: rgba(18, 12, 11, 0.98);
+  --color-header-bg: rgba(8, 8, 8, 0.8);
+  --color-mobilenav-bg: rgba(8, 8, 8, 0.98);
 }
