@@ -1353,39 +1353,35 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "yerba-rei-verde-premium-export-500g",
-    "nombre": "YERBA MATE REI VERDE PREMIUM EXPORT 500 GR",
-    "descripcion": "Yerba Mate Rei Verde Premium Export, la selección de exportación de la marca uruguaya. Hojas seleccionadas de mayor calidad, sabor refinado y duración superior.",
+    "id": "yerba-rei-verde-premium",
+    "nombre": "YERBA MATE REI VERDE PREMIUM",
+    "descripcion": "Yerba Mate Rei Verde Premium, la versión de mayor calidad de la marca uruguaya. Hojas más finas y seleccionadas para una infusión excepcional y duradera.",
     "precio": 4500,
     "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
-    "variantes": [],
     "destacado": false,
     "detalles": [
-      "Peso: 500 g",
-      "Selección export premium",
-      "Sabor refinado y superior"
-    ]
-  },
-  {
-    "id": "yerba-rei-verde-premium-1kg",
-    "nombre": "YERBA MATE REI VERDE PREMIUM 1 KG",
-    "descripcion": "Yerba Mate Rei Verde Premium en presentación de 1 kg. La versión de mayor calidad de Rei Verde, con hojas más finas y seleccionadas para una infusión excepcional y prolongada.",
-    "precio": 7000,
-    "imagen": "assets/images/yerba-rei-verde-premium-1kg.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "variantes": [],
-    "destacado": false,
-    "detalles": [
-      "Peso: 1 kg",
-      "Versión premium de Rei Verde",
+      "Yerba premium uruguaya",
+      "Sabor refinado y superior",
       "Hojas seleccionadas de primera"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
+        "precio": 4500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-premium-1kg.jpg",
+        "precio": 7000
+      }
     ]
   }
 ];
 
+// Función para obtener productos por categoría
 // Función para obtener productos por categoría
 // Función para obtener productos por categoría
 function obtenerProductosPorCategoria(categoria) {
