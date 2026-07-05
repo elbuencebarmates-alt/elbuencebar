@@ -1196,22 +1196,12 @@ const PRODUCTOS = [
     "subcategoria": "vasos",
     "precio": 5000,
     "imagen": "assets/images/termos-vaso-fernetero.png",
-    "descripcion": "Vaso térmico fernetero de acero inoxidable con pintura texturada en negro mate. Excelente capacidad y aislamiento térmico doble pared para mantener tu bebida fría por horas.",
-    "destacado": false,
-    "detalles": [
-      "Fabricado en acero inoxidable doble pared térmico",
-      "Pintura siliconada negra de alta resistencia",
-      "Ideal para fernet, cerveza y bebidas frías"
-    ]
-  }
-,
-
-    // --- CATEGORÍA YERBAS ---
+    "descripcion": "Vaso térmico fernetero de acero inoxidable con pintura texturada en negro mate. Excelente capacidad y aislamiento térmico doble pared para mantener tu bebida fría     // --- CATEGORÍA YERBAS ---
   {
     "id": "yerba-canarias-edicion-especial-1kg",
     "nombre": "YERBA MATE CANARIAS EDICIÓN ESPECIAL",
     "descripcion": "Disfrutá del sabor auténtico de la Yerba Mate Canarias Edición Especial. Una selección premium importada desde Uruguay, ideal para cebadas de larga duración, con sabor persistente y equilibrado. Edición limitada elegida por El Buen Cebar.",
-    "precio": 5990,
+    "precio": 6000,
     "imagen": "assets/images/yerba-canarias-edicion-especial-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1225,7 +1215,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-edicion-especial-1kg.jpg",
-        "precio": 5990
+        "precio": 6000
       },
       {
         "nombre": "1 KG",
@@ -1238,7 +1228,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-jengibre-te-verde",
     "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE",
     "descripcion": "La Yerba Mate Canarias con Té Verde y Jengibre combina el sabor clásico del mate con las propiedades del té verde y el toque picante del jengibre. Una mezcla refrescante y energizante, perfecta para quienes buscan algo diferente.",
-    "precio": 5990,
+    "precio": 6000,
     "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1252,7 +1242,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
-        "precio": 5990
+        "precio": 6000
       },
       {
         "nombre": "1 KG",
@@ -1284,12 +1274,12 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
-        "precio": 9790
+        "precio": 9800
       },
       {
         "nombre": "5 KG",
         "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
-        "precio": 42990
+        "precio": 43000
       }
     ]
   },
@@ -1297,7 +1287,7 @@ const PRODUCTOS = [
     "id": "yerba-pindare-1kg",
     "nombre": "YERBA PINDARE",
     "descripcion": "Yerba Mate Pindare, una yerba brasileña de alta calidad con sabor intenso y particular. Hojas finas, buena duración y aroma característico. Una elección diferente para el paladar exigente.",
-    "precio": 4998,
+    "precio": 5000,
     "imagen": "assets/images/yerba-pindare-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1311,12 +1301,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 4998
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 9536
+        "precio": 9600
       }
     ]
   },
@@ -1324,7 +1314,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-tradicional",
     "nombre": "YERBA MATE REI VERDE TRADICIONAL",
     "descripcion": "Yerba Mate Rei Verde Tradicional, clásica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duración de cebada. Perfecta para el consumo diario.",
-    "precio": 4141,
+    "precio": 4200,
     "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1338,12 +1328,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
-        "precio": 4141
+        "precio": 4200
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-tradicional-1kg.jpg",
-        "precio": 7911
+        "precio": 8000
       }
     ]
   },
@@ -1351,7 +1341,7 @@ const PRODUCTOS = [
     "id": "yerba-verdecita-sin-palo-1kg",
     "nombre": "YERBA MATE VERDE CITA SIN PALO",
     "descripcion": "Yerba Mate Verde Cita Sin Palo, una yerba argentina de primer nivel. Sin palo para una infusión más limpia, con sabor fuerte y persistente. Muy apreciada por los cebadores exigentes.",
-    "precio": 4860,
+    "precio": 4900,
     "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1365,12 +1355,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 4860
+        "precio": 4900
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 9180
+        "precio": 9200
       }
     ]
   },
@@ -1378,7 +1368,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-serena",
     "nombre": "YERBA MATE CANARIAS SERENA",
     "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
-    "precio": 5896,
+    "precio": 5900,
     "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1392,12 +1382,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
-        "precio": 5896
+        "precio": 5900
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-serena-1kg.jpg",
-        "precio": 10990
+        "precio": 11000
       }
     ]
   },
@@ -1424,7 +1414,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-premium-1kg.jpg",
-        "precio": 12090
+        "precio": 12100
       }
     ]
   },
@@ -1432,7 +1422,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-tradicional",
     "nombre": "YERBA MATE CANARIAS TRADICIONAL",
     "descripcion": "Yerba Mate Canarias Tradicional, la marca de yerba número uno de Uruguay. Compuesta principalmente por hojas seleccionadas de sabor intenso y duradero, libre de palo. Perfecta para cebar mates cargados de sabor.",
-    "precio": 5409,
+    "precio": 5500,
     "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1446,16 +1436,15 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 5409
+        "precio": 5500
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 10250
+        "precio": 10300
       }
     ]
   }
-
 ];
 
 // Función para obtener productos por categoría
