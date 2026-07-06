@@ -556,7 +556,7 @@ const PRODUCTOS = [
     "nombre": "TERMO GRABADO ARGENTINA 360",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 38000,
+    "precio": 40000,
     "imagen": "assets/images/termo-argentina-360.png",
     "descripcion": "Termo media manija de acero inoxidable de 1 litro con pintura texturada en negro mate. Cuenta con un exclusivo grabado láser de 360 grados temático de la Selección Argentina y motivos patrios.",
     "destacado": true,
@@ -588,7 +588,7 @@ const PRODUCTOS = [
     "nombre": "TERMO SYSTEM 1L NEGRO CON MANIJA Y TAPAMATE",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 25000,
+    "precio": 35000,
     "imagen": "assets/images/termo-system-12-lts.png",
     "descripcion": "Termo de 1 litro con manija rígida lateral y tapón con sistema cebador hermético de alta precisión, incluye tapa que sirve como mate térmico.",
     "destacado": false,
@@ -1453,6 +1453,7 @@ const PRODUCTOS = [
     ]
   }
 ];
+
 
 
 
