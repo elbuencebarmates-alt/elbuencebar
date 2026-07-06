@@ -177,7 +177,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL DE ALGARROBO CON VIROLA DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 47500,
+    "precio": 50000,
     "imagen": "assets/images/mate-imperial-algarrobo.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca y base firme.",
     "destacado": false,
@@ -1453,6 +1453,7 @@ const PRODUCTOS = [
     ]
   }
 ];
+
 
 
 
