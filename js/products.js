@@ -1104,7 +1104,7 @@ const PRODUCTOS = [
     "nombre": "CANASTAS DE CUERO CON ESCUDO DE FUTBOL COLOR NEGRO",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 29000,
+    "precio": 55000,
     "imagen": "assets/images/canastas-de-cuero-con-escudo-de-futbol-color-negro.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -1453,6 +1453,7 @@ const PRODUCTOS = [
     ]
   }
 ];
+
 
 
 
