@@ -40,7 +40,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL CROCO Y REPUJADO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 103500,
+    "precio": 55000,
     "imagen": "assets/images/mate-imperial-croco-negro.png",
     "descripcion": "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
     "destacado": true,
@@ -54,22 +54,22 @@ const PRODUCTOS = [
       {
         "nombre": "IMPERIAL CUERO CROCO NEGRO",
         "imagen": "assets/images/mate-imperial-croco-negro.png",
-        "precio": 103500
+        "precio": 55000
       },
       {
         "nombre": "IMPERIAL CUERO CROCO MARRON",
         "imagen": "assets/images/mate-imperial-croco-marron.png",
-        "precio": 103500
+        "precio": 55000
       },
       {
         "nombre": "IMPERIAL ARGENTINA CUERO REPUJADO NEGRO",
         "imagen": "assets/images/mate-imperial-repujado-negro.png",
-        "precio": 103500
+        "precio": 55000
       },
       {
         "nombre": "IMPERIAL CUERO CROCO ROSA",
         "imagen": "assets/images/mate-imperial-croco-rosa.png",
-        "precio": 103500
+        "precio": 55000
       }
     ]
   },
@@ -78,7 +78,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85500,
+    "precio": 55000,
     "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
     "descripcion": "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
     "destacado": true,
@@ -92,27 +92,27 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO MARRON REPUJADO PELOTA",
         "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
-        "precio": 85500
+        "precio": 55000
       },
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-base-alpaca-negro.png",
-        "precio": 85500
+        "precio": 55000
       },
       {
         "nombre": "CON BASE DE ALPACA CALADA NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-negro.png",
-        "precio": 85500
+        "precio": 55000
       },
       {
         "nombre": "CON BASE DE ALPACA CALADA MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-marron.png",
-        "precio": 85500
+        "precio": 55000
       },
       {
         "nombre": "CUERO LABRADO ROSA FELIZ DIA MAMA",
         "imagen": "assets/images/mate-imperial-labrado-rosa-mama.png",
-        "precio": 85500
+        "precio": 55000
       }
     ]
   },
@@ -121,7 +121,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BOTITAS DE ALPACA MARRON LISO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85500,
+    "precio": 55000,
     "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
     "descripcion": "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
     "destacado": true,
@@ -135,7 +135,7 @@ const PRODUCTOS = [
       {
         "nombre": "MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
-        "precio": 85500
+        "precio": 55000
       }
     ]
   },
@@ -144,7 +144,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BASE DE ALPACA Y PELOTAS",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85500,
+    "precio": 55000,
     "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
     "descripcion": "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
     "destacado": true,
@@ -158,17 +158,17 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
-        "precio": 85500
+        "precio": 55000
       },
       {
         "nombre": "CUERO MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-marron.png",
-        "precio": 85500
+        "precio": 55000
       },
       {
         "nombre": "ANIMAL PRINT",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-animal.png",
-        "precio": 85500
+        "precio": 55000
       }
     ]
   },
@@ -193,7 +193,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL COLOR AZUL CON BASE DE PELOTAS DE BRONCE",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 85500,
+    "precio": 55000,
     "imagen": "assets/images/imperial-azul-pelotas-bronce.png",
     "descripcion": "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
     "destacado": false,
@@ -209,7 +209,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL ANIMAL PRINT CALABAZA AHUECADA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 76000,
+    "precio": 55000,
     "imagen": "assets/images/imperial-animal-print-calabaza.png",
     "descripcion": "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
     "destacado": false,
@@ -257,7 +257,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO CON VIROLA DE ALPACA CALADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 50000,
+    "precio": 40000,
     "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
     "descripcion": "Un torpedo premium único en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminación repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
     "destacado": true,
@@ -271,12 +271,12 @@ const PRODUCTOS = [
       {
         "nombre": "NEGRO",
         "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
-        "precio": 50000
+        "precio": 40000
       },
       {
         "nombre": "MARRÓN",
         "imagen": "assets/images/torpedo-alpaca-calada-marron.png",
-        "precio": 50000
+        "precio": 40000
       }
     ]
   },
@@ -1453,6 +1453,7 @@ const PRODUCTOS = [
     ]
   }
 ];
+
 
 // Función para obtener productos por categoría
 function obtenerProductosPorCategoria(categoria) {
