@@ -285,7 +285,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO ALGARROBO CON VIROLA DE ALPACA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 33000,
+    "precio": 35000,
     "imagen": "assets/images/mate-torpedo-algarrobo-alpaca.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
     "destacado": false,
@@ -301,7 +301,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO DE ALGARROBO LAQUEADO VIROLA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 33000,
+    "precio": 35000,
     "imagen": "assets/images/mate-torpedo-algarrobo-laqueado.png",
     "descripcion": "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
     "destacado": false,
@@ -317,7 +317,7 @@ const PRODUCTOS = [
     "nombre": "CAMIONERO DE ALGARROBO PREMIUM CON GUARDA DE ACERO",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 33000,
+    "precio": 35000,
     "imagen": "assets/images/camionero-algarrobo-premium.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
     "destacado": false,
@@ -572,7 +572,7 @@ const PRODUCTOS = [
     "nombre": "TERMO MEDIA MANIJA NEGRO TOTAL BLACK",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 33000,
+    "precio": 35000,
     "imagen": "assets/images/termo-media-manija-total-black.png",
     "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
     "destacado": false,
@@ -1453,6 +1453,7 @@ const PRODUCTOS = [
     ]
   }
 ];
+
 
 
 // Función para obtener productos por categoría
