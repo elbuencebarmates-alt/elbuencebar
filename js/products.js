@@ -1059,7 +1059,7 @@ const PRODUCTOS = [
     "nombre": "BOLSO MATERO CUERINA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
-    "precio": 12500,
+    "precio": 20000,
     "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
     "descripcion": "Bolsito de tela con chaulata.\r\n\r\nApto para termo stanley de 1,4",
     "destacado": false,
@@ -1074,7 +1074,7 @@ const PRODUCTOS = [
     "nombre": "BOLSO MATERO TELA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
-    "precio": 10500,
+    "precio": 20000,
     "imagen": "assets/images/bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia.jpeg",
     "descripcion": "Bolsito de tela con chaulata",
     "destacado": false,
@@ -1089,7 +1089,7 @@ const PRODUCTOS = [
     "nombre": "MOCHILA / BOLSO MATERO ANIMAL PRINT CON CHAULATAS",
     "categoria": "bolsos",
     "subcategoria": "mochila",
-    "precio": 11000,
+    "precio": 20000,
     "imagen": "assets/images/mochila-bolso-matero-animal-print-con-chaulatas.jpeg",
     "descripcion": "Incluye mochila/bolso color animal print con yerbero y azucarero haciendo juego.",
     "destacado": false,
@@ -1453,6 +1453,7 @@ const PRODUCTOS = [
     ]
   }
 ];
+
 
 
 
