@@ -356,11 +356,42 @@
       const motivo = document.getElementById("motivo").value;
       const mensaje = document.getElementById("mensaje").value;
       
-      // Simular envío de datos
-      mostrarToast(`¡Gracias ${nombre}! Tu consulta por ${motivo} fue enviada. Te responderemos a la brevedad.`);
-      
-      // Limpiar formulario
-      e.target.reset();
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = "Enviando...";
+      submitBtn.disabled = true;
+
+      const data = {
+        "Nombre": nombre,
+        "Email": email,
+        "Motivo": motivo,
+        "Mensaje": mensaje,
+        "_subject": `Nueva consulta de Contacto - ${motivo} - ${nombre}`,
+        "_replyto": email,
+        "_template": "table"
+      };
+
+      fetch("https://formsubmit.co/ajax/elbuencebarmates@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(res => {
+        mostrarToast(`¡Gracias ${nombre}! Tu consulta fue enviada. Te responderemos a la brevedad.`);
+        e.target.reset();
+      })
+      .catch(err => {
+        console.error("Error al enviar email:", err);
+        mostrarToast("Hubo un error al enviar el mensaje. Por favor, intenta por WhatsApp.");
+      })
+      .finally(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      });
     }
   </script>
 </body>
