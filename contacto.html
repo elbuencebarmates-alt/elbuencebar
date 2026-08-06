@@ -131,28 +131,34 @@
       <!-- Formulario de Contacto -->
       <div>
         <h2 class="section-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 24px;">Envianos un mensaje</h2>
-        <form onsubmit="enviarMensajeContacto(event)">
+        <form action="https://formsubmit.co/elbuencebarmates@gmail.com" method="POST">
+          <!-- Campos obligatorios y ocultos para FormSubmit -->
+          <input type="hidden" name="_subject" value="Nueva consulta desde la web">
+          <input type="hidden" name="_template" value="table">
+          <!-- Usamos captcha de formsubmit por seguridad -->
+          <input type="hidden" name="_captcha" value="true">
+          
           <div class="form-grid">
             <div class="form-group">
               <label class="form-label" for="nombre">Nombre Completo</label>
-              <input type="text" id="nombre" class="form-input" required placeholder="Juan Pérez">
+              <input type="text" id="nombre" name="Nombre" class="form-input" required placeholder="Juan Pérez">
             </div>
             <div class="form-group">
               <label class="form-label" for="email">Email</label>
-              <input type="email" id="email" class="form-input" required placeholder="juan@gmail.com">
+              <input type="email" id="email" name="Email" class="form-input" required placeholder="juan@gmail.com">
             </div>
             <div class="form-group form-group--full">
               <label class="form-label" for="motivo">Motivo de consulta</label>
-              <select id="motivo" class="form-select">
-                <option value="consulta">Consulta General</option>
-                <option value="personalizado">Mates Personalizados / Grabado Láser</option>
-                <option value="envio">Duda sobre mi Envío / Ramos Mejía</option>
-                <option value="cambio">Cambios y Devoluciones</option>
+              <select id="motivo" name="Motivo" class="form-select">
+                <option value="Consulta General">Consulta General</option>
+                <option value="Mates Personalizados / Grabado Láser">Mates Personalizados / Grabado Láser</option>
+                <option value="Duda sobre mi Envío / Ramos Mejía">Duda sobre mi Envío / Ramos Mejía</option>
+                <option value="Cambios y Devoluciones">Cambios y Devoluciones</option>
               </select>
             </div>
             <div class="form-group form-group--full">
               <label class="form-label" for="mensaje">Mensaje</label>
-              <textarea id="mensaje" class="form-textarea" required placeholder="Escribí aquí tu mensaje detallado..."></textarea>
+              <textarea id="mensaje" name="Mensaje" class="form-textarea" required placeholder="Escribí aquí tu mensaje detallado..."></textarea>
             </div>
             <div class="form-group form-group--full">
               <button type="submit" class="btn btn--primary btn--full" style="height: 48px; justify-content: center;">Enviar Mensaje</button>
@@ -348,51 +354,7 @@
   <script src="js/cart.js"></script>
   <script src="js/main.js?v=116"></script>
   <script>
-    function enviarMensajeContacto(e) {
-      e.preventDefault();
-      
-      const nombre = document.getElementById("nombre").value;
-      const email = document.getElementById("email").value;
-      const motivo = document.getElementById("motivo").value;
-      const mensaje = document.getElementById("mensaje").value;
-      
-      const submitBtn = e.target.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = "Enviando...";
-      submitBtn.disabled = true;
-
-      const data = {
-        "Nombre": nombre,
-        "Email": email,
-        "Motivo": motivo,
-        "Mensaje": mensaje,
-        "_subject": `Nueva consulta de Contacto - ${motivo} - ${nombre}`,
-        "_replyto": email,
-        "_template": "table"
-      };
-
-      fetch("https://formsubmit.co/ajax/elbuencebarmates@gmail.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify(data)
-      })
-      .then(response => response.json())
-      .then(res => {
-        mostrarToast(`¡Gracias ${nombre}! Tu consulta fue enviada. Te responderemos a la brevedad.`);
-        e.target.reset();
-      })
-      .catch(err => {
-        console.error("Error al enviar email:", err);
-        mostrarToast("Hubo un error al enviar el mensaje. Por favor, intenta por WhatsApp.");
-      })
-      .finally(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-      });
-    }
+    // En este archivo ya no necesitamos lógica JS adicional de form ya que es un POST directo
   </script>
 </body>
 </html>
