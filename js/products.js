@@ -1593,6 +1593,96 @@ const PRODUCTOS = [
         "precio": 10500
       }
     ]
+  },
+  {
+    "id": "mate-perita-algarrobo-grande",
+    "nombre": "MATE PERITA DE ALGARROBO BARNIZADO PREMIUM GRANDE",
+    "categoria": "mates",
+    "subcategoria": "madera",
+    "precio": 7000,
+    "imagen": "assets/images/mate-perita-de-algarrobo-barnizado-premium-grande.jpg",
+    "descripcion": "Mate perita de algarrobo macizo barnizado de gran tamaño. Diseño ergonómico muy cómodo de agarrar y duradero.",
+    "destacado": true,
+    detalles: [
+      "Madera de algarrobo maciza seleccionada",
+      "Terminación con barniz de alta protección",
+      "Formato perita ergonómico amplio"
+    ]
+  },
+  {
+    "id": "mate-ranchero-artesanal-rosas",
+    "nombre": "MATE RANCHERO ARTESANAL PINTADO A MANO - MANCHAS ROSAS",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 54000,
+    "imagen": "assets/images/mate-ranchero-moldeado-y-pintado-a-mano-trabajo-todo-artesanal-manchas-rosas.jpeg",
+    "descripcion": "Mate ranchero moldeado y pintado artesanalmente a mano con exclusivo diseño de manchas rosas y virola de alpaca.",
+    "destacado": true,
+    detalles: [
+      "Trabajo 100% artesanal moldeado a mano",
+      "Diseño exclusivo pintado en tonos rosa",
+      "Virola de alpaca trabajada a mano"
+    ]
+  },
+  {
+    "id": "box-malvinas-argentinas",
+    "nombre": "BOX MALVINAS ARGENTINAS: CAJA + MATE CAMIONERO + BOMBILLA",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 27000,
+    "imagen": "assets/images/box-malvinas-argentinas-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata-todo-grabado.jpeg",
+    "descripcion": "Set completo temático Malvinas Argentinas: incluye caja de presentación grabada, mate camionero de algarrobo laqueado y bombilla chata grabada.",
+    "destacado": true,
+    detalles: [
+      "Caja de madera con grabado temático",
+      "Mate camionero de algarrobo laqueado",
+      "Bombilla chata de acero inoxidable"
+    ]
+  },
+  {
+    "id": "box-harry-potter",
+    "nombre": "BOX TEMÁTICO HARRY POTTER: CAJA + MATE CAMIONERO + BOMBILLA",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 27000,
+    "imagen": "assets/images/box-harry-potter-caja-presentaci-n-camionero-laqueado-brilloso-y-bombilla-chata-todo-grabado.jpeg",
+    "descripcion": "Box especial para fanáticos de Harry Potter: caja de regalo grabada con motivos del colegio Hogwarts, mate camionero laqueado y bombilla chata grabada.",
+    "destacado": true,
+    detalles: [
+      "Grabado láser temático de alta precisión",
+      "Mate de algarrobo laqueado brillante",
+      "Presentación lista para regalar"
+    ]
+  },
+  {
+    "id": "box-boca-juniors",
+    "nombre": "BOX BOCA JUNIORS: CAJA PRESENTACIÓN + MATE CAMIONERO + BOMBILLA",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 27000,
+    "imagen": "assets/images/box-boca-juniors-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata.jpeg",
+    "descripcion": "Combo xeneize de regalo: caja de presentación personalizada con escudo de Boca Juniors, mate camionero de algarrobo laqueado y bombilla chata.",
+    "destacado": true,
+    detalles: [
+      "Temática oficial Boca Juniors",
+      "Mate de algarrobo laqueado de alta terminación",
+      "Caja rígida protectora grabada"
+    ]
+  },
+  {
+    "id": "box-river-plate",
+    "nombre": "BOX RIVER PLATE: CAJA PRESENTACIÓN + MATE CAMIONERO + BOMBILLA",
+    "categoria": "combos",
+    subcategoria: "sets",
+    precio: 27000,
+    imagen: "assets/images/box-river-plate-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata.jpeg",
+    descripcion: "Combo millonario de regalo: caja de presentación grabada con escudo de River Plate, mate camionero de algarrobo laqueado y bombilla chata.",
+    destacado: true,
+    detalles: [
+      "Temática oficial River Plate",
+      "Mate de algarrobo laqueado brillante",
+      "Caja de presentación grabada a láser"
+    ]
   }
 ];
 
