@@ -1263,7 +1263,7 @@ const PRODUCTOS = [
     "nombre": "YERBA MATE BALDO TRADICIONAL",
     "descripcion": "Yerba Mate Baldo Tradicional, una de las marcas más reconocidas de Uruguay. De hoja gruesa, con palo, de sabor robusto y duradero. Ideal para los amantes del mate clásico.",
     "precio": 7500,
-    "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
+    "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
     "destacado": true,
@@ -1275,12 +1275,12 @@ const PRODUCTOS = [
     "variantes": [
       {
         "nombre": "500 GR",
-        "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
+        "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
         "precio": 7500
       },
       {
         "nombre": "1 KG",
-        "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
+        "imagen": "assets/images/yerba-baldo-tradicional-1kg.png",
         "precio": 10000
       },
       {
