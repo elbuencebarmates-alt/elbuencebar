@@ -1716,17 +1716,17 @@ const PRODUCTOS = [
   },
   {
     "id": "imperial-fleje-acero-negro-mama",
-    "nombre": "MATE IMPERIAL FLEJE Y VIROLA DE ACERO NEGRO",
+    "nombre": "MATE IMPERIAL NEGRO GRABADO DÍA DE LA MADRE «TE AMO MAMÁ»",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 22500,
     "imagen": "assets/images/imperial-fleje-y-virola-de-acero-interior-calabaza-color-negro-grabado-d-a-de-la-madre.jpeg",
-    "descripcion": "Mate imperial con virola y fleje reforzado de acero inox, calabaza brasilera seleccionada de alto grosor y forrado en cuero vacuno negro mate.",
+    "descripcion": "Edición especial Día de la Madre: Mate imperial con virola de acero inoxidable grabada a láser con la frase 'Te amo Mamá - Que tus mates sean eternos', fleje reforzado y forrado en cuero vacuno negro mate.",
     "destacado": true,
     "detalles": [
-      "Fleje lateral de acero inoxidable pulido",
-      "Calabaza brasilera de pared gruesa",
-      "Forrado en cuero vacuno negro de máxima calidad"
+      "Grabado láser especial Día de la Madre 'Te Amo Mamá'",
+      "Fleje y virola de acero inoxidable pulido",
+      "Calabaza brasilera seleccionada forrada en cuero vacuno negro"
     ]
   },
   {
