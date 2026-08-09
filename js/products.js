@@ -2043,6 +2043,96 @@ const PRODUCTOS = [
       "Doble dije ornamental de bronce",
       "Filtro tipo cuchara de fácil limpieza"
     ]
+  },
+  {
+    "id": "canasta-cuero-azul-boca-juniors",
+    "nombre": "CANASTA MATERA DE CUERO AZUL BOCA JUNIORS",
+    "categoria": "materas",
+    "subcategoria": "cuero",
+    "precio": 36000,
+    "imagen": "assets/images/canasta-de-100-cuero-azul-con-logos-de-boca-juniors-y-escudo-premium-con-division.jpg",
+    "descripcion": "Canasta matera 100% cuero vacuno legítimo azul marino con escudos y logos gravados de Boca Juniors y división interior rígida.",
+    "destacado": true,
+    "detalles": [
+      "100% cuero vacuno reinforced",
+      "Escudos grabados a fuego de Boca Juniors",
+      "División rígida de separación interna"
+    ]
+  },
+  {
+    "id": "canasta-afa-celeste-cuero-reforzado",
+    "nombre": "CANASTA MATERA CELESTE AFA ARGENTINA CUERO REFORZADO",
+    "categoria": "materas",
+    "subcategoria": "cuero",
+    "precio": 36000,
+    "imagen": "assets/images/canasta-afa-argentina-color-celeste-cuero-grueso-reforzado-y-doble-costura.jpeg",
+    "descripcion": "Canasta matera de cuero vacuno grueso en tono celeste patria con logos de AFA, doble costura y manija reforzada con remaches.",
+    "destacado": true,
+    "detalles": [
+      "Cuero vacuno grueso color celeste Selección",
+      "Doble costura e hilos industriales",
+      "Espacio amplio para termo Stanley o Lumilagro de 1.3L"
+    ]
+  },
+  {
+    "id": "canasta-cuero-pelos-premium",
+    "nombre": "CANASTA MATERA DE CUERO VACUNO CON PELO NATURAL",
+    "categoria": "materas",
+    "subcategoria": "cuero",
+    "precio": 36000,
+    "imagen": "assets/images/canasta-de-cuero-con-pelos-premium-con-division.jpeg",
+    "descripcion": "Exclusiva canasta matera artesanal confeccionada en cuero vacuno natural con pelo, manchas surtidas únicas y división interior.",
+    destacado: true,
+    "detalles": [
+      "Cuero vacuno legítimo con pelo natural",
+      "Diseño único e irrepetible por pieza",
+      "Manija de cuero reforzada con remaches metálicos"
+    ]
+  },
+  {
+    "id": "canasta-cuerina-negro-croco",
+    "nombre": "CANASTA MATERA CUERO CROCO NEGRO DOBLE COSTURA",
+    "categoria": "materas",
+    "subcategoria": "ecocuero",
+    "precio": 16000,
+    "imagen": "assets/images/canasta-de-cuerina-color-negro-cuero-croco-doble-costura-premium.jpeg",
+    "descripcion": "Canasta matera rígida en ecocuero textura croco negro con doble costura reforzada, manija de agarre ergonómica y división interna.",
+    destacado: true,
+    "detalles": [
+      "Ecocuero de alta densidad con textura cocodrilo",
+      "Base rígida antideslizante",
+      "División para termo y frascos yerbero/azucarero"
+    ]
+  },
+  {
+    "id": "bolso-matero-bordo-river-plate",
+    "nombre": "BOLSO MATERO BORDÓ RIVER PLATE CON SUJETADOR DE TERMO",
+    "categoria": "bolsos",
+    "subcategoria": "tela",
+    "precio": 18000,
+    "imagen": "assets/images/bolso-matero-color-bord-con-logo-de-river.jpeg",
+    "descripcion": "Bolso matero reforzado en tela impermeable bordó con el escudo oficial de River Plate bordado y correa regulable para colgar.",
+    destacado: true,
+    "detalles": [
+      "Escudo bordado oficial de River Plate",
+      "Interior térmico lavable e impermeable",
+      "Sujetadores elásticos para termo y frascos"
+    ]
+  },
+  {
+    "id": "combo-bolso-boca-yerbero-azucarero",
+    "nombre": "COMBO BOLSO MATERO AZUL BOCA JUNIORS + YERBERO + AZUCARERO",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 18000,
+    "imagen": "assets/images/combo-bolso-clasico-tela-matero-grande-con-sujetador-para-termo-yerbero-azucarero-color-azul-con-escudo-de-boca-juniors-tela.jpg",
+    "descripcion": "Combo completo x3 piezas: bolso matero azul xeneize con escudo de Boca Juniors, lata yerbera y lata azucarera haciendo juego.",
+    destacado: true,
+    "detalles": [
+      "Bolso térmico grande con espacio para termo de 1.5L",
+      "Incluye yerbero y azucarero con pico vertedor",
+      "Estampa oficial Boca Juniors"
+    ]
   }
 ];
 
