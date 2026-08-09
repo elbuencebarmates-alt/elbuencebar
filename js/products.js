@@ -1953,6 +1953,96 @@ const PRODUCTOS = [
       "Incluye plato de madera lustrada",
       "Cuchillo y tenedor parrilleros de acero"
     ]
+  },
+  {
+    "id": "imperial-algarrobo-papa-eternos",
+    "nombre": "MATE IMPERIAL DE ALGARROBO GRABADO EL MEJOR PAPÁ DEL MUNDO",
+    "categoria": "mates",
+    "subcategoria": "madera",
+    "precio": 22000,
+    "imagen": "assets/images/imperial-de-algarrobo-grabado-el-mejor-papa-del-mundo-que-tus-mates-sean-eternos-guarda-de-alpaca.jpeg",
+    "descripcion": "Mate imperial de algarrobo macizo con virola de acero inoxidable grabada a láser con la frase 'El mejor papá del mundo - Que tus mates sean eternos'.",
+    "destacado": true,
+    "detalles": [
+      "Algarrobo seleccionado barnizado de alta calidad",
+      "Virola de acero inox con grabado láser profundo",
+      "Ideal para regalo del Día del Padre"
+    ]
+  },
+  {
+    "id": "imperial-grabado-boca-libertadores",
+    "nombre": "MATE IMPERIAL GRABADO BOCA JUNIORS COPA LIBERTADORES",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 24000,
+    "imagen": "assets/images/imperial-grabado-boca-libertadores.jpeg",
+    "descripcion": "Mate imperial forrado en cuero vacuno negro con virola de alpaca grabada a láser con las Copas Libertadores de Boca Juniors.",
+    "destacado": true,
+    "detalles": [
+      "Edición homenaje Copas Libertadores Boca Juniors",
+      "Virola de alpaca pulida e interior de calabaza brasilera",
+      "Base de 4 patas reforzadas"
+    ]
+  },
+  {
+    "id": "imperial-grabado-independiente",
+    "nombre": "MATE IMPERIAL GRABADO CLUB ATLÉTICO INDEPENDIENTE",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 24000,
+    "imagen": "assets/images/imperial-grabado-club-atl-tico-independiente.jpeg",
+    "descripcion": "Mate imperial forrado en cuero de primera calidad con virola de alpaca grabada a láser con el escudo oficial del Rey de Copas Independiente.",
+    "destacado": true,
+    "detalles": [
+      "Grabado láser del escudo de Independiente",
+      "Calabaza brasilera de alto grosor",
+      "Virola de alpaca pulida a espejo"
+    ]
+  },
+  {
+    "id": "termo-media-manija-corazon-campeon",
+    "nombre": "TERMO MEDIA MANIJA NEGRO - GRABADO CORAZÓN DE CAMPEÓN",
+    "categoria": "termos",
+    "subcategoria": "negro",
+    "precio": 24000,
+    "imagen": "assets/images/termo-media-manija-negro-grabado-coraz-n-de-campe-n.jpeg",
+    "descripcion": "Termo media manija de acero inoxidable 1L texturado negro mate con grabado 360 del escudo de la Selección Argentina y las 3 estrellas 'Corazón de Campeón'.",
+    "destacado": true,
+    "detalles": [
+      "Acero inoxidable insulado de doble pared",
+      "Mantención térmica frío/calor 24hs",
+      "Grabado 360º de alta calidad"
+    ]
+  },
+  {
+    "id": "set-cubiertos-asado-rosmania-12pzas",
+    "nombre": "SET DE CUBIERTOS ASADO ESTILO ALEMANIA ROSMANIA - 12 PIEZAS",
+    "categoria": "accesorios",
+    "subcategoria": "asado",
+    "precio": 29500,
+    "imagen": "assets/images/set-de-cubiertos-asado-estilo-alemania-rosmania-12-piezas.jpeg",
+    "descripcion": "Juego completo de cubiertos para asado de 12 piezas (6 cuchillos y 6 tenedores) de acero inoxidable premium con mango de madera estilo Alemania.",
+    "destacado": true,
+    "detalles": [
+      "6 cuchillos parrilleros de filo serrado",
+      "6 tenedores de acero inoxidable",
+      "Empuñadura de madera noble reforzada con remaches"
+    ]
+  },
+  {
+    "id": "bombillon-recto-premium-alpaca",
+    "nombre": "BOMBILLÓN RECTO PREMIUM PICO DE ALPACA Y BRONCE",
+    "categoria": "bombillas",
+    "subcategoria": "alpaca",
+    "precio": 24000,
+    "imagen": "assets/images/bombillon-recto-premium-pico-de-alpaca-ca-o-cincelado-doble-dije-de-bronce-pala-ancha-grande-cuchara.jpg",
+    "descripcion": "Bombillón recto artesanal de 19 cm en alpaca maciza con caño cincelado, doble dije de bronce esculpido y pala ancha filtro cuchara.",
+    "destacado": true,
+    "detalles": [
+      "100% alpaca premium cincelada a mano",
+      "Doble dije ornamental de bronce",
+      "Filtro tipo cuchara de fácil limpieza"
+    ]
   }
 ];
 
