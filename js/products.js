@@ -712,7 +712,7 @@ const PRODUCTOS = [
     "nombre": "COSITO PARA EL MATE DE ACERO INOXIDABLE",
     "categoria": "accesorios",
     "subcategoria": "limpieza",
-    "precio": 4500,
+    "precio": 12000,
     "imagen": "assets/images/cosito-acero.jpg",
     "descripcion": "El accesorio ideal para vaciar la yerba del mate de manera rápida, limpia y sin desperdicios. Fabricado 100% en acero inoxidable de alta calidad, duradero y fácil de lavar.",
     "destacado": false,
