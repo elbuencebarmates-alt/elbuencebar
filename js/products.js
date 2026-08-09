@@ -1773,6 +1773,96 @@ const PRODUCTOS = [
       "Mate de algarrobo macizo pulido y laqueado",
       "Caja protectora con sujetadores de pana"
     ]
+  },
+  {
+    "id": "termo-media-manija-penales-inglaterra",
+    "nombre": "TERMO MEDIA MANIJA NEGRO - GRABADO LISTA DE PENALES INGLATERRA",
+    "categoria": "termos",
+    "subcategoria": "negro",
+    "precio": 24500,
+    "imagen": "assets/images/termo-media-manija-negro-grabado-lista-de-penales-inglaterra.jpeg",
+    "descripcion": "Termo media manija de acero inoxidable 1 Litro con acabado mate texturado negro y exclusivo grabado láser 360 de la histórica definición por penales contra Inglaterra.",
+    "destacado": true,
+    "detalles": [
+      "Acero inoxidable de doble pared insulada",
+      "Conserva agua caliente por más de 20hs",
+      "Grabado láser 360º temático Selección Argentina"
+    ]
+  },
+  {
+    "id": "lata-yerbera-baldo-visor",
+    "nombre": "LATA YERBERA BALDO 500G CON PICO VERTEDOR Y VISOR LATERAL",
+    "categoria": "accesorios",
+    "subcategoria": "yerberos",
+    "precio": 29500,
+    "imagen": "assets/images/lata-yerbera-baldo-500gr-con-pico-vertedor-y-visor-lateral-cierre-herm-tico.jpeg",
+    "descripcion": "Lata yerbera oficial Baldo de 500g con pico vertedor plástico, visor de nivel transparente lateral y tapa de cierre hermético.",
+    "destacado": true,
+    "detalles": [
+      "Cierre hermético antihumedad",
+      "Pico vertedor cómodo para servir yerba",
+      "Visor de acrílico transparente para ver la carga"
+    ]
+  },
+  {
+    "id": "combo-viajero-negro-completo",
+    "nombre": "COMBO MATERO VIAJERO NEGRO: BOLSO + TERMO + YERBERO + AZUCARERO",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 24000,
+    "imagen": "assets/images/combo-viajero-color-negro-mate-simil-con-vuelo-bolso-matero-grande-con-sujetador-para-termo-yerbero-azucarero.jpeg",
+    "descripcion": "Set completo viajero de mate: incluye bolso matero reforzado con sujetadores elásticos, mate con vuelo térmico, yerbero y azucarero haciendo juego.",
+    "destacado": true,
+    "detalles": [
+      "Bolso matero rígido con correa ajustable",
+      "Incluye mate térmico con vuelo",
+      "Set completo yerbero y azucarero en negro mate"
+    ]
+  },
+  {
+    "id": "bombillon-copa-del-mundo",
+    "nombre": "BOMBILLÓN COPA DEL MUNDO ALPACA Y BRONCE",
+    "categoria": "bombillas",
+    "subcategoria": "alpaca",
+    "precio": 19500,
+    "imagen": "assets/images/bombillon-copa-del-mundo-copa-grande-de-alpaca-y-bronce.jpeg",
+    "descripcion": "Exclusivo bombillón de alpaca premium de 19 cm con dije esculpido de la Copa del Mundo en bronce macizo y filtro tipo cuchara de alta succión.",
+    destacado: true,
+    "detalles": [
+      "Fabricado en alpaca pulida a espejo",
+      "Dije tridimensional de la Copa del Mundo en bronce",
+      "Excelente flujo de aire y filtrado"
+    ]
+  },
+  {
+    "id": "botella-antivuelco-penales-inglaterra",
+    "nombre": "BOTELLA ANTIVUELCO NEGRA GRABADA LISTA DE PENALES INGLATERRA",
+    "categoria": "termos",
+    "subcategoria": "botellas",
+    "precio": 24000,
+    "imagen": "assets/images/botella-antivuelco-grabada-lista-de-penales-inglatera-color-negro.jpeg",
+    "descripcion": "Botella térmica deportiva antivuelco de acero inoxidable grabada con la histórica lista de penales contra Inglaterra en el Mundial 1998.",
+    destacado: true,
+    "detalles": [
+      "Base antideslizante con traba de seguridad",
+      "Pico vertedor deportivo y manija de agarre",
+      "Grabado láser inalterable"
+    ]
+  },
+  {
+    "id": "camionero-algarrobo-argentina-grabado",
+    "nombre": "MATE CAMIONERO DE ALGARROBO GRABADO SELECCIÓN ARGENTINA",
+    "categoria": "mates",
+    "subcategoria": "madera",
+    "precio": 15000,
+    "imagen": "assets/images/camionero-algarrobo-grabado-inglaterra-la-concha-de-tu-madre.jpeg",
+    "descripcion": "Mate camionero de algarrobo macizo pulido con virola de acero inoxidable grabada con motivos patrios de la Selección Argentina.",
+    destacado: true,
+    "detalles": [
+      "Algarrobo seleccionado de gran espesor",
+      "Virola de acero con grabado láser",
+      "Base ancha y cuerpo robusto tradicional"
+    ]
   }
 ];
 
