@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    BASE DE DATOS DE PRODUCTOS - EL BUEN CEBAR
    ========================================================================== */
 
@@ -1448,6 +1448,148 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
+        "precio": 10500
+      }
+    ]
+  },
+  {
+    "id": "yerba-rei-verde-clasica-blanco-500g",
+    "nombre": "YERBA REI VERDE CLÁSICA PAQUETE BLANCO 500G",
+    "descripcion": "Yerba Mate Rei Verde Clásica paquete blanco 500g. Molienda tradicional uruguaya de sabor suave y persistente.",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Yerba mate uruguaya de molienda fina",
+      "Paquete blanco clásico 500g",
+      "Sabor equilibrado y duradero"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
+        "precio": 5000
+      }
+    ]
+  },
+  {
+    "id": "yerba-barao-500g",
+    "nombre": "YERBA BARAO 500G",
+    "descripcion": "Yerba Mate Barão 500g importada de Brasil. Sabor intenso y molienda fina de alta calidad.",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-barao-500g.jpeg",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Yerba mate brasileña importada",
+      "Molienda fina premium",
+      "Presentación 500g"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-barao-500g.jpeg",
+        "precio": 5000
+      }
+    ]
+  },
+  {
+    "id": "yerba-sara-coco-500g",
+    "nombre": "YERBA SARA EDICIÓN LIMITADA COCO 500G",
+    "descripcion": "Yerba Mate Sara Edición Limitada sabor Coco en presentación de 500g. Combinación de yerba uruguaya con toque de coco.",
+    "precio": 6500,
+    "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": true,
+    "detalles": [
+      "Edición Limitada sabor Coco",
+      "Yerba uruguaya de selección especial",
+      "Presentación 500g"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
+        "precio": 6500
+      }
+    ]
+  },
+  {
+    "id": "yerba-rei-verde-clasica-blanco-1kg",
+    "nombre": "YERBA REI VERDE CLÁSICA PAQUETE BLANCO 1KG",
+    "descripcion": "Yerba Mate Rei Verde Clásica paquete blanco 1kg. Molienda tradicional uruguaya de sabor rendidor.",
+    "precio": 9000,
+    "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Yerba mate uruguaya paquete de 1kg",
+      "Molienda tradicional paquete blanco",
+      "Rendimiento superior en cebadas"
+    ],
+    "variantes": [
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
+        "precio": 9000
+      }
+    ]
+  },
+  {
+    "id": "yerba-sara-extra-suave",
+    "nombre": "YERBA MATE SARA EXTRA SUAVE",
+    "descripcion": "Yerba Mate Sara Extra Suave importada de Uruguay. Sabor delicado y muy amable al paladar.",
+    "precio": 6000,
+    "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Yerba uruguaya sin palo",
+      "Sabor extra suave y bajo amargor",
+      "Excelente durabilidad"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
+        "precio": 6000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
+        "precio": 10500
+      }
+    ]
+  },
+  {
+    "id": "yerba-sara-tradicional",
+    "nombre": "YERBA MATE SARA TRADICIONAL",
+    "descripcion": "Yerba Mate Sara Tradicional paquete rojo. La clásica yerba uruguaya de cuerpo intenso y carácter persistente.",
+    "precio": 6000,
+    "imagen": "assets/images/yerba-sara-tradicional.jpeg",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Yerba uruguaya tradicional paquete rojo",
+      "Sabor intenso y auténtico",
+      "Hojas seleccionadas de máxima calidad"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-sara-tradicional.jpeg",
+        "precio": 6000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-sara-tradicional.jpeg",
         "precio": 10500
       }
     ]
