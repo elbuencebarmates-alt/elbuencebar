@@ -10,12 +10,12 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 40000,
     "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
-    "descripcion": "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
+    "descripcion": "Nuestra mejor calidad. SelecciÃ³n de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
     "destacado": true,
     "detalles": [
       "Calabaza brasilera seleccionada por su espesor",
       "Virola superior con guarda de alpaca cincelada",
-      "Formato boca ancha para cebadas más cómodas"
+      "Formato boca ancha para cebadas mÃ¡s cÃ³modas"
     ],
     "variantes": [
       {
@@ -24,7 +24,7 @@ const PRODUCTOS = [
         "precio": 40000
       },
       {
-        "nombre": "CUERO MARRÁ“N LISO",
+        "nombre": "CUERO MARRÃ“N LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-marron.png",
         "precio": 40000
       },
@@ -42,11 +42,11 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 50000,
     "imagen": "assets/images/mate-imperial-croco-negro.png",
-    "descripcion": "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
+    "descripcion": "Una selecciÃ³n exclusiva de mates imperiales premium con texturas Ãºnicas. PodÃ©s elegir entre el cuero vacuno grabado estilo cocodrilo o el diseÃ±o repujado temÃ¡tico de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
     "destacado": true,
     "detalles": [
       "Calabaza brasilera de alto espesor seleccionada",
-      "Cuero vacuno legítimo grabado estilo croco o repujado",
+      "Cuero vacuno legÃ­timo grabado estilo croco o repujado",
       "Virola de alpaca pulida a espejo con cincelados de flores",
       "Costura reforzada a mano con hilo encerado"
     ],
@@ -80,7 +80,7 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 50000,
     "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
-    "descripcion": "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesaníalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
+    "descripcion": "Nuestra mejor selecciÃ³n de mates imperiales con base de alpaca trabajada artesanalmente. PodÃ©s elegir entre cuero marrÃ³n repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrÃ³n) o el exclusivo cuero labrado rosa con grabado 'Feliz DÃ­a MamÃ¡'.",
     "destacado": true,
     "detalles": [
       "Base de alpaca cincelada y reforzada (sin patas expuestas)",
@@ -123,17 +123,17 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 50000,
     "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
-    "descripcion": "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
+    "descripcion": "Un diseÃ±o sumamente distinguido y tradicional. Este mate imperial de cuero marrÃ³n liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindÃ¡ndole una presencia e imponencia Ãºnicas en la mesa.",
     "destacado": true,
     "detalles": [
       "Calabaza brasilera de alto espesor seleccionada",
-      "Forrado en cuero vacuno marrón liso de primera",
+      "Forrado en cuero vacuno marrÃ³n liso de primera",
       "Patas con apliques ornamentales de alpaca (botitas)",
-      "Virola superior de alpaca cincelada artesaníalmente"
+      "Virola superior de alpaca cincelada artesanalmente"
     ],
     "variantes": [
       {
-        "nombre": "MARRÁ“N LISO",
+        "nombre": "MARRÃ“N LISO",
         "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
         "precio": 50000
       }
@@ -146,7 +146,7 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 50000,
     "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
-    "descripcion": "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
+    "descripcion": "Un diseÃ±o sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esfÃ©ricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrÃ³n o en textura animal print con pelo.",
     "destacado": true,
     "detalles": [
       "Base de alpaca trabajada a mano con pelotitas de bronce",
@@ -184,7 +184,7 @@ const PRODUCTOS = [
     "detalles": [
       "Interior de madera de algarrobo macizo torneado",
       "No junta humedad ni hongos, muy duradero",
-      "Exterior forrado en cuero vacuno legítimo",
+      "Exterior forrado en cuero vacuno legÃ­timo",
       "Virola superior de alpaca premium calada o lisa"
     ]
   },
@@ -195,10 +195,10 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 50000,
     "imagen": "assets/images/imperial-azul-pelotas-bronce.png",
-    "descripcion": "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
+    "descripcion": "Mate Imperial de cuero teÃ±ido en azul profundo con base de pelotas metÃ¡licas y virola de alpaca cincelada. Una pieza de diseÃ±o Ãºnica.",
     "destacado": false,
     "detalles": [
-      "Cuero legítimo teñido en tono azul premium",
+      "Cuero legÃ­timo teÃ±ido en tono azul premium",
       "Base de alpaca con aplique de pelotitas de bronce",
       "Virola cincelada con motivos florales",
       "Interior de calabaza seleccionada de gran espesor"
@@ -211,12 +211,12 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 50000,
     "imagen": "assets/images/imperial-animal-print-calabaza.png",
-    "descripcion": "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
+    "descripcion": "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseÃ±o Animal Print y virola de alpaca cincelada.",
     "destacado": false,
     "detalles": [
-      "Cuero con pelo natural diseño animal print",
-      "Virola de alpaca cincelada artesaníalmente",
-      "Base de apoyo de cuero legítimo",
+      "Cuero con pelo natural diseÃ±o animal print",
+      "Virola de alpaca cincelada artesanalmente",
+      "Base de apoyo de cuero legÃ­timo",
       "Interior de calabaza brasilera de alto grosor"
     ]
   },
@@ -227,7 +227,7 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 35000,
     "imagen": "assets/images/imperial-roma-cincelado.png",
-    "descripcion": "Mate Imperial modelo Roma, forrado en cuero con terminación repujada y base completa de alpaca totalmente cincelada.",
+    "descripcion": "Mate Imperial modelo Roma, forrado en cuero con terminaciÃ³n repujada y base completa de alpaca totalmente cincelada.",
     "destacado": false,
     "detalles": [
       "Cuero vacuno con trabajo repujado",
@@ -243,11 +243,11 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 40000,
     "imagen": "assets/images/imperial-cuero-jean.png",
-    "descripcion": "Mate Imperial forrado en cuero con textura estilo jean de color azul e interior térmico de acero inoxidable. Higiénico y moderno.",
+    "descripcion": "Mate Imperial forrado en cuero con textura estilo jean de color azul e interior tÃ©rmico de acero inoxidable. HigiÃ©nico y moderno.",
     "destacado": false,
     "detalles": [
       "Forrado en cuero seleccionado con grabado textura Jean",
-      "Interior de acero inoxidable doble pared térmico",
+      "Interior de acero inoxidable doble pared tÃ©rmico",
       "Virola de alpaca lisa",
       "Excelente base de 4 patas firmes"
     ]
@@ -259,12 +259,12 @@ const PRODUCTOS = [
     "subcategoria": "torpedo",
     "precio": 40000,
     "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
-    "descripcion": "Un torpedo premium único en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminación repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
+    "descripcion": "Un torpedo premium Ãºnico en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminaciÃ³n repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
     "destacado": true,
     "detalles": [
       "Calabaza de excelente espesor y formato torpedo",
-      "Cuero legítimo repujado cincelado",
-      "Virola y base ancha de alpaca calada artesaníalmente",
+      "Cuero legÃ­timo repujado cincelado",
+      "Virola y base ancha de alpaca calada artesanalmente",
       "Costura reforzada a mano con hilo encerado"
     ],
     "variantes": [
@@ -274,7 +274,7 @@ const PRODUCTOS = [
         "precio": 40000
       },
       {
-        "nombre": "MARRÁ“N",
+        "nombre": "MARRÃ“N",
         "imagen": "assets/images/torpedo-alpaca-calada-marron.png",
         "precio": 40000
       }
@@ -291,9 +291,9 @@ const PRODUCTOS = [
     "destacado": false,
     "detalles": [
       "Madera maciza de algarrobo torneado premium",
-      "Virola de alpaca cincelada artesaníalmente",
+      "Virola de alpaca cincelada artesanalmente",
       "Forrado en cuero vacuno seleccionado cosido a mano",
-      "Formato torpedo clásico"
+      "Formato torpedo clÃ¡sico"
     ]
   },
   {
@@ -303,13 +303,13 @@ const PRODUCTOS = [
     "subcategoria": "torpedo",
     "precio": 35000,
     "imagen": "assets/images/mate-torpedo-algarrobo-laqueado.png",
-    "descripcion": "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
+    "descripcion": "Mate de algarrobo de exportaciÃ³n con terminaciÃ³n laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
     "destacado": false,
     "detalles": [
       "Acabado laqueado brillante que protege la madera",
-      "Virola cincelada de diseño patrio",
+      "Virola cincelada de diseÃ±o patrio",
       "Excelente espesor de madera de algarrobo laqueada",
-      "Base de apoyo súper estable"
+      "Base de apoyo sÃºper estable"
     ]
   },
   {
@@ -323,25 +323,25 @@ const PRODUCTOS = [
     "destacado": false,
     "detalles": [
       "Madera de algarrobo seleccionado extra gruesa",
-      "Virola de acero con cincelados de gran definición",
-      "Exterior en cuero vacuno teñido a mano",
+      "Virola de acero con cincelados de gran definiciÃ³n",
+      "Exterior en cuero vacuno teÃ±ido a mano",
       "Terminaciones de alta costura"
     ]
   },
   {
     "id": "mate-termico-stanley-negro",
-    "nombre": "MATE TÁ‰RMICO CON VUELO COLOR NEGRO",
+    "nombre": "MATE TÃ‰RMICO CON VUELO COLOR NEGRO",
     "categoria": "mates",
     "subcategoria": "termico",
     "precio": 18000,
     "imagen": "assets/images/mate-termico-stanley-negro.png",
-    "descripcion": "Mate térmico fabricado en acero inoxidable de doble pared de vacío (tipo Stanley), con virola/vuelo superior. Mantiene la temperatura perfecta por horas y es súper higiénico.",
+    "descripcion": "Mate tÃ©rmico fabricado en acero inoxidable de doble pared de vacÃ­o (tipo Stanley), con virola/vuelo superior. Mantiene la temperatura perfecta por horas y es sÃºper higiÃ©nico.",
     "destacado": true,
     "detalles": [
-      "Acero inoxidable de doble pared de vacío de grado alimenticio",
-      "Virola con vuelo estilo clásico",
-      "Fácil de lavar, higiénico y no junta humedad",
-      "Conserva calor/frío de la yerba por horas"
+      "Acero inoxidable de doble pared de vacÃ­o de grado alimenticio",
+      "Virola con vuelo estilo clÃ¡sico",
+      "FÃ¡cil de lavar, higiÃ©nico y no junta humedad",
+      "Conserva calor/frÃ­o de la yerba por horas"
     ]
   },
   {
@@ -351,33 +351,33 @@ const PRODUCTOS = [
     "subcategoria": "torpedo",
     "precio": 25000,
     "imagen": "assets/images/torpedo-repujado-borravino.png",
-    "descripcion": "Mate torpedo premium con interior de calabaza de gran grosor, forrado en cuero legítimo con trabajo repujado color borravino y una imponente virola de alpaca ancha con base de alpaca.",
+    "descripcion": "Mate torpedo premium con interior de calabaza de gran grosor, forrado en cuero legÃ­timo con trabajo repujado color borravino y una imponente virola de alpaca ancha con base de alpaca.",
     "destacado": false,
     "detalles": [
       "Calabaza brasilera de alto espesor",
-      "Cuero vacuno legítimo labrado y repujado color borravino",
+      "Cuero vacuno legÃ­timo labrado y repujado color borravino",
       "Virola y base ancha de alpaca reforzada",
       "Costura cruzada fina hecha a mano"
     ]
   },
   {
     "id": "bombilla-bombillon",
-    "nombre": "BOMBILLÁ“N DE CAÁ‘O LISO",
+    "nombre": "BOMBILLÃ“N DE CAÃ‘O LISO",
     "categoria": "bombillas",
     "subcategoria": "bombillon",
     "precio": 15000,
     "imagen": "assets/images/bombillon-alpaca-cincelado.png",
-    "descripcion": "Bombillones de caño liso diseñados para mates de boca ancha y profundos. Disponibles en alpaca con caño cincelado o en acero inoxidable con formato pico de loro y pala grande.",
+    "descripcion": "Bombillones de caÃ±o liso diseÃ±ados para mates de boca ancha y profundos. Disponibles en alpaca con caÃ±o cincelado o en acero inoxidable con formato pico de loro y pala grande.",
     "destacado": true,
     "detalles": [
-      "Caño de gran diámetro para un caudal óptimo",
+      "CaÃ±o de gran diÃ¡metro para un caudal Ã³ptimo",
       "Pala grande microperforada de excelente filtrado",
       "Terminaciones pulidas a espejo y difusor de calor",
       "Largo ideal de 20-21 cm para mates imperiales o camioneros"
     ],
     "variantes": [
       {
-        "nombre": "ALPACA CON CAÁ‘O CINCELADO",
+        "nombre": "ALPACA CON CAÃ‘O CINCELADO",
         "imagen": "assets/images/bombillon-alpaca-cincelado.png",
         "precio": 15000
       },
@@ -390,32 +390,32 @@ const PRODUCTOS = [
   },
   {
     "id": "bombilla-bombillon-labrado-premium",
-    "nombre": "BOMBILLÁ“N DE CAÁ‘O LABRADO PREMIUM",
+    "nombre": "BOMBILLÃ“N DE CAÃ‘O LABRADO PREMIUM",
     "categoria": "bombillas",
     "subcategoria": "bombillon",
     "precio": 25000,
     "imagen": "assets/images/bombillon-labrado-trenzado.png",
-    "descripcion": "Bombillón de altísima gama con caño labrado artesaníalmente. Cuenta con virolas de bronce torneadas y detalles de orfebrería únicos. Disponible en diseño trenzado con pico dorado, diseño espiralado tradicional o diseño torsión con pala y pico dorados.",
+    "descripcion": "BombillÃ³n de altÃ­sima gama con caÃ±o labrado artesanalmente. Cuenta con virolas de bronce torneadas y detalles de orfebrerÃ­a Ãºnicos. Disponible en diseÃ±o trenzado con pico dorado, diseÃ±o espiralado tradicional o diseÃ±o torsiÃ³n con pala y pico dorados.",
     "destacado": true,
     "detalles": [
       "Trabajo de cincelado y labrado hecho a mano en alpaca",
-      "Virolas y apliques de bronce de fundición soldados a mano",
+      "Virolas y apliques de bronce de fundiciÃ³n soldados a mano",
       "Pala y pico pulidos a espejo o con acabados dorados",
       "Largo de 21 cm de gran caudal, ideal para mates imperiales"
     ],
     "variantes": [
       {
-        "nombre": "DISEÁ‘O TRENZADO CON PICO DORADO",
+        "nombre": "DISEÃ‘O TRENZADO CON PICO DORADO",
         "imagen": "assets/images/bombillon-labrado-trenzado.png",
         "precio": 25000
       },
       {
-        "nombre": "DISEÁ‘O ESPIRALADO",
+        "nombre": "DISEÃ‘O ESPIRALADO",
         "imagen": "assets/images/bombillon-labrado-espiralado.png",
         "precio": 25000
       },
       {
-        "nombre": "DISEÁ‘O TORSION CON PALA DORADA",
+        "nombre": "DISEÃ‘O TORSION CON PALA DORADA",
         "imagen": "assets/images/bombillon-labrado-torsion.png",
         "precio": 25000
       }
@@ -428,17 +428,17 @@ const PRODUCTOS = [
     "subcategoria": "acero",
     "precio": 10000,
     "imagen": "assets/images/bombilla-acero-pala-bronce.png",
-    "descripcion": "Bombillas de acero inoxidable 304 con filtro de pala de alta retención. Muy higiénicas y duraderas. Disponibles en versiones con caño liso y pico de bronce, o formato pico de loro en medidas de 16 cm y 19 cm.",
+    "descripcion": "Bombillas de acero inoxidable 304 con filtro de pala de alta retenciÃ³n. Muy higiÃ©nicas y duraderas. Disponibles en versiones con caÃ±o liso y pico de bronce, o formato pico de loro en medidas de 16 cm y 19 cm.",
     "destacado": true,
     "detalles": [
-      "Fabricada íntegramente en acero inoxidable AISI 304",
-      "Filtro tipo pala soldada muy fácil de limpiar",
-      "Pico curvo anatómico muy confortable",
-      "Largo según variante: 16 cm o 19 cm"
+      "Fabricada Ã­ntegramente en acero inoxidable AISI 304",
+      "Filtro tipo pala soldada muy fÃ¡cil de limpiar",
+      "Pico curvo anatÃ³mico muy confortable",
+      "Largo segÃºn variante: 16 cm o 19 cm"
     ],
     "variantes": [
       {
-        "nombre": "CAÁ‘O LISO CON PICO DE BRONCE",
+        "nombre": "CAÃ‘O LISO CON PICO DE BRONCE",
         "imagen": "assets/images/bombilla-acero-pala-bronce.png",
         "precio": 10000
       },
@@ -461,13 +461,13 @@ const PRODUCTOS = [
     "subcategoria": "acero",
     "precio": 10000,
     "imagen": "assets/images/bombilla-chata-grabada-combo.png",
-    "descripcion": "Bombilla chata clásica fabricada en acero inoxidable con grabado láser de alta precisión. Podés elegir tu diseño favorito: escudos de fútbol de Boca o River, diseño patrio de Argentina, Ruta 40, Copa del Mundo, o grabados especiales para regalar como 'Te amo papá' o 'Te amo mamá'.",
+    "descripcion": "Bombilla chata clÃ¡sica fabricada en acero inoxidable con grabado lÃ¡ser de alta precisiÃ³n. PodÃ©s elegir tu diseÃ±o favorito: escudos de fÃºtbol de Boca o River, diseÃ±o patrio de Argentina, Ruta 40, Copa del Mundo, o grabados especiales para regalar como 'Te amo papÃ¡' o 'Te amo mamÃ¡'.",
     "destacado": true,
     "detalles": [
-      "Fabricada íntegramente en acero inoxidable 304",
-      "Grabado láser indeleble de gran definición",
+      "Fabricada Ã­ntegramente en acero inoxidable 304",
+      "Grabado lÃ¡ser indeleble de gran definiciÃ³n",
       "Doble anillo de bronce en el cuello",
-      "Fácil succión y excelente filtrado de yerba"
+      "FÃ¡cil succiÃ³n y excelente filtrado de yerba"
     ],
     "variantes": [
       {
@@ -491,12 +491,12 @@ const PRODUCTOS = [
         "precio": 10000
       },
       {
-        "nombre": "TE AMO PAPÁ",
+        "nombre": "TE AMO PAPÃ",
         "imagen": "assets/images/bombilla-chata-papa.png",
         "precio": 10000
       },
       {
-        "nombre": "TE AMO MAMÁ",
+        "nombre": "TE AMO MAMÃ",
         "imagen": "assets/images/bombilla-chata-mama.png",
         "precio": 10000
       },
@@ -514,11 +514,11 @@ const PRODUCTOS = [
     "subcategoria": "acero",
     "precio": 10000,
     "imagen": "assets/images/bombilla-chata-lisa-curva.png",
-    "descripcion": "Bombilla chata lisa de acero inoxidable 304 pulido a espejo. Su diseño minimalista y elegante cuenta con un anillo difusor de calor en el cuello. Disponible en versión con curva o versión recta.",
+    "descripcion": "Bombilla chata lisa de acero inoxidable 304 pulido a espejo. Su diseÃ±o minimalista y elegante cuenta con un anillo difusor de calor en el cuello. Disponible en versiÃ³n con curva o versiÃ³n recta.",
     "destacado": true,
     "detalles": [
-      "Fabricada en acero inoxidable AISI 304 higiénico",
-      "Formato chato tradicional muy cómodo al uso",
+      "Fabricada en acero inoxidable AISI 304 higiÃ©nico",
+      "Formato chato tradicional muy cÃ³modo al uso",
       "Anillo difusor de calor de bronce",
       "Variante recta de 17 cm y variante curva de 19 cm"
     ],
@@ -542,13 +542,13 @@ const PRODUCTOS = [
     "subcategoria": "alpaca",
     "precio": 25000,
     "imagen": "assets/images/bombillon-alpaca-premium-loro.png",
-    "descripcion": "Exclusivo bombillón artesaníal fabricado íntegramente en alpaca con pico en curva pronunciada (pico de loro) y detalles florales cincelados a mano.",
+    "descripcion": "Exclusivo bombillÃ³n artesanal fabricado Ã­ntegramente en alpaca con pico en curva pronunciada (pico de loro) y detalles florales cincelados a mano.",
     "destacado": false,
     "detalles": [
-      "Fabricación artesaníal en alpaca premium",
-      "Pico de loro curvado anatómico muy cómodo",
-      "Cincelados tradicionales en el caño",
-      "Filtro tipo pala de alta capacidad de succión"
+      "FabricaciÃ³n artesanal en alpaca premium",
+      "Pico de loro curvado anatÃ³mico muy cÃ³modo",
+      "Cincelados tradicionales en el caÃ±o",
+      "Filtro tipo pala de alta capacidad de succiÃ³n"
     ]
   },
   {
@@ -558,13 +558,13 @@ const PRODUCTOS = [
     "subcategoria": "negro",
     "precio": 40000,
     "imagen": "assets/images/termo-argentina-360.png",
-    "descripcion": "Termo media manija de acero inoxidable de 1 litro con pintura texturada en negro mate. Cuenta con un exclusivo grabado láser de 360 grados temático de la Selección Argentina y motivos patrios.",
+    "descripcion": "Termo media manija de acero inoxidable de 1 litro con pintura texturada en negro mate. Cuenta con un exclusivo grabado lÃ¡ser de 360 grados temÃ¡tico de la SelecciÃ³n Argentina y motivos patrios.",
     "destacado": true,
     "detalles": [
-      "Acero inoxidable doble pared de vacío (mantiene frío/calor por 24hs)",
+      "Acero inoxidable doble pared de vacÃ­o (mantiene frÃ­o/calor por 24hs)",
       "Pintura rugosa texturada antideslizante negra",
-      "Grabado láser de 360 grados de alta definición",
-      "Media manija rebatible y tapón cebador de precisión"
+      "Grabado lÃ¡ser de 360 grados de alta definiciÃ³n",
+      "Media manija rebatible y tapÃ³n cebador de precisiÃ³n"
     ]
   },
   {
@@ -574,12 +574,12 @@ const PRODUCTOS = [
     "subcategoria": "negro",
     "precio": 35000,
     "imagen": "assets/images/termo-media-manija-total-black.png",
-    "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
+    "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapÃ³n cebador ergonÃ³mico.",
     "destacado": false,
     "detalles": [
       "Pintura siliconada de alta resistencia",
-      "Conserva calor/frío por más de 20 horas",
-      "Media manija para un agarre cómodo",
+      "Conserva calor/frÃ­o por mÃ¡s de 20 horas",
+      "Media manija para un agarre cÃ³modo",
       "Capacidad: 1 Litro"
     ]
   },
@@ -590,11 +590,11 @@ const PRODUCTOS = [
     "subcategoria": "negro",
     "precio": 35000,
     "imagen": "assets/images/termo-system-12-lts.png",
-    "descripcion": "Termo de 1 litro con manija rígida lateral y tapón con sistema cebador hermético de alta precisión, incluye tapa que sirve como mate térmico.",
+    "descripcion": "Termo de 1 litro con manija rÃ­gida lateral y tapÃ³n con sistema cebador hermÃ©tico de alta precisiÃ³n, incluye tapa que sirve como mate tÃ©rmico.",
     "destacado": false,
     "detalles": [
-      "Manija fija lateral de transporte cómodo",
-      "Tapón cebador hermético a prueba de fugas",
+      "Manija fija lateral de transporte cÃ³modo",
+      "TapÃ³n cebador hermÃ©tico a prueba de fugas",
       "Acero inoxidable 304 de doble capa",
       "Conserva calor por 24hs"
     ]
@@ -606,13 +606,13 @@ const PRODUCTOS = [
     "subcategoria": "madera",
     "precio": 30000,
     "imagen": "assets/images/mesa-matera-valija.png",
-    "descripcion": "Práctica mesa matera plegable fabricada en madera seleccionada que se convierte en valija para transportar tu termo, mate, yerbero y bombilla de manera segura y cómoda. Ideal para el parque, la plaza o tus viajes.",
+    "descripcion": "PrÃ¡ctica mesa matera plegable fabricada en madera seleccionada que se convierte en valija para transportar tu termo, mate, yerbero y bombilla de manera segura y cÃ³moda. Ideal para el parque, la plaza o tus viajes.",
     "destacado": true,
     "detalles": [
       "Fabricada en madera maciza pulida y tratada",
       "Formato 2 en 1 (Mesa de apoyo y Valija de transporte)",
-      "Manija de agarre ergonómica",
-      "Traba de seguridad metálica"
+      "Manija de agarre ergonÃ³mica",
+      "Traba de seguridad metÃ¡lica"
     ]
   },
   {
@@ -622,10 +622,10 @@ const PRODUCTOS = [
     "subcategoria": "canasta",
     "precio": 55000,
     "imagen": "assets/images/canasta-cuero-grande.png",
-    "descripcion": "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
+    "descripcion": "Canasta matera confeccionada en cuero legÃ­timo de alta resistencia con terminaciÃ³n de costuras reforzadas a mano y remaches de bronce.",
     "destacado": false,
     "detalles": [
-      "Cuero vacuno legítimo extra grueso seleccionado",
+      "Cuero vacuno legÃ­timo extra grueso seleccionado",
       "Costura doble reforzada de gran resistencia",
       "Remaches de bronce reforzados en manija y uniones",
       "Manija superior fija de gran comodidad"
@@ -638,13 +638,13 @@ const PRODUCTOS = [
     "subcategoria": "canasta",
     "precio": 55000,
     "imagen": "assets/images/media-canasta-cuero-negro.png",
-    "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate de manera segura y cómoda. Disponible en colores Negro o Marrón Suela.",
+    "descripcion": "Media canasta matera fabricada en cuero legÃ­timo vacuno con costuras reforzadas a mano en tiento y mango rÃ­gido. Ideal para transportar termo y mate de manera segura y cÃ³moda. Disponible en colores Negro o MarrÃ³n Suela.",
     "destacado": false,
     "detalles": [
-      "Cuero vacuno legítimo de excelente resistencia",
+      "Cuero vacuno legÃ­timo de excelente resistencia",
       "Costuras tradicionales reforzadas hechas a mano",
-      "Manija fija rígida y división interna para termo y mate",
-      "Tamaño práctico y compacto para uso diario"
+      "Manija fija rÃ­gida y divisiÃ³n interna para termo y mate",
+      "TamaÃ±o prÃ¡ctico y compacto para uso diario"
     ],
     "variantes": [
       {
@@ -653,7 +653,7 @@ const PRODUCTOS = [
         "precio": 55000
       },
       {
-        "nombre": "MARRÁ“N SUELA",
+        "nombre": "MARRÃ“N SUELA",
         "imagen": "assets/images/media-canasta-cuero-suela.png",
         "precio": 55000
       }
@@ -666,13 +666,13 @@ const PRODUCTOS = [
     "subcategoria": "canasta",
     "precio": 60000,
     "imagen": "assets/images/mediacanasta-pelo-vacuno.jpg",
-    "descripcion": "Esta canasta viene con pelo natural, por lo cual presentan todas diferentes tonos y manchas, volviendo cada modelo único. En caso de querer un tono particular, una vez realizada la compra solicita foto de la misma a través de WhatsApp.",
+    "descripcion": "Esta canasta viene con pelo natural, por lo cual presentan todas diferentes tonos y manchas, volviendo cada modelo Ãºnico. En caso de querer un tono particular, una vez realizada la compra solicita foto de la misma a travÃ©s de WhatsApp.",
     "destacado": true,
     "detalles": [
-      "Pelo natural vacuno con estampados y colores únicos",
-      "Costuras reforzadas a mano para máxima duración",
-      "Manija rígida fija para un transporte cómodo y seguro",
-      "Diseño premium con división interna"
+      "Pelo natural vacuno con estampados y colores Ãºnicos",
+      "Costuras reforzadas a mano para mÃ¡xima duraciÃ³n",
+      "Manija rÃ­gida fija para un transporte cÃ³modo y seguro",
+      "DiseÃ±o premium con divisiÃ³n interna"
     ]
   },
   {
@@ -682,12 +682,12 @@ const PRODUCTOS = [
     "subcategoria": "set",
     "precio": 18000,
     "imagen": "assets/images/set-yerbero-negro-mate.png",
-    "descripcion": "Set de latas yerbera y azucarera con picos vertedores de plástico dosificadores de alta resistencia, revestidas en cuerina negra mate con costuras reforzadas.",
+    "descripcion": "Set de latas yerbera y azucarera con picos vertedores de plÃ¡stico dosificadores de alta resistencia, revestidas en cuerina negra mate con costuras reforzadas.",
     "destacado": false,
     "detalles": [
       "Lata yerbera (grande) y lata azucarera (mediana)",
-      "Picos vertedores plásticos antiderrames",
-      "Revestimiento sintético negro mate de fácil limpieza",
+      "Picos vertedores plÃ¡sticos antiderrames",
+      "Revestimiento sintÃ©tico negro mate de fÃ¡cil limpieza",
       "Calce perfecto para bolsos y canastas"
     ]
   },
@@ -698,13 +698,13 @@ const PRODUCTOS = [
     "subcategoria": "set",
     "precio": 18000,
     "imagen": "assets/images/set-yerbero-acero.png",
-    "descripcion": "Set de latas para yerba y azúcar con acabado color acero pulido, picos vertedores dosificadores superiores de alta resistencia.",
+    "descripcion": "Set de latas para yerba y azÃºcar con acabado color acero pulido, picos vertedores dosificadores superiores de alta resistencia.",
     "destacado": false,
     "detalles": [
       "Hojalata premium con recubrimiento color acero brillante",
-      "Picos vertedores plásticos higiénicos",
-      "Fácil de transportar y limpiar",
-      "Diseño moderno y elegante"
+      "Picos vertedores plÃ¡sticos higiÃ©nicos",
+      "FÃ¡cil de transportar y limpiar",
+      "DiseÃ±o moderno y elegante"
     ]
   },
   {
@@ -714,26 +714,26 @@ const PRODUCTOS = [
     "subcategoria": "limpieza",
     "precio": 15000,
     "imagen": "assets/images/cosito-acero.jpg",
-    "descripcion": "El accesorio ideal para vaciar la yerba del mate de manera rápida, limpia y sin desperdicios. Fabricado 100% en acero inoxidable de alta calidad, duradero y fácil de lavar.",
+    "descripcion": "El accesorio ideal para vaciar la yerba del mate de manera rÃ¡pida, limpia y sin desperdicios. Fabricado 100% en acero inoxidable de alta calidad, duradero y fÃ¡cil de lavar.",
     "destacado": false,
     "detalles": [
-      "Fabricado íntegramente en acero inoxidable 304",
+      "Fabricado Ã­ntegramente en acero inoxidable 304",
       "Facilita la limpieza del mate en un solo movimiento",
-      "Resistente, higiénico y de larga vida útil"
+      "Resistente, higiÃ©nico y de larga vida Ãºtil"
     ]
   },
   {
     "id": "imperial-repujado-marron",
-    "nombre": "IMPERIAL DE ALPACA CUERO REPUJADO MARRÁ“N",
+    "nombre": "IMPERIAL DE ALPACA CUERO REPUJADO MARRÃ“N",
     "categoria": "mates",
     "subcategoria": "imperial",
     "precio": 85500,
     "imagen": "assets/images/imperial-alpaca-repujado-marron.jpg",
-    "descripcion": "Mate imperial premium fabricado con calabaza brasilera de alto espesor, forrado en cuero vacuno legítimo labrado con diseño repujado marrón y una hermosa virola de alpaca cincelada artesaníalmente.",
+    "descripcion": "Mate imperial premium fabricado con calabaza brasilera de alto espesor, forrado en cuero vacuno legÃ­timo labrado con diseÃ±o repujado marrÃ³n y una hermosa virola de alpaca cincelada artesanalmente.",
     "destacado": false,
     "detalles": [
       "Calabaza brasilera de gran grosor",
-      "Forrado en cuero legítimo repujado marrón",
+      "Forrado en cuero legÃ­timo repujado marrÃ³n",
       "Virola superior de alpaca cincelada a mano",
       "Base reforzada de excelente estabilidad"
     ]
@@ -776,7 +776,7 @@ const PRODUCTOS = [
         "precio": 38000
       },
       {
-        "nombre": "CUERO MARRÁ“N LISO",
+        "nombre": "CUERO MARRÃ“N LISO",
         "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
         "precio": 38000
       }
@@ -793,7 +793,7 @@ const PRODUCTOS = [
     "destacado": false,
     "detalles": [
       "Calabaza brasilera de alto espesor",
-      "Forrado en cuero vacuno legítimo con costuras tradicionales",
+      "Forrado en cuero vacuno legÃ­timo con costuras tradicionales",
       "Virola de alpaca pulida",
       "Incluye bombilla pico de loro de acero inoxidable"
     ]
@@ -805,12 +805,12 @@ const PRODUCTOS = [
     "subcategoria": "torpedo",
     "precio": 20500,
     "imagen": "assets/images/torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla.jpeg",
-    "descripcion": "Excelente producto artesaníal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -820,12 +820,12 @@ const PRODUCTOS = [
     "subcategoria": "imperial",
     "precio": 35000,
     "imagen": "assets/images/imperial-con-dije-de-bronce-sol-argentino-soldado-con-bombilla-de-regalo.jpeg",
-    "descripcion": "Excelente producto artesaníal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -835,12 +835,12 @@ const PRODUCTOS = [
     "subcategoria": "torpedo",
     "precio": 39500,
     "imagen": "assets/images/torpedo-criollo-guarda-de-alpaca-cincelada-interior-calabaza-con-bombilla-pico-loro.jpg",
-    "descripcion": "TorpedoÂ  criollo base de cuero, con diferentes diseños tallados, color negro con interior calabaza.\r\n\r\nGuarda de alpaca cincelada.\r\n\r\nIncluye bombilla pico loro de acero inoxidable con filtro /pala.",
+    "descripcion": "TorpedoÂ  criollo base de cuero, con diferentes diseÃ±os tallados, color negro con interior calabaza.\r\n\r\nGuarda de alpaca cincelada.\r\n\r\nIncluye bombilla pico loro de acero inoxidable con filtro /pala.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -850,12 +850,12 @@ const PRODUCTOS = [
     "subcategoria": "torpedo",
     "precio": 36000,
     "imagen": "assets/images/torpedo-de-alpaca-cincelada-interior-calabaza-animal-print-con-bombilla-de-regalo.jpg",
-    "descripcion": "Torpedo de cuero con interior calabaza, guarda de alpaca cincelada.\r\n\r\nReforzado con patas rígidas",
+    "descripcion": "Torpedo de cuero con interior calabaza, guarda de alpaca cincelada.\r\n\r\nReforzado con patas rÃ­gidas",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -870,7 +870,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -885,7 +885,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -900,7 +900,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -910,12 +910,12 @@ const PRODUCTOS = [
     "subcategoria": "media-manija",
     "precio": 60000,
     "imagen": "assets/images/termo-original-luminox-lumilagro-1-litro-pico-cebador-con-caja.jpeg",
-    "descripcion": "Excelente producto artesaníal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -925,12 +925,12 @@ const PRODUCTOS = [
     "subcategoria": "alpaca",
     "precio": 20000,
     "imagen": "assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg",
-    "descripcion": "Bombillon sin diseños en el caño. caño grueso y pala ancha de alpaca\r\n\r\nPico de loro de bronce.",
+    "descripcion": "Bombillon sin diseÃ±os en el caÃ±o. caÃ±o grueso y pala ancha de alpaca\r\n\r\nPico de loro de bronce.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -945,7 +945,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -960,7 +960,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -975,7 +975,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -985,12 +985,12 @@ const PRODUCTOS = [
     "subcategoria": "soporte",
     "precio": 4500,
     "imagen": "assets/images/porta-mate-premium-para-la-palanca-de-cambio-reforzado-doble-costura.jpeg",
-    "descripcion": "porta mate de eco cuero. idéntico a los de cuero.",
+    "descripcion": "porta mate de eco cuero. idÃ©ntico a los de cuero.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1000,12 +1000,12 @@ const PRODUCTOS = [
     "subcategoria": "repuesto",
     "precio": 6000,
     "imagen": "assets/images/pico-system-blanco.jpeg",
-    "descripcion": "Excelente producto artesaníal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1015,12 +1015,12 @@ const PRODUCTOS = [
     "subcategoria": "soporte",
     "precio": 12000,
     "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
-    "descripcion": "Porta mate artesaníales de cuero\r\n\r\n10 cm de diámetro",
+    "descripcion": "Porta mate artesanales de cuero\r\n\r\n10 cm de diÃ¡metro",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ],
     "variantes": [
       {
@@ -1051,7 +1051,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1066,7 +1066,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1081,7 +1081,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1096,7 +1096,7 @@ const PRODUCTOS = [
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1106,12 +1106,12 @@ const PRODUCTOS = [
     "subcategoria": "canasta",
     "precio": 55000,
     "imagen": "assets/images/canastas-de-cuero-con-escudo-de-futbol-color-negro.jpeg",
-    "descripcion": "Excelente producto artesaníal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1121,27 +1121,27 @@ const PRODUCTOS = [
     "subcategoria": "camionero",
     "precio": 24000,
     "imagen": "assets/images/camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero.jpeg",
-    "descripcion": "Excelente producto artesaníal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
     "id": "camionero-algarrobo-grabado-predisenados-bombilla",
-    "nombre": "CAMIONERO ALGARROBO GRABADO PREDISEÁ‘ADOS + BOMBILLA",
+    "nombre": "CAMIONERO ALGARROBO GRABADO PREDISEÃ‘ADOS + BOMBILLA",
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 18000,
     "imagen": "assets/images/camionero-algarrobo-grabado-predisenados-bombilla.jpeg",
-    "descripcion": "Excelente producto artesaníal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
       "Materiales premium garantizados",
-      "Diseño artesaníal tradicional"
+      "DiseÃ±o artesanal tradicional"
     ]
   },
   {
@@ -1166,12 +1166,12 @@ const PRODUCTOS = [
     "subcategoria": "novedades",
     "precio": 5000,
     "imagen": "assets/images/accesorios-luz-mate.png",
-    "descripcion": "Práctica luz LED para bombilla de mate. Ideal para cebar de noche o en viajes. Viene con pila incluida y gancho sujetador universal.",
+    "descripcion": "PrÃ¡ctica luz LED para bombilla de mate. Ideal para cebar de noche o en viajes. Viene con pila incluida y gancho sujetador universal.",
     "destacado": false,
     "detalles": [
       "Luz LED blanca de alta visibilidad",
-      "Pila incluida de larga duración",
-      "Gancho de sujeción compatible con cualquier bombilla"
+      "Pila incluida de larga duraciÃ³n",
+      "Gancho de sujeciÃ³n compatible con cualquier bombilla"
     ]
   },
   {
@@ -1181,11 +1181,11 @@ const PRODUCTOS = [
     "subcategoria": "combos",
     "precio": 25000,
     "imagen": "assets/images/accesorios-mesa-madera.png",
-    "descripcion": "Mesa matera plegable de madera de pino seleccionado con posa-termos y posa-mates integrados. Muy liviana y fácil de transportar.",
+    "descripcion": "Mesa matera plegable de madera de pino seleccionado con posa-termos y posa-mates integrados. Muy liviana y fÃ¡cil de transportar.",
     "destacado": false,
     "detalles": [
       "Fabricada en madera de pino pulida y natural",
-      "Diseño plegable súper compacto y liviano",
+      "DiseÃ±o plegable sÃºper compacto y liviano",
       "Espacio para termo, mate y accesorios"
     ]
   },
@@ -1196,18 +1196,18 @@ const PRODUCTOS = [
     "subcategoria": "vasos",
     "precio": 5000,
     "imagen": "assets/images/termos-vaso-fernetero.png",
-    "descripcion": "Vaso térmico fernetero de acero inoxidable con pintura texturada en negro mate. Excelente capacidad y aislamiento térmico doble pared para mantener tu bebida fría por horas.",
+    "descripcion": "Vaso tÃ©rmico fernetero de acero inoxidable con pintura texturada en negro mate. Excelente capacidad y aislamiento tÃ©rmico doble pared para mantener tu bebida frÃ­a por horas.",
     "destacado": false,
     "detalles": [
-      "Fabricado en acero inoxidable doble pared térmico",
+      "Fabricado en acero inoxidable doble pared tÃ©rmico",
       "Pintura siliconada negra de alta resistencia",
-      "Ideal para fernet, cerveza y bebidas frías"
+      "Ideal para fernet, cerveza y bebidas frÃ­as"
     ]
   },
   {
     "id": "yerba-canarias-edicion-especial-1kg",
-    "nombre": "YERBA MATE CANARIAS EDICIÁ“N ESPECIAL",
-    "descripcion": "Disfrutá del sabor auténtico de la Yerba Mate Canarias Edición Especial. Una selección premium importada desde Uruguay, ideal para cebadas de larga duración, con sabor persistente y equilibrado. Edición limitada elegida por El Buen Cebar.",
+    "nombre": "YERBA MATE CANARIAS EDICIÃ“N ESPECIAL",
+    "descripcion": "DisfrutÃ¡ del sabor autÃ©ntico de la Yerba Mate Canarias EdiciÃ³n Especial. Una selecciÃ³n premium importada desde Uruguay, ideal para cebadas de larga duraciÃ³n, con sabor persistente y equilibrado. EdiciÃ³n limitada elegida por El Buen Cebar.",
     "precio": 6000,
     "imagen": "assets/images/yerba-canarias-edicion-especial.png",
     "categoria": "yerbas",
@@ -1216,7 +1216,7 @@ const PRODUCTOS = [
     "detalles": [
       "Yerba mate uruguaya premium",
       "Sabor suave y persistente",
-      "Edición Especial de selección"
+      "EdiciÃ³n Especial de selecciÃ³n"
     ],
     "variantes": [
       {
@@ -1233,17 +1233,17 @@ const PRODUCTOS = [
   },
   {
     "id": "yerba-canarias-jengibre-te-verde",
-    "nombre": "YERBA MATE CANARIAS TÁ‰ VERDE Y JENGIBRE",
-    "descripcion": "La Yerba Mate Canarias con Té Verde y Jengibre combina el sabor clásico del mate con las propiedades del té verde y el toque picante del jengibre. Una mezcla refrescante y energizante, perfecta para quienes buscan algo diferente.",
+    "nombre": "YERBA MATE CANARIAS TÃ‰ VERDE Y JENGIBRE",
+    "descripcion": "La Yerba Mate Canarias con TÃ© Verde y Jengibre combina el sabor clÃ¡sico del mate con las propiedades del tÃ© verde y el toque picante del jengibre. Una mezcla refrescante y energizante, perfecta para quienes buscan algo diferente.",
     "precio": 6000,
     "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
     "destacado": true,
     "detalles": [
-      "Con té verde y jengibre natural",
+      "Con tÃ© verde y jengibre natural",
       "Sabor refrescante y energizante",
-      "Excelente duración de cebadas"
+      "Excelente duraciÃ³n de cebadas"
     ],
     "variantes": [
       {
@@ -1261,7 +1261,7 @@ const PRODUCTOS = [
   {
     "id": "yerba-baldo-tradicional-500g",
     "nombre": "YERBA MATE BALDO TRADICIONAL",
-    "descripcion": "Yerba Mate Baldo Tradicional, una de las marcas más reconocidas de Uruguay. De hoja gruesa, con palo, de sabor robusto y duradero. Ideal para los amantes del mate clásico.",
+    "descripcion": "Yerba Mate Baldo Tradicional, una de las marcas mÃ¡s reconocidas de Uruguay. De hoja gruesa, con palo, de sabor robusto y duradero. Ideal para los amantes del mate clÃ¡sico.",
     "precio": 7500,
     "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
     "categoria": "yerbas",
@@ -1293,15 +1293,15 @@ const PRODUCTOS = [
   {
     "id": "yerba-pindare-1kg",
     "nombre": "YERBA PINDARE",
-    "descripcion": "Yerba Mate Pindare, una yerba brasileña de alta calidad con sabor intenso y particular. Hojas finas, buena duración y aroma característico. Una elección diferente para el paladar exigente.",
+    "descripcion": "Yerba Mate Pindare, una yerba brasileÃ±a de alta calidad con sabor intenso y particular. Hojas finas, buena duraciÃ³n y aroma caracterÃ­stico. Una elecciÃ³n diferente para el paladar exigente.",
     "precio": 5000,
     "imagen": "assets/images/yerba-pindare-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
     "destacado": false,
     "detalles": [
-      "Yerba brasileña importada",
-      "Sabor intenso y aroma característico",
+      "Yerba brasileÃ±a importada",
+      "Sabor intenso y aroma caracterÃ­stico",
       "Molienda fina tradicional"
     ],
     "variantes": [
@@ -1320,7 +1320,7 @@ const PRODUCTOS = [
   {
     "id": "yerba-rei-verde-tradicional",
     "nombre": "YERBA MATE REI VERDE TRADICIONAL",
-    "descripcion": "Yerba Mate Rei Verde Tradicional, clásica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duración de cebada. Perfecta para el consumo diario.",
+    "descripcion": "Yerba Mate Rei Verde Tradicional, clÃ¡sica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duraciÃ³n de cebada. Perfecta para el consumo diario.",
     "precio": 4000,
     "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
     "categoria": "yerbas",
@@ -1347,7 +1347,7 @@ const PRODUCTOS = [
   {
     "id": "yerba-verdecita-sin-palo-1kg",
     "nombre": "YERBA MATE VERDE CITA SIN PALO",
-    "descripcion": "Yerba Mate Verde Cita Sin Palo, una yerba argentina de primer nivel. Sin palo para una infusión más limpia, con sabor fuerte y persistente. Muy apreciada por los cebadores exigentes.",
+    "descripcion": "Yerba Mate Verde Cita Sin Palo, una yerba argentina de primer nivel. Sin palo para una infusiÃ³n mÃ¡s limpia, con sabor fuerte y persistente. Muy apreciada por los cebadores exigentes.",
     "precio": 5000,
     "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
     "categoria": "yerbas",
@@ -1374,7 +1374,7 @@ const PRODUCTOS = [
   {
     "id": "yerba-canarias-serena",
     "nombre": "YERBA MATE CANARIAS SERENA",
-    "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
+    "descripcion": "Yerba Mate Canarias Serena, la lÃ­nea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duraciÃ³n. Ideal para quienes prefieren un mate mÃ¡s tranquilo.",
     "precio": 6000,
     "imagen": "assets/images/yerba-canarias-serena-500g.png",
     "categoria": "yerbas",
@@ -1382,7 +1382,7 @@ const PRODUCTOS = [
     "destacado": false,
     "detalles": [
       "Yerba uruguaya tipo compuesta",
-      "Línea suave de Canarias",
+      "LÃ­nea suave de Canarias",
       "Sabor delicado y equilibrado"
     ],
     "variantes": [
@@ -1401,7 +1401,7 @@ const PRODUCTOS = [
   {
     "id": "yerba-rei-verde-premium",
     "nombre": "YERBA MATE REI VERDE PREMIUM",
-    "descripcion": "Yerba Mate Rei Verde Premium, la versión de mayor calidad de la marca uruguaya. Hojas más finas y seleccionadas para una infusión excepcional y duradera.",
+    "descripcion": "Yerba Mate Rei Verde Premium, la versiÃ³n de mayor calidad de la marca uruguaya. Hojas mÃ¡s finas y seleccionadas para una infusiÃ³n excepcional y duradera.",
     "precio": 6500,
     "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
     "categoria": "yerbas",
@@ -1428,7 +1428,7 @@ const PRODUCTOS = [
   {
     "id": "yerba-canarias-tradicional",
     "nombre": "YERBA MATE CANARIAS TRADICIONAL",
-    "descripcion": "Yerba Mate Canarias Tradicional, la marca de yerba número uno de Uruguay. Compuesta principalmente por hojas seleccionadas de sabor intenso y duradero, libre de palo. Perfecta para cebar mates cargados de sabor.",
+    "descripcion": "Yerba Mate Canarias Tradicional, la marca de yerba nÃºmero uno de Uruguay. Compuesta principalmente por hojas seleccionadas de sabor intenso y duradero, libre de palo. Perfecta para cebar mates cargados de sabor.",
     "precio": 5500,
     "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
     "categoria": "yerbas",
@@ -1436,7 +1436,7 @@ const PRODUCTOS = [
     "destacado": true,
     "detalles": [
       "Yerba uruguaya tradicional sin palo",
-      "Sabor intenso y de larga duración",
+      "Sabor intenso y de larga duraciÃ³n",
       "Importada directamente de Uruguay"
     ],
     "variantes": [
@@ -1603,7 +1603,7 @@ const PRODUCTOS = [
 
 
 
-// Función para obtener productos por categoría
+// FunciÃ³n para obtener productos por categorÃ­a
 function obtenerProductosPorCategoria(categoria) {
   if (!categoria || categoria === 'todos') {
     return PRODUCTOS;
@@ -1611,7 +1611,7 @@ function obtenerProductosPorCategoria(categoria) {
   return PRODUCTOS.filter(p => p.categoria === categoria);
 }
 
-// Función para buscar productos por nombre o descripción
+// FunciÃ³n para buscar productos por nombre o descripciÃ³n
 function buscarProductos(query) {
   const q = query.toLowerCase().trim();
   if (!q) return PRODUCTOS;
@@ -1621,12 +1621,12 @@ function buscarProductos(query) {
   );
 }
 
-// Función para obtener un producto por su ID
+// FunciÃ³n para obtener un producto por su ID
 function obtenerProductoPorId(id) {
   return PRODUCTOS.find(p => p.id === id);
 }
 
-// Función para obtener la imagen secundaria de hover de un producto
+// FunciÃ³n para obtener la imagen secundaria de hover de un producto
 function obtenerImagenHover(p) {
   if (p.imagenes && p.imagenes.length >= 2) {
     return p.imagenes[1];

@@ -59,7 +59,7 @@
       transition: all var(--transition-fast);
       background-color: var(--color-bg-secondary);
       display: flex;
-      align-itemás: center;
+      align-items: center;
       justify-content: center;
     }
     
@@ -146,7 +146,7 @@
     .action-row {
       display: flex;
       gap: 16px;
-      align-itemás: center;
+      align-items: center;
       margin-top: 12px;
       padding-bottom: 24px;
       border-bottom: 1px solid var(--color-border);
@@ -154,7 +154,7 @@
     
     .qty-selector-detail {
       display: flex;
-      align-itemás: center;
+      align-items: center;
       border: 1px solid var(--color-border);
       border-radius: var(--radius-md);
       height: 48px;
@@ -166,7 +166,7 @@
       height: 100%;
       background-color: var(--color-bg-secondary);
       display: flex;
-      align-itemás: center;
+      align-items: center;
       justify-content: center;
       font-weight: 700;
       font-size: 1.1rem;
@@ -192,7 +192,7 @@
     
     .product-bullets li {
       display: flex;
-      align-itemás: flex-start;
+      align-items: flex-start;
       gap: 10px;
       font-size: 0.9rem;
       color: var(--color-text-secondary);
@@ -266,7 +266,7 @@
   <main class="container" style="padding-top: 130px; padding-bottom: 80px;" id="product-container">
     <!-- El contenido se inyectará dinámicamente mediante javascript -->
     <div style="text-align: center; padding: 100px 0; color: var(--color-text-muted);">
-      <p>Cargando los detalles del mate artesaníal...</p>
+      <p>Cargando los detalles del mate artesanal...</p>
     </div>
   </main>
 
@@ -284,7 +284,7 @@
     <div class="container footer__grid">
       <div class="footer__col-about">
         <a href="index.html" class="logo" style="color: #fff;">El Buen Cebar</a>
-        <p>Mates y accesorios de primer nivel. Fabricación artesaníal y atención personalizada desde Ramos Mejía.</p>
+        <p>Mates y accesorios de primer nivel. Fabricación artesanal y atención personalizada desde Ramos Mejía.</p>
         <div class="footer__socials">
           <a href="https://instagram.com/elbuen.cebar" target="_blank" class="footer__social-link" aria-label="Instagram">
             <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -329,7 +329,7 @@
       </div>
     </div>
     <div class="container footer__bottom">
-      <p>&copy; <span id="copyright-year">2026</span> El Buen Cebar. Todos los derechos reservados. Diseñado artesaníalmente.</p>
+      <p>&copy; <span id="copyright-year">2026</span> El Buen Cebar. Todos los derechos reservados. Diseñado artesanalmente.</p>
       <div class="footer__payments">
         <span>Aceptamos:</span>
         <div class="footer__payments-icons">
@@ -349,7 +349,7 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
       </div>
-      <div class="cart-drawer__body" id="cart-itemás-list"></div>
+      <div class="cart-drawer__body" id="cart-items-list"></div>
       <div class="cart-drawer__footer" id="cart-drawer-summary" style="display: none;">
         <div class="cart-summary-row"><span>Subtotal</span><span id="cart-subtotal">$0</span></div>
         <div class="cart-summary-row"><span>Envío</span><span id="cart-shipping">A calcular</span></div>
@@ -366,8 +366,8 @@
   <!-- Lógica dinámica de carga de ficha de producto -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const paramás = new URLSearchParamás(window.location.search);
-      const id = paramás.get("id");
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
 
       if (!id) {
         window.location.href = "catalogo.html";
@@ -525,8 +525,8 @@
 
     // Lanza la función del carrito global
     function dispararAgregarCarrito() {
-      const paramás = new URLSearchParamás(window.location.search);
-      const id = paramás.get("id");
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
       agregarAlCarrito(id, window.cantidadSeleccionadaActiva, window.opcionSeleccionadaActiva);
     }
 

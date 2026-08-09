@@ -8,7 +8,7 @@
   height: 85vh;
   min-height: 550px;
   display: flex;
-  align-itemás: center;
+  align-items: center;
   overflow: hidden;
   background-color: var(--color-bg-dark);
 }
@@ -48,7 +48,7 @@
   color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
-  align-itemás: flex-start;
+  align-items: flex-start;
 }
 
 .home-hero__label {
@@ -105,7 +105,7 @@
   transition: all var(--transition-normal);
   display: flex;
   flex-direction: column;
-  align-itemás: center;
+  align-items: center;
 }
 
 .category-card:hover {
@@ -121,7 +121,7 @@
   border-radius: var(--radius-full);
   background-color: var(--color-bg-primary);
   display: flex;
-  align-itemás: center;
+  align-items: center;
   justify-content: center;
   margin-bottom: 20px;
   border: 1px solid var(--color-border);
@@ -173,7 +173,7 @@
 
 .feature-item {
   display: flex;
-  align-itemás: flex-start;
+  align-items: flex-start;
   gap: 16px;
 }
 
@@ -183,7 +183,7 @@
   border-radius: var(--radius-md);
   background-color: rgba(78, 54, 41, 0.05);
   display: flex;
-  align-itemás: center;
+  align-items: center;
   justify-content: center;
   color: var(--color-primary);
   flex-shrink: 0;
@@ -216,7 +216,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-  align-itemás: center;
+  align-items: center;
 }
 
 .about-craft__image-wrapper {
@@ -283,7 +283,7 @@
 
 .about-craft__point {
   display: flex;
-  align-itemás: center;
+  align-items: center;
   gap: 12px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -309,7 +309,7 @@
   display: grid;
   grid-template-columns: 1.2fr 1.8fr;
   gap: 48px;
-  align-itemás: center;
+  align-items: center;
 }
 
 .locality-info {
@@ -340,7 +340,7 @@
 .locality-detail-item {
   display: flex;
   gap: 14px;
-  align-itemás: flex-start;
+  align-items: flex-start;
 }
 
 .locality-detail-item svg {
