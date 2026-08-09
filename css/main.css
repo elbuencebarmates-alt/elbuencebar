@@ -110,7 +110,7 @@ section {
 .header__inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-itemás: center;
   height: 80px;
   transition: height var(--transition-normal);
 }
@@ -126,7 +126,7 @@ section {
   color: var(--color-primary);
   letter-spacing: -0.01em;
   display: flex;
-  align-items: center;
+  align-itemás: center;
   gap: 8px;
 }
 
@@ -186,7 +186,7 @@ section {
 
 .header__actions {
   display: flex;
-  align-items: center;
+  align-itemás: center;
   gap: 20px;
 }
 
@@ -195,7 +195,7 @@ section {
   transition: color var(--transition-fast), transform var(--transition-fast);
   position: relative;
   display: flex;
-  align-items: center;
+  align-itemás: center;
   justify-content: center;
   width: 40px;
   height: 40px;
@@ -230,7 +230,7 @@ section {
   height: 18px;
   border-radius: var(--radius-full);
   display: flex;
-  align-items: center;
+  align-itemás: center;
   justify-content: center;
   border: 2px solid var(--color-bg-primary);
 }
@@ -242,7 +242,7 @@ section {
   width: 30px;
   height: 30px;
   justify-content: center;
-  align-items: center;
+  align-itemás: center;
   border-radius: var(--radius-md);
 }
 
@@ -334,7 +334,7 @@ section {
   border-radius: var(--radius-full);
   background-color: rgba(253, 251, 247, 0.05);
   display: flex;
-  align-items: center;
+  align-itemás: center;
   justify-content: center;
   color: var(--color-bg-primary);
   transition: background-color var(--transition-fast), transform var(--transition-fast);
@@ -391,7 +391,7 @@ section {
 
 .footer__info-item {
   display: flex;
-  align-items: flex-start;
+  align-itemás: flex-start;
   gap: 12px;
   font-size: 0.95rem;
   color: var(--color-text-muted);
@@ -412,7 +412,7 @@ section {
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-itemás: center;
   font-size: 0.85rem;
   color: var(--color-text-muted);
 }
@@ -420,7 +420,7 @@ section {
 .footer__payments {
   display: flex;
   gap: 12px;
-  align-items: center;
+  align-itemás: center;
 }
 
 .footer__payments span {
@@ -525,7 +525,7 @@ section {
   border: 1px solid var(--color-border);
   box-shadow: 0 4px 20px rgba(232, 140, 81, 0.15); /* Resplandor cobre cálido */
   display: flex;
-  align-items: center;
+  align-itemás: center;
   justify-content: center;
   z-index: 999;
   cursor: pointer;
@@ -579,7 +579,7 @@ section {
   border: none;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
   display: flex;
-  align-items: center;
+  align-itemás: center;
   justify-content: center;
   z-index: 999;
   cursor: pointer;
@@ -620,7 +620,7 @@ section {
 
 .whatsapp-popup__header {
   display: flex;
-  align-items: center;
+  align-itemás: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--color-border);
   padding-bottom: 8px;
@@ -632,7 +632,7 @@ section {
   font-weight: 600;
   color: var(--color-primary);
   display: flex;
-  align-items: center;
+  align-itemás: center;
   gap: 6px;
 }
 
@@ -653,7 +653,7 @@ section {
 
 .whatsapp-option-btn {
   display: flex;
-  align-items: center;
+  align-itemás: center;
   gap: 12px;
   padding: 10px 14px;
   background-color: var(--color-bg-secondary);

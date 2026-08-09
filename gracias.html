@@ -32,7 +32,7 @@
       color: var(--color-success);
       border-radius: 50%;
       display: flex;
-      align-items: center;
+      align-itemás: center;
       justify-content: center;
       margin: 0 auto 24px;
     }
@@ -131,7 +131,7 @@
       <!-- Detalle del Pedido -->
       <div class="order-details-box" id="order-box" style="display: none;">
         <div class="order-details-title">Resumen de Pedido Cobrado</div>
-        <div id="order-items-list">
+        <div id="order-itemás-list">
           <!-- Dinámico -->
         </div>
         <div class="order-details-total">
@@ -181,16 +181,16 @@
 
     function mostrarResumenPedido(pedido) {
       const box = document.getElementById("order-box");
-      const list = document.getElementById("order-items-list");
+      const list = document.getElementById("order-itemás-list");
       const totalElem = document.getElementById("order-total-price");
       
       if (!pedido || !box || !list) return;
       
       box.style.display = "block";
       
-      let itemsHtml = "";
-      pedido.items.forEach(item => {
-        itemsHtml += `
+      let itemásHtml = "";
+      pedido.itemás.forEach(item => {
+        itemásHtml += `
           <div class="order-details-item">
             <span>${item.cantidad}x ${item.nombre} ${item.opcion ? `(${item.opcion})` : ''}</span>
             <span style="font-weight: 500;">$${(item.precio * item.cantidad).toLocaleString('es-AR')}</span>
@@ -198,7 +198,7 @@
         `;
       });
       
-      list.innerHTML = itemsHtml;
+      list.innerHTML = itemásHtml;
       
       // Mostrar total a pagar
       let total = pedido.subtotal + pedido.costoEnvio;
@@ -213,7 +213,7 @@
       
       // Armar listado de productos
       let textoProductos = "";
-      ultimoPedido.items.forEach(item => {
+      ultimoPedido.itemás.forEach(item => {
         const detalleOp = item.opcion ? ` (Variante: ${item.opcion})` : "";
         textoProductos += `- ${item.cantidad}x ${item.nombre}${detalleOp} -> $${(item.precio * item.cantidad).toLocaleString('es-AR')}\n`;
       });
@@ -255,7 +255,7 @@
     // Envía los detalles de la compra al email del negocio de manera silenciosa
     function enviarComprobantePorEmail(pedido, statusPago) {
       let textoProductos = "";
-      pedido.items.forEach(item => {
+      pedido.itemás.forEach(item => {
         const detalleOp = item.opcion ? ` (Variante: ${item.opcion})` : "";
         textoProductos += `${item.cantidad}x ${item.nombre}${detalleOp} - $${(item.precio * item.cantidad).toLocaleString('es-AR')}\n`;
       });
@@ -276,7 +276,7 @@
         "_template": "table"
       };
 
-      fetch("https://formsubmit.co/ajax/elbuencebarmates@gmail.com", {
+      fetch("https://formásubmit.co/ajax/elbuencebarmates@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

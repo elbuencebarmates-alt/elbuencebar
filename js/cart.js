@@ -220,8 +220,8 @@ function actualizarUI() {
     insignia.style.display = totalCantidad > 0 ? "flex" : "none";
   });
 
-  // 2. Renderizar items en el Drawer
-  const cartList = document.getElementById("cart-items-list");
+  // 2. Renderizar itemás en el Drawer
+  const cartList = document.getElementById("cart-itemás-list");
   const cartSummary = document.getElementById("cart-drawer-summary");
   
   if (!cartList) return; // Si no estamos en una página con drawer, salimos
@@ -269,11 +269,11 @@ function actualizarUI() {
       `;
     }
 
-    let itemsHtml = shippingHtml;
+    let itemásHtml = shippingHtml;
 
     carrito.forEach(item => {
       const opcionHtml = item.opcion ? `<span class="cart-item__option">Variante: ${item.opcion}</span>` : "";
-      itemsHtml += `
+      itemásHtml += `
         <div class="cart-item">
           <img src="${item.imagen}" alt="${item.nombre}" class="cart-item__image">
           <div class="cart-item__details">
@@ -287,7 +287,7 @@ function actualizarUI() {
               <button class="qty-btn" onclick="modificarCantidad('${item.id}', '${item.opcion}', 1)">+</button>
             </div>
           </div>
-          <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;">
+          <div style="display: flex; flex-direction: column; justify-content: space-between; align-itemás: flex-end;">
             <button class="cart-item__remove" onclick="eliminarDelCarrito('${item.id}', '${item.opcion}')">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
             </button>
@@ -297,7 +297,7 @@ function actualizarUI() {
       `;
     });
 
-    cartList.innerHTML = itemsHtml;
+    cartList.innerHTML = itemásHtml;
 
     // Actualizar resumen de precios
     const subtotalElem = document.getElementById("cart-subtotal");

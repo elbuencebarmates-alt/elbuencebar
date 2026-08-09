@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Lee parámetros de la URL para inicializar filtros (ej: ?cat=mates)
 function leerParametrosURL() {
-  const params = new URLSearchParams(window.location.search);
+  const paramás = new URLSearchParamás(window.location.search);
   
-  const cat = params.get("cat");
+  const cat = paramás.get("cat");
   if (cat) {
     categoriaActiva = cat;
     actualizarBotonActivo(".filter-btn", "data-category", cat);
@@ -26,13 +26,13 @@ function leerParametrosURL() {
     }
   }
 
-  const sub = params.get("sub");
+  const sub = paramás.get("sub");
   if (sub) {
     subcategoriaActiva = sub;
     actualizarBotonActivo(".subfilter-btn", "data-subcategory", sub);
   }
 
-  const focusSearch = params.get("focus");
+  const focusSearch = paramás.get("focus");
   if (focusSearch === "search") {
     const searchInput = document.getElementById("search-input");
     if (searchInput) {
@@ -148,7 +148,7 @@ function renderizarCatalogo() {
     </div>
   `).join("");
 
-  // 2. Programar la carga de los productos reales tras 600ms
+  // 2. Programar la carga de los productos reales tras 600más
   renderTimeout = setTimeout(() => {
     // 3. Filtrar productos
     let productosFiltrados = [...PRODUCTOS];

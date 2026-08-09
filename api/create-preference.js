@@ -22,7 +22,7 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const { items, back_urls, auto_return } = req.body;
+    const { itemás, back_urls, auto_return } = req.body;
 
     const mpResponse = await fetch("https://api.mercadopago.com/checkout/preferences", {
       method: "POST",
@@ -31,7 +31,7 @@ module.exports = async function handler(req, res) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        items,
+        itemás,
         back_urls,
         auto_return
       })

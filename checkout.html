@@ -51,7 +51,7 @@
     .checkout-item-mini {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-itemás: center;
       font-size: 0.9rem;
       margin-bottom: 12px;
       color: var(--color-text-secondary);
@@ -280,7 +280,7 @@
     <div class="container footer__grid">
       <div class="footer__col-about">
         <a href="index.html" class="logo" style="color: #fff;">El Buen Cebar</a>
-        <p>Mates y accesorios de primer nivel. Fabricación artesanal y atención personalizada desde Ramos Mejía.</p>
+        <p>Mates y accesorios de primer nivel. Fabricación artesaníal y atención personalizada desde Ramos Mejía.</p>
         <div class="footer__socials">
           <a href="https://instagram.com/elbuen.cebar" target="_blank" class="footer__social-link" aria-label="Instagram">
             <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -325,7 +325,7 @@
       </div>
     </div>
     <div class="container footer__bottom">
-      <p>&copy; <span id="copyright-year">2026</span> El Buen Cebar. Todos los derechos reservados. Diseñado artesanalmente.</p>
+      <p>&copy; <span id="copyright-year">2026</span> El Buen Cebar. Todos los derechos reservados. Diseñado artesaníalmente.</p>
       <div class="footer__payments">
         <span>Aceptamos:</span>
         <div class="footer__payments-icons">
@@ -440,7 +440,7 @@
       
       const total = subtotal + costoEnvio - descuento;
 
-      // Renderizar listado de items lateral
+      // Renderizar listado de itemás lateral
       listMini.innerHTML = carrito.map(item => `
         <div class="checkout-item-mini">
           <div>
@@ -538,12 +538,12 @@
           direccion: direccionText,
           subtotal: subtotal,
           costoEnvio: costoEnvio,
-          items: carrito
+          itemás: carrito
         };
         localStorage.setItem("el_buen_cebar_ultimo_pedido", JSON.stringify(pedido));
 
-        // Formatear items para la API de Mercado Pago
-        const mpItems = carrito.map(item => ({
+        // Formatear itemás para la API de Mercado Pago
+        const mpItemás = carrito.map(item => ({
           title: item.nombre + (item.opcion ? ` (${item.opcion})` : ""),
           quantity: item.cantidad,
           unit_price: Number(item.precio),
@@ -552,7 +552,7 @@
 
         // Si hay costo de envío, agregarlo como un producto en Mercado Pago
         if (costoEnvio > 0) {
-          mpItems.push({
+          mpItemás.push({
             title: "Costo de Envío",
             quantity: 1,
             unit_price: Number(costoEnvio),
@@ -572,7 +572,7 @@
             "Content-Type": "application/json"
           },
           body: JSON.stringify({
-            items: mpItems,
+            itemás: mpItemás,
             back_urls: {
               success: successUrl,
               pending: pendingUrl,
@@ -617,7 +617,7 @@
         direccion: metodoEntrega === "retiro" ? "Retiro por Showroom" : (document.getElementById("c-calle").value + (document.getElementById("c-piso").value ? ", " + document.getElementById("c-piso").value : "") + ", " + document.getElementById("c-localidad").value + ", " + document.getElementById("c-provincia").value + " (CP: " + document.getElementById("c-cp").value + ")"),
         subtotal: subtotal,
         costoEnvio: costoEnvio,
-        items: carrito
+        itemás: carrito
       };
       enviarComprobantePorEmail(pedidoObj, `Pendiente - ${textoPago.trim()}`);
 
@@ -659,7 +659,7 @@
     // Envía los detalles de la compra al email del negocio de manera silenciosa
     function enviarComprobantePorEmail(pedido, statusPago) {
       let textoProductos = "";
-      pedido.items.forEach(item => {
+      pedido.itemás.forEach(item => {
         const detalleOp = item.opcion ? ` (Variante: ${item.opcion})` : "";
         textoProductos += `${item.cantidad}x ${item.nombre}${detalleOp} - $${(item.precio * item.cantidad).toLocaleString('es-AR')}\n`;
       });
@@ -682,7 +682,7 @@
         "_template": "table"
       };
 
-      fetch("https://formsubmit.co/ajax/elbuencebarmates@gmail.com", {
+      fetch("https://formásubmit.co/ajax/elbuencebarmates@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
