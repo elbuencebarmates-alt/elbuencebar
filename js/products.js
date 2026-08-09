@@ -2133,6 +2133,96 @@ const PRODUCTOS = [
       "Incluye yerbero y azucarero con pico vertedor",
       "Estampa oficial Boca Juniors"
     ]
+  },
+  {
+    "id": "canasta-cuerina-animal-print",
+    "nombre": "CANASTA MATERA DE CUERINA ANIMAL PRINT CON DIVISIÓN",
+    "categoria": "materas",
+    "subcategoria": "ecocuero",
+    "precio": 16000,
+    "imagen": "assets/images/canasta-de-cuerina-animal-print-con-division-en-el-medio.jpeg",
+    "descripcion": "Canasta matera confeccionada en ecocuero estampado animal print jaguar/leopardo con división central reforzada.",
+    "destacado": true,
+    "detalles": [
+      "Ecocuero estampado animal print exclusivo",
+      "Manija reforzada con doble costura",
+      "División media para estabilidad del termo"
+    ]
+  },
+  {
+    "id": "media-canasta-cuero-marron",
+    "nombre": "MEDIA CANASTA 100% CUERO VACUNO MARRÓN",
+    "categoria": "materas",
+    "subcategoria": "cuero",
+    "precio": 36000,
+    "imagen": "assets/images/media-canasta-100-cuero-marron.jpeg",
+    "descripcion": "Media canasta matera compacta confeccionada en 100% cuero vacuno legítimo color marrón chocolate con manija ergonómica.",
+    "destacado": true,
+    "detalles": [
+      "100% cuero vacuno genuino",
+      "Formato compacto ideal para transporte rápido",
+      "Costuras industriales de alta durabilidad"
+    ]
+  },
+  {
+    "id": "canasta-cuadrada-mango-rigido-animal-print",
+    "nombre": "CANASTA CUADRADA MANGO RÍGIDO ANIMAL PRINT",
+    "categoria": "materas",
+    "subcategoria": "ecocuero",
+    "precio": 18000,
+    "imagen": "assets/images/canasta-cuadrada-con-mango-r-gido-premium-animal-print.jpeg",
+    "descripcion": "Canasta matera rígida de formato cuadrado en ecocuero animal print con manija de agarre rígida estructural de madera y aluminio.",
+    "destacado": true,
+    "detalles": [
+      "Estructura cuadrada autoportante rígida",
+      "Manija fija ergonómica premium",
+      "Estampa animal print de alto impacto visual"
+    ]
+  },
+  {
+    "id": "canasta-mango-rigido-gajos-pelota",
+    "nombre": "CANASTA MATERA NEGRA MANGO RÍGIDO GAJOS PELOTA",
+    "categoria": "materas",
+    "subcategoria": "ecocuero",
+    "precio": 18000,
+    "imagen": "assets/images/canasta-mango-r-gido-color-negro-con-gajos-pelota.jpeg",
+    "descripcion": "Canasta matera en ecocuero negro texturado estilo gajos de pelota de fútbol con manija rígida arqueada.",
+    "destacado": true,
+    "detalles": [
+      "Textura gajos de pelota de fútbol en relieve",
+      "Manija rígida reforzada superior",
+      "Estructura antideslizante lavable"
+    ]
+  },
+  {
+    "id": "canasta-cuerina-rosa-doble-costura",
+    "nombre": "CANASTA MATERA DE CUERINA ROSA DOBLE COSTURA",
+    "categoria": "materas",
+    "subcategoria": "ecocuero",
+    "precio": 16000,
+    "imagen": "assets/images/canasta-de-cuerina-color-rosa-doble-costura-premium.jpeg",
+    "descripcion": "Canasta matera en ecocuero color rosa pastel con doble costura decorativa reforzada e hilos a tono.",
+    "destacado": true,
+    "detalles": [
+      "Color rosa pastel exclusivo",
+      "Doble costura e hilos reforzados",
+      "Capacidad para termo, mate y frascos"
+    ]
+  },
+  {
+    "id": "mochila-bolso-animal-print-set",
+    "nombre": "MOCHILA / BOLSO MATERO ANIMAL PRINT + YERBERO + AZUCARERO",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 28500,
+    "imagen": "assets/images/mochila-bolso-animal-print-yerbero-azucarero.jpeg",
+    "descripcion": "Set completo x3 piezas: mochila/bolso matero acolchado en estampado animal print con sujetador para termo, yerbero y azucarero haciendo juego.",
+    "destacado": true,
+    "detalles": [
+      "Se transforma en bolso de colgar o mochila de espalda",
+      "Incluye latas yerbera y azucarera con pico vertedor",
+      "Interior forrado e impermeable"
+    ]
   }
 ];
 
