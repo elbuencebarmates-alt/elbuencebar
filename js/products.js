@@ -1209,7 +1209,7 @@ const PRODUCTOS = [
     "nombre": "YERBA MATE CANARIAS EDICIÓN ESPECIAL",
     "descripcion": "Disfrutá del sabor auténtico de la Yerba Mate Canarias Edición Especial. Una selección premium importada desde Uruguay, ideal para cebadas de larga duración, con sabor persistente y equilibrado. Edición limitada elegida por El Buen Cebar.",
     "precio": 6000,
-    "imagen": "assets/images/yerba-canarias-edicion-especial-1kg.jpg",
+    "imagen": "assets/images/yerba-canarias-edicion-especial.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
     "destacado": true,
@@ -1221,12 +1221,12 @@ const PRODUCTOS = [
     "variantes": [
       {
         "nombre": "500 GR",
-        "imagen": "assets/images/yerba-canarias-edicion-especial-1kg.jpg",
+        "imagen": "assets/images/yerba-canarias-edicion-especial.png",
         "precio": 6000
       },
       {
         "nombre": "1 KG",
-        "imagen": "assets/images/yerba-canarias-edicion-especial-1kg.jpg",
+        "imagen": "assets/images/yerba-canarias-edicion-especial.png",
         "precio": 11000
       }
     ]
@@ -1376,7 +1376,7 @@ const PRODUCTOS = [
     "nombre": "YERBA MATE CANARIAS SERENA",
     "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
     "precio": 6000,
-    "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
+    "imagen": "assets/images/yerba-canarias-serena-500g.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
     "destacado": false,
@@ -1388,7 +1388,7 @@ const PRODUCTOS = [
     "variantes": [
       {
         "nombre": "500 GR",
-        "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
+        "imagen": "assets/images/yerba-canarias-serena-500g.png",
         "precio": 6000
       },
       {
