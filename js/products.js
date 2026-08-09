@@ -1683,6 +1683,96 @@ const PRODUCTOS = [
       "Mate de algarrobo laqueado brillante",
       "Caja de presentación grabada a láser"
     ]
+  },
+  {
+    "id": "caja-presentacion-feliz-dia-mama",
+    "nombre": "CAJA PRESENTACIÓN GRABADA FELIZ DÍA DE LA MADRE",
+    "categoria": "accesorios",
+    "subcategoria": "cajas",
+    "precio": 9500,
+    "imagen": "assets/images/caja-presentacion-grabada-feliz-dia-de-la-madre-para-mate-y-bombilla-con-sujetador-y-tela-de-pana.jpg",
+    "descripcion": "Exclusiva caja de madera lustrada grabada con temática Día de la Madre, interior forrado en tela de pana con sujetadores para mate y bombilla.",
+    "destacado": true,
+    "detalles": [
+      "Madera seleccionada con grabado láser de alta precisión",
+      "Interior revestido en suave tela de pana",
+      "Sujetadores elásticos para mate y bombilla"
+    ]
+  },
+  {
+    "id": "bombilla-grabada-te-amo-mama",
+    "nombre": "BOMBILLA CHATA GRABADA TE AMO MAMÁ CON DIJE DE BRONCE",
+    "categoria": "bombillas",
+    "subcategoria": "acero",
+    "precio": 8500,
+    "imagen": "assets/images/bombilla-grabada-te-amo-mam-pico-curva-de-acero-inox-chata-con-dije-de-bronce.jpeg",
+    "descripcion": "Bombilla chata de acero inoxidable de 19 cm con pico curvo ergonométrico, grabado con la leyenda 'Te Amo Mamá' y aplique de dije en bronce.",
+    "destacado": true,
+    "detalles": [
+      "Acero inoxidable AISI 304 higiénico y lavable",
+      "Pico curvo anatómico muy confortable",
+      "Aplique ornamental en bronce cincelado"
+    ]
+  },
+  {
+    "id": "imperial-fleje-acero-negro-mama",
+    "nombre": "MATE IMPERIAL FLEJE Y VIROLA DE ACERO NEGRO",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 45000,
+    "imagen": "assets/images/imperial-fleje-y-virola-de-acero-interior-calabaza-color-negro-grabado-d-a-de-la-madre.jpeg",
+    "descripcion": "Mate imperial con virola y fleje reforzado de acero inox, calabaza brasilera seleccionada de alto grosor y forrado en cuero vacuno negro mate.",
+    "destacado": true,
+    "detalles": [
+      "Fleje lateral de acero inoxidable pulido",
+      "Calabaza brasilera de pared gruesa",
+      "Forrado en cuero vacuno negro de máxima calidad"
+    ]
+  },
+  {
+    "id": "box-indio-solari",
+    "nombre": "BOX TEMÁTICO INDIO SOLARI: CAJA + MATE CAMIONERO + BOMBILLA",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 27000,
+    "imagen": "assets/images/box-indio-solari-caja-presentaci-n-camionero-laqueado-brilloso-y-bombilla-chata-todo-grabado.jpeg",
+    "descripcion": "Edición especial para fanáticos del Indio Solari: caja de madera grabada, mate camionero de algarrobo laqueado y bombilla chata grabada.",
+    "destacado": true,
+    "detalles": [
+      "Grabado temático exclusivo Indio Solari",
+      "Mate camionero de algarrobo laqueado a fuego",
+      "Bombilla de acero inoxidable de regalo"
+    ]
+  },
+  {
+    "id": "box-los-simpsons",
+    "nombre": "BOX TEMÁTICO LOS SIMPSONS: CAJA + MATE CAMIONERO + BOMBILLA",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 27000,
+    "imagen": "assets/images/box-los-simpsons-caja-presentaci-n-camionero-laqueado-brilloso-y-bombilla-chata-todo-grabado.jpeg",
+    "descripcion": "Set temático de regalo Los Simpsons: incluye caja rígida de madera grabada con motivos de la serie, mate camionero laqueado y bombilla chata.",
+    "destacado": true,
+    "detalles": [
+      "Grabado láser de alta definición con personajes",
+      "Mate camionero laqueado resistente al uso cotidiano",
+      "Excelente terminación y presentación"
+    ]
+  },
+  {
+    "id": "combo-messi-grabado",
+    "nombre": "COMBO LIONEL MESSI 10: CAJA PRESENTACIÓN + MATE + BOMBILLA",
+    "categoria": "combos",
+    "subcategoria": "sets",
+    "precio": 27000,
+    "imagen": "assets/images/box-messi-foto-grabado-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata.jpeg",
+    "descripcion": "Set homenaje al capitán de la Selección Argentina Lionel Messi: caja con grabado del 10, mate camionero de algarrobo y bombilla chata.",
+    "destacado": true,
+    "detalles": [
+      "Grabado temático de Lionel Messi y la 10",
+      "Mate de algarrobo macizo pulido y laqueado",
+      "Caja protectora con sujetadores de pana"
+    ]
   }
 ];
 
