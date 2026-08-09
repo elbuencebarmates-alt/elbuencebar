@@ -1863,6 +1863,96 @@ const PRODUCTOS = [
       "Virola de acero con grabado láser",
       "Base ancha y cuerpo robusto tradicional"
     ]
+  },
+  {
+    "id": "imperial-full-alpaca-argentina",
+    "nombre": "MATE IMPERIAL FULL ALPACA BANDERA ARGENTINA",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 36000,
+    "imagen": "assets/images/imperial-premium-full-alpaca-bandera-de-argentina-celeste-y-blanco.jpg",
+    "descripcion": "Edición especial de lujo: Mate imperial forrado en cuero de primera con virola y guarda completa cincelada en alpaca con diseño patriótico celeste y blanco.",
+    "destacado": true,
+    "detalles": [
+      "Guarda y virola en alpaca pulida a espejo",
+      "Calabaza brasilera seleccionada por grosor",
+      "Diseño exclusivo Selección Argentina"
+    ]
+  },
+  {
+    "id": "imperial-cuero-vaquita-alpaca",
+    "nombre": "MATE IMPERIAL CUERO VAQUITA BLANCO Y NEGRO",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 36000,
+    "imagen": "assets/images/mate-imperial-cuero-vaquita-blanco-y-negro-guarda-de-alpaca-calabaza-tama-o-mediano.jpg",
+    "descripcion": "Exclusivo mate imperial forrado en cuero vacuno natural con pelo estilo vaquita (blanco y negro) y virola cincelada de alpaca.",
+    "destacado": true,
+    "detalles": [
+      "Cuero con pelo natural diseño vaquita",
+      "Virola de alpaca pulida con motivos artesanales",
+      "Interior de calabaza brasilera de alto espesor"
+    ]
+  },
+  {
+    "id": "imperial-guarda-alpaca-rosa",
+    "nombre": "MATE IMPERIAL DE CUERO ROSA CON GUARDA DE ALPACA",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 24000,
+    "imagen": "assets/images/imperial-guarda-de-alpaca-color-rosa-int-calabaza.jpg",
+    "descripcion": "Mate imperial forrado en cuero curtido en tono rosa pastel con virola y guarda cincelada de alpaca premium.",
+    "destacado": true,
+    "detalles": [
+      "Cuero teñido en tono rosa exclusivo",
+      "Virola de alpaca cincelada a mano",
+      "Calabaza seleccionada de gran rendimiento"
+    ]
+  },
+  {
+    "id": "imperial-grabado-racing-club",
+    "nombre": "MATE IMPERIAL GRABADO RACING CLUB DE AVELLANEDA",
+    "categoria": "mates",
+    "subcategoria": "imperial",
+    "precio": 24000,
+    "imagen": "assets/images/imperial-cuero-alpaca-calabaza-grabado-racing-club.jpeg",
+    "descripcion": "Mate imperial para fanáticos de Racing Club: forrado en cuero vacuno negro con virola de alpaca grabada a láser con escudo y leyendas del club.",
+    "destacado": true,
+    "detalles": [
+      "Escudo de Racing Club grabado con gran detalle",
+      "Virola de alpaca y cuero vacuno legítimo",
+      "Calabaza brasilera de pared gruesa"
+    ]
+  },
+  {
+    "id": "canasta-cuero-azul-afa",
+    "nombre": "CANASTA MATERA DE CUERO AZUL AFA Y SELECCIÓN",
+    "categoria": "materas",
+    "subcategoria": "cuero",
+    "precio": 36000,
+    "imagen": "assets/images/canasta-de-100-cuero-azul-con-logos-de-afa-y-escudo-premium-con-division.jpeg",
+    "descripcion": "Canasta matera fabricada 100% en cuero legítimo color azul marino con escudos y logos gravados de AFA y la Selección Argentina, con división interior.",
+    "destacado": true,
+    "detalles": [
+      "100% cuero vacuno reinforced",
+      "División interna rígida para termo y frascos",
+      "Manija y costuras industriales de alta resistencia"
+    ]
+  },
+  {
+    "id": "set-asado-valijita-3pzas",
+    "nombre": "SET DE ASADO CERRADO VALIJITA (PLATO, CUCHILLO Y TENEDOR)",
+    "categoria": "accesorios",
+    "subcategoria": "asado",
+    "precio": 18000,
+    "imagen": "assets/images/set-de-asado-cerrado-valijita-plato-cuchillo-y-tenedor.jpeg",
+    "descripcion": "Estuche valijita matera/asado de cuerina con cierre que incluye plato de madera dura de alparrobo o eucalipto, cuchillo y tenedor de acero inox.",
+    "destacado": true,
+    "detalles": [
+      "Estuche valijita con cierre hermético",
+      "Incluye plato de madera lustrada",
+      "Cuchillo y tenedor parrilleros de acero"
+    ]
   }
 ];
 
