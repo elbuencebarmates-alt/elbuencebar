@@ -620,7 +620,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA 100% CUERO GRANDE REFORZADA",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 55000,
+    "precio": 30000,
     "imagen": "assets/images/canasta-cuero-grande.png",
     "descripcion": "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
     "destacado": false,
@@ -636,7 +636,7 @@ const PRODUCTOS = [
     "nombre": "MEDIA CANASTA MATERA DE CUERO",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 55000,
+    "precio": 36000,
     "imagen": "assets/images/media-canasta-cuero-negro.png",
     "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate de manera segura y cómoda. Disponible en colores Negro o Marrón Suela.",
     "destacado": false,
@@ -650,12 +650,12 @@ const PRODUCTOS = [
       {
         "nombre": "NEGRA",
         "imagen": "assets/images/media-canasta-cuero-negro.png",
-        "precio": 55000
+        "precio": 36000
       },
       {
         "nombre": "MARRÓN SUELA",
         "imagen": "assets/images/media-canasta-cuero-suela.png",
-        "precio": 55000
+        "precio": 36000
       }
     ]
   },
@@ -664,7 +664,7 @@ const PRODUCTOS = [
     "nombre": "MEDIACANASTA PREMIUM DE PELO VACUNO COLORES SURTIDOS",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 60000,
+    "precio": 36000,
     "imagen": "assets/images/mediacanasta-pelo-vacuno.jpg",
     "descripcion": "Esta canasta viene con pelo natural, por lo cual presentan todas diferentes tonos y manchas, volviendo cada modelo único. En caso de querer un tono particular, una vez realizada la compra solicita foto de la misma a través de WhatsApp.",
     "destacado": true,
@@ -1104,7 +1104,7 @@ const PRODUCTOS = [
     "nombre": "CANASTAS DE CUERO CON ESCUDO DE FUTBOL COLOR NEGRO",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 55000,
+    "precio": 36000,
     "imagen": "assets/images/canastas-de-cuero-con-escudo-de-futbol-color-negro.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
