@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BASE DE DATOS DE PRODUCTOS - EL BUEN CEBAR
+   BASE DE DATOS DE PRODUCTOS - EL BUEN CEBAR ARTESANAL
    ========================================================================== */
 
 const PRODUCTOS = [
@@ -21,17 +21,17 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
-        "precio": 40000
+        "precio": 38000
       },
       {
         "nombre": "CUERO MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-marron.png",
-        "precio": 40000
+        "precio": 38000
       },
       {
         "nombre": "CUERO CRUDO",
         "imagen": "assets/images/mate-imperial-boca-ancha-crudo.png",
-        "precio": 50000
+        "precio": 38000
       }
     ]
   },
@@ -54,22 +54,22 @@ const PRODUCTOS = [
       {
         "nombre": "IMPERIAL CUERO CROCO NEGRO",
         "imagen": "assets/images/mate-imperial-croco-negro.png",
-        "precio": 50000
+        "precio": 42000
       },
       {
         "nombre": "IMPERIAL CUERO CROCO MARRON",
         "imagen": "assets/images/mate-imperial-croco-marron.png",
-        "precio": 50000
+        "precio": 42000
       },
       {
         "nombre": "IMPERIAL ARGENTINA CUERO REPUJADO NEGRO",
         "imagen": "assets/images/mate-imperial-repujado-negro.png",
-        "precio": 50000
+        "precio": 42000
       },
       {
         "nombre": "IMPERIAL CUERO CROCO ROSA",
         "imagen": "assets/images/mate-imperial-croco-rosa.png",
-        "precio": 50000
+        "precio": 42000
       }
     ]
   },
@@ -384,7 +384,7 @@ const PRODUCTOS = [
       {
         "nombre": "ACERO CON PICO DE LORO Y PALA GRANDE",
         "imagen": "assets/images/bombillon-acero-pala.png",
-        "precio": 10000
+        "precio": 15000
       }
     ]
   },
@@ -473,37 +473,37 @@ const PRODUCTOS = [
       {
         "nombre": "BOCA JUNIORS",
         "imagen": "assets/images/bombilla-chata-boca.png",
-        "precio": 10000
+        "precio": 7500
       },
       {
         "nombre": "RIVER PLATE",
         "imagen": "assets/images/bombilla-chata-river.png",
-        "precio": 10000
+        "precio": 7500
       },
       {
         "nombre": "COPA DEL MUNDO",
         "imagen": "assets/images/bombilla-chata-copa.png",
-        "precio": 10000
+        "precio": 7500
       },
       {
         "nombre": "ARGENTINA",
         "imagen": "assets/images/bombilla-chata-argentina.png",
-        "precio": 10000
+        "precio": 7500
       },
       {
         "nombre": "TE AMO PAPÁ",
         "imagen": "assets/images/bombilla-chata-papa.png",
-        "precio": 10000
+        "precio": 7500
       },
       {
         "nombre": "TE AMO MAMÁ",
         "imagen": "assets/images/bombilla-chata-mama.png",
-        "precio": 10000
+        "precio": 7500
       },
       {
         "nombre": "RUTA 40",
         "imagen": "assets/images/bombilla-chata-ruta40.png",
-        "precio": 10000
+        "precio": 7500
       }
     ]
   },
@@ -526,12 +526,12 @@ const PRODUCTOS = [
       {
         "nombre": "CON CURVA",
         "imagen": "assets/images/bombilla-chata-lisa-curva.png",
-        "precio": 10000
+        "precio": 7500
       },
       {
         "nombre": "RECTA",
         "imagen": "assets/images/bombilla-chata-lisa-recta.png",
-        "precio": 10000
+        "precio": 7500
       }
     ]
   },
@@ -773,12 +773,12 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
-        "precio": 38000
+        "precio": 32000
       },
       {
         "nombre": "CUERO MARRÓN LISO",
         "imagen": "assets/images/torpedo-pelotitas-bronce.jpg",
-        "precio": 38000
+        "precio": 32000
       }
     ]
   },
@@ -1227,7 +1227,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-edicion-especial.png",
-        "precio": 11000
+        "precio": 9000
       }
     ]
   },
@@ -1254,7 +1254,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-jengibre-te-verde-1kg.jpg",
-        "precio": 11000
+        "precio": 9000
       }
     ]
   },
@@ -1281,7 +1281,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-baldo-tradicional-1kg.png",
-        "precio": 10000
+        "precio": 10500
       },
       {
         "nombre": "5 KG",
@@ -1313,7 +1313,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 9500
+        "precio": 9000
       }
     ]
   },
@@ -1340,7 +1340,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-tradicional-1kg.jpg",
-        "precio": 8000
+        "precio": 9000
       }
     ]
   },
@@ -1394,7 +1394,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-serena-1kg.jpg",
-        "precio": 11000
+        "precio": 9000
       }
     ]
   },
@@ -1421,7 +1421,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-premium-1kg.jpg",
-        "precio": 12000
+        "precio": 9000
       }
     ]
   },
@@ -1448,7 +1448,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 10500
+        "precio": 9000
       }
     ]
   },
@@ -1536,7 +1536,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
-        "precio": 9000
+        "precio": 10500
       }
     ]
   },
@@ -1563,7 +1563,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
-        "precio": 10500
+        "precio": 9000
       }
     ]
   },
@@ -1590,7 +1590,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-sara-tradicional.jpeg",
-        "precio": 10500
+        "precio": 9000
       }
     ]
   },
@@ -1603,7 +1603,7 @@ const PRODUCTOS = [
     "imagen": "assets/images/mate-perita-de-algarrobo-barnizado-premium-grande.jpg",
     "descripcion": "Mate perita de algarrobo macizo barnizado de gran tamaño. Diseño ergonómico muy cómodo de agarrar y duradero.",
     "destacado": true,
-    detalles: [
+    "detalles": [
       "Madera de algarrobo maciza seleccionada",
       "Terminación con barniz de alta protección",
       "Formato perita ergonómico amplio"
@@ -1618,7 +1618,7 @@ const PRODUCTOS = [
     "imagen": "assets/images/mate-ranchero-moldeado-y-pintado-a-mano-trabajo-todo-artesanal-manchas-rosas.jpeg",
     "descripcion": "Mate ranchero moldeado y pintado artesanalmente a mano con exclusivo diseño de manchas rosas y virola de alpaca.",
     "destacado": true,
-    detalles: [
+    "detalles": [
       "Trabajo 100% artesanal moldeado a mano",
       "Diseño exclusivo pintado en tonos rosa",
       "Virola de alpaca trabajada a mano"
@@ -1633,7 +1633,7 @@ const PRODUCTOS = [
     "imagen": "assets/images/box-malvinas-argentinas-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata-todo-grabado.jpeg",
     "descripcion": "Set completo temático Malvinas Argentinas: incluye caja de presentación grabada, mate camionero de algarrobo laqueado y bombilla chata grabada.",
     "destacado": true,
-    detalles: [
+    "detalles": [
       "Caja de madera con grabado temático",
       "Mate camionero de algarrobo laqueado",
       "Bombilla chata de acero inoxidable"
@@ -1648,7 +1648,7 @@ const PRODUCTOS = [
     "imagen": "assets/images/box-harry-potter-caja-presentaci-n-camionero-laqueado-brilloso-y-bombilla-chata-todo-grabado.jpeg",
     "descripcion": "Box especial para fanáticos de Harry Potter: caja de regalo grabada con motivos del colegio Hogwarts, mate camionero laqueado y bombilla chata grabada.",
     "destacado": true,
-    detalles: [
+    "detalles": [
       "Grabado láser temático de alta precisión",
       "Mate de algarrobo laqueado brillante",
       "Presentación lista para regalar"
@@ -1663,7 +1663,7 @@ const PRODUCTOS = [
     "imagen": "assets/images/box-boca-juniors-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata.jpeg",
     "descripcion": "Combo xeneize de regalo: caja de presentación personalizada con escudo de Boca Juniors, mate camionero de algarrobo laqueado y bombilla chata.",
     "destacado": true,
-    detalles: [
+    "detalles": [
       "Temática oficial Boca Juniors",
       "Mate de algarrobo laqueado de alta terminación",
       "Caja rígida protectora grabada"
@@ -1673,12 +1673,12 @@ const PRODUCTOS = [
     "id": "box-river-plate",
     "nombre": "BOX RIVER PLATE: CAJA PRESENTACIÓN + MATE CAMIONERO + BOMBILLA",
     "categoria": "accesorios",
-    subcategoria: "cajas",
-    precio: 28500,
-    imagen: "assets/images/box-river-plate-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata.jpeg",
-    descripcion: "Combo millonario de regalo: caja de presentación grabada con escudo de River Plate, mate camionero de algarrobo laqueado y bombilla chata.",
-    destacado: true,
-    detalles: [
+    "subcategoria": "cajas",
+    "precio": 28500,
+    "imagen": "assets/images/box-river-plate-caja-presentacion-camionero-algarrobo-brilloso-laqueado-bombilla-chata.jpeg",
+    "descripcion": "Combo millonario de regalo: caja de presentación grabada con escudo de River Plate, mate camionero de algarrobo laqueado y bombilla chata.",
+    "destacado": true,
+    "detalles": [
       "Temática oficial River Plate",
       "Mate de algarrobo laqueado brillante",
       "Caja de presentación grabada a láser"
@@ -1827,7 +1827,7 @@ const PRODUCTOS = [
     "precio": 19500,
     "imagen": "assets/images/bombillon-copa-del-mundo-copa-grande-de-alpaca-y-bronce.jpeg",
     "descripcion": "Exclusivo bombillón de alpaca premium de 19 cm con dije esculpido de la Copa del Mundo en bronce macizo y filtro tipo cuchara de alta succión.",
-    destacado: true,
+    "destacado": true,
     "detalles": [
       "Fabricado en alpaca pulida a espejo",
       "Dije tridimensional de la Copa del Mundo en bronce",
@@ -1842,7 +1842,7 @@ const PRODUCTOS = [
     "precio": 24000,
     "imagen": "assets/images/botella-antivuelco-grabada-lista-de-penales-inglatera-color-negro.jpeg",
     "descripcion": "Botella térmica deportiva antivuelco de acero inoxidable grabada con la histórica lista de penales contra Inglaterra en el Mundial 1998.",
-    destacado: true,
+    "destacado": true,
     "detalles": [
       "Base antideslizante con traba de seguridad",
       "Pico vertedor deportivo y manija de agarre",
@@ -1857,7 +1857,7 @@ const PRODUCTOS = [
     "precio": 15000,
     "imagen": "assets/images/camionero-algarrobo-grabado-inglaterra-la-concha-de-tu-madre.jpeg",
     "descripcion": "Mate camionero de algarrobo macizo pulido con virola de acero inoxidable grabada con motivos patrios de la Selección Argentina.",
-    destacado: true,
+    "destacado": true,
     "detalles": [
       "Algarrobo seleccionado de gran espesor",
       "Virola de acero con grabado láser",
@@ -2082,7 +2082,7 @@ const PRODUCTOS = [
     "precio": 36000,
     "imagen": "assets/images/canasta-de-cuero-con-pelos-premium-con-division.jpeg",
     "descripcion": "Exclusiva canasta matera artesanal confeccionada en cuero vacuno natural con pelo, manchas surtidas únicas y división interior.",
-    destacado: true,
+    "destacado": true,
     "detalles": [
       "Cuero vacuno legítimo con pelo natural",
       "Diseño único e irrepetible por pieza",
@@ -2097,7 +2097,7 @@ const PRODUCTOS = [
     "precio": 16000,
     "imagen": "assets/images/canasta-de-cuerina-color-negro-cuero-croco-doble-costura-premium.jpeg",
     "descripcion": "Canasta matera rígida en ecocuero textura croco negro con doble costura reforzada, manija de agarre ergonómica y división interna.",
-    destacado: true,
+    "destacado": true,
     "detalles": [
       "Ecocuero de alta densidad con textura cocodrilo",
       "Base rígida antideslizante",
@@ -2112,7 +2112,7 @@ const PRODUCTOS = [
     "precio": 18000,
     "imagen": "assets/images/bolso-matero-color-bord-con-logo-de-river.jpeg",
     "descripcion": "Bolso matero reforzado en tela impermeable bordó con el escudo oficial de River Plate bordado y correa regulable para colgar.",
-    destacado: true,
+    "destacado": true,
     "detalles": [
       "Escudo bordado oficial de River Plate",
       "Interior térmico lavable e impermeable",
@@ -2127,7 +2127,7 @@ const PRODUCTOS = [
     "precio": 18000,
     "imagen": "assets/images/combo-bolso-clasico-tela-matero-grande-con-sujetador-para-termo-yerbero-azucarero-color-azul-con-escudo-de-boca-juniors-tela.jpg",
     "descripcion": "Combo completo x3 piezas: bolso matero azul xeneize con escudo de Boca Juniors, lata yerbera y lata azucarera haciendo juego.",
-    destacado: true,
+    "destacado": true,
     "detalles": [
       "Bolso térmico grande con espacio para termo de 1.5L",
       "Incluye yerbero y azucarero con pico vertedor",
@@ -2225,13 +2225,6 @@ const PRODUCTOS = [
     ]
   }
 ];
-
-
-
-
-
-
-
 
 // Función para obtener productos por categoría
 function obtenerProductosPorCategoria(categoria) {
