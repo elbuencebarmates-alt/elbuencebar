@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   inicializarScrollReveal();
   inicializarModoOscuro();
   inicializarBotonWhatsApp();
+  actualizarContadoresCategorias();
 });
 
 // 1. Efecto Scroll en la Cabecera (Header shadow & shrink)
@@ -195,4 +196,35 @@ function inicializarBotonWhatsApp() {
     }
   });
 }
+
+// 7. Actualización automática y dinámica de contadores de productos por categoría
+function actualizarContadoresCategorias() {
+  if (typeof PRODUCTOS === 'undefined' || !Array.isArray(PRODUCTOS)) return;
+
+  const categoryCards = document.querySelectorAll('.category-card');
+  if (!categoryCards || categoryCards.length === 0) return;
+
+  categoryCards.forEach(card => {
+    const href = card.getAttribute('href') || '';
+    const match = href.match(/(?:cat|categoria)=([^&]+)/);
+    if (!match) return;
+
+    const catSlug = match[1].toLowerCase();
+    
+    let count = 0;
+    if (catSlug === 'todos') {
+      count = PRODUCTOS.length;
+    } else if (catSlug === 'yerberos-azucareros') {
+      count = PRODUCTOS.filter(p => p.categoria === 'yerberos-azucareros' || p.categoria === 'yerberos').length;
+    } else {
+      count = PRODUCTOS.filter(p => p.categoria === catSlug).length;
+    }
+
+    const countElem = card.querySelector('.category-card__count');
+    if (countElem) {
+      countElem.textContent = `${count} ${count === 1 ? 'Producto' : 'Productos'}`;
+    }
+  });
+}
+
 
