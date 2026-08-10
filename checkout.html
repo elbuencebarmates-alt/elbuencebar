@@ -161,12 +161,12 @@
           <div class="checkout-section">
             <h2 class="checkout-section__title">2. Forma de Entrega</h2>
             <div class="radio-group">
-              <!-- Opción 1: Retiro Showroom -->
+              <!-- Opción 1: Entrega Coordinada -->
               <label class="radio-label radio-label--active" id="label-entrega-retiro">
                 <input type="radio" name="r-entrega" value="retiro" checked onclick="cambiarMetodoEntrega('retiro')">
                 <div class="radio-info">
-                  <span class="radio-title">Retiro por Showroom (Ramos Mejía)</span>
-                  <span class="radio-desc">Gratis. Coordinamos el retiro de lunes a sábados.</span>
+                  <span class="radio-title">Coordinar Entrega Propia (Ramos Mejía y Alrededores)</span>
+                  <span class="radio-desc">Gratis. Coordinamos el horario de entrega en tu zona con nuestro reparto.</span>
                 </div>
               </label>
 
@@ -455,7 +455,7 @@
       document.getElementById("chk-subtotal").textContent = `$${subtotal.toLocaleString('es-AR')}`;
       
       if (metodoEntrega === "retiro") {
-        document.getElementById("chk-shipping").textContent = "GRATIS (Retiro)";
+        document.getElementById("chk-shipping").textContent = "GRATIS (Entrega Propia)";
       } else {
         document.getElementById("chk-shipping").textContent = costoEnvio === 0 ? "GRATIS" : `$${costoEnvio.toLocaleString('es-AR')}`;
       }
@@ -471,7 +471,6 @@
       document.getElementById("chk-total").textContent = `$${total.toLocaleString('es-AR')}`;
     }
 
-    // Procesa el pedido recopilando toda la info
     // Procesa el pedido recopilando toda la info
     function procesarPedidoWhatsApp(e) {
       e.preventDefault();
@@ -504,8 +503,8 @@
       let textoEntrega = "";
       let direccionText = "";
       if (metodoEntrega === "retiro") {
-        textoEntrega = "Método: Retiro por Showroom (Ramos Mejía)\n";
-        direccionText = "Retiro por Showroom";
+        textoEntrega = "Método: Entrega Propia Coordinada (Ramos Mejía y Alrededores)\n";
+        direccionText = "Entrega Propia Coordinada";
       } else {
         const calle = document.getElementById("c-calle").value;
         const depto = document.getElementById("c-piso").value;
@@ -614,7 +613,7 @@
         telefono: telefono,
         email: email,
         metodoEntrega: metodoEntrega,
-        direccion: metodoEntrega === "retiro" ? "Retiro por Showroom" : (document.getElementById("c-calle").value + (document.getElementById("c-piso").value ? ", " + document.getElementById("c-piso").value : "") + ", " + document.getElementById("c-localidad").value + ", " + document.getElementById("c-provincia").value + " (CP: " + document.getElementById("c-cp").value + ")"),
+        direccion: metodoEntrega === "retiro" ? "Entrega Propia Coordinada" : (document.getElementById("c-calle").value + (document.getElementById("c-piso").value ? ", " + document.getElementById("c-piso").value : "") + ", " + document.getElementById("c-localidad").value + ", " + document.getElementById("c-provincia").value + " (CP: " + document.getElementById("c-cp").value + ")"),
         subtotal: subtotal,
         costoEnvio: costoEnvio,
         items: carrito
@@ -631,7 +630,7 @@
                       `💳 PAGO:\n- ${textoPago}\n` +
                       `💰 RESUMEN:\n` +
                       `- Subtotal: $${subtotal.toLocaleString('es-AR')}\n` +
-                      `- Envío: ${metodoEntrega === 'retiro' ? 'Retiro en local' : (costoEnvio === 0 ? 'GRATIS' : '$' + costoEnvio.toLocaleString('es-AR'))}\n` +
+                      `- Envío: ${metodoEntrega === 'retiro' ? 'Entrega Propia Coordinada' : (costoEnvio === 0 ? 'GRATIS' : '$' + costoEnvio.toLocaleString('es-AR'))}\n` +
                       (descuento > 0 ? `- Descuento Efectivo (10%): -$${descuento.toLocaleString('es-AR')}\n` : "") +
                       `- TOTAL A PAGAR: $${total.toLocaleString('es-AR')}`;
 

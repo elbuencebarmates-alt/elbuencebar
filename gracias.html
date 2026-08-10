@@ -221,7 +221,7 @@
       // Armar datos de entrega
       let textoEntrega = "";
       if (ultimoPedido.metodoEntrega === "retiro") {
-        textoEntrega = "Método: Retiro por Showroom (Ramos Mejía)\n";
+        textoEntrega = "Método: Entrega Propia Coordinada (Ramos Mejía y Alrededores)\n";
       } else {
         textoEntrega = `Método: Envío a Domicilio (Logística Propia)\nDirección: ${ultimoPedido.direccion}\n`;
       }
@@ -236,7 +236,7 @@
                       `💳 PAGO:\n- Mercado Pago (APROBADO ONLINE)\n` +
                       `💰 RESUMEN:\n` +
                       `- Subtotal: $${ultimoPedido.subtotal.toLocaleString('es-AR')}\n` +
-                      `- Envío: ${ultimoPedido.metodoEntrega === 'retiro' ? 'Retiro en local' : (ultimoPedido.costoEnvio === 0 ? 'GRATIS' : '$' + ultimoPedido.costoEnvio.toLocaleString('es-AR'))}\n` +
+                      `- Envío: ${ultimoPedido.metodoEntrega === 'retiro' ? 'Entrega Propia' : (ultimoPedido.costoEnvio === 0 ? 'GRATIS' : '$' + ultimoPedido.costoEnvio.toLocaleString('es-AR'))}\n` +
                       `- TOTAL PAGADO: $${(ultimoPedido.subtotal + ultimoPedido.costoEnvio).toLocaleString('es-AR')}\n\n` +
                       `*El pago se acreditó correctamente en tu cuenta de Mercado Pago.*`;
 
@@ -265,7 +265,7 @@
       const data = {
         "Nombre Cliente": pedido.nombre,
         "Telefono Cliente": pedido.telefono,
-        "Metodo Entrega": pedido.metodoEntrega === "retiro" ? "Retiro por Showroom" : "Envío a domicilio",
+        "Metodo Entrega": pedido.metodoEntrega === "retiro" ? "Entrega Propia Coordinada" : "Envío a domicilio",
         "Direccion Entrega": pedido.direccion || "No aplica",
         "Productos": textoProductos,
         "Subtotal": `$${pedido.subtotal.toLocaleString('es-AR')}`,
