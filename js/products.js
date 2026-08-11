@@ -2202,6 +2202,160 @@ const PRODUCTOS = [
       "Incluye latas yerbera y azucarera con pico vertedor",
       "Interior forrado e impermeable"
     ]
+  },
+  {
+    "id": "mate-vasito-termico-negro-virola",
+    "nombre": "MATE VASITO INTERIOR TÉRMICO NEGRO CON VIROLA",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 10000,
+    "imagen": "assets/images/mate-vasito-termico-negro-virola.jpeg",
+    "descripcion": "Mate vasito térmico de acero inoxidable con virola pulida. Ideal para grabados personalizados.",
+    "destacado": true,
+    "detalles": [
+      "Interior térmico en acero inoxidable AISI 304",
+      "Virola de acero pulida lista para grabar",
+      "Terminación en pintura negro mate texturado",
+      "Excelente retención de temperatura"
+    ]
+  },
+  {
+    "id": "mate-copita-termico-rosa",
+    "nombre": "MATE COPITA COLOR ROSA INTERIOR TÉRMICO ACERO INOXIDABLE",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-copita-termico-rosa.jpeg",
+    "descripcion": "Mate térmico formato copita en color rosa con interior de acero inoxidable de alta durabilidad.",
+    "destacado": true,
+    "detalles": [
+      "Formato ergonómico tipo copita",
+      "Interior higiénico inoxidable libre de hongos",
+      "Color rosa acabado mate pastel",
+      "Práctico y fácil de lavar"
+    ]
+  },
+  {
+    "id": "mate-vasito-termico-blanco",
+    "nombre": "MATE VASITO TÉRMICO BLANCO",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vasito-termico-blanco.jpeg",
+    "descripcion": "Mate vasito térmico liso de color blanco con interior de acero inoxidable higiénico y lavable.",
+    "destacado": true,
+    "detalles": [
+      "Cuerpo de acero inoxidable con aislamiento térmico",
+      "Pintura blanca electrostática de alta resistencia",
+      "No altera el sabor ni absorbe olores",
+      "Medidas estándar para fácil cebado"
+    ]
+  },
+  {
+    "id": "mate-vasito-termico-negro",
+    "nombre": "MATE VASITO TÉRMICO NEGRO",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vasito-termico-negro.jpeg",
+    "descripcion": "Mate vasito térmico liso de color negro mate con interior de acero inoxidable de gran rendimiento.",
+    "destacado": true,
+    "detalles": [
+      "Acero inoxidable AISI 304 térmico",
+      "Superficie texturada de agarre firme",
+      "Conserva el calor sin quemar las manos",
+      "Compacto y liviano"
+    ]
+  },
+  {
+    "id": "mate-vasito-termico-rosa",
+    "nombre": "MATE VASITO TÉRMICO ROSA",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vasito-termico-rosa.jpeg",
+    "descripcion": "Mate vasito térmico liso en tono rosa pastel con interior térmico de acero.",
+    "destacado": true,
+    "detalles": [
+      "Construcción interna en acero inoxidable",
+      "Tono rosa mate moderno",
+      "Aptos para uso diario y viajes"
+    ]
+  },
+  {
+    "id": "mate-vasito-copa-inox-blanco",
+    "nombre": "VASITO COPA INOX COLOR BLANCO",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vasito-copa-inox-blanco.jpeg",
+    "descripcion": "Mate tipo copa inox de color blanco brillante con doble pared térmica.",
+    "destacado": true,
+    "detalles": [
+      "Doble pared insulada que mantiene la temperatura",
+      "Borde suave pulido",
+      "Color blanco impoluto"
+    ]
+  },
+  {
+    "id": "mate-vasito-copa-inox-negro",
+    "nombre": "VASITO COPA INOX COLOR NEGRO",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vasito-copa-inox-negro.jpeg",
+    "descripcion": "Mate tipo copa inox de color negro texturado con interior térmico inoloro.",
+    "destacado": true,
+    "detalles": [
+      "Cuerpo ergonómico en copa",
+      "Aislamiento de calor de alta calidad",
+      "Acabado profesional negro"
+    ]
+  },
+  {
+    "id": "mate-vaso-termico-vuelo-rosa",
+    "nombre": "VASO TÉRMICO CON VUELO INTERIOR INOX - COLOR ROSA",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vaso-termico-vuelo-rosa.jpeg",
+    "descripcion": "Mate térmico ergonómico con vuelo superior en tono rosa y pared interna de acero.",
+    "destacado": true,
+    "detalles": [
+      "Vuelo amplio para un fácil vertido y cebado",
+      "Base estable antiderrames",
+      "Térmico inoloro e inalterable"
+    ]
+  },
+  {
+    "id": "mate-vaso-termico-vuelo-blanco",
+    "nombre": "VASO TÉRMICO CON VUELO INTERIOR INOX - COLOR BLANCO",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vaso-termico-vuelo-blanco.jpeg",
+    "descripcion": "Mate térmico con vuelo y agarre anatómico en color blanco.",
+    "destacado": true,
+    "detalles": [
+      "Boca ancha con borde curvado",
+      "Interior 100% acero inoxidable",
+      "Fácil limpieza"
+    ]
+  },
+  {
+    "id": "mate-vaso-termico-vuelo-negro",
+    "nombre": "VASO TÉRMICO CON VUELO INTERIOR INOX - COLOR NEGRO",
+    "categoria": "mates",
+    "subcategoria": "termicos",
+    "precio": 5000,
+    "imagen": "assets/images/mate-vaso-termico-vuelo-negro.jpeg",
+    "descripcion": "Mate térmico con vuelo en tono negro mate con excelente aislamiento de temperatura.",
+    "destacado": true,
+    "detalles": [
+      "Terminación en negro mate elegante",
+      "Vuelo ergonómico de cómodo agarre",
+      "Calidad garantizada"
+    ]
   }
 ];
 
