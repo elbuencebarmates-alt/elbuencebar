@@ -778,22 +778,6 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "camionero-cuero-bombilla",
-    "nombre": "MATE CAMIONERO DE CUERO CON BOMBILLA PICO DE LORO",
-    "categoria": "mates",
-    "subcategoria": "camionero",
-    "precio": 62500,
-    "imagen": "assets/images/camionero-cuero-calabaza.jpg",
-    "descripcion": "Mate Camionero de cuero, alpaca y calabaza con bombilla de acero.",
-    "destacado": false,
-    "detalles": [
-      "Calabaza brasilera de alto espesor",
-      "Forrado en cuero vacuno legítimo con costuras tradicionales",
-      "Virola de alpaca pulida",
-      "Incluye bombilla pico de loro de acero inoxidable"
-    ]
-  },
-  {
     "id": "torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla",
     "nombre": "TORPEDO NEGRO INTERIOR DE CALABAZA VIROLA ACERO BOCA ANCHA CON BOMBILLA",
     "categoria": "mates",
