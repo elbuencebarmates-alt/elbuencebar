@@ -365,7 +365,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLÓN DE CAÑO LISO",
     "categoria": "bombillas",
     "subcategoria": "bombillon",
-    "precio": 20000,
+    "precio": 5000,
     "imagen": "assets/images/bombillon-acero-pala.png",
     "descripcion": "Bombillón de acero inoxidable con formato pico de loro y pala grande microperforada de alta capacidad de succión.",
     "destacado": true,
@@ -379,7 +379,7 @@ const PRODUCTOS = [
       {
         "nombre": "ACERO CON PICO DE LORO Y PALA GRANDE",
         "imagen": "assets/images/bombillon-acero-pala.png",
-        "precio": 20000
+        "precio": 5000
       }
     ]
   },
