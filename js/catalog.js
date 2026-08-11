@@ -160,7 +160,11 @@ function renderizarCatalogo() {
 
     // Filtro Subcategoría (solo aplica si está activo mates y se seleccionó algo distinto a "todos")
     if (categoriaActiva === "mates" && subcategoriaActiva !== "todos") {
-      productosFiltrados = productosFiltrados.filter(p => p.subcategoria === subcategoriaActiva);
+      productosFiltrados = productosFiltrados.filter(p => 
+        p.subcategoria === subcategoriaActiva || 
+        (subcategoriaActiva === "termico" && p.subcategoria === "termicos") ||
+        (subcategoriaActiva === "termicos" && p.subcategoria === "termico")
+      );
     }
 
 
