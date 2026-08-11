@@ -388,7 +388,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLÓN DE CAÑO LABRADO PREMIUM",
     "categoria": "bombillas",
     "subcategoria": "bombillon",
-    "precio": 32500,
+    "precio": 35000,
     "imagen": "assets/images/bombillon-labrado-trenzado.png",
     "descripcion": "Bombillón de altísima gama con caño labrado artesanalmente. Cuenta con virolas de bronce torneadas y detalles de orfebrería únicos. Disponible en diseño trenzado con pico dorado, diseño espiralado tradicional o diseño torsión con pala y pico dorados.",
     "destacado": true,
@@ -402,17 +402,17 @@ const PRODUCTOS = [
       {
         "nombre": "DISEÑO TRENZADO CON PICO DORADO",
         "imagen": "assets/images/bombillon-labrado-trenzado.png",
-        "precio": 32500
+        "precio": 35000
       },
       {
         "nombre": "DISEÑO ESPIRALADO",
         "imagen": "assets/images/bombillon-labrado-espiralado.png",
-        "precio": 32500
+        "precio": 35000
       },
       {
         "nombre": "DISEÑO TORSION CON PALA DORADA",
         "imagen": "assets/images/bombillon-labrado-torsion.png",
-        "precio": 32500
+        "precio": 35000
       }
     ]
   },
@@ -421,7 +421,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLA DE ACERO INOXIDABLE CON FILTRO/PALA",
     "categoria": "bombillas",
     "subcategoria": "acero",
-    "precio": 13500,
+    "precio": 15000,
     "imagen": "assets/images/bombilla-acero-pala-bronce.png",
     "descripcion": "Bombillas de acero inoxidable 304 con filtro de pala de alta retención. Muy higiénicas y duraderas. Disponibles en versiones con caño liso y pico de bronce, o formato pico de loro en medidas de 16 cm y 19 cm.",
     "destacado": true,
@@ -435,17 +435,17 @@ const PRODUCTOS = [
       {
         "nombre": "CAÑO LISO CON PICO DE BRONCE",
         "imagen": "assets/images/bombilla-acero-pala-bronce.png",
-        "precio": 13500
+        "precio": 15000
       },
       {
         "nombre": "PICO DE LORO 16CM",
         "imagen": "assets/images/bombilla-acero-pala-16cm.png",
-        "precio": 13500
+        "precio": 15000
       },
       {
         "nombre": "PICO DE LORO 19CM",
         "imagen": "assets/images/bombilla-acero-pala-19cm.png",
-        "precio": 13500
+        "precio": 15000
       }
     ]
   },
@@ -454,7 +454,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLA CHATA GRABADA",
     "categoria": "bombillas",
     "subcategoria": "acero",
-    "precio": 8000,
+    "precio": 10000,
     "imagen": "assets/images/bombilla-chata-grabada-combo.png",
     "descripcion": "Bombilla chata clásica fabricada en acero inoxidable con grabado láser de alta precisión. Podés elegir tu diseño favorito: escudos de fútbol de Boca o River, diseño patrio de Argentina, Ruta 40, Copa del Mundo, o grabados especiales para regalar como 'Te amo papá' o 'Te amo mamá'.",
     "destacado": true,
@@ -468,37 +468,37 @@ const PRODUCTOS = [
       {
         "nombre": "BOCA JUNIORS",
         "imagen": "assets/images/bombilla-chata-boca.png",
-        "precio": 8000
+        "precio": 10000
       },
       {
         "nombre": "RIVER PLATE",
         "imagen": "assets/images/bombilla-chata-river.png",
-        "precio": 8000
+        "precio": 10000
       },
       {
         "nombre": "COPA DEL MUNDO",
         "imagen": "assets/images/bombilla-chata-copa.png",
-        "precio": 8000
+        "precio": 10000
       },
       {
         "nombre": "ARGENTINA",
         "imagen": "assets/images/bombilla-chata-argentina.png",
-        "precio": 8000
+        "precio": 10000
       },
       {
         "nombre": "TE AMO PAPÁ",
         "imagen": "assets/images/bombilla-chata-papa.png",
-        "precio": 8000
+        "precio": 10000
       },
       {
         "nombre": "TE AMO MAMÁ",
         "imagen": "assets/images/bombilla-chata-mama.png",
-        "precio": 8000
+        "precio": 10000
       },
       {
         "nombre": "RUTA 40",
         "imagen": "assets/images/bombilla-chata-ruta40.png",
-        "precio": 8000
+        "precio": 10000
       }
     ]
   },
@@ -507,7 +507,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLA CHATA LISA",
     "categoria": "bombillas",
     "subcategoria": "acero",
-    "precio": 7000,
+    "precio": 5000,
     "imagen": "assets/images/bombilla-chata-lisa-curva.png",
     "descripcion": "Bombilla chata lisa de acero inoxidable 304 pulido a espejo. Su diseño minimalista y elegante cuenta con un anillo difusor de calor en el cuello. Disponible en versión con curva o versión recta.",
     "destacado": true,
@@ -521,12 +521,12 @@ const PRODUCTOS = [
       {
         "nombre": "CON CURVA",
         "imagen": "assets/images/bombilla-chata-lisa-curva.png",
-        "precio": 7000
+        "precio": 5000
       },
       {
         "nombre": "RECTA",
         "imagen": "assets/images/bombilla-chata-lisa-recta.png",
-        "precio": 7000
+        "precio": 5000
       }
     ]
   },
@@ -535,7 +535,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLON PREMIUM ARTESANAL 100% ALPACA - PICO LORO",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
-    "precio": 19500,
+    "precio": 20000,
     "imagen": "assets/images/bombillon-alpaca-premium-loro.png",
     "descripcion": "Exclusivo bombillón artesanal fabricado íntegramente en alpaca con pico en curva pronunciada (pico de loro) y detalles florales cincelados a mano.",
     "destacado": false,
@@ -599,7 +599,7 @@ const PRODUCTOS = [
     "nombre": "MESA MATERA VALIJA 2 EN 1",
     "categoria": "materas",
     "subcategoria": "madera",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/mesa-matera-valija.png",
     "descripcion": "Práctica mesa matera plegable fabricada en madera seleccionada que se convierte en valija para transportar tu termo, mate, yerbero y bombilla de manera segura y cómoda. Ideal para el parque, la plaza o tus viajes.",
     "destacado": true,
@@ -615,7 +615,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA 100% CUERO GRANDE REFORZADA",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/canasta-cuero-grande.png",
     "descripcion": "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
     "destacado": false,
@@ -631,7 +631,7 @@ const PRODUCTOS = [
     "nombre": "MEDIA CANASTA MATERA DE CUERO",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/media-canasta-cuero-negro.png",
     "descripcion": "Media canasta matera fabricada en cuero legítimo vacuno con costuras reforzadas a mano en tiento y mango rígido. Ideal para transportar termo y mate de manera segura y cómoda. Disponible en colores Negro o Marrón Suela.",
     "destacado": false,
@@ -645,12 +645,12 @@ const PRODUCTOS = [
       {
         "nombre": "NEGRA",
         "imagen": "assets/images/media-canasta-cuero-negro.png",
-        "precio": 42000
+        "precio": 40000
       },
       {
         "nombre": "MARRÓN SUELA",
         "imagen": "assets/images/media-canasta-cuero-suela.png",
-        "precio": 42000
+        "precio": 40000
       }
     ]
   },
@@ -659,7 +659,7 @@ const PRODUCTOS = [
     "nombre": "MEDIACANASTA PREMIUM DE PELO VACUNO COLORES SURTIDOS",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 48000,
+    "precio": 50000,
     "imagen": "assets/images/mediacanasta-pelo-vacuno.jpg",
     "descripcion": "Esta canasta viene con pelo natural, por lo cual presentan todas diferentes tonos y manchas, volviendo cada modelo único. En caso de querer un tono particular, una vez realizada la compra solicita foto de la misma a través de WhatsApp.",
     "destacado": true,
@@ -675,7 +675,7 @@ const PRODUCTOS = [
     "nombre": "SET DE YERBERO Y AZUCARERA NEGRO MATE",
     "categoria": "yerberos-azucareros",
     "subcategoria": "set",
-    "precio": 24000,
+    "precio": 25000,
     "imagen": "assets/images/set-yerbero-negro-mate.png",
     "descripcion": "Set de latas yerbera y azucarera con picos vertedores de plástico dosificadores de alta resistencia, revestidas en cuerina negra mate con costuras reforzadas.",
     "destacado": false,
@@ -691,7 +691,7 @@ const PRODUCTOS = [
     "nombre": "SET DE YERBERO Y AZUCARERA COLOR ACERO",
     "categoria": "yerberos-azucareros",
     "subcategoria": "set",
-    "precio": 24000,
+    "precio": 25000,
     "imagen": "assets/images/set-yerbero-acero.png",
     "descripcion": "Set de latas para yerba y azúcar con acabado color acero pulido, picos vertedores dosificadores superiores de alta resistencia.",
     "destacado": false,
@@ -707,7 +707,7 @@ const PRODUCTOS = [
     "nombre": "COSITO PARA EL MATE DE ACERO INOXIDABLE",
     "categoria": "accesorios",
     "subcategoria": "limpieza",
-    "precio": 9600,
+    "precio": 10000,
     "imagen": "assets/images/cosito-acero.jpg",
     "descripcion": "El accesorio ideal para vaciar la yerba del mate de manera rápida, limpia y sin desperdicios. Fabricado 100% en acero inoxidable de alta calidad, duradero y fácil de lavar.",
     "destacado": false,
@@ -722,7 +722,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL DE ALPACA CUERO REPUJADO MARRÓN",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/imperial-alpaca-repujado-marron.jpg",
     "descripcion": "Mate imperial premium fabricado con calabaza brasilera de alto espesor, forrado en cuero vacuno legítimo labrado con diseño repujado marrón y una hermosa virola de alpaca cincelada artesanalmente.",
     "destacado": false,
@@ -738,7 +738,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL PREMIUM LISO CHOCOLATE BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/imperial-premium-chocolate.jpg",
     "descripcion": "El mate definitivo. Cuenta con una virola de alpaca pulida a espejo con guarda trabajada, forrado en cuero liso premium color chocolate, base ancha de alpaca y cuatro delicadas pelotitas de bronce como soporte. Incluye bombilla pico de loro de acero inoxidable.",
     "destacado": true,
@@ -782,7 +782,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO NEGRO INTERIOR DE CALABAZA VIROLA ACERO BOCA ANCHA CON BOMBILLA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 27000,
+    "precio": 25000,
     "imagen": "assets/images/torpedo-negro-interior-de-calabaza-virola-acero-boca-ancha-con-bombilla.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -797,7 +797,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON DIJE DE BRONCE SOL ARGENTINO SOLDADO CON BOMBILLA DE REGALO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 46000,
+    "precio": 45000,
     "imagen": "assets/images/imperial-con-dije-de-bronce-sol-argentino-soldado-con-bombilla-de-regalo.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -812,7 +812,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO CRIOLLO, GUARDA DE ALPACA CINCELADA, INTERIOR CALABAZA CON BOMBILLA PICO LORO",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 52500,
+    "precio": 55000,
     "imagen": "assets/images/torpedo-criollo-guarda-de-alpaca-cincelada-interior-calabaza-con-bombilla-pico-loro.jpg",
     "descripcion": "Torpedo  criollo base de cuero, con diferentes diseños tallados, color negro con interior calabaza.\r\n\r\nGuarda de alpaca cincelada.\r\n\r\nIncluye bombilla pico loro de acero inoxidable con filtro /pala.",
     "destacado": false,
@@ -827,7 +827,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO DE ALPACA CINCELADA INTERIOR CALABAZA ANIMAL PRINT CON BOMBILLA DE REGALO",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 47000,
+    "precio": 45000,
     "imagen": "assets/images/torpedo-de-alpaca-cincelada-interior-calabaza-animal-print-con-bombilla-de-regalo.jpg",
     "descripcion": "Torpedo de cuero con interior calabaza, guarda de alpaca cincelada.\r\n\r\nReforzado con patas rígidas",
     "destacado": false,
@@ -842,7 +842,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL ESCUDO DE BRONCE - BOCA, GUARDA DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 50500,
+    "precio": 50000,
     "imagen": "assets/images/imperial-escudo-de-bronce-boca-guarda-de-alpaca.jpg",
     "descripcion": "Imperial interior calabaza con guarda de alpaca, con escudo en bronce de Boca soldado.\r\n\r\ncuero vacuno 100%",
     "destacado": false,
@@ -902,7 +902,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLON DE ALPACA \"CLASSIC\" CON PICO DE LORO",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
-    "precio": 15500,
+    "precio": 15000,
     "imagen": "assets/images/bombillon-de-alpaca-classic-con-pico-de-loro.jpeg",
     "descripcion": "Bombillon sin diseños en el caño. caño grueso y pala ancha de alpaca\r\n\r\nPico de loro de bronce.",
     "destacado": false,
@@ -932,7 +932,7 @@ const PRODUCTOS = [
     "nombre": "VASO QUENCHER DE 1.2L COLORES SURTIDOS",
     "categoria": "termos",
     "subcategoria": "vasos",
-    "precio": 27000,
+    "precio": 25000,
     "imagen": "assets/images/vaso-quencher-de-1-2l-colores-surtidos.jpeg",
     "descripcion": "TAPA ANTIVUELCO\r\n\r\nSORBETE DE PLASTICO\r\n\r\nCOLORES SURTIDOS",
     "destacado": false,
@@ -947,7 +947,7 @@ const PRODUCTOS = [
     "nombre": "BOTELLA FLIP DE 650ML COLORES SURTIDOS",
     "categoria": "termos",
     "subcategoria": "vasos",
-    "precio": 25500,
+    "precio": 25000,
     "imagen": "assets/images/botella-flip-de-650ml-colores-surtidos.jpeg",
     "descripcion": "PICO VERTEDOR\r\n\r\nTAPA ANTIVUELCO\r\n\r\nCOLORES SURTIDOS",
     "destacado": false,
@@ -962,7 +962,7 @@ const PRODUCTOS = [
     "nombre": "PORTA MATE DE ECO CUERO PARA LA PALANCA DE CAMBIO",
     "categoria": "accesorios",
     "subcategoria": "soporte",
-    "precio": 7000,
+    "precio": 5000,
     "imagen": "assets/images/porta-mate-premium-para-la-palanca-de-cambio-reforzado-doble-costura.jpeg",
     "descripcion": "porta mate de eco cuero. idéntico a los de cuero.",
     "destacado": false,
@@ -977,7 +977,7 @@ const PRODUCTOS = [
     "nombre": "PICO SYSTEM BLANCO",
     "categoria": "accesorios",
     "subcategoria": "repuesto",
-    "precio": 4800,
+    "precio": 5000,
     "imagen": "assets/images/pico-system-blanco.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -992,7 +992,7 @@ const PRODUCTOS = [
     "nombre": "PORTA MATE DE CUERO VACUNO PARA PALANCA DE CAMBIO(BORRAVINO Y NEGRO)",
     "categoria": "accesorios",
     "subcategoria": "soporte",
-    "precio": 16500,
+    "precio": 15000,
     "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
     "descripcion": "Porta mate artesanales de cuero\r\n\r\n10 cm de diámetro",
     "destacado": false,
@@ -1005,12 +1005,12 @@ const PRODUCTOS = [
       {
         "nombre": "BORRAVINO",
         "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
-        "precio": 16500
+        "precio": 15000
       },
       {
         "nombre": "NEGRO",
         "imagen": "assets/images/porta-mate-de-cuero-vacuno-100-para-la-palanca-de-cambio-premium.jpeg",
-        "precio": 16500
+        "precio": 15000
       }
     ]
   },
@@ -1019,7 +1019,7 @@ const PRODUCTOS = [
     "nombre": "MOCHILA/BOLSO MATERO + CHAULATA  CON DETALLES EN SUELA",
     "categoria": "bolsos",
     "subcategoria": "mochila",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
     "imagenes": [
       "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
@@ -1038,7 +1038,7 @@ const PRODUCTOS = [
     "nombre": "BOLSO MATERO CUERINA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
     "descripcion": "Bolsito de tela con chaulata.\r\n\r\nApto para termo stanley de 1,4",
     "destacado": false,
@@ -1053,7 +1053,7 @@ const PRODUCTOS = [
     "nombre": "BOLSO MATERO TELA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia.jpeg",
     "descripcion": "Bolsito de tela con chaulata",
     "destacado": false,
@@ -1068,7 +1068,7 @@ const PRODUCTOS = [
     "nombre": "MOCHILA / BOLSO MATERO ANIMAL PRINT CON CHAULATAS",
     "categoria": "bolsos",
     "subcategoria": "mochila",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/mochila-bolso-matero-animal-print-con-chaulatas.jpeg",
     "descripcion": "Incluye mochila/bolso color animal print con yerbero y azucarero haciendo juego.",
     "destacado": false,
@@ -1083,7 +1083,7 @@ const PRODUCTOS = [
     "nombre": "CANASTAS DE CUERO CON ESCUDO DE FUTBOL COLOR NEGRO",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/canastas-de-cuero-con-escudo-de-futbol-color-negro.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -1098,7 +1098,7 @@ const PRODUCTOS = [
     "nombre": "CAMIONERO CRIOLLO CALABAZA LAQUEADA VIROLA ACERO + BOMBILLA DE ACERO",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 32000,
+    "precio": 30000,
     "imagen": "assets/images/camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -1113,7 +1113,7 @@ const PRODUCTOS = [
     "nombre": "CAMIONERO ALGARROBO GRABADO PREDISEÑADOS + BOMBILLA",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 24000,
+    "precio": 25000,
     "imagen": "assets/images/camionero-algarrobo-grabado-predisenados-bombilla.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -1128,7 +1128,7 @@ const PRODUCTOS = [
     "nombre": "MATEPA GRUESA DE ACERO CON SUJETADOR",
     "categoria": "accesorios",
     "subcategoria": "repuesto",
-    "precio": 11000,
+    "precio": 10000,
     "imagen": "assets/images/accesorios-matepa-acero.png",
     "descripcion": "Tapa mate o matepa gruesa fabricada en acero inoxidable con sujetador incorporado. Ideal para cebar sin salpicaduras y mantener el calor.",
     "destacado": false,
@@ -1143,7 +1143,7 @@ const PRODUCTOS = [
     "nombre": "LUZ MATE COLORES SURTIDOS",
     "categoria": "accesorios",
     "subcategoria": "novedades",
-    "precio": 3600,
+    "precio": 5000,
     "imagen": "assets/images/accesorios-luz-mate.png",
     "descripcion": "Práctica luz LED para bombilla de mate. Ideal para cebar de noche o en viajes. Viene con pila incluida y gancho sujetador universal.",
     "destacado": false,
@@ -1158,7 +1158,7 @@ const PRODUCTOS = [
     "nombre": "MESA PLEGABLE DE MADERA",
     "categoria": "accesorios",
     "subcategoria": "combos",
-    "precio": 32500,
+    "precio": 35000,
     "imagen": "assets/images/accesorios-mesa-madera.png",
     "descripcion": "Mesa matera plegable de madera de pino seleccionado con posa-termos y posa-mates integrados. Muy liviana y fácil de transportar.",
     "destacado": false,
@@ -1173,7 +1173,7 @@ const PRODUCTOS = [
     "nombre": "VASO FERNETERO LISO NEGRO",
     "categoria": "termos",
     "subcategoria": "vasos",
-    "precio": 5500,
+    "precio": 5000,
     "imagen": "assets/images/termos-vaso-fernetero.png",
     "descripcion": "Vaso térmico fernetero de acero inoxidable con pintura texturada en negro mate. Excelente capacidad y aislamiento térmico doble pared para mantener tu bebida fría por horas.",
     "destacado": false,
@@ -1187,7 +1187,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-edicion-especial-1kg",
     "nombre": "YERBA MATE CANARIAS EDICIÓN ESPECIAL",
     "descripcion": "Disfrutá del sabor auténtico de la Yerba Mate Canarias Edición Especial. Una selección premium importada desde Uruguay, ideal para cebadas de larga duración, con sabor persistente y equilibrado. Edición limitada elegida por El Buen Cebar.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-canarias-edicion-especial.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1201,12 +1201,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-edicion-especial.png",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-edicion-especial.png",
-        "precio": 14000
+        "precio": 15000
       }
     ]
   },
@@ -1214,7 +1214,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-jengibre-te-verde",
     "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE",
     "descripcion": "La Yerba Mate Canarias con Té Verde y Jengibre combina el sabor clásico del mate con las propiedades del té verde y el toque picante del jengibre. Una mezcla refrescante y energizante, perfecta para quienes buscan algo diferente.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1228,12 +1228,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-jengibre-te-verde-1kg.jpg",
-        "precio": 12000
+        "precio": 10000
       }
     ]
   },
@@ -1241,7 +1241,7 @@ const PRODUCTOS = [
     "id": "yerba-baldo-tradicional-500g",
     "nombre": "YERBA MATE BALDO TRADICIONAL",
     "descripcion": "Yerba Mate Baldo Tradicional, una de las marcas más reconocidas de Uruguay. De hoja gruesa, con palo, de sabor robusto y duradero. Ideal para los amantes del mate clásico.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1255,17 +1255,17 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-baldo-tradicional-1kg.png",
-        "precio": 17000
+        "precio": 15000
       },
       {
         "nombre": "5 KG",
         "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
-        "precio": 43000
+        "precio": 45000
       }
     ]
   },
@@ -1273,7 +1273,7 @@ const PRODUCTOS = [
     "id": "yerba-pindare-1kg",
     "nombre": "YERBA PINDARE",
     "descripcion": "Yerba Mate Pindare, una yerba brasileña de alta calidad con sabor intenso y particular. Hojas finas, buena duración y aroma característico. Una elección diferente para el paladar exigente.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-pindare-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1287,12 +1287,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 11500
+        "precio": 10000
       }
     ]
   },
@@ -1300,7 +1300,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-tradicional",
     "nombre": "YERBA MATE REI VERDE TRADICIONAL",
     "descripcion": "Yerba Mate Rei Verde Tradicional, clásica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duración de cebada. Perfecta para el consumo diario.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1314,12 +1314,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-tradicional-1kg.jpg",
-        "precio": 8000
+        "precio": 10000
       }
     ]
   },
@@ -1327,7 +1327,7 @@ const PRODUCTOS = [
     "id": "yerba-verdecita-sin-palo-1kg",
     "nombre": "YERBA MATE VERDE CITA SIN PALO",
     "descripcion": "Yerba Mate Verde Cita Sin Palo, una yerba argentina de primer nivel. Sin palo para una infusión más limpia, con sabor fuerte y persistente. Muy apreciada por los cebadores exigentes.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1341,12 +1341,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 11500
+        "precio": 10000
       }
     ]
   },
@@ -1354,7 +1354,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-serena",
     "nombre": "YERBA MATE CANARIAS SERENA",
     "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-canarias-serena-500g.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1368,12 +1368,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-serena-500g.png",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-serena-1kg.jpg",
-        "precio": 12000
+        "precio": 10000
       }
     ]
   },
@@ -1381,7 +1381,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-premium",
     "nombre": "YERBA MATE REI VERDE PREMIUM",
     "descripcion": "Yerba Mate Rei Verde Premium, la versión de mayor calidad de la marca uruguaya. Hojas más finas y seleccionadas para una infusión excepcional y duradera.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1395,12 +1395,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-premium-1kg.jpg",
-        "precio": 12000
+        "precio": 10000
       }
     ]
   },
@@ -1408,7 +1408,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-tradicional",
     "nombre": "YERBA MATE CANARIAS TRADICIONAL",
     "descripcion": "Yerba Mate Canarias Tradicional, la marca de yerba número uno de Uruguay. Compuesta principalmente por hojas seleccionadas de sabor intenso y duradero, libre de palo. Perfecta para cebar mates cargados de sabor.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1422,12 +1422,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 11000
+        "precio": 10000
       }
     ]
   },
@@ -1435,7 +1435,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-clasica-blanco-500g",
     "nombre": "YERBA REI VERDE CLÁSICA PAQUETE BLANCO 500G",
     "descripcion": "Yerba Mate Rei Verde Clásica paquete blanco 500g. Molienda tradicional uruguaya de sabor suave y persistente.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1449,7 +1449,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
-        "precio": 6500
+        "precio": 5000
       }
     ]
   },
@@ -1457,7 +1457,7 @@ const PRODUCTOS = [
     "id": "yerba-barao-500g",
     "nombre": "YERBA BARAO 500G",
     "descripcion": "Yerba Mate Barão 500g importada de Brasil. Sabor intenso y molienda fina de alta calidad.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-barao-500g.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1471,7 +1471,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-barao-500g.jpeg",
-        "precio": 6500
+        "precio": 5000
       }
     ]
   },
@@ -1479,7 +1479,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-coco-500g",
     "nombre": "YERBA SARA EDICIÓN LIMITADA COCO 500G",
     "descripcion": "Yerba Mate Sara Edición Limitada sabor Coco en presentación de 500g. Combinación de yerba uruguaya con toque de coco.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1493,7 +1493,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
-        "precio": 6500
+        "precio": 5000
       }
     ]
   },
@@ -1501,7 +1501,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-clasica-blanco-1kg",
     "nombre": "YERBA REI VERDE CLÁSICA PAQUETE BLANCO 1KG",
     "descripcion": "Yerba Mate Rei Verde Clásica paquete blanco 1kg. Molienda tradicional uruguaya de sabor rendidor.",
-    "precio": 10500,
+    "precio": 10000,
     "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1515,7 +1515,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
-        "precio": 17000
+        "precio": 15000
       }
     ]
   },
@@ -1523,7 +1523,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-extra-suave",
     "nombre": "YERBA MATE SARA EXTRA SUAVE",
     "descripcion": "Yerba Mate Sara Extra Suave importada de Uruguay. Sabor delicado y muy amable al paladar.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1537,12 +1537,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
-        "precio": 12000
+        "precio": 10000
       }
     ]
   },
@@ -1550,7 +1550,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-tradicional",
     "nombre": "YERBA MATE SARA TRADICIONAL",
     "descripcion": "Yerba Mate Sara Tradicional paquete rojo. La clásica yerba uruguaya de cuerpo intenso y carácter persistente.",
-    "precio": 6500,
+    "precio": 5000,
     "imagen": "assets/images/yerba-sara-tradicional.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1564,12 +1564,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-sara-tradicional.jpeg",
-        "precio": 6500
+        "precio": 5000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-sara-tradicional.jpeg",
-        "precio": 12000
+        "precio": 10000
       }
     ]
   },
@@ -1578,7 +1578,7 @@ const PRODUCTOS = [
     "nombre": "MATE PERITA DE ALGARROBO BARNIZADO PREMIUM GRANDE",
     "categoria": "mates",
     "subcategoria": "madera",
-    "precio": 6600,
+    "precio": 5000,
     "imagen": "assets/images/mate-perita-de-algarrobo-barnizado-premium-grande.jpg",
     "descripcion": "Mate perita de algarrobo macizo barnizado de gran tamaño. Diseño ergonómico muy cómodo de agarrar y duradero.",
     "destacado": true,
@@ -1593,7 +1593,7 @@ const PRODUCTOS = [
     "nombre": "MATE RANCHERO ARTESANAL PINTADO A MANO - MANCHAS ROSAS",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 36000,
+    "precio": 35000,
     "imagen": "assets/images/mate-ranchero-moldeado-y-pintado-a-mano-trabajo-todo-artesanal-manchas-rosas.jpeg",
     "descripcion": "Mate ranchero moldeado y pintado artesanalmente a mano con exclusivo diseño de manchas rosas y virola de alpaca.",
     "destacado": true,
@@ -1668,7 +1668,7 @@ const PRODUCTOS = [
     "nombre": "CAJA PRESENTACIÓN GRABADA FELIZ DÍA DE LA MADRE",
     "categoria": "accesorios",
     "subcategoria": "cajas",
-    "precio": 14500,
+    "precio": 15000,
     "imagen": "assets/images/caja-presentacion-grabada-feliz-dia-de-la-madre-para-mate-y-bombilla-con-sujetador-y-tela-de-pana.jpg",
     "descripcion": "Exclusiva caja de madera lustrada grabada con temática Día de la Madre, interior forrado en tela de pana con sujetadores para mate y bombilla.",
     "destacado": true,
@@ -1698,7 +1698,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL NEGRO GRABADO DÍA DE LA MADRE «TE AMO MAMÁ»",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/imperial-fleje-y-virola-de-acero-interior-calabaza-color-negro-grabado-d-a-de-la-madre.jpeg",
     "descripcion": "Edición especial Día de la Madre: Mate imperial con virola de acero inoxidable grabada a láser con la frase 'Te amo Mamá - Que tus mates sean eternos', fleje reforzado y forrado en cuero vacuno negro mate.",
     "destacado": true,
@@ -1773,7 +1773,7 @@ const PRODUCTOS = [
     "nombre": "LATA YERBERA BALDO 500G CON PICO VERTEDOR Y VISOR LATERAL",
     "categoria": "accesorios",
     "subcategoria": "yerberos",
-    "precio": 36000,
+    "precio": 35000,
     "imagen": "assets/images/lata-yerbera-baldo-500gr-con-pico-vertedor-y-visor-lateral-cierre-herm-tico.jpeg",
     "descripcion": "Lata yerbera oficial Baldo de 500g con pico vertedor plástico, visor de nivel transparente lateral y tapa de cierre hermético.",
     "destacado": true,
@@ -1803,7 +1803,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLÓN COPA DEL MUNDO ALPACA Y BRONCE",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
-    "precio": 24000,
+    "precio": 25000,
     "imagen": "assets/images/bombillon-copa-del-mundo-copa-grande-de-alpaca-y-bronce.jpeg",
     "descripcion": "Exclusivo bombillón de alpaca premium de 19 cm con dije esculpido de la Copa del Mundo en bronce macizo y filtro tipo cuchara de alta succión.",
     "destacado": true,
@@ -1818,7 +1818,7 @@ const PRODUCTOS = [
     "nombre": "BOTELLA ANTIVUELCO NEGRA GRABADA LISTA DE PENALES INGLATERRA",
     "categoria": "termos",
     "subcategoria": "botellas",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/botella-antivuelco-grabada-lista-de-penales-inglatera-color-negro.jpeg",
     "descripcion": "Botella térmica deportiva antivuelco de acero inoxidable grabada con la histórica lista de penales contra Inglaterra en el Mundial 1998.",
     "destacado": true,
@@ -1833,7 +1833,7 @@ const PRODUCTOS = [
     "nombre": "MATE CAMIONERO DE ALGARROBO GRABADO SELECCIÓN ARGENTINA",
     "categoria": "mates",
     "subcategoria": "madera",
-    "precio": 18000,
+    "precio": 20000,
     "imagen": "assets/images/camionero-algarrobo-grabado-inglaterra-la-concha-de-tu-madre.jpeg",
     "descripcion": "Mate camionero de algarrobo macizo pulido con virola de acero inoxidable grabada con motivos patrios de la Selección Argentina.",
     "destacado": true,
@@ -1848,7 +1848,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL FULL ALPACA BANDERA ARGENTINA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/imperial-premium-full-alpaca-bandera-de-argentina-celeste-y-blanco.jpg",
     "descripcion": "Edición especial de lujo: Mate imperial forrado en cuero de primera con virola y guarda completa cincelada en alpaca con diseño patriótico celeste y blanco.",
     "destacado": true,
@@ -1863,7 +1863,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL CUERO VAQUITA BLANCO Y NEGRO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/mate-imperial-cuero-vaquita-blanco-y-negro-guarda-de-alpaca-calabaza-tama-o-mediano.jpg",
     "descripcion": "Exclusivo mate imperial forrado en cuero vacuno natural con pelo estilo vaquita (blanco y negro) y virola cincelada de alpaca.",
     "destacado": true,
@@ -1908,7 +1908,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA DE CUERO AZUL AFA Y SELECCIÓN",
     "categoria": "materas",
     "subcategoria": "cuero",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/canasta-de-100-cuero-azul-con-logos-de-afa-y-escudo-premium-con-division.jpeg",
     "descripcion": "Canasta matera fabricada 100% en cuero legítimo color azul marino con escudos y logos gravados de AFA y la Selección Argentina, con división interior.",
     "destacado": true,
@@ -1923,7 +1923,7 @@ const PRODUCTOS = [
     "nombre": "SET DE ASADO CERRADO VALIJITA (PLATO, CUCHILLO Y TENEDOR)",
     "categoria": "accesorios",
     "subcategoria": "asado",
-    "precio": 21500,
+    "precio": 20000,
     "imagen": "assets/images/set-de-asado-cerrado-valijita-plato-cuchillo-y-tenedor.jpeg",
     "descripcion": "Estuche valijita matera/asado de cuerina con cierre que incluye plato de madera dura de alparrobo o eucalipto, cuchillo y tenedor de acero inox.",
     "destacado": true,
@@ -1938,7 +1938,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL DE ALGARROBO GRABADO EL MEJOR PAPÁ DEL MUNDO",
     "categoria": "mates",
     "subcategoria": "madera",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/imperial-de-algarrobo-grabado-el-mejor-papa-del-mundo-que-tus-mates-sean-eternos-guarda-de-alpaca.jpeg",
     "descripcion": "Mate imperial de algarrobo macizo con virola de acero inoxidable grabada a láser con la frase 'El mejor papá del mundo - Que tus mates sean eternos'.",
     "destacado": true,
@@ -1998,7 +1998,7 @@ const PRODUCTOS = [
     "nombre": "SET DE CUBIERTOS ASADO ESTILO ALEMANIA ROSMANIA - 12 PIEZAS",
     "categoria": "accesorios",
     "subcategoria": "asado",
-    "precio": 36000,
+    "precio": 35000,
     "imagen": "assets/images/set-de-cubiertos-asado-estilo-alemania-rosmania-12-piezas.jpeg",
     "descripcion": "Juego completo de cubiertos para asado de 12 piezas (6 cuchillos y 6 tenedores) de acero inoxidable premium con mango de madera estilo Alemania.",
     "destacado": true,
@@ -2013,7 +2013,7 @@ const PRODUCTOS = [
     "nombre": "BOMBILLÓN RECTO PREMIUM PICO DE ALPACA Y BRONCE",
     "categoria": "bombillas",
     "subcategoria": "alpaca",
-    "precio": 26500,
+    "precio": 25000,
     "imagen": "assets/images/bombillon-recto-premium-pico-de-alpaca-ca-o-cincelado-doble-dije-de-bronce-pala-ancha-grande-cuchara.jpg",
     "descripcion": "Bombillón recto artesanal de 19 cm en alpaca maciza con caño cincelado, doble dije de bronce esculpido y pala ancha filtro cuchara.",
     "destacado": true,
@@ -2028,7 +2028,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA DE CUERO AZUL BOCA JUNIORS",
     "categoria": "materas",
     "subcategoria": "cuero",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/canasta-de-100-cuero-azul-con-logos-de-boca-juniors-y-escudo-premium-con-division.jpg",
     "descripcion": "Canasta matera 100% cuero vacuno legítimo azul marino con escudos y logos gravados de Boca Juniors y división interior rígida.",
     "destacado": true,
@@ -2043,7 +2043,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA CELESTE AFA ARGENTINA CUERO REFORZADO",
     "categoria": "materas",
     "subcategoria": "cuero",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/canasta-afa-argentina-color-celeste-cuero-grueso-reforzado-y-doble-costura.jpeg",
     "descripcion": "Canasta matera de cuero vacuno grueso en tono celeste patria con logos de AFA, doble costura y manija reforzada con remaches.",
     "destacado": true,
@@ -2058,7 +2058,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA DE CUERO VACUNO CON PELO NATURAL",
     "categoria": "materas",
     "subcategoria": "cuero",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/canasta-de-cuero-con-pelos-premium-con-division.jpeg",
     "descripcion": "Exclusiva canasta matera artesanal confeccionada en cuero vacuno natural con pelo, manchas surtidas únicas y división interior.",
     "destacado": true,
@@ -2073,7 +2073,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA CUERO CROCO NEGRO DOBLE COSTURA",
     "categoria": "materas",
     "subcategoria": "ecocuero",
-    "precio": 19800,
+    "precio": 20000,
     "imagen": "assets/images/canasta-de-cuerina-color-negro-cuero-croco-doble-costura-premium.jpeg",
     "descripcion": "Canasta matera rígida en ecocuero textura croco negro con doble costura reforzada, manija de agarre ergonómica y división interna.",
     "destacado": true,
@@ -2088,7 +2088,7 @@ const PRODUCTOS = [
     "nombre": "BOLSO MATERO BORDÓ RIVER PLATE CON SUJETADOR DE TERMO",
     "categoria": "bolsos",
     "subcategoria": "tela",
-    "precio": 21500,
+    "precio": 20000,
     "imagen": "assets/images/bolso-matero-color-bord-con-logo-de-river.jpeg",
     "descripcion": "Bolso matero reforzado en tela impermeable bordó con el escudo oficial de River Plate bordado y correa regulable para colgar.",
     "destacado": true,
@@ -2103,7 +2103,7 @@ const PRODUCTOS = [
     "nombre": "COMBO BOLSO MATERO AZUL BOCA JUNIORS + YERBERO + AZUCARERO",
     "categoria": "combos",
     "subcategoria": "sets",
-    "precio": 24000,
+    "precio": 25000,
     "imagen": "assets/images/combo-bolso-clasico-tela-matero-grande-con-sujetador-para-termo-yerbero-azucarero-color-azul-con-escudo-de-boca-juniors-tela.jpg",
     "descripcion": "Combo completo x3 piezas: bolso matero azul xeneize con escudo de Boca Juniors, lata yerbera y lata azucarera haciendo juego.",
     "destacado": true,
@@ -2118,7 +2118,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA DE CUERINA ANIMAL PRINT CON DIVISIÓN",
     "categoria": "materas",
     "subcategoria": "ecocuero",
-    "precio": 21500,
+    "precio": 20000,
     "imagen": "assets/images/canasta-de-cuerina-animal-print-con-division-en-el-medio.jpeg",
     "descripcion": "Canasta matera confeccionada en ecocuero estampado animal print jaguar/leopardo con división central reforzada.",
     "destacado": true,
@@ -2133,7 +2133,7 @@ const PRODUCTOS = [
     "nombre": "MEDIA CANASTA 100% CUERO VACUNO MARRÓN",
     "categoria": "materas",
     "subcategoria": "cuero",
-    "precio": 36000,
+    "precio": 35000,
     "imagen": "assets/images/media-canasta-100-cuero-marron.jpeg",
     "descripcion": "Media canasta matera compacta confeccionada en 100% cuero vacuno legítimo color marrón chocolate con manija ergonómica.",
     "destacado": true,
@@ -2148,7 +2148,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA CUADRADA MANGO RÍGIDO ANIMAL PRINT",
     "categoria": "materas",
     "subcategoria": "ecocuero",
-    "precio": 18000,
+    "precio": 20000,
     "imagen": "assets/images/canasta-cuadrada-con-mango-r-gido-premium-animal-print.jpeg",
     "descripcion": "Canasta matera rígida de formato cuadrado en ecocuero animal print con manija de agarre rígida estructural de madera y aluminio.",
     "destacado": true,
@@ -2163,7 +2163,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA NEGRA MANGO RÍGIDO GAJOS PELOTA",
     "categoria": "materas",
     "subcategoria": "ecocuero",
-    "precio": 19800,
+    "precio": 20000,
     "imagen": "assets/images/canasta-mango-r-gido-color-negro-con-gajos-pelota.jpeg",
     "descripcion": "Canasta matera en ecocuero negro texturado estilo gajos de pelota de fútbol con manija rígida arqueada.",
     "destacado": true,
@@ -2178,7 +2178,7 @@ const PRODUCTOS = [
     "nombre": "CANASTA MATERA DE CUERINA ROSA DOBLE COSTURA",
     "categoria": "materas",
     "subcategoria": "ecocuero",
-    "precio": 19800,
+    "precio": 20000,
     "imagen": "assets/images/canasta-de-cuerina-color-rosa-doble-costura-premium.jpeg",
     "descripcion": "Canasta matera en ecocuero color rosa pastel con doble costura decorativa reforzada e hilos a tono.",
     "destacado": true,
