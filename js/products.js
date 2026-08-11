@@ -8,7 +8,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL PREMIUM BOCA ANCHA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 42000,
+    "precio": 30000,
     "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
     "descripcion": "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
     "destacado": true,
@@ -21,17 +21,17 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
-        "precio": 42000
+        "precio": 30000
       },
       {
         "nombre": "CUERO MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-marron.png",
-        "precio": 42000
+        "precio": 30000
       },
       {
         "nombre": "CUERO CRUDO",
         "imagen": "assets/images/mate-imperial-boca-ancha-crudo.png",
-        "precio": 42000
+        "precio": 30000
       }
     ]
   },
@@ -40,7 +40,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL CROCO Y REPUJADO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 42000,
+    "precio": 40000,
     "imagen": "assets/images/mate-imperial-croco-negro.png",
     "descripcion": "Una selección exclusiva de mates imperiales premium con texturas únicas. Podés elegir entre el cuero vacuno grabado estilo cocodrilo o el diseño repujado temático de Argentina. Piezas terminadas a mano con virola de alpaca cincelada.",
     "destacado": true,
@@ -54,22 +54,22 @@ const PRODUCTOS = [
       {
         "nombre": "IMPERIAL CUERO CROCO NEGRO",
         "imagen": "assets/images/mate-imperial-croco-negro.png",
-        "precio": 42000
+        "precio": 40000
       },
       {
         "nombre": "IMPERIAL CUERO CROCO MARRON",
         "imagen": "assets/images/mate-imperial-croco-marron.png",
-        "precio": 42000
+        "precio": 40000
       },
       {
         "nombre": "IMPERIAL ARGENTINA CUERO REPUJADO NEGRO",
         "imagen": "assets/images/mate-imperial-repujado-negro.png",
-        "precio": 42000
+        "precio": 40000
       },
       {
         "nombre": "IMPERIAL CUERO CROCO ROSA",
         "imagen": "assets/images/mate-imperial-croco-rosa.png",
-        "precio": 42000
+        "precio": 40000
       }
     ]
   },
@@ -78,7 +78,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 65000,
+    "precio": 40000,
     "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
     "descripcion": "Nuestra mejor selección de mates imperiales con base de alpaca trabajada artesanalmente. Podés elegir entre cuero marrón repujado pelota, cuero negro liso, bases de alpaca calada (negro o marrón) o el exclusivo cuero labrado rosa con grabado 'Feliz Día Mamá'.",
     "destacado": true,
@@ -92,27 +92,27 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO MARRON REPUJADO PELOTA",
         "imagen": "assets/images/mate-imperial-base-alpaca-marron.png",
-        "precio": 65000
+        "precio": 40000
       },
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-base-alpaca-negro.png",
-        "precio": 65000
+        "precio": 40000
       },
       {
         "nombre": "CON BASE DE ALPACA CALADA NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-negro.png",
-        "precio": 65000
+        "precio": 40000
       },
       {
         "nombre": "CON BASE DE ALPACA CALADA MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-calada-marron.png",
-        "precio": 65000
+        "precio": 40000
       },
       {
         "nombre": "CUERO LABRADO ROSA FELIZ DIA MAMA",
         "imagen": "assets/images/mate-imperial-labrado-rosa-mama.png",
-        "precio": 65000
+        "precio": 40000
       }
     ]
   },
@@ -121,7 +121,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BOTITAS DE ALPACA MARRON LISO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 65000,
+    "precio": 50000,
     "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
     "descripcion": "Un diseño sumamente distinguido y tradicional. Este mate imperial de cuero marrón liso cuenta con cuatro patas reforzadas recubiertas con detalles ornamentales de alpaca (botitas), brindándole una presencia e imponencia únicas en la mesa.",
     "destacado": true,
@@ -135,7 +135,7 @@ const PRODUCTOS = [
       {
         "nombre": "MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-botitas-alpaca.png",
-        "precio": 65000
+        "precio": 50000
       }
     ]
   },
@@ -144,7 +144,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CON BASE DE ALPACA Y PELOTAS",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 65000,
+    "precio": 45000,
     "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
     "descripcion": "Un diseño sumamente llamativo y original. Este mate imperial cuenta con una base de alpaca con detalles esféricos de bronce (pelotitas) en la base de las patas. Disponible en cuero negro liso, cuero marrón o en textura animal print con pelo.",
     "destacado": true,
@@ -158,17 +158,17 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-negro.png",
-        "precio": 65000
+        "precio": 45000
       },
       {
         "nombre": "CUERO MARRON",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-marron.png",
-        "precio": 65000
+        "precio": 45000
       },
       {
         "nombre": "ANIMAL PRINT",
         "imagen": "assets/images/mate-imperial-base-alpaca-pelotas-animal.png",
-        "precio": 65000
+        "precio": 45000
       }
     ]
   },
@@ -177,7 +177,7 @@ const PRODUCTOS = [
     "nombre": "MATE IMPERIAL DE ALGARROBO CON VIROLA DE ALPACA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 65000,
+    "precio": 35000,
     "imagen": "assets/images/mate-imperial-algarrobo.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca y base firme.",
     "destacado": false,
@@ -193,7 +193,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL COLOR AZUL CON BASE DE PELOTAS DE BRONCE",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 65000,
+    "precio": 50000,
     "imagen": "assets/images/imperial-azul-pelotas-bronce.png",
     "descripcion": "Mate Imperial de cuero teñido en azul profundo con base de pelotas metálicas y virola de alpaca cincelada. Una pieza de diseño única.",
     "destacado": false,
@@ -209,7 +209,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL ANIMAL PRINT CALABAZA AHUECADA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 65000,
+    "precio": 45000,
     "imagen": "assets/images/imperial-animal-print-calabaza.png",
     "descripcion": "Exclusivo mate Imperial con forrado en cuero de pelo natural con diseño Animal Print y virola de alpaca cincelada.",
     "destacado": false,
@@ -225,7 +225,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL ROMA CON BASE COMPLETA CINCELADA",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 46000,
+    "precio": 35000,
     "imagen": "assets/images/imperial-roma-cincelado.png",
     "descripcion": "Mate Imperial modelo Roma, forrado en cuero con terminación repujada y base completa de alpaca totalmente cincelada.",
     "destacado": false,
@@ -241,7 +241,7 @@ const PRODUCTOS = [
     "nombre": "IMPERIAL CUERO JEAN CON INTERIOR DE ACERO",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 52500,
+    "precio": 40000,
     "imagen": "assets/images/imperial-cuero-jean.png",
     "descripcion": "Mate Imperial forrado en cuero con textura estilo jean de color azul e interior térmico de acero inoxidable. Higiénico y moderno.",
     "destacado": false,
@@ -257,7 +257,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO CON VIROLA DE ALPACA CALADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 52500,
+    "precio": 40000,
     "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
     "descripcion": "Un torpedo premium único en su tipo. Elaborado sobre calabaza brasilera de alto espesor, forrado en cuero vacuno con terminación repujada y costura cruzada a mano. Destaca su imponente virola de alpaca calada y cincelada con base de alpaca ancha.",
     "destacado": true,
@@ -271,12 +271,12 @@ const PRODUCTOS = [
       {
         "nombre": "NEGRO",
         "imagen": "assets/images/torpedo-alpaca-calada-negro.png",
-        "precio": 52500
+        "precio": 40000
       },
       {
         "nombre": "MARRÓN",
         "imagen": "assets/images/torpedo-alpaca-calada-marron.png",
-        "precio": 52500
+        "precio": 40000
       }
     ]
   },
@@ -285,7 +285,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO ALGARROBO CON VIROLA DE ALPACA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 46000,
+    "precio": 40000,
     "imagen": "assets/images/mate-torpedo-algarrobo-alpaca.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
     "destacado": false,
@@ -301,7 +301,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO DE ALGARROBO LAQUEADO VIROLA CINCELADA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 46000,
+    "precio": 40000,
     "imagen": "assets/images/mate-torpedo-algarrobo-laqueado.png",
     "descripcion": "Mate de algarrobo de exportación con terminación laqueada brillante, virola cincelada y base de apoyo de madera maciza.",
     "destacado": false,
@@ -317,7 +317,7 @@ const PRODUCTOS = [
     "nombre": "CAMIONERO DE ALGARROBO PREMIUM CON GUARDA DE ACERO",
     "categoria": "mates",
     "subcategoria": "camionero",
-    "precio": 46000,
+    "precio": 35000,
     "imagen": "assets/images/camionero-algarrobo-premium.png",
     "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
     "destacado": false,
@@ -333,7 +333,7 @@ const PRODUCTOS = [
     "nombre": "MATE TÉRMICO CON VUELO COLOR NEGRO",
     "categoria": "mates",
     "subcategoria": "termico",
-    "precio": 24000,
+    "precio": 20000,
     "imagen": "assets/images/mate-termico-stanley-negro.png",
     "descripcion": "Mate térmico fabricado en acero inoxidable de doble pared de vacío (tipo Stanley), con virola/vuelo superior. Mantiene la temperatura perfecta por horas y es súper higiénico.",
     "destacado": true,
@@ -349,7 +349,7 @@ const PRODUCTOS = [
     "nombre": "TORPEDO DE CUERO REPUJADO BORRAVINO CON BASE DE ALPACA",
     "categoria": "mates",
     "subcategoria": "torpedo",
-    "precio": 32500,
+    "precio": 30000,
     "imagen": "assets/images/torpedo-repujado-borravino.png",
     "descripcion": "Mate torpedo premium con interior de calabaza de gran grosor, forrado en cuero legítimo con trabajo repujado color borravino y una imponente virola de alpaca ancha con base de alpaca.",
     "destacado": false,
@@ -366,8 +366,8 @@ const PRODUCTOS = [
     "categoria": "bombillas",
     "subcategoria": "bombillon",
     "precio": 20000,
-    "imagen": "assets/images/bombillon-alpaca-cincelado.png",
-    "descripcion": "Bombillones de caño liso diseñados para mates de boca ancha y profundos. Disponibles en alpaca con caño cincelado o en acero inoxidable con formato pico de loro y pala grande.",
+    "imagen": "assets/images/bombillon-acero-pala.png",
+    "descripcion": "Bombillón de acero inoxidable con formato pico de loro y pala grande microperforada de alta capacidad de succión.",
     "destacado": true,
     "detalles": [
       "Caño de gran diámetro para un caudal óptimo",
@@ -376,11 +376,6 @@ const PRODUCTOS = [
       "Largo ideal de 20-21 cm para mates imperiales o camioneros"
     ],
     "variantes": [
-      {
-        "nombre": "ALPACA CON CAÑO CINCELADO",
-        "imagen": "assets/images/bombillon-alpaca-cincelado.png",
-        "precio": 20000
-      },
       {
         "nombre": "ACERO CON PICO DE LORO Y PALA GRANDE",
         "imagen": "assets/images/bombillon-acero-pala.png",
@@ -556,7 +551,7 @@ const PRODUCTOS = [
     "nombre": "TERMO GRABADO ARGENTINA 360",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 32000,
+    "precio": 35000,
     "imagen": "assets/images/termo-argentina-360.png",
     "descripcion": "Termo media manija de acero inoxidable de 1 litro con pintura texturada en negro mate. Cuenta con un exclusivo grabado láser de 360 grados temático de la Selección Argentina y motivos patrios.",
     "destacado": true,
@@ -572,7 +567,7 @@ const PRODUCTOS = [
     "nombre": "TERMO MEDIA MANIJA NEGRO TOTAL BLACK",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 30000,
+    "precio": 35000,
     "imagen": "assets/images/termo-media-manija-total-black.png",
     "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
     "destacado": false,
@@ -588,7 +583,7 @@ const PRODUCTOS = [
     "nombre": "TERMO SYSTEM 1L NEGRO CON MANIJA Y TAPAMATE",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 30000,
+    "precio": 35000,
     "imagen": "assets/images/termo-system-12-lts.png",
     "descripcion": "Termo de 1 litro con manija rígida lateral y tapón con sistema cebador hermético de alta precisión, incluye tapa que sirve como mate térmico.",
     "destacado": false,
@@ -893,7 +888,7 @@ const PRODUCTOS = [
     "nombre": "TERMOS MEDIA MANIJA ACERO",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 39000,
+    "precio": 35000,
     "imagen": "assets/images/termo-media-manija.jpg",
     "descripcion": "Termo media manija de 1 litro y de acero inoxidable.",
     "destacado": false,
@@ -908,7 +903,7 @@ const PRODUCTOS = [
     "nombre": "TERMO ORIGINAL LUMINOX LUMILAGRO 1 LITRO PICO CEBADOR CON CAJA",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 78000,
+    "precio": 35000,
     "imagen": "assets/images/termo-original-luminox-lumilagro-1-litro-pico-cebador-con-caja.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
@@ -938,7 +933,7 @@ const PRODUCTOS = [
     "nombre": "TERMO 1,2 LTS. PICO SYSTEM COLOR COBRE",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 39000,
+    "precio": 35000,
     "imagen": "assets/images/termo-12-lts-pico-system-color-cobre.jpeg",
     "descripcion": "termo color cobre con pico system y tapa para usar. omo mate.\r\n\r\n1,2 lts.",
     "destacado": false,
@@ -1208,7 +1203,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-edicion-especial-1kg",
     "nombre": "YERBA MATE CANARIAS EDICIÓN ESPECIAL",
     "descripcion": "Disfrutá del sabor auténtico de la Yerba Mate Canarias Edición Especial. Una selección premium importada desde Uruguay, ideal para cebadas de larga duración, con sabor persistente y equilibrado. Edición limitada elegida por El Buen Cebar.",
-    "precio": 8500,
+    "precio": 6500,
     "imagen": "assets/images/yerba-canarias-edicion-especial.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1222,7 +1217,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-edicion-especial.png",
-        "precio": 8500
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1235,7 +1230,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-jengibre-te-verde",
     "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE",
     "descripcion": "La Yerba Mate Canarias con Té Verde y Jengibre combina el sabor clásico del mate con las propiedades del té verde y el toque picante del jengibre. Una mezcla refrescante y energizante, perfecta para quienes buscan algo diferente.",
-    "precio": 7200,
+    "precio": 6500,
     "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1249,7 +1244,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
-        "precio": 7200
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1262,7 +1257,7 @@ const PRODUCTOS = [
     "id": "yerba-baldo-tradicional-500g",
     "nombre": "YERBA MATE BALDO TRADICIONAL",
     "descripcion": "Yerba Mate Baldo Tradicional, una de las marcas más reconocidas de Uruguay. De hoja gruesa, con palo, de sabor robusto y duradero. Ideal para los amantes del mate clásico.",
-    "precio": 10500,
+    "precio": 6500,
     "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1276,7 +1271,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
-        "precio": 10500
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1294,7 +1289,7 @@ const PRODUCTOS = [
     "id": "yerba-pindare-1kg",
     "nombre": "YERBA PINDARE",
     "descripcion": "Yerba Mate Pindare, una yerba brasileña de alta calidad con sabor intenso y particular. Hojas finas, buena duración y aroma característico. Una elección diferente para el paladar exigente.",
-    "precio": 7000,
+    "precio": 6500,
     "imagen": "assets/images/yerba-pindare-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1308,7 +1303,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 7000
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1321,7 +1316,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-tradicional",
     "nombre": "YERBA MATE REI VERDE TRADICIONAL",
     "descripcion": "Yerba Mate Rei Verde Tradicional, clásica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duración de cebada. Perfecta para el consumo diario.",
-    "precio": 4800,
+    "precio": 6500,
     "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1335,7 +1330,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
-        "precio": 4800
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1348,7 +1343,7 @@ const PRODUCTOS = [
     "id": "yerba-verdecita-sin-palo-1kg",
     "nombre": "YERBA MATE VERDE CITA SIN PALO",
     "descripcion": "Yerba Mate Verde Cita Sin Palo, una yerba argentina de primer nivel. Sin palo para una infusión más limpia, con sabor fuerte y persistente. Muy apreciada por los cebadores exigentes.",
-    "precio": 7000,
+    "precio": 6500,
     "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1362,7 +1357,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 7000
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1375,7 +1370,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-serena",
     "nombre": "YERBA MATE CANARIAS SERENA",
     "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
-    "precio": 7200,
+    "precio": 6500,
     "imagen": "assets/images/yerba-canarias-serena-500g.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1389,7 +1384,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-serena-500g.png",
-        "precio": 7200
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1402,7 +1397,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-premium",
     "nombre": "YERBA MATE REI VERDE PREMIUM",
     "descripcion": "Yerba Mate Rei Verde Premium, la versión de mayor calidad de la marca uruguaya. Hojas más finas y seleccionadas para una infusión excepcional y duradera.",
-    "precio": 7200,
+    "precio": 6500,
     "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1416,7 +1411,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
-        "precio": 7200
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1429,7 +1424,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-tradicional",
     "nombre": "YERBA MATE CANARIAS TRADICIONAL",
     "descripcion": "Yerba Mate Canarias Tradicional, la marca de yerba número uno de Uruguay. Compuesta principalmente por hojas seleccionadas de sabor intenso y duradero, libre de palo. Perfecta para cebar mates cargados de sabor.",
-    "precio": 6600,
+    "precio": 6500,
     "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1443,7 +1438,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 6600
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1456,7 +1451,7 @@ const PRODUCTOS = [
     "id": "yerba-rei-verde-clasica-blanco-500g",
     "nombre": "YERBA REI VERDE CLÁSICA PAQUETE BLANCO 500G",
     "descripcion": "Yerba Mate Rei Verde Clásica paquete blanco 500g. Molienda tradicional uruguaya de sabor suave y persistente.",
-    "precio": 6000,
+    "precio": 6500,
     "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1470,7 +1465,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
-        "precio": 6000
+        "precio": 6500
       }
     ]
   },
@@ -1478,7 +1473,7 @@ const PRODUCTOS = [
     "id": "yerba-barao-500g",
     "nombre": "YERBA BARAO 500G",
     "descripcion": "Yerba Mate Barão 500g importada de Brasil. Sabor intenso y molienda fina de alta calidad.",
-    "precio": 6000,
+    "precio": 6500,
     "imagen": "assets/images/yerba-barao-500g.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1492,7 +1487,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-barao-500g.jpeg",
-        "precio": 6000
+        "precio": 6500
       }
     ]
   },
@@ -1500,7 +1495,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-coco-500g",
     "nombre": "YERBA SARA EDICIÓN LIMITADA COCO 500G",
     "descripcion": "Yerba Mate Sara Edición Limitada sabor Coco en presentación de 500g. Combinación de yerba uruguaya con toque de coco.",
-    "precio": 7200,
+    "precio": 6500,
     "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1514,7 +1509,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
-        "precio": 7200
+        "precio": 6500
       }
     ]
   },
@@ -1544,7 +1539,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-extra-suave",
     "nombre": "YERBA MATE SARA EXTRA SUAVE",
     "descripcion": "Yerba Mate Sara Extra Suave importada de Uruguay. Sabor delicado y muy amable al paladar.",
-    "precio": 7200,
+    "precio": 6500,
     "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1558,7 +1553,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
-        "precio": 7200
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1571,7 +1566,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-tradicional",
     "nombre": "YERBA MATE SARA TRADICIONAL",
     "descripcion": "Yerba Mate Sara Tradicional paquete rojo. La clásica yerba uruguaya de cuerpo intenso y carácter persistente.",
-    "precio": 7200,
+    "precio": 6500,
     "imagen": "assets/images/yerba-sara-tradicional.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1585,7 +1580,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-sara-tradicional.jpeg",
-        "precio": 7200
+        "precio": 6500
       },
       {
         "nombre": "1 KG",
@@ -1779,7 +1774,7 @@ const PRODUCTOS = [
     "nombre": "TERMO MEDIA MANIJA NEGRO - GRABADO LISTA DE PENALES INGLATERRA",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 30000,
+    "precio": 35000,
     "imagen": "assets/images/termo-media-manija-negro-grabado-lista-de-penales-inglaterra.jpeg",
     "descripcion": "Termo media manija de acero inoxidable 1 Litro con acabado mate texturado negro y exclusivo grabado láser 360 de la histórica definición por penales contra Inglaterra.",
     "destacado": true,
@@ -2004,7 +1999,7 @@ const PRODUCTOS = [
     "nombre": "TERMO MEDIA MANIJA NEGRO - GRABADO CORAZÓN DE CAMPEÓN",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 30000,
+    "precio": 35000,
     "imagen": "assets/images/termo-media-manija-negro-grabado-coraz-n-de-campe-n.jpeg",
     "descripcion": "Termo media manija de acero inoxidable 1L texturado negro mate con grabado 360 del escudo de la Selección Argentina y las 3 estrellas 'Corazón de Campeón'.",
     "destacado": true,

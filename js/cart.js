@@ -38,10 +38,16 @@ function guardarCarrito() {
 }
 
 // Agrega un producto al carrito
-function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null) {
+function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null, skipUpsell = false) {
   // Buscar producto en la base de datos (PRODUCTOS está en products.js)
   const producto = PRODUCTOS.find(p => p.id === id);
   if (!producto) return;
+
+  // Interceptar si es un Mate y no viene de confirmación de Upsell
+  if (producto.categoria === "mates" && !skipUpsell) {
+    mostrarUpsellModal(id, cantidad, opcion, event);
+    return;
+  }
 
   // Lógica de animación Fly-to-Cart
   let delayDrawer = 0;
@@ -131,6 +137,139 @@ function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null) {
     }, delayDrawer);
   } else {
     abrirCarritoDrawer();
+  }
+}
+
+// MODAL ESTILO MC DONALD'S (CROSS-SELL / COMBO MATERO)
+function mostrarUpsellModal(mateId, cantidad = 1, opcion = "", originalEvent = null) {
+  const mate = PRODUCTOS.find(p => p.id === mateId);
+  if (!mate) return;
+
+  let modalOverlay = document.getElementById("upsell-modal-overlay");
+  if (!modalOverlay) {
+    modalOverlay = document.createElement("div");
+    modalOverlay.id = "upsell-modal-overlay";
+    modalOverlay.className = "upsell-modal-overlay";
+    document.body.appendChild(modalOverlay);
+  }
+
+  const precioMate = mate.precio;
+  const precioCaja = 12500;
+  const precioBombilla = 7500;
+
+  modalOverlay.innerHTML = `
+    <div class="upsell-modal-card">
+      <button class="upsell-modal-close" onclick="cerrarUpsellModal()">&times;</button>
+      
+      <div class="upsell-badge">
+        ✨ PROMO COMBO MATERO COMPLETO
+      </div>
+      
+      <h3 class="upsell-title">¿Querés armar tu combo como en McDonald's?</h3>
+      <p class="upsell-subtitle">Llevate tu mate equipado con caja de regalo o bombilla a precio especial</p>
+      
+      <div class="upsell-product-preview">
+        <img src="${mate.imagen}" alt="${mate.nombre}">
+        <div class="upsell-product-info">
+          <div class="upsell-product-name">${mate.nombre} ${opcion ? `(${opcion})` : ''}</div>
+          <div class="upsell-product-price">$${precioMate.toLocaleString('es-AR')}</div>
+        </div>
+      </div>
+      
+      <div class="upsell-addons-list">
+        <label class="upsell-addon-card selected" id="card-addon-caja">
+          <input type="checkbox" id="chk-addon-caja" class="upsell-addon-checkbox" checked onchange="actualizarTotalUpsell(${precioMate})">
+          <img src="assets/images/caja-presentacion-feliz-dia-mama.png" alt="Caja de Regalo" class="upsell-addon-img">
+          <div class="upsell-addon-details">
+            <div class="upsell-addon-title">📦 Caja de Regalo de Presentación</div>
+            <div class="upsell-addon-desc">Caja rígida grabada ideal para regalo o protección</div>
+          </div>
+          <div class="upsell-addon-price">+$12.500</div>
+        </label>
+        
+        <label class="upsell-addon-card selected" id="card-addon-bombilla">
+          <input type="checkbox" id="chk-addon-bombilla" class="upsell-addon-checkbox" checked onchange="actualizarTotalUpsell(${precioMate})">
+          <img src="assets/images/bombilla-acero-pala-bronce.png" alt="Bombilla de Acero" class="upsell-addon-img">
+          <div class="upsell-addon-details">
+            <div class="upsell-addon-title">⚡ Bombilla de Acero Inoxidable</div>
+            <div class="upsell-addon-desc">Formato pico de loro con pala grande microperforada</div>
+          </div>
+          <div class="upsell-addon-price">+$7.500</div>
+        </label>
+      </div>
+      
+      <div class="upsell-total-bar">
+        <span>TOTAL DEL COMBO:</span>
+        <span class="upsell-total-amount" id="upsell-total-display">$${(precioMate + precioCaja + precioBombilla).toLocaleString('es-AR')}</span>
+      </div>
+      
+      <div class="upsell-actions">
+        <button class="btn btn--primary btn--lg" id="btn-upsell-confirm">
+          🛒 AGREGAR COMBO MATERO
+        </button>
+        <button class="upsell-skip-btn" onclick="confirmarUpsellSoloMate('${mateId}', ${cantidad}, '${opcion.replace(/'/g, "\\'")}')">
+          No gracias, llevar solo el mate
+        </button>
+      </div>
+    </div>
+  `;
+
+  modalOverlay.style.display = "flex";
+
+  document.getElementById("btn-upsell-confirm").onclick = () => {
+    const addCaja = document.getElementById("chk-addon-caja").checked;
+    const addBombilla = document.getElementById("chk-addon-bombilla").checked;
+
+    cerrarUpsellModal();
+
+    // 1. Agregar Mate principal
+    agregarAlCarrito(mateId, cantidad, opcion, originalEvent, true);
+
+    // 2. Agregar adicionales seleccionados
+    if (addCaja) {
+      agregarAlCarrito("caja-presentacion-feliz-dia-mama", 1, "", null, true);
+    }
+    if (addBombilla) {
+      agregarAlCarrito("bombilla-acero-inoxidable", 1, "", null, true);
+    }
+  };
+}
+
+function actualizarTotalUpsell(precioMate) {
+  const chkCaja = document.getElementById("chk-addon-caja");
+  const chkBombilla = document.getElementById("chk-addon-bombilla");
+  const cardCaja = document.getElementById("card-addon-caja");
+  const cardBombilla = document.getElementById("card-addon-bombilla");
+  
+  if (chkCaja) {
+    if (chkCaja.checked) cardCaja.classList.add("selected");
+    else cardCaja.classList.remove("selected");
+  }
+
+  if (chkBombilla) {
+    if (chkBombilla.checked) cardBombilla.classList.add("selected");
+    else cardBombilla.classList.remove("selected");
+  }
+
+  let total = precioMate;
+  if (chkCaja && chkCaja.checked) total += 12500;
+  if (chkBombilla && chkBombilla.checked) total += 7500;
+
+  const display = document.getElementById("upsell-total-display");
+  if (display) {
+    display.textContent = `$${total.toLocaleString('es-AR')}`;
+  }
+}
+
+function confirmarUpsellSoloMate(mateId, cantidad, opcion) {
+  cerrarUpsellModal();
+  agregarAlCarrito(mateId, cantidad, opcion, null, true);
+}
+
+function cerrarUpsellModal() {
+  const modalOverlay = document.getElementById("upsell-modal-overlay");
+  if (modalOverlay) {
+    modalOverlay.style.display = "none";
   }
 }
 
