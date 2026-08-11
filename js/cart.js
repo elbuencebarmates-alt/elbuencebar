@@ -165,8 +165,8 @@ function mostrarUpsellModal(mateId, cantidad = 1, opcion = "", originalEvent = n
         ✨ PROMO COMBO MATERO COMPLETO
       </div>
       
-      <h3 class="upsell-title">¿Querés armar tu combo como en McDonald's?</h3>
-      <p class="upsell-subtitle">Llevate tu mate equipado con caja de regalo o bombilla a precio especial</p>
+      <h3 class="upsell-title">¿Querés armar tu Set Matero Completo?</h3>
+      <p class="upsell-subtitle">Aprovechá a equipar tu mate con caja de regalo o bombilla a precio promocional</p>
       
       <div class="upsell-product-preview">
         <img src="${mate.imagen}" alt="${mate.nombre}">
