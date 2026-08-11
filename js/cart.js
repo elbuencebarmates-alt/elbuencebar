@@ -38,7 +38,7 @@ function guardarCarrito() {
 }
 
 // Agrega un producto al carrito
-function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null, skipUpsell = false) {
+function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null, skipUpsell = false, precioCustom = null) {
   // Buscar producto en la base de datos (PRODUCTOS está en products.js)
   const producto = PRODUCTOS.find(p => p.id === id);
   if (!producto) return;
@@ -99,9 +99,9 @@ function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null, skipUpsel
   }
 
   // Buscar si la opción corresponde a una variante con precio o imagen propios
-  let precioFinal = producto.precio;
+  let precioFinal = precioCustom !== null ? precioCustom : producto.precio;
   let imagenFinal = producto.imagen;
-  if (producto.variantes && opcion) {
+  if (precioCustom === null && producto.variantes && opcion) {
     const varEncontrada = producto.variantes.find(v => v.nombre.toLowerCase().trim() === opcion.toLowerCase().trim());
     if (varEncontrada) {
       precioFinal = varEncontrada.precio;
@@ -140,7 +140,7 @@ function agregarAlCarrito(id, cantidad = 1, opcion = "", event = null, skipUpsel
   }
 }
 
-// MODAL ESTILO MC DONALD'S (CROSS-SELL / COMBO MATERO)
+// MODAL COMBO MATERO (CROSS-SELL / ADICIONALES)
 function mostrarUpsellModal(mateId, cantidad = 1, opcion = "", originalEvent = null) {
   const mate = PRODUCTOS.find(p => p.id === mateId);
   if (!mate) return;
@@ -154,7 +154,7 @@ function mostrarUpsellModal(mateId, cantidad = 1, opcion = "", originalEvent = n
   }
 
   const precioMate = mate.precio;
-  const precioCaja = 12500;
+  const precioCaja = 8000;
   const precioBombilla = 7500;
 
   modalOverlay.innerHTML = `
@@ -184,7 +184,7 @@ function mostrarUpsellModal(mateId, cantidad = 1, opcion = "", originalEvent = n
             <div class="upsell-addon-title">📦 Caja de Regalo de Presentación</div>
             <div class="upsell-addon-desc">Caja rígida grabada ideal para regalo o protección</div>
           </div>
-          <div class="upsell-addon-price">+$12.500</div>
+          <div class="upsell-addon-price">+$8.000</div>
         </label>
         
         <label class="upsell-addon-card selected" id="card-addon-bombilla">
@@ -225,12 +225,12 @@ function mostrarUpsellModal(mateId, cantidad = 1, opcion = "", originalEvent = n
     // 1. Agregar Mate principal
     agregarAlCarrito(mateId, cantidad, opcion, originalEvent, true);
 
-    // 2. Agregar adicionales seleccionados
+    // 2. Agregar adicionales seleccionados (Caja a $8.000 promocional)
     if (addCaja) {
-      agregarAlCarrito("caja-presentacion-feliz-dia-mama", 1, "", null, true);
+      agregarAlCarrito("caja-presentacion-feliz-dia-mama", 1, "Adicional Combo Promo", null, true, 8000);
     }
     if (addBombilla) {
-      agregarAlCarrito("bombilla-acero-inoxidable", 1, "", null, true);
+      agregarAlCarrito("bombilla-acero-inoxidable", 1, "Adicional Combo Promo", null, true, 7500);
     }
   };
 }
@@ -252,7 +252,7 @@ function actualizarTotalUpsell(precioMate) {
   }
 
   let total = precioMate;
-  if (chkCaja && chkCaja.checked) total += 12500;
+  if (chkCaja && chkCaja.checked) total += 8000;
   if (chkBombilla && chkBombilla.checked) total += 7500;
 
   const display = document.getElementById("upsell-total-display");
