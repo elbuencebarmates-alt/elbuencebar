@@ -333,7 +333,7 @@ const PRODUCTOS = [
     "nombre": "MATE TÉRMICO CON VUELO COLOR NEGRO",
     "categoria": "mates",
     "subcategoria": "termico",
-    "precio": 20000,
+    "precio": 5000,
     "imagen": "assets/images/mate-termico-stanley-negro.png",
     "descripcion": "Mate térmico fabricado en acero inoxidable de doble pared de vacío (tipo Stanley), con virola/vuelo superior. Mantiene la temperatura perfecta por horas y es súper higiénico.",
     "destacado": true,
