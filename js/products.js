@@ -887,7 +887,7 @@ const PRODUCTOS = [
     "nombre": "TERMO ORIGINAL LUMINOX LUMILAGRO 1 LITRO PICO CEBADOR CON CAJA",
     "categoria": "termos",
     "subcategoria": "media-manija",
-    "precio": 35000,
+    "precio": 50000,
     "imagen": "assets/images/termo-original-luminox-lumilagro-1-litro-pico-cebador-con-caja.jpeg",
     "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
     "destacado": false,
