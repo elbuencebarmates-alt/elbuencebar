@@ -2363,7 +2363,7 @@ const PRODUCTOS = [
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 25000,
-    "imagen": "assets/images/camionero-guarda-aluminio.jpg",
+    "imagen": "assets/images/camionero-guarda-aluminio.jpeg",
     "descripcion": "Mate Camionero de calabaza brasilera de alto espesor forrado en cuero vacuno con virola de aluminio pulido.",
     "destacado": true,
     "detalles": [
@@ -2379,7 +2379,7 @@ const PRODUCTOS = [
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 30000,
-    "imagen": "assets/images/camionero-guarda-acero.jpg",
+    "imagen": "assets/images/camionero-guarda-acero.jpeg",
     "descripcion": "Mate Camionero de calabaza forrado en cuero vacuno con virola y guarda de acero inoxidable pulido.",
     "destacado": true,
     "detalles": [
@@ -2395,7 +2395,7 @@ const PRODUCTOS = [
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 25000,
-    "imagen": "assets/images/camionero-algarrobo-liso.jpg",
+    "imagen": "assets/images/camionero-algarrobo-liso.jpeg",
     "descripcion": "Mate Camionero de madera de algarrobo macizo seleccionado, pulido y curado al natural.",
     "destacado": true,
     "detalles": [
@@ -2411,7 +2411,7 @@ const PRODUCTOS = [
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 30000,
-    "imagen": "assets/images/camionero-cuero-pelo.jpg",
+    "imagen": "assets/images/camionero-cuero-pelo.jpeg",
     "descripcion": "Mate Camionero criollo de calabaza artesanal con base revestida en cuero vacuno natural con pelo.",
     "destacado": true,
     "detalles": [
