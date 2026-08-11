@@ -314,18 +314,18 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-camionero-algarrobo-premium",
-    "nombre": "CAMIONERO DE ALGARROBO PREMIUM CON GUARDA DE ACERO",
+    "nombre": "CAMIONERO DE ALGARROBO PREMIUM CON VIROLA DE ACERO",
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 35000,
-    "imagen": "assets/images/camionero-algarrobo-premium.png",
-    "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con detalles de virola de alpaca o acero de gran nivel.",
-    "destacado": false,
+    "imagen": "assets/images/camionero-algarrobo-premium-real.jpg",
+    "descripcion": "Mate Camionero 100% algarrobo macizo seleccionado con virola de acero inoxidable pulido de calidad premium.",
+    "destacado": true,
     "detalles": [
-      "Madera de algarrobo seleccionado extra gruesa",
-      "Virola de acero con cincelados de gran definición",
-      "Cuerpo de madera maciza seleccionada de alta calidad",
-      "Terminación pulida a mano con cera natural de abejas"
+      "Madera de algarrobo macizo estacionado de alto espesor",
+      "Virola de acero inoxidable inoloro pulida a espejo",
+      "Terminación pulida a mano con cera natural de abejas",
+      "Excelente estabilidad y durabilidad noble"
     ]
   },
   {
@@ -1095,17 +1095,18 @@ const PRODUCTOS = [
   },
   {
     "id": "camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero",
-    "nombre": "CAMIONERO CRIOLLO CALABAZA LAQUEADA VIROLA ACERO + BOMBILLA DE ACERO",
+    "nombre": "CAMIONERO CRIOLLO CALABAZA LAQUEADA VIROLA ACERO + BOMBILLA",
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 30000,
-    "imagen": "assets/images/camionero-criollo-calabaza-laqueada-virola-acero-bombilla-de-acero.jpeg",
-    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
-    "destacado": false,
+    "imagen": "assets/images/camionero-criollo-calabaza-laqueada.jpeg",
+    "descripcion": "Mate Camionero criollo de calabaza brasilera seleccionada forrada en cuero vacuno con virola de acero e incluye bombilla de regalo.",
+    "destacado": true,
     "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
+      "Calabaza brasilera de alto espesor laqueada",
+      "Forrado en cuero vacuno vacuno vacuno seleccionado",
+      "Virola de acero inoxidable",
+      "Incluye bombilla de regalo"
     ]
   },
   {
@@ -1115,12 +1116,13 @@ const PRODUCTOS = [
     "subcategoria": "camionero",
     "precio": 25000,
     "imagen": "assets/images/camionero-algarrobo-grabado-predisenados-bombilla.jpeg",
-    "descripcion": "Excelente producto artesanal de primera calidad, ideal para disfrutar del ritual del mate.",
+    "descripcion": "Mate Camionero de algarrobo con grabados temáticos prediseñados a láser e incluye bombilla.",
     "destacado": false,
     "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
+      "Madera de algarrobo macizo",
+      "Grabado láser de alta precisión",
+      "Incluye bombilla de regalo",
+      "Listo para regalar"
     ]
   },
   {
@@ -1829,21 +1831,6 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "camionero-algarrobo-argentina-grabado",
-    "nombre": "MATE CAMIONERO DE ALGARROBO GRABADO SELECCIÓN ARGENTINA",
-    "categoria": "mates",
-    "subcategoria": "madera",
-    "precio": 20000,
-    "imagen": "assets/images/camionero-algarrobo-grabado-inglaterra-la-concha-de-tu-madre.jpeg",
-    "descripcion": "Mate camionero de algarrobo macizo pulido con virola de acero inoxidable grabada con motivos patrios de la Selección Argentina.",
-    "destacado": true,
-    "detalles": [
-      "Algarrobo seleccionado de gran espesor",
-      "Virola de acero con grabado láser",
-      "Base ancha y cuerpo robusto tradicional"
-    ]
-  },
-  {
     "id": "imperial-full-alpaca-argentina",
     "nombre": "MATE IMPERIAL FULL ALPACA BANDERA ARGENTINA",
     "categoria": "mates",
@@ -2281,50 +2268,18 @@ const PRODUCTOS = [
   },
   {
     "id": "mate-camionero-guarda-aluminio",
-    "nombre": "MATE CAMIONERO CON GUARDA DE ALUMINIO",
+    "nombre": "MATE CAMIONERO CON VIROLA DE ALUMINIO",
     "categoria": "mates",
     "subcategoria": "camionero",
     "precio": 25000,
     "imagen": "assets/images/camionero-guarda-aluminio.jpeg",
-    "descripcion": "Mate Camionero de calabaza brasilera de alto espesor forrado en cuero vacuno con virola de aluminio pulido.",
+    "descripcion": "Mate Camionero clásico de calabaza brasilera forrado en cuero vacuno con virola liviana de aluminio pulido.",
     "destacado": true,
     "detalles": [
-      "Calabaza de alto espesor seleccionada",
-      "Forrado en cuero vacuno legítimo con costuras tradicionales",
-      "Virola de aluminio liviana y resistente",
-      "Formato ergonómico tradicional"
-    ]
-  },
-  {
-    "id": "mate-camionero-guarda-acero",
-    "nombre": "MATE CAMIONERO DE CALABAZA CON GUARDA DE ACERO",
-    "categoria": "mates",
-    "subcategoria": "camionero",
-    "precio": 30000,
-    "imagen": "assets/images/camionero-guarda-acero.jpeg",
-    "descripcion": "Mate Camionero de calabaza forrado en cuero vacuno con virola y guarda de acero inoxidable pulido.",
-    "destacado": true,
-    "detalles": [
-      "Calabaza brasilera de alto espesor",
-      "Forrado en cuero vacuno premium con costuras reforzadas",
-      "Virola de acero inoxidable inoloro",
-      "Excelente capacidad e inercia térmica"
-    ]
-  },
-  {
-    "id": "mate-camionero-algarrobo-liso",
-    "nombre": "MATE CAMIONERO DE ALGARROBO LISO TRADICIONAL",
-    "categoria": "mates",
-    "subcategoria": "camionero",
-    "precio": 25000,
-    "imagen": "assets/images/camionero-algarrobo-liso.jpeg",
-    "descripcion": "Mate Camionero de madera de algarrobo macizo seleccionado, pulido y curado al natural.",
-    "destacado": true,
-    "detalles": [
-      "Madera de algarrobo macizo estacionado",
-      "Formato camionero con excelente estabilidad",
-      "Terminación pulida a mano al natural",
-      "No se rompe ni fisura con el uso"
+      "Calabaza brasilera de pared gruesa",
+      "Forrado en cuero vacuno legítimo",
+      "Virola de aluminio pulido liviana",
+      "Excelente capacidad para cebado continuo"
     ]
   },
   {
@@ -2334,13 +2289,45 @@ const PRODUCTOS = [
     "subcategoria": "camionero",
     "precio": 30000,
     "imagen": "assets/images/camionero-cuero-pelo.jpeg",
-    "descripcion": "Mate Camionero criollo de calabaza artesanal con base revestida en cuero vacuno natural con pelo.",
+    "descripcion": "Mate Camionero criollo artesanal de calabaza con base revestida en cuero vacuno natural con pelo.",
     "destacado": true,
     "detalles": [
       "Calabaza artesanal de pared gruesa",
       "Base de cuero vacuno legítimo con pelo natural",
       "Diseño rústico único e irrepetible",
-      "Virola pulida a espejo"
+      "Cosido artesanalmente a mano"
+    ]
+  },
+  {
+    "id": "camionero-criollo-cuero-labrado",
+    "nombre": "CAMIONERO CRIOLLO CON BASE DE CUERO LABRADA",
+    "categoria": "mates",
+    "subcategoria": "camionero",
+    "precio": 30000,
+    "imagen": "assets/images/camionero-cuero-labrado.jpeg",
+    "descripcion": "Mate Camionero criollo de calabaza sin virola con base reforzada en suela de cuero vacuno labrado.",
+    "destacado": false,
+    "detalles": [
+      "Calabaza natural sin virola metálica",
+      "Base de suela labrada de alta resistencia",
+      "Estilismo criollo tradicional",
+      "Formato ergonómico"
+    ]
+  },
+  {
+    "id": "camionero-alpaca-cincelada",
+    "nombre": "CAMIONERO 100% CALABAZA VIROLA CINCELADA DE ALPACA",
+    "categoria": "mates",
+    "subcategoria": "camionero",
+    "precio": 40000,
+    "imagen": "assets/images/camionero-alpaca-cincelada.jpeg",
+    "descripcion": "Mate Camionero premium 100% calabaza forrado en cuero liso con virola cincelada artesanal de alpaca de alta gama.",
+    "destacado": true,
+    "detalles": [
+      "Calabaza brasilera seleccionada de alto espesor",
+      "Virola de alpaca de primera calidad cincelada a mano",
+      "Forrado en cuero vacuno teñido a mano",
+      "Costuras de refuerzo de máxima durabilidad"
     ]
   }
 ];
