@@ -184,7 +184,7 @@ const PRODUCTOS = [
     "detalles": [
       "Interior de madera de algarrobo macizo torneado",
       "No junta humedad ni hongos, muy duradero",
-      "Exterior forrado en cuero vacuno legítimo",
+      "Cuerpo de madera maciza seleccionada de alta calidad",
       "Virola superior de alpaca premium calada o lisa"
     ]
   },
@@ -287,12 +287,12 @@ const PRODUCTOS = [
     "subcategoria": "torpedo",
     "precio": 40000,
     "imagen": "assets/images/mate-torpedo-algarrobo-alpaca.png",
-    "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada y excelentes costuras.",
+    "descripcion": "Mate premium tallado en madera maciza de algarrobo seleccionado de gran durabilidad y sabor noble. Cuenta con virola de alpaca cincelada artesanalmente.",
     "destacado": false,
     "detalles": [
       "Madera maciza de algarrobo torneado premium",
       "Virola de alpaca cincelada artesanalmente",
-      "Forrado en cuero vacuno seleccionado cosido a mano",
+      "Cuerpo de madera maciza seleccionada de alta calidad",
       "Formato torpedo clásico"
     ]
   },
@@ -324,8 +324,8 @@ const PRODUCTOS = [
     "detalles": [
       "Madera de algarrobo seleccionado extra gruesa",
       "Virola de acero con cincelados de gran definición",
-      "Exterior en cuero vacuno teñido a mano",
-      "Terminaciones de alta costura"
+      "Cuerpo de madera maciza seleccionada de alta calidad",
+      "Terminación pulida a mano con cera natural de abejas"
     ]
   },
   {
