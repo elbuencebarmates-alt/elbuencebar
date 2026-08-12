@@ -2161,7 +2161,7 @@ const PRODUCTOS = [
     "nombre": "MOCHILA / BOLSO MATERO NEGRO CON DETALLES EN SUELA + SET YERBERO",
     "categoria": "bolsos",
     "subcategoria": "bolsos",
-    "precio": 20000,
+    "precio": 25000,
     "imagen": "assets/images/mochila-negro-suela.jpeg",
     "descripcion": "Mochila matera urbana en color negro con detalles contrastantes en cuero suela vacuno y latas yerbera/azucarera.",
     "destacado": true,
