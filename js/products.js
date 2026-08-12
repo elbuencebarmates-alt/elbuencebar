@@ -663,7 +663,7 @@ const PRODUCTOS = [
     "nombre": "Mediacanasta premium de pelo vacuno",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 70000,
+    "precio": 50000,
     "imagen": "assets/images/mediacanasta-pelo-vacuno.jpg",
     "descripcion": "Esta canasta viene con pelo natural, por lo cual presentan todas diferentes tonos y manchas, volviendo cada modelo único. En caso de querer un tono particular, una vez realizada la compra solicita foto de la misma a través de WhatsApp.",
     "destacado": true,
