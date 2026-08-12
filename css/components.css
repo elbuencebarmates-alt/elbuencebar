@@ -1323,3 +1323,92 @@
     gap: 20px;
   }
 }
+
+
+/* ==========================================================================
+   FORMATO CARROUSEL SLIDER SLIDE PARA MÁS VENDIDOS
+   ========================================================================== */
+.mas-vendidos-carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mas-vendidos-carousel {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 16px 4px 24px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.mas-vendidos-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.mas-vendidos-carousel .product-card {
+  flex: 0 0 calc(33.333% - 16px);
+  min-width: 270px;
+  scroll-snap-align: start;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.mas-vendidos-carousel .product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-normal);
+  color: var(--color-primary);
+}
+
+.carousel-nav-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg-primary);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav-btn--prev {
+  left: -15px;
+}
+
+.carousel-nav-btn--next {
+  right: -15px;
+}
+
+@media (max-width: 992px) {
+  .mas-vendidos-carousel .product-card {
+    flex: 0 0 calc(50% - 12px);
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mas-vendidos-carousel .product-card {
+    flex: 0 0 calc(85% - 10px);
+    min-width: 220px;
+  }
+  .carousel-nav-btn {
+    display: none;
+  }
+}

@@ -13,12 +13,12 @@
   <meta name="keywords" content="mate imperial, mate torpedo, mate camionero, el buen cebar, mate artesanal, ramos mejia, la matanza">
   
   <!-- Favicon -->
-  <link rel="icon" href="assets/images/favicon.png?v=500" type="image/png">
+  <link rel="icon" href="assets/images/favicon.png?v=510" type="image/png">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/main.css?v=500">
-  <link rel="stylesheet" href="css/components.css?v=500">
+  <link rel="stylesheet" href="css/main.css?v=510">
+  <link rel="stylesheet" href="css/components.css?v=510">
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
@@ -252,131 +252,153 @@
   
   
   
-  <!-- PRODUCTOS MÁS VENDIDOS -->
-  <section class="container reveal-on-scroll" style="padding-top: 50px; padding-bottom: 50px;">
+  
+  <!-- PRODUCTOS MÁS VENDIDOS (FORMATO CARROUSEL INTERACTIVO) -->
+  <section class="container reveal-on-scroll" style="padding-top: 60px; padding-bottom: 60px;">
     <h2 class="section-title">Más Vendidos</h2>
-    <p class="section-subtitle">Los productos preferidos y más elegidos por los cebadores</p>
+    <p class="section-subtitle">Deslizá para descubrir nuestros productos más elegidos</p>
 
-    <div class="product-grid product-grid--mas-vendidos">
-      <!-- 1. IMPERIAL -->
-      <div class="product-card">
-        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=mate-imperial-boca-ancha'">
-          <span class="product-card__badge">Imperial</span>
-          <img src="assets/images/mate-imperial-boca-ancha-negro.png" alt="Mate Imperial premium boca ancha" class="product-card__image product-card__image--primary">
-          <img src="assets/images/mate-imperial-boca-ancha-marron.png" alt="Mate Imperial premium boca ancha" class="product-card__image product-card__image--secondary">
-        </div>
-        <div class="product-card__content">
-          <span class="product-card__meta">Mates · Imperial</span>
-          <h3 class="product-card__title">Mate Imperial premium boca ancha</h3>
-          <div class="product-card__price-box">
-            <span class="product-card__price">$30.000</span>
+    <div class="mas-vendidos-carousel-container">
+      <button class="carousel-nav-btn carousel-nav-btn--prev" onclick="deslizarMasVendidos(-1)" aria-label="Anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+
+      <div class="mas-vendidos-carousel" id="mas-vendidos-slider">
+        <!-- 1. IMPERIAL -->
+        <div class="product-card">
+          <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=mate-imperial-boca-ancha'">
+            <span class="product-card__badge">Imperial</span>
+            <img src="assets/images/mate-imperial-boca-ancha-negro.png" alt="Mate Imperial premium boca ancha" class="product-card__image product-card__image--primary">
+            <img src="assets/images/mate-imperial-boca-ancha-marron.png" alt="Mate Imperial premium boca ancha" class="product-card__image product-card__image--secondary">
           </div>
-          <div class="product-card__actions">
-            <a href="producto.html?id=mate-imperial-boca-ancha" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-imperial-boca-ancha', 1, '', event)">Agregar</button>
+          <div class="product-card__content">
+            <span class="product-card__meta">Mates · Imperial</span>
+            <h3 class="product-card__title">Mate Imperial premium boca ancha</h3>
+            <div class="product-card__price-box">
+              <span class="product-card__price">$30.000</span>
+            </div>
+            <div class="product-card__actions">
+              <a href="producto.html?id=mate-imperial-boca-ancha" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+              <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-imperial-boca-ancha', 1, '', event)">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. CAMIONERO -->
+        <div class="product-card">
+          <div class="product-card__image-container" onclick="window.location.href='producto.html?id=mate-camionero-algarrobo-premium'">
+            <span class="product-card__badge">Camionero</span>
+            <img src="assets/images/camionero-algarrobo-premium-real.jpg" alt="Mate Camionero de Algarrobo Premium" class="product-card__image">
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__meta">Mates · Camionero</span>
+            <h3 class="product-card__title">Mate Camionero de Algarrobo Premium</h3>
+            <div class="product-card__price-box">
+              <span class="product-card__price">$35.000</span>
+            </div>
+            <div class="product-card__actions">
+              <a href="producto.html?id=mate-camionero-algarrobo-premium" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+              <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-camionero-algarrobo-premium', 1, '', event)">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. TORPEDO -->
+        <div class="product-card">
+          <div class="product-card__image-container" onclick="window.location.href='producto.html?id=mate-torpedo-alpaca-calada'">
+            <span class="product-card__badge">Torpedo</span>
+            <img src="assets/images/torpedo-alpaca-calada-negro.png" alt="Mate Torpedo Virola de Alpaca Calada" class="product-card__image">
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__meta">Mates · Torpedo</span>
+            <h3 class="product-card__title">Mate Torpedo Virola de Alpaca Calada</h3>
+            <div class="product-card__price-box">
+              <span class="product-card__price">$40.000</span>
+            </div>
+            <div class="product-card__actions">
+              <a href="producto.html?id=mate-torpedo-alpaca-calada" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+              <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-torpedo-alpaca-calada', 1, '', event)">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. BOMBILLA -->
+        <div class="product-card">
+          <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=bombilla-bombillon'">
+            <span class="product-card__badge">Bombilla</span>
+            <img src="assets/images/bombillon-alpaca-cincelado.png" alt="Bombillón de caño liso" class="product-card__image product-card__image--primary">
+            <img src="assets/images/bombillon-acero-pala.png" alt="Bombillón de caño liso" class="product-card__image product-card__image--secondary">
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__meta">Bombillas · Bombillón</span>
+            <h3 class="product-card__title">Bombillón de caño liso</h3>
+            <div class="product-card__price-box">
+              <span class="product-card__price">$15.000</span>
+            </div>
+            <div class="product-card__actions">
+              <a href="producto.html?id=bombilla-bombillon" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+              <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('bombilla-bombillon', 1, '', event)">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. TERMO -->
+        <div class="product-card">
+          <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=termo-media-manija-total-black'">
+            <span class="product-card__badge">Termo</span>
+            <img src="assets/images/termo-media-manija-total-black.png" alt="Termo media manija negro Total Black" class="product-card__image product-card__image--primary">
+            <img src="assets/images/termo-media-manija.jpg" alt="Termo media manija negro Total Black" class="product-card__image product-card__image--secondary">
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__meta">Termos · Negro</span>
+            <h3 class="product-card__title">Termo media manija negro Total Black</h3>
+            <div class="product-card__price-box">
+              <span class="product-card__price">$25.000</span>
+            </div>
+            <div class="product-card__actions">
+              <a href="producto.html?id=termo-media-manija-total-black" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+              <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('termo-media-manija-total-black', 1, '', event)">Agregar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. MATERA -->
+        <div class="product-card">
+          <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=canasta-cuero-grande'">
+            <span class="product-card__badge">Matera</span>
+            <img src="assets/images/canasta-cuero-grande.png" alt="Canasta 100% cuero grande reforzada" class="product-card__image product-card__image--primary">
+            <img src="assets/images/media-canasta-cuero-negro.png" alt="Canasta 100% cuero grande reforzada" class="product-card__image product-card__image--secondary">
+          </div>
+          <div class="product-card__content">
+            <span class="product-card__meta">Materas · Canasta</span>
+            <h3 class="product-card__title">Canasta 100% cuero grande reforzada</h3>
+            <div class="product-card__price-box">
+              <span class="product-card__price">$25.000</span>
+            </div>
+            <div class="product-card__actions">
+              <a href="producto.html?id=canasta-cuero-grande" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+              <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('canasta-cuero-grande', 1, '', event)">Agregar</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 2. CAMIONERO -->
-      <div class="product-card">
-        <div class="product-card__image-container" onclick="window.location.href='producto.html?id=mate-camionero-algarrobo-premium'">
-          <span class="product-card__badge">Camionero</span>
-          <img src="assets/images/camionero-algarrobo-premium-real.jpg" alt="Mate Camionero de Algarrobo Premium" class="product-card__image">
-        </div>
-        <div class="product-card__content">
-          <span class="product-card__meta">Mates · Camionero</span>
-          <h3 class="product-card__title">Mate Camionero de Algarrobo Premium</h3>
-          <div class="product-card__price-box">
-            <span class="product-card__price">$35.000</span>
-          </div>
-          <div class="product-card__actions">
-            <a href="producto.html?id=mate-camionero-algarrobo-premium" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-camionero-algarrobo-premium', 1, '', event)">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. TORPEDO -->
-      <div class="product-card">
-        <div class="product-card__image-container" onclick="window.location.href='producto.html?id=mate-torpedo-alpaca-calada'">
-          <span class="product-card__badge">Torpedo</span>
-          <img src="assets/images/torpedo-alpaca-calada-negro.png" alt="Mate Torpedo Virola de Alpaca Calada" class="product-card__image">
-        </div>
-        <div class="product-card__content">
-          <span class="product-card__meta">Mates · Torpedo</span>
-          <h3 class="product-card__title">Mate Torpedo Virola de Alpaca Calada</h3>
-          <div class="product-card__price-box">
-            <span class="product-card__price">$40.000</span>
-          </div>
-          <div class="product-card__actions">
-            <a href="producto.html?id=mate-torpedo-alpaca-calada" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-torpedo-alpaca-calada', 1, '', event)">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. BOMBILLA -->
-      <div class="product-card">
-        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=bombilla-bombillon'">
-          <span class="product-card__badge">Bombilla</span>
-          <img src="assets/images/bombillon-alpaca-cincelado.png" alt="Bombillón de caño liso" class="product-card__image product-card__image--primary">
-          <img src="assets/images/bombillon-acero-pala.png" alt="Bombillón de caño liso" class="product-card__image product-card__image--secondary">
-        </div>
-        <div class="product-card__content">
-          <span class="product-card__meta">Bombillas · Bombillón</span>
-          <h3 class="product-card__title">Bombillón de caño liso</h3>
-          <div class="product-card__price-box">
-            <span class="product-card__price">$15.000</span>
-          </div>
-          <div class="product-card__actions">
-            <a href="producto.html?id=bombilla-bombillon" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('bombilla-bombillon', 1, '', event)">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5. TERMO -->
-      <div class="product-card">
-        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=termo-media-manija-total-black'">
-          <span class="product-card__badge">Termo</span>
-          <img src="assets/images/termo-media-manija-total-black.png" alt="Termo media manija negro Total Black" class="product-card__image product-card__image--primary">
-          <img src="assets/images/termo-media-manija.jpg" alt="Termo media manija negro Total Black" class="product-card__image product-card__image--secondary">
-        </div>
-        <div class="product-card__content">
-          <span class="product-card__meta">Termos · Negro</span>
-          <h3 class="product-card__title">Termo media manija negro Total Black</h3>
-          <div class="product-card__price-box">
-            <span class="product-card__price">$25.000</span>
-          </div>
-          <div class="product-card__actions">
-            <a href="producto.html?id=termo-media-manija-total-black" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('termo-media-manija-total-black', 1, '', event)">Agregar</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6. MATERA -->
-      <div class="product-card">
-        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=canasta-cuero-grande'">
-          <span class="product-card__badge">Matera</span>
-          <img src="assets/images/canasta-cuero-grande.png" alt="Canasta 100% cuero grande reforzada" class="product-card__image product-card__image--primary">
-          <img src="assets/images/media-canasta-cuero-negro.png" alt="Canasta 100% cuero grande reforzada" class="product-card__image product-card__image--secondary">
-        </div>
-        <div class="product-card__content">
-          <span class="product-card__meta">Materas · Canasta</span>
-          <h3 class="product-card__title">Canasta 100% cuero grande reforzada</h3>
-          <div class="product-card__price-box">
-            <span class="product-card__price">$25.000</span>
-          </div>
-          <div class="product-card__actions">
-            <a href="producto.html?id=canasta-cuero-grande" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
-            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('canasta-cuero-grande', 1, '', event)">Agregar</button>
-          </div>
-        </div>
-      </div>
+      <button class="carousel-nav-btn carousel-nav-btn--next" onclick="deslizarMasVendidos(1)" aria-label="Siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
     </div>
+
+    <script>
+      function deslizarMasVendidos(direccion) {
+        const slider = document.getElementById('mas-vendidos-slider');
+        if (slider) {
+          const cardWidth = slider.querySelector('.product-card').offsetWidth + 24;
+          slider.scrollBy({ left: direccion * cardWidth, behavior: 'smooth' });
+        }
+      }
+    </script>
   </section>
+
 
 
 
@@ -528,9 +550,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/products.js?v=500"></script>
-  <script src="js/cart.js?v=500"></script>
-  <script src="js/main.js?v=500"></script>
+  <script src="js/products.js?v=510"></script>
+  <script src="js/cart.js?v=510"></script>
+  <script src="js/main.js?v=510"></script>
 </body>
 </html>
 
