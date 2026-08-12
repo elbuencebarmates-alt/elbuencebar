@@ -2329,6 +2329,86 @@ const PRODUCTOS = [
       "Forrado en cuero vacuno teñido a mano",
       "Costuras de refuerzo de máxima durabilidad"
     ]
+  },
+  {
+    "id": "portamate-cuerina-doble-costura",
+    "nombre": "PORTAMATE DE CUERINA DOBLE COSTURA Y DOBLE REMACHE",
+    "categoria": "portamates",
+    "subcategoria": "portamate",
+    "precio": 5000,
+    "imagen": "assets/images/portamate-cuerina-doble-costura.jpeg",
+    "descripcion": "Portamate artesanal confeccionado en cuerina de alta calidad con doble costura reforzada y doble remache.",
+    "destacado": true,
+    "detalles": [
+      "100% confección artesanal de primera línea",
+      "Ideal para usar en la palanca de cambios del auto o transportar tu mate",
+      "Costuras reforzadas para máxima durabilidad",
+      "Fácil colocación y adaptabilidad"
+    ]
+  },
+  {
+    "id": "portamate-cuero-borravino",
+    "nombre": "PORTAMATE DE CUERO 100% - BORRAVINO",
+    "categoria": "portamates",
+    "subcategoria": "portamate",
+    "precio": 10000,
+    "imagen": "assets/images/portamate-cuero-borravino.jpeg",
+    "descripcion": "Portamate 100% cuero vacuno legítimo en tono borravino exclusivo para la palanca de cambios o transporte.",
+    "destacado": true,
+    "detalles": [
+      "100% confección artesanal de primera línea",
+      "Ideal para usar en la palanca de cambios del auto o transportar tu mate",
+      "Costuras reforzadas para máxima durabilidad",
+      "Fácil colocación y adaptabilidad"
+    ]
+  },
+  {
+    "id": "portamate-cuero-marron",
+    "nombre": "PORTAMATE DE CUERO 100% - MARRÓN",
+    "categoria": "portamates",
+    "subcategoria": "portamate",
+    "precio": 10000,
+    "imagen": "assets/images/portamate-cuero-marron.jpeg",
+    "descripcion": "Portamate 100% cuero vacuno genuino de tono marrón chocolate con terminaciones artesanales de máxima durabilidad.",
+    "destacado": true,
+    "detalles": [
+      "100% confección artesanal de primera línea",
+      "Ideal para usar en la palanca de cambios del auto o transportar tu mate",
+      "Costuras reforzadas para máxima durabilidad",
+      "Fácil colocación y adaptabilidad"
+    ]
+  },
+  {
+    "id": "portamate-cuero-negro",
+    "nombre": "PORTAMATE DE CUERO 100% - NEGRO",
+    "categoria": "portamates",
+    "subcategoria": "portamate",
+    "precio": 10000,
+    "imagen": "assets/images/portamate-cuero-negro.jpeg",
+    "descripcion": "Portamate 100% cuero vacuno premium en color negro mate con remaches y hebilla reforzada.",
+    "destacado": true,
+    "detalles": [
+      "100% confección artesanal de primera línea",
+      "Ideal para usar en la palanca de cambios del auto o transportar tu mate",
+      "Costuras reforzadas para máxima durabilidad",
+      "Fácil colocación y adaptabilidad"
+    ]
+  },
+  {
+    "id": "portamate-cuero-suela",
+    "nombre": "PORTAMATE DE CUERO 100% - SUELA",
+    "categoria": "portamates",
+    "subcategoria": "portamate",
+    "precio": 10000,
+    "imagen": "assets/images/portamate-cuero-suela.jpeg",
+    "descripcion": "Portamate 100% cuero vacuno en tono suela tradicional con costuras a tono de alta resistencia.",
+    "destacado": true,
+    "detalles": [
+      "100% confección artesanal de primera línea",
+      "Ideal para usar en la palanca de cambios del auto o transportar tu mate",
+      "Costuras reforzadas para máxima durabilidad",
+      "Fácil colocación y adaptabilidad"
+    ]
   }
 ];
 
