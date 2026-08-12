@@ -1213,290 +1213,35 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "yerba-canarias-jengibre-te-verde",
-    "nombre": "YERBA MATE CANARIAS TÉ VERDE Y JENGIBRE",
-    "descripcion": "La Yerba Mate Canarias con Té Verde y Jengibre combina el sabor clásico del mate con las propiedades del té verde y el toque picante del jengibre. Una mezcla refrescante y energizante, perfecta para quienes buscan algo diferente.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": true,
-    "detalles": [
-      "Con té verde y jengibre natural",
-      "Sabor refrescante y energizante",
-      "Excelente duración de cebadas"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-canarias-jengibre-te-verde-1kg.jpg",
-        "precio": 10000
-      }
-    ]
-  },
-  {
-    "id": "yerba-baldo-tradicional-500g",
-    "nombre": "YERBA MATE BALDO TRADICIONAL",
-    "descripcion": "Yerba Mate Baldo Tradicional, una de las marcas más reconocidas de Uruguay. De hoja gruesa, con palo, de sabor robusto y duradero. Ideal para los amantes del mate clásico.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": true,
-    "detalles": [
-      "Yerba uruguaya con palo",
-      "Sabor robusto y tradicional",
-      "Excelente calidad seleccionada"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-baldo-tradicional-1kg.png",
-        "precio": 15000
-      },
-      {
-        "nombre": "5 KG",
-        "imagen": "assets/images/yerba-baldo-tradicional-500g.jpg",
-        "precio": 45000
-      }
-    ]
-  },
-  {
-    "id": "yerba-pindare-1kg",
-    "nombre": "YERBA PINDARE",
-    "descripcion": "Yerba Mate Pindare, una yerba brasileña de alta calidad con sabor intenso y particular. Hojas finas, buena duración y aroma característico. Una elección diferente para el paladar exigente.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-pindare-1kg.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": false,
-    "detalles": [
-      "Yerba brasileña importada",
-      "Sabor intenso y aroma característico",
-      "Molienda fina tradicional"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-pindare-1kg.jpg",
-        "precio": 10000
-      }
-    ]
-  },
-  {
-    "id": "yerba-rei-verde-tradicional",
-    "nombre": "YERBA MATE REI VERDE TRADICIONAL",
-    "descripcion": "Yerba Mate Rei Verde Tradicional, clásica uruguaya de calidad reconocida. Sabor equilibrado, suave al paladar, con buena duración de cebada. Perfecta para el consumo diario.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": false,
-    "detalles": [
-      "Yerba uruguaya tradicional",
-      "Sabor suave y equilibrado",
-      "Perfecto para consumo diario"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-rei-verde-tradicional-500g.jpg",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-rei-verde-tradicional-1kg.jpg",
-        "precio": 10000
-      }
-    ]
-  },
-  {
-    "id": "yerba-verdecita-sin-palo-1kg",
-    "nombre": "YERBA MATE VERDE CITA SIN PALO",
-    "descripcion": "Yerba Mate Verde Cita Sin Palo, una yerba argentina de primer nivel. Sin palo para una infusión más limpia, con sabor fuerte y persistente. Muy apreciada por los cebadores exigentes.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": false,
-    "detalles": [
-      "Sin palo - sabor concentrado",
-      "Yerba argentina de calidad",
-      "Bajo contenido de polvo"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-verdecita-sin-palo-1kg.jpg",
-        "precio": 10000
-      }
-    ]
-  },
-  {
-    "id": "yerba-canarias-serena",
-    "nombre": "YERBA MATE CANARIAS SERENA",
-    "descripcion": "Yerba Mate Canarias Serena, la línea suave de la reconocida marca uruguaya. Sabor delicado y equilibrado, con hoja fina y buena duración. Ideal para quienes prefieren un mate más tranquilo.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-canarias-serena-500g.png",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": false,
-    "detalles": [
-      "Yerba uruguaya tipo compuesta",
-      "Línea suave de Canarias",
-      "Sabor delicado y equilibrado"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-canarias-serena-500g.png",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-canarias-serena-1kg.jpg",
-        "precio": 10000
-      }
-    ]
-  },
-  {
-    "id": "yerba-rei-verde-premium",
-    "nombre": "YERBA MATE REI VERDE PREMIUM",
-    "descripcion": "Yerba Mate Rei Verde Premium, la versión de mayor calidad de la marca uruguaya. Hojas más finas y seleccionadas para una infusión excepcional y duradera.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": false,
-    "detalles": [
-      "Yerba premium uruguaya",
-      "Sabor refinado y superior",
-      "Hojas seleccionadas de primera"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-rei-verde-premium-export-500g.jpg",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-rei-verde-premium-1kg.jpg",
-        "precio": 10000
-      }
-    ]
-  },
-  {
-    "id": "yerba-canarias-tradicional",
-    "nombre": "YERBA MATE CANARIAS TRADICIONAL",
-    "descripcion": "Yerba Mate Canarias Tradicional, la marca de yerba número uno de Uruguay. Compuesta principalmente por hojas seleccionadas de sabor intenso y duradero, libre de palo. Perfecta para cebar mates cargados de sabor.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": true,
-    "detalles": [
-      "Yerba uruguaya tradicional sin palo",
-      "Sabor intenso y de larga duración",
-      "Importada directamente de Uruguay"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
-        "precio": 10000
-      }
-    ]
-  },
-  {
-    "id": "yerba-rei-verde-clasica-blanco-500g",
-    "nombre": "YERBA REI VERDE CLÁSICA PAQUETE BLANCO 500G",
-    "descripcion": "Yerba Mate Rei Verde Clásica paquete blanco 500g. Molienda tradicional uruguaya de sabor suave y persistente.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
-    "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": false,
-    "detalles": [
-      "Yerba mate uruguaya de molienda fina",
-      "Paquete blanco clásico 500g",
-      "Sabor equilibrado y duradero"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
-        "precio": 5000
-      }
-    ]
-  },
-  {
     "id": "yerba-barao-500g",
-    "nombre": "YERBA BARAO 500G",
-    "descripcion": "Yerba Mate Barão 500g importada de Brasil. Sabor intenso y molienda fina de alta calidad.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-barao-500g.jpeg",
+    "nombre": "YERBA BARAO DE COTEGIPE 500G",
     "categoria": "yerbas",
-    "subcategoria": "otras",
-    "destacado": false,
+    "subcategoria": "500g",
+    "precio": 6000,
+    "imagen": "assets/images/yerba-barao-500g.jpeg",
+    "descripcion": "Yerba Mate Barão de Cotegipe brasilera molienda fina para chimarrão de 500g.",
+    "destacado": true,
     "detalles": [
-      "Yerba mate brasileña importada",
-      "Molienda fina premium",
-      "Presentación 500g"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-barao-500g.jpeg",
-        "precio": 5000
-      }
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
     ]
   },
   {
     "id": "yerba-sara-coco-500g",
     "nombre": "YERBA SARA EDICIÓN LIMITADA COCO 500G",
-    "descripcion": "Yerba Mate Sara Edición Limitada sabor Coco en presentación de 500g. Combinación de yerba uruguaya con toque de coco.",
-    "precio": 5000,
-    "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
     "categoria": "yerbas",
-    "subcategoria": "otras",
+    "subcategoria": "500g",
+    "precio": 10000,
+    "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
+    "descripcion": "Yerba Mate Sara Edición Limitada saborizada con delicadas notas de coco de 500g.",
     "destacado": true,
     "detalles": [
-      "Edición Limitada sabor Coco",
-      "Yerba uruguaya de selección especial",
-      "Presentación 500g"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-sara-coco-500g.jpeg",
-        "precio": 5000
-      }
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
     ]
   },
   {
@@ -2522,6 +2267,262 @@ const PRODUCTOS = [
       "Sujetador elástico interior para fijar el termo",
       "Incluye juego de latas yerbera y azucarera a tono",
       "Correa ajustable para llevar al hombro o cruzado"
+    ]
+  },
+  {
+    "id": "yerba-mate-sport-500g",
+    "nombre": "YERBA EXCLUSIVA MATE SPORT 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 4000,
+    "imagen": "assets/images/yerba-mate-sport-500g.jpeg",
+    "descripcion": "Yerba Mate Sport funcional de molienda equilibrada de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-kurupi-menta-boldo-500g",
+    "nombre": "YERBA KURUPÍ MENTA Y BOLDO 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-kurupi-menta-boldo-500g.jpeg",
+    "descripcion": "Yerba Mate Kurupí menta y boldo paraguaya ideal para tereré o mate digestivo de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-kurupi-menta-limon-500g",
+    "nombre": "YERBA KURUPÍ MENTA Y LIMÓN 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-kurupi-menta-limon-500g.jpeg",
+    "descripcion": "Yerba Mate Kurupí menta y limón altamente refrescante de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-kurupi-terere-mega-menta-500g",
+    "nombre": "YERBA KURUPÍ TERERÉ MEGA MENTA 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 5000,
+    "imagen": "assets/images/yerba-kurupi-terere-mega-menta-500g.jpeg",
+    "descripcion": "Yerba Mate Kurupí Tereré Mega Menta extra intensa de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-mate-10-argentina-500g",
+    "nombre": "YERBA MATE 10 EDICIÓN ARGENTINA 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 4000,
+    "imagen": "assets/images/yerba-mate-10-argentina-500g.jpeg",
+    "descripcion": "Yerba Mate 10 Edición Especial Selección Argentina de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-rei-verde-blanco-500g",
+    "nombre": "YERBA REI VERDE CLÁSICA PAQUETE BLANCO 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 7000,
+    "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
+    "descripcion": "Yerba Mate Rei Verde Clásica paquete blanco uruguaya de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-mate-10-mate-rojo-rosa-500g",
+    "nombre": "YERBA MATE 10 MATE ROJO PAQUETE ROSA 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 4000,
+    "imagen": "assets/images/yerba-mate-10-mate-rojo-rosa-500g.jpeg",
+    "descripcion": "Yerba Mate 10 Mate Rojo paquete rosa de molienda estacionada de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-rei-verde-clasica-500g",
+    "nombre": "YERBA MATE REI VERDE 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 6500,
+    "imagen": "assets/images/yerba-rei-verde-clasica-500g.jpeg",
+    "descripcion": "Yerba Mate Rei Verde tradicional uruguaya sin palo de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-rei-verde-export-500g",
+    "nombre": "YERBA MATE REI VERDE PREMIUM EXPORT PAQUETE NEGRO 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 7500,
+    "imagen": "assets/images/yerba-rei-verde-export-500g.jpeg",
+    "descripcion": "Yerba Mate Rei Verde Premium Export paquete negro uruguaya estacionada de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-pindare-500g",
+    "nombre": "YERBA PINDARE 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 5500,
+    "imagen": "assets/images/yerba-pindare-500g.jpeg",
+    "descripcion": "Yerba Mate Pindaré estacionamiento natural molienda de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-verdecita-500g",
+    "nombre": "YERBA VERDECITA 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 4500,
+    "imagen": "assets/images/yerba-verdecita-500g.jpeg",
+    "descripcion": "Yerba Mate Verdecita suave y duradera de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-baldo-500g",
+    "nombre": "YERBA BALDO 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 7500,
+    "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
+    "descripcion": "Yerba Mate Baldo uruguaya sin palo molienda seleccionada de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-canarias-serena-500g",
+    "nombre": "YERBA CANARIAS SERENA 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 8000,
+    "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
+    "descripcion": "Yerba Mate Canarias Serena compuesta con toronjil, pasiflora, menta y tilo de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-canarias-te-verde-jengibre-500g",
+    "nombre": "YERBA CANARIAS TÉ VERDE Y JENGIBRE 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 8000,
+    "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
+    "descripcion": "Yerba Mate Canarias compuesta con té verde y jengibre digestivo de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-canarias-edicion-especial-500g",
+    "nombre": "YERBA CANARIAS EDICIÓN ESPECIAL 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 7500,
+    "imagen": "assets/images/yerba-canarias-edicion-especial.png",
+    "descripcion": "Yerba Mate Canarias Edición Especial de estacionamiento prolongado de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-canarias-tradicional-500g",
+    "nombre": "YERBA CANARIAS TRADICIONAL 500G",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "precio": 7500,
+    "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
+    "descripcion": "Yerba Mate Canarias Tradicional uruguaya despalada de 500g.",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate seleccionada de origen verificado",
+      "Sabor intenso y duradero de excelente rendimiento",
+      "Envasado en origen que conserva aroma y frescura"
     ]
   }
 ];
