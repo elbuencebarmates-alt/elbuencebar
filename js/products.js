@@ -2072,17 +2072,18 @@ const PRODUCTOS = [
   },
   {
     "id": "bolso-matero-bordo-river-plate",
-    "nombre": "BOLSO MATERO BORDÓ RIVER PLATE CON SUJETADOR DE TERMO",
+    "nombre": "BOLSO MATERO COLOR BORDÓ CON ESCUDO DE RIVER PLATE",
     "categoria": "bolsos",
-    "subcategoria": "tela",
+    "subcategoria": "bolsos",
     "precio": 20000,
-    "imagen": "assets/images/bolso-matero-color-bord-con-logo-de-river.jpeg",
-    "descripcion": "Bolso matero reforzado en tela impermeable bordó con el escudo oficial de River Plate bordado y correa regulable para colgar.",
+    "imagen": "assets/images/bolso-bordo-river.jpeg",
+    "descripcion": "Bolso matero reforzado en color bordó con escudo oficial de River Plate, incluye sujetador para termo, yerbero y azucarero.",
     "destacado": true,
     "detalles": [
-      "Escudo bordado oficial de River Plate",
-      "Interior térmico lavable e impermeable",
-      "Sujetadores elásticos para termo y frascos"
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
     ]
   },
   {
@@ -2178,16 +2179,17 @@ const PRODUCTOS = [
   {
     "id": "mochila-bolso-animal-print-set",
     "nombre": "MOCHILA / BOLSO MATERO ANIMAL PRINT + YERBERO + AZUCARERO",
-    "categoria": "combos",
-    "subcategoria": "sets",
-    "precio": 30000,
-    "imagen": "assets/images/mochila-bolso-animal-print-yerbero-azucarero.jpeg",
-    "descripcion": "Set completo x3 piezas: mochila/bolso matero acolchado en estampado animal print con sujetador para termo, yerbero y azucarero haciendo juego.",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 20000,
+    "imagen": "assets/images/mochila-animal-print-set.jpeg",
+    "descripcion": "Mochila y bolso matero versátil con estampado animal print moderno, incluye yerbero y azucarero herméticos.",
     "destacado": true,
     "detalles": [
-      "Se transforma en bolso de colgar o mochila de espalda",
-      "Incluye latas yerbera y azucarera con pico vertedor",
-      "Interior forrado e impermeable"
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
     ]
   },
   {
@@ -2408,6 +2410,118 @@ const PRODUCTOS = [
       "Ideal para usar en la palanca de cambios del auto o transportar tu mate",
       "Costuras reforzadas para máxima durabilidad",
       "Fácil colocación y adaptabilidad"
+    ]
+  },
+  {
+    "id": "bolso-clasico-matero-rosa-fucsia",
+    "nombre": "BOLSO CLÁSICO MATERO ROSA FUCSIA + YERBERO + AZUCARERO",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 20000,
+    "imagen": "assets/images/bolso-rosa-fucsia.jpeg",
+    "descripcion": "Bolso clásico matero grande en tono rosa fucsia vibrante con sujetador interno de termo, yerbero y azucarero a juego.",
+    "destacado": true,
+    "detalles": [
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
+    ]
+  },
+  {
+    "id": "bolso-cuerina-grande-suela",
+    "nombre": "BOLSO MATERO CUERINA GRANDE COLOR SUELA + SET YERBERO",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 20000,
+    "imagen": "assets/images/bolso-cuerina-suela.jpeg",
+    "descripcion": "Combo de bolso matero grande confeccionado en cuerina resistente color suela con yerbero y azucarero haciendo juego.",
+    "destacado": true,
+    "detalles": [
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
+    ]
+  },
+  {
+    "id": "mochila-bolso-matero-verde-suela",
+    "nombre": "MOCHILA / BOLSO MATERO VERDE CON DETALLES EN SUELA + SET YERBERO",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 25000,
+    "imagen": "assets/images/mochila-verde-suela.jpeg",
+    "descripcion": "Mochila materna de lona premium verde enebro con detalles y correas en cuero suela vacuno, incluye yerbero y azucarero.",
+    "destacado": true,
+    "detalles": [
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
+    ]
+  },
+  {
+    "id": "mochila-bolso-matero-negro-suela",
+    "nombre": "MOCHILA / BOLSO MATERO NEGRO CON DETALLES EN SUELA + SET YERBERO",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 20000,
+    "imagen": "assets/images/mochila-negro-suela.jpeg",
+    "descripcion": "Mochila matera urbana en color negro con detalles contrastantes en cuero suela vacuno y latas yerbera/azucarera.",
+    "destacado": true,
+    "detalles": [
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
+    ]
+  },
+  {
+    "id": "bolso-clasico-boca-juniors",
+    "nombre": "BOLSO CLÁSICO TELA MATERO COLOR AZUL CON ESCUDO DE BOCA JUNIORS",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 20000,
+    "imagen": "assets/images/bolso-boca-juniors.jpeg",
+    "descripcion": "Bolso matero grande de tela reforzada azul con el escudo de Boca Juniors, sujetador para termo, yerbero y azucarero.",
+    "destacado": true,
+    "detalles": [
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
+    ]
+  },
+  {
+    "id": "bolso-clasico-tela-negro",
+    "nombre": "BOLSO CLÁSICO TELA MATERO COLOR NEGRO + YERBERO + AZUCARERO",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 20000,
+    "imagen": "assets/images/bolso-tela-negro.jpeg",
+    "descripcion": "Bolso matero clásico de tela negra lavable con divisiones internas para termo, mate y kit yerbero.",
+    "destacado": true,
+    "detalles": [
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
+    ]
+  },
+  {
+    "id": "bolso-cuerina-grande-negro",
+    "nombre": "BOLSO MATERO CUERINA GRANDE COLOR NEGRO + YERBERO + AZUCARERO",
+    "categoria": "bolsos",
+    "subcategoria": "bolsos",
+    "precio": 20000,
+    "imagen": "assets/images/bolso-cuerina-negro.jpeg",
+    "descripcion": "Bolso matero amplio de cuerina negra mate con costuras reforzadas, sujetador de termo y juego de yerbero/azucarero.",
+    "destacado": true,
+    "detalles": [
+      "Confeccionado con materiales impermeables y lavables",
+      "Sujetador elástico interior para fijar el termo",
+      "Incluye juego de latas yerbera y azucarera a tono",
+      "Correa ajustable para llevar al hombro o cruzado"
     ]
   }
 ];
