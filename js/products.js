@@ -1015,21 +1015,6 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "bolsito-viral-tik-tok-con-chaulata",
-    "nombre": "BOLSO MATERO CUERINA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
-    "categoria": "bolsos",
-    "subcategoria": "bolso",
-    "precio": 20000,
-    "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
-    "descripcion": "Bolsito de tela con chaulata.\r\n\r\nApto para termo stanley de 1,4",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-  {
     "id": "canastas-de-cuero-con-escudo-de-futbol-color-negro",
     "nombre": "CANASTAS DE CUERO CON ESCUDO DE FUTBOL COLOR NEGRO",
     "categoria": "materas",
@@ -2109,22 +2094,6 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "bolso-clasico-matero-rosa-fucsia",
-    "nombre": "BOLSO CLÁSICO MATERO ROSA FUCSIA + YERBERO + AZUCARERO",
-    "categoria": "bolsos",
-    "subcategoria": "bolsos",
-    "precio": 20000,
-    "imagen": "assets/images/bolso-rosa-fucsia.jpeg",
-    "descripcion": "Bolso clásico matero grande en tono rosa fucsia vibrante con sujetador interno de termo, yerbero y azucarero a juego.",
-    "destacado": true,
-    "detalles": [
-      "Confeccionado con materiales impermeables y lavables",
-      "Sujetador elástico interior para fijar el termo",
-      "Incluye juego de latas yerbera y azucarera a tono",
-      "Correa ajustable para llevar al hombro o cruzado"
-    ]
-  },
-  {
     "id": "bolso-cuerina-grande-suela",
     "nombre": "BOLSO MATERO CUERINA GRANDE COLOR SUELA + SET YERBERO",
     "categoria": "bolsos",
@@ -2180,38 +2149,6 @@ const PRODUCTOS = [
     "precio": 20000,
     "imagen": "assets/images/bolso-boca-juniors.jpeg",
     "descripcion": "Bolso matero grande de tela reforzada azul con el escudo de Boca Juniors, sujetador para termo, yerbero y azucarero.",
-    "destacado": true,
-    "detalles": [
-      "Confeccionado con materiales impermeables y lavables",
-      "Sujetador elástico interior para fijar el termo",
-      "Incluye juego de latas yerbera y azucarera a tono",
-      "Correa ajustable para llevar al hombro o cruzado"
-    ]
-  },
-  {
-    "id": "bolso-clasico-tela-negro",
-    "nombre": "BOLSO CLÁSICO TELA MATERO COLOR NEGRO + YERBERO + AZUCARERO",
-    "categoria": "bolsos",
-    "subcategoria": "bolsos",
-    "precio": 20000,
-    "imagen": "assets/images/bolso-tela-negro.jpeg",
-    "descripcion": "Bolso matero clásico de tela negra lavable con divisiones internas para termo, mate y kit yerbero.",
-    "destacado": true,
-    "detalles": [
-      "Confeccionado con materiales impermeables y lavables",
-      "Sujetador elástico interior para fijar el termo",
-      "Incluye juego de latas yerbera y azucarera a tono",
-      "Correa ajustable para llevar al hombro o cruzado"
-    ]
-  },
-  {
-    "id": "bolso-cuerina-grande-negro",
-    "nombre": "BOLSO MATERO CUERINA GRANDE COLOR NEGRO + YERBERO + AZUCARERO",
-    "categoria": "bolsos",
-    "subcategoria": "bolsos",
-    "precio": 20000,
-    "imagen": "assets/images/bolso-cuerina-negro.jpeg",
-    "descripcion": "Bolso matero amplio de cuerina negra mate con costuras reforzadas, sujetador de termo y juego de yerbero/azucarero.",
     "destacado": true,
     "detalles": [
       "Confeccionado con materiales impermeables y lavables",
