@@ -1,3 +1,14 @@
+
+// Security Helper: Sanitización XSS contra inyección HTML
+function escapeHTML(str) {
+  if (str === null || str === undefined) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 /* ==========================================================================
    INTERACTIVIDAD GLOBAL - EL BUEN CEBAR
    ========================================================================== */

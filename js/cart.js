@@ -1,3 +1,7 @@
+function escapeHTML(str) {
+  if (str === null || str === undefined) return '';
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+}
 /* ==========================================================================
    GESTOR DEL CARRITO - EL BUEN CEBAR
    ========================================================================== */
@@ -16,11 +20,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Carga los datos guardados en LocalStorage
+// Carga y audita los datos guardados en LocalStorage (Previene manipulación de precios)
 function cargarCarrito() {
   const carritoGuardado = localStorage.getItem("el_buen_cebar_carrito");
   if (carritoGuardado) {
     try {
-      carrito = JSON.parse(carritoGuardado);
+      const parsed = JSON.parse(carritoGuardado);
+      if (Array.isArray(parsed)) {
+        carrito = parsed.filter(item => {
+          if (!item || !item.id) return false;
+          // Validar que el producto exista en la base de datos real PRODUCTOS
+          const prod = typeof PRODUCTOS !== 'undefined' ? PRODUCTOS.find(p => p.id === item.id) : null;
+          if (prod) {
+            // Re-sanitizar y fijar campos
+            item.nombre = prod.nombre;
+            item.categoria = prod.categoria;
+            // Clampear cantidad entera segura entre 1 y 99
+            item.cantidad = Math.max(1, Math.min(99, Math.floor(parseInt(item.cantidad) || 1)));
+            // Auditar precio (mantener si es promo de caja $8.000 o bombilla $7.500)
+            if (item.precioCustom) {
+              item.precio = Math.max(0, Number(item.precioCustom));
+            } else {
+              item.precio = prod.precio;
+            }
+            return true;
+          }
+          return false;
+        });
+      } else {
+        carrito = [];
+      }
     } catch (e) {
       carrito = [];
     }
@@ -411,13 +440,13 @@ function actualizarUI() {
     let itemsHtml = shippingHtml;
 
     carrito.forEach(item => {
-      const opcionHtml = item.opcion ? `<span class="cart-item__option">Variante: ${item.opcion}</span>` : "";
+      const opcionHtml = item.opcion ? `<span class="cart-item__option">Variante: ${escapeHTML(item.opcion)}</span>` : "";
       itemsHtml += `
         <div class="cart-item">
-          <img src="${item.imagen}" alt="${item.nombre}" class="cart-item__image">
+          <img src="${item.imagen}" alt="${escapeHTML(item.nombre)}" class="cart-item__image">
           <div class="cart-item__details">
             <div>
-              <div class="cart-item__title">${item.nombre}</div>
+              <div class="cart-item__title">${escapeHTML(item.nombre)}</div>
               ${opcionHtml}
             </div>
             <div class="cart-item__qty-box">

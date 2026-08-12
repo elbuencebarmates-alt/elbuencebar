@@ -215,12 +215,12 @@ function renderizarCatalogo() {
         <div class="product-card" style="animation: fadeIn 0.4s ease forwards;">
           <div class="product-card__image-container ${hasHover ? 'product-card__image-container--has-hover' : ''}" onclick="window.location.href='producto.html?id=${p.id}'">
             ${p.destacado ? `<span class="product-card__badge">Destacado</span>` : ""}
-            <img src="${p.imagen}" alt="${p.nombre}" class="product-card__image product-card__image--primary">
-            ${hasHover ? `<img src="${imgHover}" alt="${p.nombre}" class="product-card__image product-card__image--secondary">` : ""}
+            <img src="${p.imagen}" alt="${escapeHTML(p.nombre)}" class="product-card__image product-card__image--primary">
+            ${hasHover ? `<img src="${imgHover}" alt="${escapeHTML(p.nombre)}" class="product-card__image product-card__image--secondary">` : ""}
           </div>
           <div class="product-card__content">
             <span class="product-card__meta">${p.categoria} ${p.subcategoria ? `· ${p.subcategoria}` : ''}</span>
-            <h3 class="product-card__title">${p.nombre}</h3>
+            <h3 class="product-card__title">${escapeHTML(p.nombre)}</h3>
             <div class="product-card__price-box">
               <span class="product-card__price">$${p.precio.toLocaleString('es-AR')}</span>
             </div>
