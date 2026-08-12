@@ -13,12 +13,12 @@
   <meta name="keywords" content="mate imperial, mate torpedo, mate camionero, el buen cebar, mate artesanal, ramos mejia, la matanza">
   
   <!-- Favicon -->
-  <link rel="icon" href="assets/images/favicon.png?v=450" type="image/png">
+  <link rel="icon" href="assets/images/favicon.png?v=460" type="image/png">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/main.css?v=450">
-  <link rel="stylesheet" href="css/components.css?v=450">
+  <link rel="stylesheet" href="css/main.css?v=460">
+  <link rel="stylesheet" href="css/components.css?v=460">
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
@@ -250,96 +250,132 @@
 
   
   
-  <!-- RESEÑAS Y EXPERIENCIAS REALES -->
-  <section class="reviews-section reveal-on-scroll">
-    <div class="container">
-      <div class="reviews-header">
-        <h2 class="section-title">Mensajes de nuestros clientes</h2>
-        <p class="section-subtitle">Algunos comentarios y mensajes reales que nos envían por WhatsApp e Instagram</p>
+  
+  <!-- PRODUCTOS FAVORITOS DE LA CASA -->
+  <section class="container reveal-on-scroll" style="padding-top: 60px; padding-bottom: 60px;">
+    <h2 class="section-title">Productos Favoritos</h2>
+    <p class="section-subtitle">Una selección imprescindible de nuestros mates, termos, bombillas y materas más elegidos</p>
+
+    <div class="product-grid">
+      <!-- 1. IMPERIAL -->
+      <div class="product-card">
+        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=mate-imperial-boca-ancha'">
+          <span class="product-card__badge">Imperial</span>
+          <img src="assets/images/mate-imperial-boca-ancha-negro.png" alt="Mate Imperial premium boca ancha" class="product-card__image product-card__image--primary">
+          <img src="assets/images/mate-imperial-boca-ancha-marron.png" alt="Mate Imperial premium boca ancha" class="product-card__image product-card__image--secondary">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__meta">Mates · Imperial</span>
+          <h3 class="product-card__title">Mate Imperial premium boca ancha</h3>
+          <div class="product-card__price-box">
+            <span class="product-card__price">$40.000</span>
+          </div>
+          <div class="product-card__actions">
+            <a href="producto.html?id=mate-imperial-boca-ancha" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-imperial-boca-ancha', 1, '', event)">Agregar</button>
+          </div>
+        </div>
       </div>
 
-      <div class="reviews-grid">
-        <!-- Mensaje 1 -->
-        <div class="review-card">
-          <div class="review-card__header">
-            <div class="review-card__source">💬 WhatsApp · Ramos Mejía</div>
-            <span class="review-card__rating">★★★★★</span>
+      <!-- 2. CAMIONERO -->
+      <div class="product-card">
+        <div class="product-card__image-container" onclick="window.location.href='producto.html?id=mate-camionero-algarrobo-premium'">
+          <span class="product-card__badge">Camionero</span>
+          <img src="assets/images/camionero-algarrobo-premium-real.jpg" alt="Mate Camionero de Algarrobo Premium" class="product-card__image">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__meta">Mates · Camionero</span>
+          <h3 class="product-card__title">Mate Camionero de Algarrobo Premium</h3>
+          <div class="product-card__price-box">
+            <span class="product-card__price">$35.000</span>
           </div>
-          <p class="review-card__text">"Capo mil gracias, recién me llegó el imperial. La virola un espectáculo loco, se nota la calidad del cuero. Cebar acá es otra cosa."</p>
-          <div class="review-card__footer">
-            <span class="review-card__author-name">Santi</span>
-            <span class="review-card__author-meta">Mate Imperial Premium</span>
+          <div class="product-card__actions">
+            <a href="producto.html?id=mate-camionero-algarrobo-premium" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-camionero-algarrobo-premium', 1, '', event)">Agregar</button>
           </div>
         </div>
+      </div>
 
-        <!-- Mensaje 2 -->
-        <div class="review-card">
-          <div class="review-card__header">
-            <div class="review-card__source">💬 WhatsApp · Haedo</div>
-            <span class="review-card__rating">★★★★★</span>
+      <!-- 3. TORPEDO -->
+      <div class="product-card">
+        <div class="product-card__image-container" onclick="window.location.href='producto.html?id=mate-torpedo-alpaca-calada'">
+          <span class="product-card__badge">Torpedo</span>
+          <img src="assets/images/torpedo-alpaca-calada-negro.png" alt="Mate Torpedo Virola de Alpaca Calada" class="product-card__image">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__meta">Mates · Torpedo</span>
+          <h3 class="product-card__title">Mate Torpedo Virola de Alpaca Calada</h3>
+          <div class="product-card__price-box">
+            <span class="product-card__price">$40.000</span>
           </div>
-          <p class="review-card__text">"Che impecable la canasta de cuero, entra todo perfecto (termo + yerbero + mate). Les vuelvo a comprar seguro, un abrazo!"</p>
-          <div class="review-card__footer">
-            <span class="review-card__author-name">Nico</span>
-            <span class="review-card__author-meta">Canasta de Cuero</span>
+          <div class="product-card__actions">
+            <a href="producto.html?id=mate-torpedo-alpaca-calada" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('mate-torpedo-alpaca-calada', 1, '', event)">Agregar</button>
           </div>
         </div>
+      </div>
 
-        <!-- Mensaje 3 -->
-        <div class="review-card">
-          <div class="review-card__header">
-            <div class="review-card__source">📸 Instagram · Morón</div>
-            <span class="review-card__rating">★★★★★</span>
+      <!-- 4. BOMBILLA -->
+      <div class="product-card">
+        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=bombilla-bombillon'">
+          <span class="product-card__badge">Bombilla</span>
+          <img src="assets/images/bombillon-alpaca-cincelado.png" alt="Bombillón de caño liso" class="product-card__image product-card__image--primary">
+          <img src="assets/images/bombillon-acero-pala.png" alt="Bombillón de caño liso" class="product-card__image product-card__image--secondary">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__meta">Bombillas · Bombillón</span>
+          <h3 class="product-card__title">Bombillón de caño liso</h3>
+          <div class="product-card__price-box">
+            <span class="product-card__price">$15.000</span>
           </div>
-          <p class="review-card__text">"Hola genio, llegó joya el paquete acá a Morón. Mantiene re caliente el termo Total Black, una masa."</p>
-          <div class="review-card__footer">
-            <span class="review-card__author-name">Mati</span>
-            <span class="review-card__author-meta">Termo Total Black</span>
+          <div class="product-card__actions">
+            <a href="producto.html?id=bombilla-bombillon" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('bombilla-bombillon', 1, '', event)">Agregar</button>
           </div>
         </div>
+      </div>
 
-        <!-- Mensaje 4 -->
-        <div class="review-card">
-          <div class="review-card__header">
-            <div class="review-card__source">💬 WhatsApp · Castelar</div>
-            <span class="review-card__rating">★★★★★</span>
+      <!-- 5. TERMO -->
+      <div class="product-card">
+        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=termo-media-manija-total-black'">
+          <span class="product-card__badge">Termo</span>
+          <img src="assets/images/termo-media-manija-total-black.png" alt="Termo media manija negro Total Black" class="product-card__image product-card__image--primary">
+          <img src="assets/images/termo-media-manija.jpg" alt="Termo media manija negro Total Black" class="product-card__image product-card__image--secondary">
+        </div>
+        <div class="product-card__content">
+          <span class="product-card__meta">Termos · Negro</span>
+          <h3 class="product-card__title">Termo media manija negro Total Black</h3>
+          <div class="product-card__price-box">
+            <span class="product-card__price">$25.000</span>
           </div>
-          <p class="review-card__text">"Hola chicos! Le regalé la matera de pelo a mi novio y le encantó. Gracias por mandarla tan rápido en el día!"</p>
-          <div class="review-card__footer">
-            <span class="review-card__author-name">Cami</span>
-            <span class="review-card__author-meta">Mediacanasta Pelo Vacuno</span>
+          <div class="product-card__actions">
+            <a href="producto.html?id=termo-media-manija-total-black" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('termo-media-manija-total-black', 1, '', event)">Agregar</button>
           </div>
         </div>
+      </div>
 
-        <!-- Mensaje 5 -->
-        <div class="review-card">
-          <div class="review-card__header">
-            <div class="review-card__source">💬 WhatsApp · San Justo</div>
-            <span class="review-card__rating">★★★★★</span>
-          </div>
-          <p class="review-card__text">"Buenas! Ya recibí la yerba y el bombillón de alpaca. Todo de diez la atención por WhatsApp, gracias!"</p>
-          <div class="review-card__footer">
-            <span class="review-card__author-name">Valen</span>
-            <span class="review-card__author-meta">Bombillón de Alpaca</span>
-          </div>
+      <!-- 6. MATERA -->
+      <div class="product-card">
+        <div class="product-card__image-container product-card__image-container--has-hover" onclick="window.location.href='producto.html?id=canasta-cuero-grande'">
+          <span class="product-card__badge">Matera</span>
+          <img src="assets/images/canasta-cuero-grande.png" alt="Canasta 100% cuero grande reforzada" class="product-card__image product-card__image--primary">
+          <img src="assets/images/media-canasta-cuero-negro.png" alt="Canasta 100% cuero grande reforzada" class="product-card__image product-card__image--secondary">
         </div>
-
-        <!-- Mensaje 6 -->
-        <div class="review-card">
-          <div class="review-card__header">
-            <div class="review-card__source">📸 Instagram · Lomas del Mirador</div>
-            <span class="review-card__rating">★★★★★</span>
+        <div class="product-card__content">
+          <span class="product-card__meta">Materas · Canasta</span>
+          <h3 class="product-card__title">Canasta 100% cuero grande reforzada</h3>
+          <div class="product-card__price-box">
+            <span class="product-card__price">$25.000</span>
           </div>
-          <p class="review-card__text">"Excelente calidad el bolso matero bordó. Lo uso todos los días para la facu y la verdad de 10."</p>
-          <div class="review-card__footer">
-            <span class="review-card__author-name">Joaco</span>
-            <span class="review-card__author-meta">Bolso Matero Bordó</span>
+          <div class="product-card__actions">
+            <a href="producto.html?id=canasta-cuero-grande" class="btn btn--secondary btn--sm btn--full">Ver Detalles</a>
+            <button class="btn btn--primary btn--sm" onclick="agregarAlCarrito('canasta-cuero-grande', 1, '', event)">Agregar</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
 
   <!-- LOCALIDAD Y CONTACTO (RAMOS MEJÍA) -->
@@ -490,9 +526,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/products.js?v=450"></script>
-  <script src="js/cart.js?v=450"></script>
-  <script src="js/main.js?v=450"></script>
+  <script src="js/products.js?v=460"></script>
+  <script src="js/cart.js?v=460"></script>
+  <script src="js/main.js?v=460"></script>
 </body>
 </html>
 
