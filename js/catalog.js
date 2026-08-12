@@ -214,7 +214,7 @@ function renderizarCatalogo() {
       return `
         <div class="product-card" style="animation: fadeIn 0.4s ease forwards;">
           <div class="product-card__image-container ${hasHover ? 'product-card__image-container--has-hover' : ''}" onclick="window.location.href='producto.html?id=${p.id}'">
-            ${p.destacado ? `<span class="product-card__badge">Destacado</span>` : ""}
+            ${(p.destacado || p.badge) ? `<span class="product-card__badge">${escapeHTML(p.badge || 'Destacado')}</span>` : ""}
             <img src="${p.imagen}" alt="${escapeHTML(p.nombre)}" class="product-card__image product-card__image--primary">
             ${hasHover ? `<img src="${imgHover}" alt="${escapeHTML(p.nombre)}" class="product-card__image product-card__image--secondary">` : ""}
           </div>
