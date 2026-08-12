@@ -1015,62 +1015,13 @@ const PRODUCTOS = [
     ]
   },
   {
-    "id": "mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela",
-    "nombre": "MOCHILA/BOLSO MATERO + CHAULATA  CON DETALLES EN SUELA",
-    "categoria": "bolsos",
-    "subcategoria": "mochila",
-    "precio": 25000,
-    "imagen": "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
-    "imagenes": [
-      "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela.jpeg",
-      "assets/images/mochila-bolso-matero-chaulata-verde-enebro-con-detalles-en-suela-2.jpeg"
-    ],
-    "descripcion": "Mochila con tiras para bolso color verde enebro, con detalles suela.\r\n\r\nincluye sujetador para bolso y yerbera grande y yerbera chica reforzadas por dentro.",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-  {
     "id": "bolsito-viral-tik-tok-con-chaulata",
     "nombre": "BOLSO MATERO CUERINA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
     "categoria": "bolsos",
     "subcategoria": "bolso",
-    "precio": 25000,
+    "precio": 20000,
     "imagen": "assets/images/bolsito-viral-tik-tok-con-chaulata.jpeg",
     "descripcion": "Bolsito de tela con chaulata.\r\n\r\nApto para termo stanley de 1,4",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-  {
-    "id": "bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia",
-    "nombre": "BOLSO MATERO TELA PREMIUM CON SUJETADOR DE TERMO + YERBERO + AZUCARERO",
-    "categoria": "bolsos",
-    "subcategoria": "bolso",
-    "precio": 25000,
-    "imagen": "assets/images/bolso-matero-tela-premiun-con-sujetador-de-termo-yerbero-azucarero-copia.jpeg",
-    "descripcion": "Bolsito de tela con chaulata",
-    "destacado": false,
-    "detalles": [
-      "Seleccionado minuciosamente por calidad",
-      "Materiales premium garantizados",
-      "Diseño artesanal tradicional"
-    ]
-  },
-  {
-    "id": "mochila-bolso-matero-animal-print-con-chaulatas",
-    "nombre": "MOCHILA / BOLSO MATERO ANIMAL PRINT CON CHAULATAS",
-    "categoria": "bolsos",
-    "subcategoria": "mochila",
-    "precio": 25000,
-    "imagen": "assets/images/mochila-bolso-matero-animal-print-con-chaulatas.jpeg",
-    "descripcion": "Incluye mochila/bolso color animal print con yerbero y azucarero haciendo juego.",
     "destacado": false,
     "detalles": [
       "Seleccionado minuciosamente por calidad",
