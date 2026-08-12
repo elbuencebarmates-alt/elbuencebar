@@ -8,7 +8,7 @@ const PRODUCTOS = [
     "nombre": "Mate Imperial premium boca ancha",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 40000,
+    "precio": 30000,
     "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
     "descripcion": "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
     "destacado": true,
@@ -21,17 +21,17 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
-        "precio": 40000
+        "precio": 30000
       },
       {
         "nombre": "CUERO MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-marron.png",
-        "precio": 40000
+        "precio": 30000
       },
       {
         "nombre": "CUERO CRUDO",
         "imagen": "assets/images/mate-imperial-boca-ancha-crudo.png",
-        "precio": 40000
+        "precio": 30000
       }
     ],
     "badge": "DESTACADO"
