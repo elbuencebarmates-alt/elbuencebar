@@ -8,7 +8,7 @@ const PRODUCTOS = [
     "nombre": "Mate Imperial premium boca ancha",
     "categoria": "mates",
     "subcategoria": "imperial",
-    "precio": 30000,
+    "precio": 40000,
     "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
     "descripcion": "Nuestra mejor calidad. Selección de materiales premium: costura a mano con hilo encerado. Cuenta con una distinguida guarda de alpaca cincelada y calabazas brasileras seleccionadas.",
     "destacado": true,
@@ -21,19 +21,20 @@ const PRODUCTOS = [
       {
         "nombre": "CUERO NEGRO LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-negro.png",
-        "precio": 30000
+        "precio": 40000
       },
       {
         "nombre": "CUERO MARRÓN LISO",
         "imagen": "assets/images/mate-imperial-boca-ancha-marron.png",
-        "precio": 30000
+        "precio": 40000
       },
       {
         "nombre": "CUERO CRUDO",
         "imagen": "assets/images/mate-imperial-boca-ancha-crudo.png",
-        "precio": 30000
+        "precio": 40000
       }
-    ]
+    ],
+    "badge": "DESTACADO"
   },
   {
     "id": "mate-imperial-croco-repujado",
@@ -365,7 +366,7 @@ const PRODUCTOS = [
     "nombre": "Bombillón de caño liso",
     "categoria": "bombillas",
     "subcategoria": "bombillon",
-    "precio": 5000,
+    "precio": 15000,
     "imagen": "assets/images/bombillon-acero-pala.png",
     "descripcion": "Bombillón de acero inoxidable con formato pico de loro y pala grande microperforada de alta capacidad de succión.",
     "destacado": true,
@@ -379,9 +380,10 @@ const PRODUCTOS = [
       {
         "nombre": "ACERO CON PICO DE LORO Y PALA GRANDE",
         "imagen": "assets/images/bombillon-acero-pala.png",
-        "precio": 5000
+        "precio": 15000
       }
-    ]
+    ],
+    "badge": "ALPACA"
   },
   {
     "id": "bombilla-bombillon-labrado-premium",
@@ -567,16 +569,17 @@ const PRODUCTOS = [
     "nombre": "Termo media manija negro Total Black",
     "categoria": "termos",
     "subcategoria": "negro",
-    "precio": 35000,
+    "precio": 25000,
     "imagen": "assets/images/termo-media-manija-total-black.png",
     "descripcion": "Termo de acero inoxidable con pintura epoxy negro mate de alta resistencia, media manija rebatible y tapón cebador ergonómico.",
-    "destacado": false,
+    "destacado": true,
     "detalles": [
       "Pintura siliconada de alta resistencia",
       "Conserva calor/frío por más de 20 horas",
       "Media manija para un agarre cómodo",
       "Capacidad: 1 Litro"
-    ]
+    ],
+    "badge": "MEDIA MANIJA"
   },
   {
     "id": "termo-system-12-lts",
@@ -615,16 +618,17 @@ const PRODUCTOS = [
     "nombre": "Canasta 100% cuero grande reforzada",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 40000,
+    "precio": 25000,
     "imagen": "assets/images/canasta-cuero-grande.png",
     "descripcion": "Canasta matera confeccionada en cuero legítimo de alta resistencia con terminación de costuras reforzadas a mano y remaches de bronce.",
-    "destacado": false,
+    "destacado": true,
     "detalles": [
       "Cuero vacuno legítimo extra grueso seleccionado",
       "Costura doble reforzada de gran resistencia",
       "Remaches de bronce reforzados en manija y uniones",
       "Manija superior fija de gran comodidad"
-    ]
+    ],
+    "badge": "100% CUERO"
   },
   {
     "id": "matera-media-canasta",
@@ -659,7 +663,7 @@ const PRODUCTOS = [
     "nombre": "Mediacanasta premium de pelo vacuno",
     "categoria": "materas",
     "subcategoria": "canasta",
-    "precio": 50000,
+    "precio": 70000,
     "imagen": "assets/images/mediacanasta-pelo-vacuno.jpg",
     "descripcion": "Esta canasta viene con pelo natural, por lo cual presentan todas diferentes tonos y manchas, volviendo cada modelo único. En caso de querer un tono particular, una vez realizada la compra solicita foto de la misma a través de WhatsApp.",
     "destacado": true,
@@ -668,7 +672,8 @@ const PRODUCTOS = [
       "Costuras reforzadas a mano para máxima duración",
       "Manija rígida fija para un transporte cómodo y seguro",
       "Diseño premium con división interna"
-    ]
+    ],
+    "badge": "PELO NATURAL"
   },
   {
     "id": "set-yerbero-negro-mate",
