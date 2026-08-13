@@ -1144,7 +1144,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-edicion-especial.png",
-        "precio": 13000
+        "precio": 7500
       },
       {
         "nombre": "1 KG",
