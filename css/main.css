@@ -516,7 +516,7 @@ section {
 .dark-mode-toggle {
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  left: 24px;
   width: 50px;
   height: 50px;
   border-radius: var(--radius-full);
@@ -560,31 +560,14 @@ section {
 @media (max-width: 768px) {
   .dark-mode-toggle {
     bottom: 16px;
-    right: 16px;
+    left: 16px;
     width: 44px;
     height: 44px;
   }
 }
 
 /* --- BOTÓN FLOTANTE Y POPUP DE WHATSAPP --- */
-.whatsapp-float {
-  position: fixed;
-  bottom: 84px;
-  right: 24px;
-  width: 50px;
-  height: 50px;
-  border-radius: var(--radius-full);
-  background-color: #25D366;
-  color: #ffffff;
-  border: none;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  cursor: pointer;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-}
+.whatsapp-float { display: none !important; }
 
 .whatsapp-float:hover {
   transform: scale(1.08) translateY(-3px);
@@ -597,22 +580,7 @@ section {
   fill: currentColor;
 }
 
-.whatsapp-popup {
-  position: fixed;
-  bottom: 145px;
-  right: 24px;
-  width: 310px;
-  background-color: var(--color-bg-primary);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  padding: 16px;
-  z-index: 1000;
-  display: none;
-  flex-direction: column;
-  gap: 12px;
-  animation: fadeIn 0.25s ease-out;
-}
+.whatsapp-popup { display: none !important; }
 
 .whatsapp-popup--open {
   display: flex;
