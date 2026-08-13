@@ -1412,3 +1412,189 @@
     display: none;
   }
 }
+
+
+/* ==========================================================================
+   BARRA DE CONFIANZA, GARANTÍAS Y SELLOS DE SEGURIDAD
+   ========================================================================== */
+
+/* 1. BARRA DE GARANTÍAS DE CONFIANZA */
+.trust-bar {
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 28px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px;
+  transition: transform var(--transition-normal);
+}
+
+.trust-item:hover {
+  transform: translateY(-2px);
+}
+
+.trust-item__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.trust-item__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.trust-item__title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+
+.trust-item__desc {
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+  line-height: 1.3;
+}
+
+/* 2. INSIGNIAS Y SELLOS DE SEGURIDAD EN FOOTER */
+.footer-trust-banner {
+  border-top: 1px solid var(--color-border);
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 24px 0;
+  margin-top: 40px;
+}
+
+.footer-trust-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.payment-methods-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.payment-badge {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: var(--shadow-sm);
+}
+
+.security-seals-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.security-seal {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #10B981;
+  background-color: rgba(16, 185, 129, 0.06);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* 3. WIDGET FLOTANTE DE WHATSAPP CON ESTADO EN LÍNEA */
+.whatsapp-float-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.whatsapp-float-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.whatsapp-float-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-pulse-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #10B981;
+  border: 2px solid #fff;
+}
+
+.whatsapp-float-tooltip {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  white-space: nowrap;
+  animation: fadeIn 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float-tooltip {
+    display: none;
+  }
+  .whatsapp-float-widget {
+    bottom: 16px;
+    right: 16px;
+  }
+}
