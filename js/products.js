@@ -1220,18 +1220,6 @@ const PRODUCTOS = [
       "Yerba uruguaya sin palo",
       "Sabor extra suave y bajo amargor",
       "Excelente durabilidad"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
-        "precio": 5000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
-        "precio": 13000
-      }
     ]
   },
   {
