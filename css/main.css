@@ -696,3 +696,6 @@ section {
   }
 }
 
+
+
+.dark-mode-toggle { display: none !important; }
