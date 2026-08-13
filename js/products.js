@@ -1201,6 +1201,11 @@ const PRODUCTOS = [
     ],
     "variantes": [
       {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
+        "precio": 7000
+      },
+      {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
         "precio": 10000
@@ -1240,7 +1245,7 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-sara-tradicional.jpeg",
-        "precio": 5000
+        "precio": 7500
       },
       {
         "nombre": "1 KG",
@@ -2419,6 +2424,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Molienda fina brasilera (chimarrão)",
       "Sabor suave y verde brillante"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-barao.png",
+        "precio": 6000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-barao.png",
+        "precio": 9000
+      }
     ]
   },
   {
@@ -2434,6 +2451,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Sabor intenso y duradero",
       "Importada de Uruguay"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-tradicional.png",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-tradicional.png",
+        "precio": 15000
+      }
     ]
   },
   {
@@ -2449,6 +2478,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Corta hoja uruguaya",
       "Sabor suave y constante"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-clasica.png",
+        "precio": 6500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-clasica.png",
+        "precio": 10000
+      }
     ]
   },
   {
@@ -2464,6 +2505,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Edición Premium Export",
       "Estacionamiento natural prolongado"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-export.png",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-export.png",
+        "precio": 12000
+      }
     ]
   },
   {
@@ -2479,6 +2532,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Edición Especial seleccionada",
       "Elaborada con palo"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 3500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 6000
+      }
     ]
   },
   {
@@ -2494,6 +2559,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Sabor tradicional misionero",
       "Estacionamiento natural"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 3500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 6000
+      }
     ]
   },
   {
@@ -2509,6 +2586,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Sabor suave y equilibrado",
       "Gran rendimiento en la cebada"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-pindare.png",
+        "precio": 5500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-pindare.png",
+        "precio": 9500
+      }
     ]
   },
   {
@@ -2524,6 +2613,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Molienda equilibrada",
       "Sabor fresco y constante"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-verdecita.png",
+        "precio": 4500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-verdecita.png",
+        "precio": 9000
+      }
     ]
   },
   {
@@ -2539,6 +2640,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Yerba uruguaya tipo despalada",
       "Sabor intenso y duradero"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-baldo.png",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-baldo.png",
+        "precio": 12000
+      }
     ]
   },
   {
@@ -2554,6 +2667,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Con té verde y jengibre",
       "Sabor digestivo y reconfortante"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-te-verde-jengibre.png",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-te-verde-jengibre.png",
+        "precio": 14000
+      }
     ]
   },
   {
@@ -2569,6 +2694,18 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Con tilo, toronjil, menta y pasionaria",
       "Sabor suave y relajante"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-serena.png",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-serena.png",
+        "precio": 13000
+      }
     ]
   },
   {
@@ -2583,6 +2720,78 @@ const PRODUCTOS = [
     "detalles": [
       "Presentación de 1kg",
       "Yerba uruguaya despalada de selección",
+      "Sabor intenso y duradero"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-tradicional.png",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-tradicional.png",
+        "precio": 14000
+      }
+    ]
+  },
+  {
+    "id": "yerba-esmeralda-500g",
+    "nombre": "YERBA MATE ESMERALDA 500G",
+    "descripcion": "Yerba mate Esmeralda de 500g, sabor intenso y equilibrado importada de Uruguay.",
+    "precio": 8000,
+    "imagen": "assets/images/yerba-canarias-tradicional.png",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba uruguaya seleccionada",
+      "Sabor intenso y de gran rendimiento"
+    ]
+  },
+  {
+    "id": "yerba-mate-rojo-edicion-especial-500g",
+    "nombre": "YERBA MATE ROJO EDICIÓN ESPECIAL 500G",
+    "descripcion": "Yerba Mate Rojo Edición Especial de 500g.",
+    "precio": 3500,
+    "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 500g",
+      "Edición Especial de selección",
+      "Elaborada con palo"
+    ]
+  },
+  {
+    "id": "yerba-mate-rojo-tradicional-500g",
+    "nombre": "YERBA MATE ROJO TRADICIONAL 500G",
+    "descripcion": "Yerba Mate Rojo Tradicional de 500g.",
+    "precio": 3500,
+    "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 500g",
+      "Sabor tradicional misionero",
+      "Estacionamiento natural"
+    ]
+  },
+  {
+    "id": "yerba-sara-tradicional-500g",
+    "nombre": "YERBA MATE SARA TRADICIONAL 500G",
+    "descripcion": "Yerba Mate Sara Tradicional de 500g importada de Uruguay. Sabor intenso y gran durabilidad.",
+    "precio": 7500,
+    "imagen": "assets/images/yerba-sara-tradicional.jpeg",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba uruguaya despalada",
       "Sabor intenso y duradero"
     ]
   }
