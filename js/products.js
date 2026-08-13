@@ -2587,7 +2587,7 @@ const PRODUCTOS = [
     "nombre": "YERBA MATE ESMERALDA 1KG",
     "descripcion": "Yerba mate Esmeralda de 1kg importada de Uruguay. Sabor intenso y de excelente durabilidad en la cebada.",
     "precio": 15000,
-    "imagen": "assets/images/yerba-esmeralda-1kg.png",
+    "imagen": "assets/images/yerba-esmeralda-1kg.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
     "destacado": true,
@@ -2599,12 +2599,12 @@ const PRODUCTOS = [
     "variantes": [
       {
         "nombre": "500 GR",
-        "imagen": "assets/images/yerba-esmeralda-1kg.png",
+        "imagen": "assets/images/yerba-esmeralda-1kg.jpeg",
         "precio": 8000
       },
       {
         "nombre": "1 KG",
-        "imagen": "assets/images/yerba-esmeralda-1kg.png",
+        "imagen": "assets/images/yerba-esmeralda-1kg.jpeg",
         "precio": 15000
       }
     ]
