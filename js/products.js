@@ -1167,6 +1167,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-barao-500g.jpeg",
+        "precio": 6000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-barao-500g.jpeg",
+        "precio": 9000
+      }
     ]
   },
   {
@@ -2249,6 +2261,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
+        "precio": 7000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-clasica-blanco-500g.jpeg",
+        "precio": 10000
+      }
     ]
   },
   {
@@ -2265,6 +2289,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-mate-10-mate-rojo-rosa-500g.jpeg",
+        "precio": 4000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-mate-10-mate-rojo-rosa-500g.jpeg",
+        "precio": 6000
+      }
     ]
   },
   {
@@ -2281,6 +2317,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-clasica-500g.jpeg",
+        "precio": 6500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-clasica-500g.jpeg",
+        "precio": 10000
+      }
     ]
   },
   {
@@ -2297,6 +2345,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-rei-verde-export-500g.jpeg",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-rei-verde-export-500g.jpeg",
+        "precio": 12000
+      }
     ]
   },
   {
@@ -2313,6 +2373,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-pindare-500g.jpeg",
+        "precio": 5500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-pindare-500g.jpeg",
+        "precio": 9500
+      }
     ]
   },
   {
@@ -2329,6 +2401,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-verdecita-500g.jpeg",
+        "precio": 4500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-verdecita-500g.jpeg",
+        "precio": 9000
+      }
     ]
   },
   {
@@ -2345,6 +2429,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-baldo-tradicional-500g.png",
+        "precio": 12000
+      }
     ]
   },
   {
@@ -2361,6 +2457,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-serena-500g.jpg",
+        "precio": 13000
+      }
     ]
   },
   {
@@ -2377,6 +2485,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-jengibre-te-verde-500g.jpg",
+        "precio": 14000
+      }
     ]
   },
   {
@@ -2393,6 +2513,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-edicion-especial.png",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-edicion-especial.png",
+        "precio": 13000
+      }
     ]
   },
   {
@@ -2409,6 +2541,18 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-tradicional-500g.jpg",
+        "precio": 14000
+      }
     ]
   },
   {
@@ -2748,6 +2892,18 @@ const PRODUCTOS = [
       "Presentación de 500g",
       "Yerba uruguaya seleccionada",
       "Sabor intenso y de gran rendimiento"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-canarias-tradicional.png",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-canarias-tradicional.png",
+        "precio": 15000
+      }
     ]
   },
   {
@@ -2763,6 +2919,18 @@ const PRODUCTOS = [
       "Presentación de 500g",
       "Edición Especial de selección",
       "Elaborada con palo"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 3500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 6000
+      }
     ]
   },
   {
@@ -2778,6 +2946,18 @@ const PRODUCTOS = [
       "Presentación de 500g",
       "Sabor tradicional misionero",
       "Estacionamiento natural"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 3500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+        "precio": 6000
+      }
     ]
   },
   {
@@ -2793,6 +2973,18 @@ const PRODUCTOS = [
       "Presentación de 500g",
       "Yerba uruguaya despalada",
       "Sabor intenso y duradero"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-sara-tradicional.jpeg",
+        "precio": 7500
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-sara-tradicional.jpeg",
+        "precio": 13000
+      }
     ]
   }
 ];
