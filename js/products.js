@@ -1130,7 +1130,7 @@ const PRODUCTOS = [
     "id": "yerba-canarias-edicion-especial-1kg",
     "nombre": "YERBA MATE CANARIAS EDICIÓN ESPECIAL",
     "descripcion": "Disfrutá del sabor auténtico de la Yerba Mate Canarias Edición Especial. Una selección premium importada desde Uruguay, ideal para cebadas de larga duración, con sabor persistente y equilibrado. Edición limitada elegida por El Buen Cebar.",
-    "precio": 15000,
+    "precio": 13000,
     "imagen": "assets/images/yerba-canarias-edicion-especial.png",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1144,12 +1144,12 @@ const PRODUCTOS = [
       {
         "nombre": "500 GR",
         "imagen": "assets/images/yerba-canarias-edicion-especial.png",
-        "precio": 5000
+        "precio": 13000
       },
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-canarias-edicion-especial.png",
-        "precio": 15000
+        "precio": 13000
       }
     ]
   },
