@@ -1203,7 +1203,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-rei-verde-clasica-blanco-1kg.jpeg",
-        "precio": 15000
+        "precio": 10000
       }
     ]
   },
@@ -1211,7 +1211,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-extra-suave",
     "nombre": "YERBA MATE SARA EXTRA SUAVE",
     "descripcion": "Yerba Mate Sara Extra Suave importada de Uruguay. Sabor delicado y muy amable al paladar.",
-    "precio": 10000,
+    "precio": 13000,
     "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1230,7 +1230,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-sara-extra-suave.jpeg",
-        "precio": 10000
+        "precio": 13000
       }
     ]
   },
@@ -1238,7 +1238,7 @@ const PRODUCTOS = [
     "id": "yerba-sara-tradicional",
     "nombre": "YERBA MATE SARA TRADICIONAL",
     "descripcion": "Yerba Mate Sara Tradicional paquete rojo. La clásica yerba uruguaya de cuerpo intenso y carácter persistente.",
-    "precio": 10000,
+    "precio": 13000,
     "imagen": "assets/images/yerba-sara-tradicional.jpeg",
     "categoria": "yerbas",
     "subcategoria": "otras",
@@ -1257,7 +1257,7 @@ const PRODUCTOS = [
       {
         "nombre": "1 KG",
         "imagen": "assets/images/yerba-sara-tradicional.jpeg",
-        "precio": 10000
+        "precio": 13000
       }
     ]
   },
@@ -2416,6 +2416,186 @@ const PRODUCTOS = [
       "Yerba mate seleccionada de origen verificado",
       "Sabor intenso y duradero de excelente rendimiento",
       "Envasado en origen que conserva aroma y frescura"
+    ]
+  },
+  {
+    "id": "yerba-barao-1kg",
+    "nombre": "YERBA BARAO DE COTEGIPE 1KG",
+    "descripcion": "Yerba mate brasilera Barão de Cotegipe de 1kg, molienda fina ideal para chimarrão.",
+    "precio": 9000,
+    "imagen": "assets/images/yerba-barao.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Molienda fina brasilera (chimarrão)",
+      "Sabor suave y verde brillante"
+    ]
+  },
+  {
+    "id": "yerba-esmeralda-1kg",
+    "nombre": "YERBA MATE ESMERALDA 1KG",
+    "descripcion": "Yerba mate Esmeralda de 1kg, sabor Intenso y equilibrado.",
+    "precio": 15000,
+    "imagen": "assets/images/yerba-canarias-tradicional.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Sabor intenso y duradero",
+      "Importada de Uruguay"
+    ]
+  },
+  {
+    "id": "yerba-rei-verde-clasica-1kg",
+    "nombre": "YERBA MATE REI VERDE 1KG",
+    "descripcion": "Yerba mate Rei Verde tradicional de 1kg, selección de hojas de alto rendimiento.",
+    "precio": 10000,
+    "imagen": "assets/images/yerba-rei-verde-clasica.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Corta hoja uruguaya",
+      "Sabor suave y constante"
+    ]
+  },
+  {
+    "id": "yerba-rei-verde-export-1kg",
+    "nombre": "YERBA MATE REI VERDE PREMIUM EXPORT PAQUETE NEGRO 1KG",
+    "descripcion": "Yerba mate Rei Verde Premium Export paquete negro de 1kg.",
+    "precio": 12000,
+    "imagen": "assets/images/yerba-rei-verde-export.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Edición Premium Export",
+      "Estacionamiento natural prolongado"
+    ]
+  },
+  {
+    "id": "yerba-mate-rojo-edicion-especial-1kg",
+    "nombre": "YERBA MATE ROJO EDICIÓN ESPECIAL 1KG",
+    "descripcion": "Yerba Mate Rojo Edición Especial de 1kg.",
+    "precio": 6000,
+    "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Edición Especial seleccionada",
+      "Elaborada con palo"
+    ]
+  },
+  {
+    "id": "yerba-mate-rojo-tradicional-1kg",
+    "nombre": "YERBA MATE ROJO TRADICIONAL 1KG",
+    "descripcion": "Yerba Mate Rojo Tradicional de 1kg.",
+    "precio": 6000,
+    "imagen": "assets/images/yerba-mate-rojo-rosa.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Sabor tradicional misionero",
+      "Estacionamiento natural"
+    ]
+  },
+  {
+    "id": "yerba-pindare-1kg",
+    "nombre": "YERBA PINDARE 1KG",
+    "descripcion": "Yerba mate Pindare de 1kg, sabor suave y rendidor.",
+    "precio": 9500,
+    "imagen": "assets/images/yerba-pindare.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Sabor suave y equilibrado",
+      "Gran rendimiento en la cebada"
+    ]
+  },
+  {
+    "id": "yerba-verdecita-1kg",
+    "nombre": "YERBA VERDECITA 1KG",
+    "descripcion": "Yerba mate Verdecita de 1kg.",
+    "precio": 9000,
+    "imagen": "assets/images/yerba-verdecita.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Molienda equilibrada",
+      "Sabor fresco y constante"
+    ]
+  },
+  {
+    "id": "yerba-baldo-1kg",
+    "nombre": "YERBA BALDO 1KG",
+    "descripcion": "Yerba mate Baldo uruguaya de 1kg.",
+    "precio": 12000,
+    "imagen": "assets/images/yerba-baldo.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Yerba uruguaya tipo despalada",
+      "Sabor intenso y duradero"
+    ]
+  },
+  {
+    "id": "yerba-canarias-te-verde-jengibre-1kg",
+    "nombre": "YERBA CANARIAS TÉ VERDE Y JENGIBRE 1KG",
+    "descripcion": "Yerba Canarias Té Verde y Jengibre de 1kg.",
+    "precio": 14000,
+    "imagen": "assets/images/yerba-canarias-te-verde-jengibre.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Con té verde y jengibre",
+      "Sabor digestivo y reconfortante"
+    ]
+  },
+  {
+    "id": "yerba-canarias-serena-1kg",
+    "nombre": "YERBA CANARIAS SERENA 1KG",
+    "descripcion": "Yerba Canarias Serena de 1kg con yerbas medicinales.",
+    "precio": 13000,
+    "imagen": "assets/images/yerba-canarias-serena.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 1kg",
+      "Con tilo, toronjil, menta y pasionaria",
+      "Sabor suave y relajante"
+    ]
+  },
+  {
+    "id": "yerba-canarias-tradicional-1kg",
+    "nombre": "YERBA CANARIAS TRADICIONAL 1KG",
+    "descripcion": "Yerba Canarias Tradicional de 1kg importada de Uruguay.",
+    "precio": 14000,
+    "imagen": "assets/images/yerba-canarias-tradicional.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 1kg",
+      "Yerba uruguaya despalada de selección",
+      "Sabor intenso y duradero"
     ]
   }
 ];
