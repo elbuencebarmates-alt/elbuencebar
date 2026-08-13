@@ -2595,18 +2595,6 @@ const PRODUCTOS = [
       "Presentación de 1kg",
       "Yerba mate uruguaya sin adición de azúcar",
       "Sabor intenso y duradero de molienda fina"
-    ],
-    "variantes": [
-      {
-        "nombre": "500 GR",
-        "imagen": "assets/images/yerba-esmeralda-1kg.jpeg",
-        "precio": 8000
-      },
-      {
-        "nombre": "1 KG",
-        "imagen": "assets/images/yerba-esmeralda-1kg.jpeg",
-        "precio": 15000
-      }
     ]
   }
 ];
