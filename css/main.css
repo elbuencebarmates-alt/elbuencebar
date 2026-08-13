@@ -521,13 +521,13 @@ section {
   height: 50px;
   border-radius: var(--radius-full);
   background-color: var(--color-bg-secondary);
-  color: var(--color-primary); /* Color Cobre cálido */
+  color: var(--color-primary);
   border: 1px solid var(--color-border);
-  box-shadow: 0 4px 20px rgba(232, 140, 81, 0.15); /* Resplandor cobre cálido */
+  box-shadow: 0 4px 20px rgba(232, 140, 81, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999;
   cursor: pointer;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -567,7 +567,24 @@ section {
 }
 
 /* --- BOTÓN FLOTANTE Y POPUP DE WHATSAPP --- */
-.whatsapp-float { display: none !important; }
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-full);
+  background-color: #25D366;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
 
 .whatsapp-float:hover {
   transform: scale(1.08) translateY(-3px);
@@ -580,10 +597,25 @@ section {
   fill: currentColor;
 }
 
-.whatsapp-popup { display: none !important; }
+.whatsapp-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 320px;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 18px;
+  z-index: 10000;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeIn 0.25s ease-out;
+}
 
 .whatsapp-popup--open {
-  display: flex;
+  display: flex !important;
 }
 
 .whatsapp-popup__header {
