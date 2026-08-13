@@ -2581,6 +2581,60 @@ const PRODUCTOS = [
         "precio": 13000
       }
     ]
+  },
+  {
+    "id": "yerba-esmeralda-1kg",
+    "nombre": "YERBA MATE ESMERALDA 1KG",
+    "descripcion": "Yerba mate Esmeralda de 1kg importada de Uruguay. Sabor intenso y de excelente durabilidad en la cebada.",
+    "precio": 8000,
+    "imagen": "assets/images/yerba-esmeralda-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "otras",
+    "destacado": true,
+    "detalles": [
+      "Presentación de 1kg",
+      "Yerba mate uruguaya sin adición de azúcar",
+      "Sabor intenso y duradero de molienda fina"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-esmeralda-1kg.png",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-esmeralda-1kg.png",
+        "precio": 15000
+      }
+    ]
+  },
+  {
+    "id": "yerba-esmeralda-500g",
+    "nombre": "YERBA MATE ESMERALDA 500G",
+    "descripcion": "Yerba mate Esmeralda de 500g importada de Uruguay.",
+    "precio": 8000,
+    "imagen": "assets/images/yerba-esmeralda-1kg.png",
+    "categoria": "yerbas",
+    "subcategoria": "500g",
+    "destacado": false,
+    "detalles": [
+      "Presentación de 500g",
+      "Yerba mate uruguaya seleccionada",
+      "Sabor intenso y duradero"
+    ],
+    "variantes": [
+      {
+        "nombre": "500 GR",
+        "imagen": "assets/images/yerba-esmeralda-1kg.png",
+        "precio": 8000
+      },
+      {
+        "nombre": "1 KG",
+        "imagen": "assets/images/yerba-esmeralda-1kg.png",
+        "precio": 15000
+      }
+    ]
   }
 ];
 
